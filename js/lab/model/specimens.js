@@ -1,7 +1,7 @@
 // 岩石の組織（ルーペで見たようす）と化石の絵を SVG で描く。画面に依存しない。
 // 岩石の性質・説明は content/geo/identify.json。ここは描き方だけ（同じ seed なら同じ絵）。
 import { rng } from './strata.js';
-export const FILE_VERSION = '0.1.0';
+export const FILE_VERSION = '0.1.1';
 
 // 造岩鉱物の色と形
 export const MINERAL_LOOK = {

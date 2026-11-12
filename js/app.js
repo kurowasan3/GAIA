@@ -14,7 +14,7 @@ import {
   subjectsWithFields, pool, pickPractice, pickReview, dueEntries, nextReviewTime, loadKnowledge, loadLab,
 } from './catalog.js';
 
-const VERSION = '0.1.0';
+const VERSION = '0.1.1';
 const KEY = 'gaia.v1';   // 同じドメインの Lemma（lemma.v2）・ぶつりば（lemma-physics.v1）・CELESTIA（celestia.v1）と混ざらない名前
 let sync = null, syncApplying = false, syncStatus = null;   // アカウントと同期（initSync で用意）
 const $ = (sel, el = document) => el.querySelector(sel);
@@ -620,7 +620,8 @@ function renderWritten(step, e) {
   function keypadHTML() {
     const txt = fields.filter(x => isText(x.f) && !isInt(x.f));
     const kinds = new Set(txt.map(x => x.f.kind));
-    if (!kinds.size) return '';
+    // 語句だけの欄にはキーを出さない（地学の語句は記号を使わず、キーが選択肢に重なるのを防ぐ）
+    if (!kinds.size || [...kinds].every(k => k === 'word')) return '';
     const mathy = [...kinds].some(k => !CHEM_KINDS.has(k));
     if (!mathy) return `<div class="keypad sticky" id="kp">${CHEM_KEYS.map(k => `<button type="button" data-k="${esc(k)}">${esc(k)}</button>`).join('')}</div>`;
     return `<div class="keypad sticky" id="kp">${KEYS.map(k => `<button type="button" data-k="${esc(k)}">${esc(k)}</button>`).join('')}${extraKeys()}</div>`;

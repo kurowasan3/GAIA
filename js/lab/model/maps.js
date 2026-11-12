@@ -1,6 +1,6 @@
 // 地図のモデル：等値線（マーチングスクエア）、日本付近の地図、天気図、地形図（等高線）
 // 画面に依存しない（ブラウザでも Node でも動く）。地図は学習用の模式図（海岸線は単純化してある）。
-export const FILE_VERSION = '0.1.0';
+export const FILE_VERSION = '0.1.1';
 
 // ---------------------------------------------------------------- 等値線
 // f(i, j) の格子（nx × ny）で level の等値線を線分の列にして返す（格子座標）
@@ -107,7 +107,7 @@ function landMask(P) {
 export const WEATHER = {
   winter: {
     name: '西高東低（冬型の気圧配置）', season: '冬',
-    centers: [{ k: 'H', lon: 108, lat: 46, amp: 34, s: 13, p: 1052 }, { k: 'L', lon: 152, lat: 47, amp: -30, s: 7.5, p: 968 }, { k: 'L', lon: 146, lat: 40, amp: -8, s: 4 }],
+    centers: [{ k: 'H', lon: 117, lat: 45, amp: 34, s: 13, p: 1052 }, { k: 'L', lon: 152, lat: 47, amp: -30, s: 7.5, p: 968 }, { k: 'L', lon: 146, lat: 40, amp: -8, s: 4 }],
     fronts: [],
     desc: '大陸にシベリア高気圧、日本の東の海上に発達した低気圧。日本付近は等圧線が南北に混み合い、北西の季節風が強い。日本海側は雪、太平洋側は乾燥した晴れ。',
   },
@@ -183,7 +183,7 @@ export function weatherSVG(key, opts = {}) {
   }).join('');
   const fronts = (W.fronts || []).map(f => frontSVG(f, P)).join('');
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="${opts.alt || '天気図'}">
-<rect width="${w}" height="${h}" fill="#f4f8fb"/>${landMask(P)}${coastSVG(P)}${grid.join('')}${iso}${fronts}${marks}<rect width="${w}" height="${h}" fill="none" stroke="#6d6a60"/></svg>`;
+<defs><clipPath id="wx-${key}"><rect width="${w}" height="${h}"/></clipPath></defs><g clip-path="url(#wx-${key})"><rect width="${w}" height="${h}" fill="#f4f8fb"/>${landMask(P)}${coastSVG(P)}${grid.join('')}${iso}${fronts}${marks}</g><rect width="${w}" height="${h}" fill="none" stroke="#6d6a60"/></svg>`;
 }
 
 // 前線の記号：寒冷（三角・青）、温暖（半円・赤）、停滞（交互）、閉塞（三角と半円が同じ側・紫）
@@ -316,5 +316,5 @@ export function topoSVG(key, opts = {}) {
   const river = T.river ? `<path d="${smoothPath(T.river.map(([x, y]) => [x * (n - 1), (1 - y) * (n - 1)]), tx)}" fill="none" stroke="#2f6fb0" stroke-width="1.8"/>` : '';
   const scale = `<g font-family="sans-serif" font-size="10" fill="#555"><path d="M${w - 92} ${h - 12}h80" stroke="#555" stroke-width="2"/><text x="${w - 52}" y="${h - 16}" text-anchor="middle">${opts.scale || '500 m'}</text><path d="M${w - 18} 34V12M${w - 18} 12l-4 8M${w - 18} 12l4 8" stroke="#555" stroke-width="1.4" fill="none"/><text x="${w - 18}" y="46" text-anchor="middle">N</text></g>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="${opts.alt || '地形図'}">
-<rect width="${w}" height="${h}" fill="#fffdf6"/>${water}${lines}${river}${labels}${scale}<rect width="${w}" height="${h}" fill="none" stroke="#777"/></svg>`;
+<defs><clipPath id="tp-${key}"><rect width="${w}" height="${h}"/></clipPath></defs><g clip-path="url(#tp-${key})"><rect width="${w}" height="${h}" fill="#fffdf6"/>${water}${lines}${river}${labels}${scale}</g><rect width="${w}" height="${h}" fill="none" stroke="#777"/></svg>`;
 }

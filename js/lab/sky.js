@@ -2,7 +2,7 @@
 import { C, Z, $, $$, e, f1, head, tabs, bindTabs, probButton, done, slider, bindSlider, animator } from './common.js';
 import { hrSVG, hrFrame, starColor } from './model/charts.js';
 
-export const FILE_VERSION = '0.1.0';
+export const FILE_VERSION = '0.1.1';
 
 const SKY = [['sphere', '天球'], ['planets', '惑星'], ['moon', '月'], ['kepler', 'ケプラー'], ['hr', 'HR図']];
 const D2R = Math.PI / 180;
