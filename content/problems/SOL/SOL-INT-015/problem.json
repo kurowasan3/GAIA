@@ -1,0 +1,73 @@
+{
+ "id": "SOL-INT-015",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "海の深さをアイソスタシーで",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大陸は標高 0.8 km、地殻の厚さ 35 km（密度 2.8 g/cm³）。海洋では、海水（1.0 g/cm³）の下に厚さ 7 km の海洋地殻（2.9 g/cm³）がある。マントルの密度を 3.3 g/cm³ とし、大陸と海洋でアイソスタシーが成り立っているとして、海の深さを求めよ（有効数字2桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 5.2 km",
+    "grading": "約{5.2|2} [km]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "大陸地殻の底（海面下 34.2 km）を補償面とする。大陸の柱：$2.8\\times35=98.0$。海洋の柱（海の深さ $h$）：$1.0h+2.9\\times7+3.3(34.2-h-7)=110.06-2.3h$。等しいとおいて $110.06-2.3h=98.0$、$h\\fallingdotseq5.2$ km。実際の大洋の平均の深さ（約 4〜5 km）に近く、大陸と海洋の高さの差がアイソスタシーで説明できることがわかる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "isostasy"
+ ],
+ "laws": [
+  "isostasy-airy"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "アイソスタシー",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "補償面は最も深い地殻の底。海の柱には水・地殻・マントルの3つ"
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "isostasy"
+ }
+}

@@ -4176,6 +4176,30 @@
    "name": "宇宙の年齢",
    "unit": "AST-06",
    "def": "ビッグバンから現在までの時間。約 138 億年。"
+  },
+  {
+   "id": "foucault",
+   "name": "フーコーの振り子",
+   "unit": "AST-01",
+   "def": "振動面が地球の自転につれて回転して見える振り子。1851年フーコーが自転を実証した。回転の速さは 15°×sin(緯度) 毎時。"
+  },
+  {
+   "id": "equation-of-time",
+   "name": "均時差",
+   "unit": "AST-01",
+   "def": "視太陽時と平均太陽時の差。地球の公転軌道が楕円であることと地軸の傾きにより、1年で最大 ±16 分ほど変わる。"
+  },
+  {
+   "id": "hydrologic-cycle",
+   "name": "水の循環",
+   "unit": "ATM-07",
+   "def": "海・大気・陸の間を、蒸発・降水・流出によって水がめぐること。たくわえの量 ÷ 流量 で滞留時間がわかる。"
+  },
+  {
+   "id": "carbon-cycle",
+   "name": "炭素循環",
+   "unit": "ATM-07",
+   "def": "大気・海洋・生物・岩石の間を炭素がめぐること。人間が放出した CO₂ の約半分は海洋と陸の生態系に吸収されている。"
   }
  ],
  "links": [
@@ -8402,6 +8426,36 @@
    "b": "hubble-law",
    "rel": "measure",
    "note": "ハッブル定数から見積もれる"
+  },
+  {
+   "a": "foucault",
+   "b": "diurnal-motion",
+   "rel": "evidence",
+   "note": "自転の証拠"
+  },
+  {
+   "a": "equation-of-time",
+   "b": "apparent-solar-time",
+   "rel": "related",
+   "note": "視太陽時と平均太陽時の差"
+  },
+  {
+   "a": "hydrologic-cycle",
+   "b": "latent-heat",
+   "rel": "related",
+   "note": "蒸発と凝結で熱も運ぶ"
+  },
+  {
+   "a": "carbon-cycle",
+   "b": "co2",
+   "rel": "part",
+   "note": "大気中では主に二酸化炭素"
+  },
+  {
+   "a": "carbon-cycle",
+   "b": "global-warming",
+   "rel": "related",
+   "note": "温暖化と関係する"
   }
  ]
 }

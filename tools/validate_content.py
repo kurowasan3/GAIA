@@ -31,7 +31,7 @@ MAX_IMG = 600_000
 
 # 高校地学で使う単位（入力用の答えの [ ] に書けるもの）
 UNITS = set('''km m mm cm km/s m/s s 秒 分 時間 日 年 万年 億年 百万年 cm/年 ℃ °C ° K hPa Pa % ％ ‰ 倍 等 等級 天文単位 光年 パーセク pc
-g/cm^3 kg/m^3 W/m^2 kW/m^2 J g/kg g/m^3 km/h km^2 個 回 本 度 時 方向 nT μm m^3 L kg W'''.split())
+g/cm^3 kg/m^3 W/m^2 kW/m^2 J g/kg g/m^3 km/h km^2 個 回 本 度 時 方向 nT μm m^3 L kg W mgal mm/年 ℃/km Mpc g m/s^2'''.split())
 
 
 class Report:

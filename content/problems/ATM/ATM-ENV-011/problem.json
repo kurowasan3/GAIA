@@ -1,0 +1,90 @@
+{
+ "id": "ATM-ENV-011",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "大気に残る二酸化炭素",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大気中の CO₂ 濃度 1 ppm は、炭素の量で約 2.1 Gt にあたる。現在、化石燃料などから 1 年に約 10 Gt の炭素が大気に放出されているが、大気中の CO₂ 濃度の増加は 1 年に約 2.4 ppm である。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "放出された炭素のうち、大気に残る割合は約何%か。"
+     },
+     {
+      "id": "2",
+      "tex": "大気に残らなかった炭素はおもにどこへ行ったか。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 50 %",
+    "grading": "約{50|2} [%]"
+   },
+   {
+    "id": "2",
+    "tex": "海洋と陸上の植物（生態系）",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 大気に残る炭素は $2.4\\times2.1\\fallingdotseq5.0$ Gt/年。放出 10 Gt/年の約 50%。(2) 残りの約半分は、海洋（海水にとけこむ）と陸上の生態系（植物の光合成）に吸収されている。海水にとけた CO₂ は海洋を酸性化させる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "environment"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "炭素循環",
+  "二酸化炭素",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "ppm を炭素の質量に直して、入りと増加を比べる"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "carbon-cycle"
+ }
+}

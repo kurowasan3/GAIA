@@ -1,0 +1,100 @@
+{
+ "id": "ATM-RAD-011",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "熱収支の図を埋める",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球全体で平均した熱収支（単位 W/m²）について、次のことがわかっている。大気上端に入る太陽放射 342、大気や雲が反射 77、地表が反射 30、大気が吸収 67、地表が吸収 168。地表は、大気からの赤外放射を受け取り、赤外放射 390、顕熱 24、潜熱 78 を大気へ出している。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地球のアルベドを求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "地球から宇宙へ出ていく赤外放射の量を求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "大気から地表へ向かう赤外放射の量を求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 31 %",
+    "grading": "約{31|2} [%]"
+   },
+   {
+    "id": "2",
+    "tex": "235 W/m²",
+    "grading": "約{235|3} [W/m^2]"
+   },
+   {
+    "id": "3",
+    "tex": "324 W/m²",
+    "grading": "約{324|3} [W/m^2]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 反射の合計 $77+30=107$。$107/342\\fallingdotseq0.31$。(2) 地球全体はつり合っているので、宇宙へ出ていく赤外放射は吸収した分 $342-107=235$ W/m²。(3) 地表の収支：入り $168+X$、出 $390+24+78=492$。$X=324$ W/m²。地表は太陽から受け取る量の約 2 倍の赤外線を大気から受け取っている（温室効果）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "radiation-balance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱収支",
+  "アルベド",
+  "温室効果",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "地球全体・地表・大気、どの箱でも入り＝出"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "greenhouse"
+ }
+}

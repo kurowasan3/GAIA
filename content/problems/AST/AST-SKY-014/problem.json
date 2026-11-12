@@ -1,0 +1,72 @@
+{
+ "id": "AST-SKY-014",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "年周光行差から公転速度",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "黄道の極の方向にある恒星は、1年の間に天球上で半径 20.5″ の円をえがく（年周光行差）。この角度 $\\alpha$ と光の速さ $c=3.0\\times10^{5}$ km/s から、地球の公転速度 $v=c\\tan\\alpha$ を求めよ。$\\tan\\alpha\\fallingdotseq\\alpha$（ラジアン）、$\\pi=3.14$ とする。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 30 km/s",
+    "grading": "約{30|2} [km/s]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\alpha=\\dfrac{20.5}{3600}\\times\\dfrac{3.14}{180}\\fallingdotseq9.93\\times10^{-5}$ rad。$v=3.0\\times10^{5}\\times9.93\\times10^{-5}\\fallingdotseq30$ km/s。年周光行差はどの恒星でも同じ大きさで、距離に関係しない（年周視差は遠いほど小さい）。地球の公転の直接の証拠になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "diurnal-annual"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "年周光行差",
+  "公転の証拠",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "雨の中を走ると雨が前から降ってくるのと同じ"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "aberration"
+ }
+}

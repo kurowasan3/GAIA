@@ -1,0 +1,90 @@
+{
+ "id": "ATM-JWX-014",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "風向の変化から台風の進路",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "北へ進む台風が近づいて通り過ぎる間に、地点 X では風向が 東 → 南東 → 南 → 南西 と変わった。地点 Y では 東 → 北東 → 北 → 北西 と変わった。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "台風の中心と地点 X の位置関係を選べ。"
+     },
+     {
+      "id": "2",
+      "tex": "X と Y のうち、風が強くなりやすかったのはどちらか。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "台風の中心は X の西側を通過した（X は進路の東側）",
+    "grading": "選ぶ{台風の中心は X の西側を通過した（X は進路の東側）|台風の中心は X の東側を通過した（X は進路の西側）|台風の中心は X の真上を通過した}=1"
+   },
+   {
+    "id": "2",
+    "tex": "X",
+    "grading": "選ぶ{X|Y}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "北半球の台風では、風は中心に向かって反時計回りに吹きこむ。中心が観測点の西側を北上すると、観測点では風向が時計回り（東→南→西）に変わる。中心が東側を北上すると、反時計回り（東→北→西）に変わる。(1) X は時計回りなので、台風の中心は X の西側を通過した（X は進路の右側）。(2) 進路の右側（危険半円）では、台風の風と台風を動かす風（移動の速さ）が同じ向きに重なるので、風が強い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "台風",
+  "風向の変化",
+  "危険半円"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "反時計回りの渦が西側を通る → 風向は時計回り"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "typhoon"
+ }
+}

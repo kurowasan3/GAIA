@@ -1,0 +1,71 @@
+{
+ "id": "ATM-RAD-012",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "熱輸送が最大になる緯度",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大気と海洋が低緯度から高緯度へ運ぶ熱の量（ある緯度を横切って運ばれる量）が最大になる緯度として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "受け取る放射と出ていく放射がつり合う緯度（約 35〜40°）",
+    "grading": "選ぶ{赤道|受け取る放射と出ていく放射がつり合う緯度（約 35〜40°）|北緯 60° 付近|極}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "低緯度では吸収する太陽放射が出ていく地球放射より多く（熱があまる）、高緯度では不足する。ある緯度を横切る熱の量は、それより低緯度側であまった熱の合計に等しいので、あまりと不足が入れかわる緯度（放射がつり合う緯度、約 35〜40°）で最大になる。赤道や極では熱を運ぶ量は 0。熱があまる量が最大の赤道を選ぶのはよくある誤り。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "heat-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱輸送",
+  "放射収支"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "運ぶ量＝それまでにたまった「あまり」の合計"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "heat-transport"
+ }
+}

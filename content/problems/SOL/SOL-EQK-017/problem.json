@@ -1,0 +1,91 @@
+{
+ "id": "SOL-EQK-017",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "緊急地震速報の猶予",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "震源から 20 km の観測点で P波をとらえ、その 4.0 秒後に緊急地震速報が出された。P波の速さを 7.0 km/s、S波の速さを 4.0 km/s とし、速報は一瞬で届くとする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "震源から 100 km の地点では、速報を受けてから S波が届くまで何秒あるか。"
+     },
+     {
+      "id": "2",
+      "tex": "速報が S波の到着に間に合わない範囲は、震源から何 km 以内か。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 18 秒",
+    "grading": "約{18|2} [秒]"
+   },
+   {
+    "id": "2",
+    "tex": "約 27 km",
+    "grading": "約{27|2} [km]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) P波が観測点に届くのは $20/7.0=2.86$ 秒後、速報は $6.86$ 秒後。震源から 100 km の地点に S波が届くのは $100/4.0=25.0$ 秒後なので、猶予は $25.0-6.86\\fallingdotseq18$ 秒。(2) S波が速報と同時に届く距離は $4.0\\times6.86\\fallingdotseq27$ km。これより震源に近い地域では、速報より先に強いゆれが来る（速報が間に合わない）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "seismic-waves"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "緊急地震速報",
+  "P波",
+  "S波",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "速報が出る時刻と S波の到着時刻を同じ時計で比べる"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "seismic-wave"
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "id": "AST-SKY-015",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "均時差と南中時刻",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "東経 $131.5^\\circ$ の地点で、ある日に太陽の南中時刻を観測した。この日の均時差（視太陽時 − 平均太陽時）は $+9$ 分である。日本標準時は東経 $135^\\circ$ の平均太陽時である。この日、この地点で太陽が南中するのは日本標準時で何時何分か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "12時05分",
+    "grading": "語{12時05分|12時5分|12:05}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "経度 $1^\\circ$ で 4 分。東経 $131.5^\\circ$ は $135^\\circ$ より $3.5^\\circ$ 西なので、平均太陽の南中は $3.5\\times4=14$ 分おそい 12 時 14 分。均時差 $+9$ 分は、実際の太陽が平均太陽より 9 分先に進んでいる（早く南中する）ということなので、$12:14-9=12:05$。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "diurnal-annual"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "均時差",
+  "経度と時刻",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "経度の補正と均時差の補正を、向きに気をつけて足す"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "equation-of-time"
+ }
+}

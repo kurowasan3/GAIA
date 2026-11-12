@@ -1,0 +1,92 @@
+{
+ "id": "SOL-MAG-011",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "フレアと磁気嵐の時間差",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽でフレアが起こり、同時にコロナ質量放出（CME）が平均 400 km/s の速さで地球へ向かった。太陽と地球の距離を $1.5\\times10^{8}$ km とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "デリンジャー現象が起こるのは、フレアが起こってから何分後か。"
+     },
+     {
+      "id": "2",
+      "tex": "CME が地球に届いて磁気嵐が起こるのは、フレアの何日後か。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 8.3 分後",
+    "grading": "約{8.3|2} [分]"
+   },
+   {
+    "id": "2",
+    "tex": "約 4.3 日後",
+    "grading": "約{4.3|2} [日]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) X線（光）の速さは $3.0\\times10^{5}$ km/s なので $\\dfrac{1.5\\times10^{8}}{3.0\\times10^{5}}=500$ 秒 $\\fallingdotseq8.3$ 分。フレアの X線で電離圏が乱れ、短波通信が途絶える（デリンジャー現象）のはほぼフレアと同時。(2) $\\dfrac{1.5\\times10^{8}}{400}=3.75\\times10^{5}$ 秒 $\\fallingdotseq4.3$ 日。CME のプラズマが届いてから磁気嵐やオーロラが起こるので、数日の時間差が生まれる。宇宙天気予報はこの時間差を利用している。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geomagnetism",
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "磁気嵐",
+  "デリンジャー現象",
+  "CME",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "光とプラズマでは速さが千倍ちがう"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "magnetic-storm"
+ }
+}

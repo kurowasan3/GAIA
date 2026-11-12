@@ -1,0 +1,89 @@
+{
+ "id": "GEO-SED-015",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "長石の化学的風化",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "カリ長石は、二酸化炭素をとかした水によって次のように風化し、粘土鉱物（カオリナイト）になる。$$2\\mathrm{KAlSi_3O_8}+2\\mathrm{CO_2}+a\\,\\mathrm{H_2O}\\rightarrow\\mathrm{Al_2Si_2O_5(OH)_4}+2\\mathrm{K^+}+b\\,\\mathrm{H_4SiO_4}+2\\mathrm{HCO_3^-}$$"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$b$ を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "$a$ を求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "4",
+    "grading": "約{4|1}"
+   },
+   {
+    "id": "2",
+    "tex": "11",
+    "grading": "約{11|2}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) Si の数：左辺 $2\\times3=6$、右辺はカオリナイトに 2 なので $b=4$。(2) H の数：右辺は $4+4\\times4+2=22$ なので $2a=22$、$a=11$（O でも確かめられる：左辺 $16+4+11=31$、右辺 $9+16+6=31$）。K⁺ とケイ酸は水にとけて運び去られ、Al はカオリナイトとして残る。高温多湿でさらに進むと、Si も失われてボーキサイト（Al の鉱石）になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "weathering-erosion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学的風化",
+  "化学反応式"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "Si → H の順に数をそろえる"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "chemical-weathering"
+ }
+}

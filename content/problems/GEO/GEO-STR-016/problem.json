@@ -1,0 +1,68 @@
+{
+ "id": "GEO-STR-016",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "トンネルで境界面に達する距離",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "走向が南北で、西へ $45^\\circ$ 傾く地層の境界面がある。標高 250 m の地点 Q から真東へ 150 m の地点では、標高 200 m の地表にこの境界面が現れている。Q から標高 250 m のまま真東へ水平なトンネルを掘ると、何 m 掘ったところで境界面に達するか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "200 m",
+    "grading": "約{200|2} [m]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "境界面は西へ下がっている＝東へ行くほど高くなる。傾斜 $45^\\circ$ なので、東へ 1 m 進むと境界面は 1 m 高くなる。地表の露頭（標高 200 m）の真下・真上で考えると、標高 250 m で境界面に達するのは、露頭からさらに東へ 50 m の位置。よって Q から $150+50=200$ m。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geologic-structures"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "傾斜",
+  "トンネル",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "西へ傾く面は、東へ進むほど高い所にある"
+ }
+}

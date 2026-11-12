@@ -1,0 +1,73 @@
+{
+ "id": "GEO-STR-015",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "クリノメーターの偏角補正",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "偏角が西へ $7^\\circ$ の地域で、クリノメーターの磁針に合わせて地層の走向を測ったところ N60°E だった。真北を基準にした走向を答えよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "N53°E",
+    "grading": "語{N53°E|N53E|北53°東}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "偏角が西へ $7^\\circ$ とは、磁針の北（磁北）が真北より $7^\\circ$ 西を指すということ。磁北から東へ $60^\\circ$ の向きは、真北から見ると $60-7=53^\\circ$ 東。偏角を逆に足して N67°E としないよう、図にかいて確かめるとよい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geologic-structures",
+  "geomagnetism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "クリノメーター",
+  "偏角",
+  "走向"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "磁北は真北より西にある → 東向きの角度は小さくなる"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "clinometer"
+ }
+}

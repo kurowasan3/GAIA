@@ -1,0 +1,73 @@
+{
+ "id": "AST-SKY-016",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "1万3000年後の季節",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地軸は約 2 万 6000 年の周期で歳差運動をしている。現在、地球が太陽に最も近づく（近日点）のは 1 月はじめである。地軸の傾きと公転軌道の形は変わらないとすると、約 1 万 3000 年後について正しいものを2つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "天の北極は現在の位置から約 47° 離れた所にある。北半球の夏に近日点を通るので、北半球の夏と冬の差は今より大きくなる。",
+    "grading": "すべて選ぶ{天の北極は、現在の天の北極から約 47° 離れた所にある|天の北極は、現在とほぼ同じ所にある|北半球の夏に近日点を通るので、北半球の夏と冬の差は今より大きくなる|地軸の傾きが 0° になり季節がなくなる}=1,3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "歳差運動で天の北極は、黄道の北極を中心とする半径 $23.4^\\circ$ の円をえがく。半周期後には反対側に来るので、現在の位置から $2\\times23.4\\fallingdotseq47^\\circ$ 離れる（こと座のベガの近く）。また、春分点・夏至点などが軌道の上を半周ずれるので、北半球の夏至のころに近日点を通る。北半球では夏の日射がより強く、冬がより弱くなり、季節の差が大きくなる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "celestial-sphere",
+  "diurnal-annual"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "歳差運動",
+  "近日点",
+  "季節"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "半周期後は、天の極も季節と近日点の関係も反対側"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "ecliptic-motion"
+ }
+}

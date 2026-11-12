@@ -3,7 +3,7 @@
 //   ここで data/f-*.json の figs の情報から中身を入れる。
 //   解答用（role: "answer"）の図は、allowAnswer を付けて呼ぶまで中身を入れない（ファイルも読まない）。
 //   SVG は文字として読み込んで埋め込む（色が明暗の設定に合わせて変わる・将来の操作できる図のため）。
-export const FILE_VERSION = '0.1.2';
+export const FILE_VERSION = '0.1.3';
 
 let esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 export function setFigureEsc(fn) { esc = fn; }

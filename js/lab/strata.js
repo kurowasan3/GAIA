@@ -2,7 +2,7 @@
 import { C, $, $$, e, head, tabs, bindTabs, probButton, done, shuffle } from './common.js';
 import { simulate, strataSVG, makeHistory, describe, reasons, TEMPLATES, MATERIALS, column, patternDefs, rng } from './model/strata.js';
 
-export const FILE_VERSION = '0.1.2';
+export const FILE_VERSION = '0.1.3';
 
 let uid = 0;
 const nextId = () => 'sp' + (++uid);

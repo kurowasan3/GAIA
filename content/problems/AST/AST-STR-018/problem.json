@@ -1,0 +1,93 @@
+{
+ "id": "AST-STR-018",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "連星の質量",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2つの恒星 A、B からなる連星が、共通重心のまわりを円軌道で回っている。2 星の間の距離は 10 天文単位、公転周期は 20 年で、共通重心から A までと B までの距離の比は 2：3 である。$\\dfrac{a^3}{P^2}=M_A+M_B$（$a$：天文単位、$P$：年、質量は太陽質量を 1 とする）とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "2 星の質量の和は太陽の何倍か。"
+     },
+     {
+      "id": "2",
+      "tex": "A、B の質量はそれぞれ太陽の何倍か。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2.5",
+    "grading": "約{2.5|2} [倍]"
+   },
+   {
+    "id": "2",
+    "tex": "A：1.5、B：1.0",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\dfrac{10^3}{20^2}=2.5$ 倍。(2) 共通重心は重い星の近くにある（$M_Ar_A=M_Br_B$）。距離の比 2：3 なので質量の比は 3：2。$M_A=2.5\\times\\dfrac35=1.5$、$M_B=1.0$。重心に近い A の方が重い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stellar-properties",
+  "kepler"
+ ],
+ "laws": [
+  "kepler-third"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "連星",
+  "質量",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "重心からの距離は質量に反比例"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "binary"
+ }
+}

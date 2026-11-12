@@ -1,0 +1,92 @@
+{
+ "id": "AST-PLN-012",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "金星への探査機",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の軌道（半径 1.0 天文単位）上の点 A から探査機を打ち上げ、太陽を焦点の1つとする楕円軌道に乗せて、遠日点 A から近日点 B（金星の軌道上、半径 0.72 天文単位）まで飛ばす。探査機はケプラーの法則に従う。$\\sqrt{0.86}=0.93$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "探査機の軌道の長半径を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "A から B までにかかる日数を求めよ（1 年を 365 日とする）。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "0.86 天文単位",
+    "grading": "約{0.86|2} [天文単位]"
+   },
+   {
+    "id": "2",
+    "tex": "約 146 日",
+    "grading": "約{146|2} [日]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 遠日点距離 1.0、近日点距離 0.72 なので、長半径 $a=\\dfrac{1.0+0.72}{2}=0.86$ 天文単位。(2) 第3法則 $P^2=a^3$ より $P=0.86\\sqrt{0.86}=0.86\\times0.93\\fallingdotseq0.80$ 年。A から B までは楕円軌道の半周なので $0.40$ 年 $\\fallingdotseq146$ 日。金星の公転周期（0.62 年）の半分や、地球の公転周期の半分とまちがえやすい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "kepler"
+ ],
+ "laws": [
+  "kepler-third"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "ケプラーの第3法則",
+  "ホーマン軌道",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "長半径は近日点距離と遠日点距離の平均"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "kepler-laws"
+ }
+}

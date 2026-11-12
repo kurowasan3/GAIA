@@ -1,0 +1,93 @@
+{
+ "id": "AST-SUN-011",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "黒点から太陽の自転周期",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽の赤道付近の黒点が、太陽の東の縁に現れてから西の縁に消えるまで 13.5 日かかった。地球の公転周期を 365 日とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地球から見た太陽の自転周期を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "恒星に対する（真の）自転周期を求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "27 日",
+    "grading": "約{27|2} [日]"
+   },
+   {
+    "id": "2",
+    "tex": "約 25 日",
+    "grading": "約{25|2} [日]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 縁から縁までは半周なので、地球から見た自転周期は $13.5\\times2=27$ 日。(2) この間に地球も同じ向きに公転しているので、27 日は会合周期にあたる。$\\dfrac1T=\\dfrac1{27}+\\dfrac1{365}$ より $T\\fallingdotseq25$ 日（恒星に対する自転周期）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sun"
+ ],
+ "laws": [
+  "synodic-period"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "黒点",
+  "自転周期",
+  "会合周期",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "地球も同じ向きに回っている → 会合周期の考え方"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "sunspot"
+ }
+}

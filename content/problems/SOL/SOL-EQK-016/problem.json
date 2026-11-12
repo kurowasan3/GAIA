@@ -1,0 +1,72 @@
+{
+ "id": "SOL-EQK-016",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "海岸段丘から地震の周期",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある海岸では、大地震のたびに土地が 1.2 m 隆起し、地震と地震の間は 1 年に 4.0 mm の一定の速さで沈降している。この海岸で 6000 年前に海面の高さでできた海食台が、現在は標高 12 m の海岸段丘になっている。海面の高さは変わらなかったとして、大地震のくり返しの周期を求めよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "200 年",
+    "grading": "約{200|2} [年]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "周期を $T$ 年とすると、1 周期あたりの正味の隆起は $1.2-0.0040T$ [m]。平均の隆起速度は $\\dfrac{12}{6000}=0.0020$ m/年なので、$\\dfrac{1.2-0.0040T}{T}=0.0020$ → $1.2=0.0060T$ → $T=200$ 年。地震のときの隆起量だけで割ると $6000\\div(12\\div1.2)=600$ 年となって誤る。地震の間の沈降が、地震のときの隆起の大部分を打ち消している。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earthquake-types"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地殻変動",
+  "海岸段丘",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "平均の隆起速度 ＝（地震時の隆起 − 地震間の沈降）÷ 周期"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "coastal-terrace"
+ }
+}

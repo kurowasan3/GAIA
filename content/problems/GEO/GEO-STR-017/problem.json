@@ -1,0 +1,86 @@
+{
+ "id": "GEO-STR-017",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "露頭の幅と層の厚さ",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平な地表に、走向が東西で北へ $30^\\circ$ 傾く砂岩層が分布している。南北方向に測った砂岩層の地表の幅は 80 m だった。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "砂岩層の厚さを求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "砂岩層の北側の境界の位置で鉛直に掘ると、何 m で砂岩層の下面に達するか（$\\tan30^\\circ=0.577$）。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "40 m",
+    "grading": "約{40|2} [m]"
+   },
+   {
+    "id": "2",
+    "tex": "約 46 m",
+    "grading": "約{46|2} [m]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 層の厚さは境界面に垂直に測る。地表の幅 80 m は層を斜めに切った長さなので、厚さ $=80\\sin30^\\circ=40$ m。(2) 北へ傾くので、北側の境界が砂岩層の上面、南側の境界が下面である。北側の境界で掘ると、まず砂岩層の中に入り、下の面は南の露頭から北へ 80 m の位置の真下にある。深さは $80\\tan30^\\circ=80\\times0.577\\fallingdotseq46$ m。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geologic-structures"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "層の厚さ",
+  "傾斜",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "厚さ＝幅×sin、鉛直の深さ＝幅×tan"
+ }
+}

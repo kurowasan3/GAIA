@@ -1,0 +1,75 @@
+{
+ "id": "AST-GAL-013",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "型ちがいのケフェイド",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある銀河の距離を、銀河の中に見つかった変光星を使って求めた。変光星は種族 I のケフェイドだったのに、種族 II の脈動変光星（同じ周期で 1.5 等暗い）の周期光度関係を使ってしまった。正しい距離は、求めた距離の何倍か（$10^{0.3}=2.0$）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 2.0 倍",
+    "grading": "約{2.0|2} [倍]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同じ周期で種族 I の方が 1.5 等明るい。明るい星をまちがって暗い星と思うと、「暗い星がこの明るさに見える＝近い」と判断する。距離指数が 1.5 等ずれるので、距離は $10^{1.5/5}=10^{0.3}=2.0$ 倍。実際、1950 年代にこの区別がわかって、アンドロメダ銀河までの距離などが約 2 倍に修正された。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "galaxy"
+ ],
+ "laws": [
+  "distance-modulus"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "周期光度関係",
+  "ケフェイド",
+  "距離",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "明るさを小さく見積もる → 距離を小さく見積もる"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "period-luminosity"
+ }
+}

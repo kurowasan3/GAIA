@@ -1,0 +1,72 @@
+{
+ "id": "ATM-CIR-014",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "回転水槽の実験",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "外側を温め、中心を冷やした円筒形の水槽を回転台にのせて回し、水面の流れを観察した。回転がおそい場合と速い場合の流れのようすの組み合わせとして最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "おそいと同心円状にまわる流れ、速いと蛇行する波（渦）が現れる",
+    "grading": "選ぶ{おそいと同心円状にまわる流れ、速いと蛇行する波（渦）が現れる|おそいと蛇行する波（渦）が現れ、速いと同心円状にまわる流れになる|おそい・速いどちらも同心円状の流れ|おそい・速いどちらも流れは生じない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "回転がおそいと、温度差による流れは軸対称に保たれ、同心円状の流れ（ハドレー循環のような流れ）になる。回転が速くなると、転向力が強くはたらいて南北方向の流れが妨げられ、流れが波打って渦ができ、それが熱を運ぶ。地球の中緯度で偏西風が蛇行し、温帯低気圧・移動性高気圧が熱を運ぶようすにあたる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "general-circulation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "大気の大循環",
+  "回転水槽",
+  "偏西風波動"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "回転が速い＝転向力が強い＝南北に直接流れにくい"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "westerly-wave"
+ }
+}

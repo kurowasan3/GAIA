@@ -1,0 +1,91 @@
+{
+ "id": "SOL-PLT-013",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "高緯度のホットスポット",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "北緯 $60^\\circ$ の緯線に沿って海山が東西に並んでいる。いちばん東の海底火山は現在ホットスポットの上にあり、そこから経度で $5.0^\\circ$ 西にある海山 A の岩石の年代は 550 万年だった。ホットスポットは動かず、プレートは東西方向に一定の速さで動いたとする。地球の半径を 6400 km、円周率を 3.14 とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "プレートが動く向きを4方位で答えよ。"
+     },
+     {
+      "id": "2",
+      "tex": "プレートの速さを求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "西",
+    "grading": "語{西}"
+   },
+   {
+    "id": "2",
+    "tex": "約 5.1 cm/年",
+    "grading": "約{5.1|2} [cm/年]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 古い火山ほどホットスポットから遠ざかる。古い海山 A が西にあるので、プレートは西へ動いている。(2) 北緯 $60^\\circ$ の緯線の半径は $6400\\cos60^\\circ=3200$ km。経度 $5.0^\\circ$ の距離は $2\\times3.14\\times3200\\times\\dfrac{5.0}{360}\\fallingdotseq279$ km。速さ $=\\dfrac{2.79\\times10^{7}\\ \\mathrm{cm}}{5.5\\times10^{6}\\ \\text{年}}\\fallingdotseq5.1$ cm/年。赤道上の経度差と同じに計算すると 2 倍の値になってしまう。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hotspot",
+  "seafloor-spreading"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ホットスポット",
+  "緯線の長さ",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "緯度 φ の緯線の長さは赤道の cos φ 倍"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "hotspot"
+ }
+}

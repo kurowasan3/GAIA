@@ -1,0 +1,72 @@
+{
+ "id": "ATM-ENV-010",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "水蒸気の滞留時間",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大気中の水蒸気をすべて液体の水にしたときの厚さ（可降水量）は、地球平均で約 25 mm である。一方、地球全体の平均の降水量は 1 年に約 1000 mm である。大気中の水蒸気は平均して何日で入れかわるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 9 日",
+    "grading": "約{9|1} [日]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "滞留時間 ＝ たくわえられている量 ÷ 出ていく量 $=\\dfrac{25\\ \\mathrm{mm}}{1000\\ \\mathrm{mm/年}}=0.025$ 年 $\\fallingdotseq9$ 日。大気中の水は 10 日ほどで入れかわる、とても速いたくわえである（海水は数千年）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "environment"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水の循環",
+  "滞留時間",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "滞留時間 ＝ 量 ÷ 流量"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "hydrologic-cycle"
+ }
+}

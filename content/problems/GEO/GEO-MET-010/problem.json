@@ -1,0 +1,73 @@
+{
+ "id": "GEO-MET-010",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-03",
+ "topic": "紅柱石が語る地温勾配",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "Al₂SiO₅ の3つの鉱物（紅柱石・珪線石・らん晶石）が同時に安定な点（三重点）は、温度 500 ℃、圧力 $3.8\\times10^{8}$ Pa で、この圧力は深さ 16 km に相当する。紅柱石は三重点より低圧側でだけ安定である。ある地域の変成岩には紅柱石がふくまれ、らん晶石はふくまれていなかった。地温勾配は深さによらず一定で、地表は 0 ℃ とする。この地域の地温勾配の下限を求めよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 31 ℃/km",
+    "grading": "約{31|2} [℃/km]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地温勾配が一定なら、温度と深さ（圧力）の関係は原点を通る直線になる。この直線が紅柱石の領域を通るには、三重点より高温側（同じ深さでより高温）を通らなければならない。三重点を通るときの勾配は $\\dfrac{500}{16}\\fallingdotseq31$ ℃/km。これより大きい勾配なら紅柱石ができ、小さい勾配ではらん晶石ができる。紅柱石がある変成岩は、高温低圧型（領家帯など）の変成作用を受けたとわかる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "metamorphism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "同質異像",
+  "三重点",
+  "地温勾配",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "地温勾配の直線が三重点のどちら側を通るか"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "kyanite"
+ }
+}

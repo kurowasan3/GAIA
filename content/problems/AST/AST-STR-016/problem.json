@@ -1,0 +1,93 @@
+{
+ "id": "AST-STR-016",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "色のちがう同じ光度の星",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "恒星 A と B は光度が等しい。放射が最も強い波長は、A が 0.40 μm、B が 0.80 μm である。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A の表面温度は B の何倍か。"
+     },
+     {
+      "id": "2",
+      "tex": "B の半径は A の何倍か。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2 倍",
+    "grading": "約{2|1} [倍]"
+   },
+   {
+    "id": "2",
+    "tex": "4 倍",
+    "grading": "約{4|1} [倍]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) ウィーンの変位則 $\\lambda_m T=$ 一定 より、波長が半分の A の温度は B の 2 倍。(2) 光度 $L\\propto R^2T^4$ が等しいので $R^2\\propto\\dfrac1{T^4}$、$R\\propto\\dfrac1{T^2}$。B は A より温度が半分なので、半径は $2^2=4$ 倍。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stellar-properties"
+ ],
+ "laws": [
+  "wien",
+  "stefan-boltzmann"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "ウィーンの変位則",
+  "光度と半径",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "光度が同じなら、低温の星ほど大きい"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "luminosity"
+ }
+}

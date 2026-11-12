@@ -1,0 +1,99 @@
+{
+ "id": "AST-SKY-013",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "フーコーの振り子",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "フーコーの振り子の振動面は、北極では 1 時間に $15^\\circ$ 回転して見え、緯度 $\\varphi$ の地点では $15^\\circ\\times\\sin\\varphi$ 回転して見える。$\\sin35^\\circ=0.57$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "北緯 35° で、1 時間に振動面が回転する角度を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "北緯 35° で、振動面が1回転するのに何時間かかるか。"
+     },
+     {
+      "id": "3",
+      "tex": "南半球で、上から見た振動面の回転の向きを答えよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 8.6°",
+    "grading": "約{8.6|2} [°]"
+   },
+   {
+    "id": "2",
+    "tex": "約 42 時間",
+    "grading": "約{42|2} [時間]"
+   },
+   {
+    "id": "3",
+    "tex": "反時計回り",
+    "grading": "語{反時計回り|左回り}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $15\\times0.57\\fallingdotseq8.6^\\circ$。(2) $360\\div8.6\\fallingdotseq42$ 時間で1回転（1日では1回転しない）。(3) 北半球では地面が反時計回りに回るので、振動面は上から見て時計回りに回って見える。南半球では逆の反時計回り。赤道では回転しない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "diurnal-annual"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フーコーの振り子",
+  "自転の証拠",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "自転の角速度のうち、その地点の鉛直方向の成分だけが見える"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "foucault"
+ }
+}

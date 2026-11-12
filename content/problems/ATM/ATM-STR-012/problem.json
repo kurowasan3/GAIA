@@ -1,0 +1,89 @@
+{
+ "id": "ATM-STR-012",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "上空の大気の質量",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気圧は高さが 16 km 増すごとに $\\dfrac{1}{10}$ になるとする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "高さ 32 km より上にある大気の質量は、大気全体の何%か。"
+     },
+     {
+      "id": "2",
+      "tex": "地表の気圧を 1000 hPa として、高さ 40 km の気圧を求めよ（$10^{0.5}=3.16$）。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "1 %",
+    "grading": "約{1|1} [%]"
+   },
+   {
+    "id": "2",
+    "tex": "約 3.2 hPa",
+    "grading": "約{3.2|2} [hPa]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 気圧はその高さより上にある大気の重さ。地表 1000 hPa の $\\left(\\dfrac{1}{10}\\right)^2=\\dfrac{1}{100}$ になる 32 km より上には、全体の 1% の大気しかない。(2) 40 km は 16 km の 2.5 倍なので $1000\\times10^{-2.5}\\fallingdotseq3.2$ hPa。オゾン層の濃い成層圏も、質量ではごく一部である。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atm-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気圧",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "気圧＝上にある空気の重さ"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "atmosphere"
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "id": "SOL-PLT-015",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "プレートの回転運動",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "あるプレートは、地球の中心を通る軸（回転軸が地表と交わる点を回転極とよぶ）のまわりに一定の角速度で回転している。回転極から角距離 $90^\\circ$ の地点では、プレートの移動速度は 8 cm/年である。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "同じプレート上で、回転極から角距離 $30^\\circ$ の地点の移動速度を選べ。"
+     },
+     {
+      "id": "2",
+      "tex": "このプレートの縁にあるトランスフォーム断層の向きとして最も適当なものを選べ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "4 cm/年",
+    "grading": "選ぶ{8 cm/年|4 cm/年|16 cm/年|約 6.9 cm/年}=2"
+   },
+   {
+    "id": "2",
+    "tex": "回転極を中心とする小円に沿う",
+    "grading": "選ぶ{回転極を中心とする小円に沿う|回転極に向かう大円に沿う|必ず南北方向|必ず東西方向}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 回転による速さは回転軸からの距離に比例し、回転極から角距離 $\\theta$ の地点では $\\sin\\theta$ に比例する。$8\\times\\sin30^\\circ=4$ cm/年。同じプレートの上でも、場所によって速さがちがう。(2) トランスフォーム断層では、プレートどうしがすれ違うだけで近づきも離れもしない。そのため、断層は相対運動の向き、つまり回転極を中心とする小円に沿う。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plate-boundaries"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "オイラー極",
+  "トランスフォーム断層"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "剛体の回転：角速度は同じ、速さは軸からの距離に比例"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "transform"
+ }
+}

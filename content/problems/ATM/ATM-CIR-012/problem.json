@@ -1,0 +1,90 @@
+{
+ "id": "ATM-CIR-012",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "地衡風の速さと緯度",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気圧傾度力と転向力がつり合って吹く地衡風の速さ $v$ は、$\\dfrac{1}{\\rho}\\dfrac{\\Delta p}{\\Delta n}=2\\Omega v\\sin\\varphi$ で表される（$\\rho$：空気の密度、$\\Delta p/\\Delta n$：気圧傾度、$\\Omega$：地球の自転角速度、$\\varphi$：緯度）。$\\rho=1.2\\ \\mathrm{kg/m^3}$、$\\Omega=7.3\\times10^{-5}$ /s、$\\sin35^\\circ=0.57$、$\\sin15^\\circ=0.26$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "北緯 35° で、等圧線が 4 hPa ごとに 300 km の間隔で並んでいるとき、地衡風の速さを求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "同じ気圧傾度が北緯 15° にあるとき、地衡風の速さを求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 13 m/s",
+    "grading": "約{13|2} [m/s]"
+   },
+   {
+    "id": "2",
+    "tex": "約 29 m/s",
+    "grading": "約{29|2} [m/s]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\dfrac{\\Delta p}{\\Delta n}=\\dfrac{400\\ \\mathrm{Pa}}{3.0\\times10^{5}\\ \\mathrm{m}}$。$v=\\dfrac{400}{1.2\\times3.0\\times10^{5}\\times2\\times7.3\\times10^{-5}\\times0.57}\\fallingdotseq13$ m/s。(2) 同じ気圧傾度なら $v\\propto\\dfrac{1}{\\sin\\varphi}$ なので $13\\times\\dfrac{0.57}{0.26}\\fallingdotseq29$ m/s。低緯度ほど転向力が弱いので、同じ気圧差でも強い風になる（赤道付近では地衡風の関係が成り立たない）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "winds"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地衡風",
+  "転向力",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "転向力は sin(緯度) に比例"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "geostrophic"
+ }
+}

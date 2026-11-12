@@ -1,0 +1,72 @@
+{
+ "id": "SOL-SHP-012",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "振り子の数えまちがい",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "長さ 1.00 m の単振り子が 100 回往復する時間を測ったところ 200.6 秒だったので、周期 $T=2.006$ 秒として $g=\\dfrac{4\\pi^2L}{T^2}$ から重力加速度を求めた。ところが、あとで記録を見直すと、振り子を放した瞬間を「1回目」と数えていたため、実際の往復は 99 回だったとわかった。正しい重力加速度を求めよ（小数第2位まで）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$9.62\\ \\mathrm{m/s^2}$",
+    "grading": "約{9.62|3} [m/s^2]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "正しい周期は $T=\\dfrac{200.6}{99}=2.026$ 秒。$g=\\dfrac{4\\pi^2\\times1.00}{2.026^2}\\fallingdotseq9.62\\ \\mathrm{m/s^2}$。まちがった値（9.81）とは約 2% ずれる。$g\\propto1/T^2$ なので、周期の 1% のずれは $g$ の約 2% のずれになる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gravity-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重力加速度",
+  "振り子",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "g は T² に反比例"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "gravity-accel"
+ }
+}

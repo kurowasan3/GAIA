@@ -1,7 +1,7 @@
 // 地学用語の関連付け：用語のネットワーク・関係を当てる練習・経路さがし・単元ごとの一覧
 import { C, Z, $, $$, e, f1, head, tabs, bindTabs, probButton, done, quiz, choicesFrom, shuffle } from './common.js';
 
-export const FILE_VERSION = '0.1.2';
+export const FILE_VERSION = '0.1.3';
 
 // 向きのある関係（A → B）。そのほかは向きなし（説明文で読む）
 const DIRECTED = { cause: '原因', form: 'できる', evidence: '証拠' };

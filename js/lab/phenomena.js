@@ -2,7 +2,7 @@
 import { C, $, $$, e, f1, head, tabs, bindTabs, probButton, done, slider, bindSlider, animator } from './common.js';
 import { travelTimeSVG, omoriK } from './model/charts.js';
 
-export const FILE_VERSION = '0.1.2';
+export const FILE_VERSION = '0.1.3';
 
 const SIMS = [['seismic', '地震波'], ['adiabatic', '断熱変化'], ['hotspot', 'ホットスポット'], ['isostasy', 'アイソスタシー'], ['radiometric', '放射年代']];
 

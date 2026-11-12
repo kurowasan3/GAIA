@@ -1,0 +1,94 @@
+{
+ "id": "ATM-CLD-014",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "自由対流高度と雲頂",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "周囲の気温は、地表で 20 ℃、高さ 2000 m までは 100 m につき 0.8 ℃、2000 m より上では 100 m につき 0.2 ℃ の割合で下がる。地表の空気塊が山の斜面で強制的に持ち上げられ、高さ 1000 m で雲ができた。乾燥断熱減率を 1.0 ℃/100 m、湿潤断熱減率を 0.5 ℃/100 m とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "空気塊が強制されなくても自分で上昇し始める高さを求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "雲頂の高さ（空気塊の上昇が止まる高さ）を求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 1700 m",
+    "grading": "約{1700|2} [m]"
+   },
+   {
+    "id": "2",
+    "tex": "約 2300 m",
+    "grading": "約{2300|2} [m]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "空気塊の温度：1000 m で $20-10=10$ ℃、その上は $10-0.5\\times\\dfrac{z-1000}{100}$。周囲：$20-0.8\\times\\dfrac{z}{100}$（$z\\le2000$）。(1) 等しくなる高さ：$15-0.005z=20-0.008z$ → $z\\fallingdotseq1667$ m。ここより上では空気塊が周囲より暖かく、自力で上昇する（自由対流高度）。(2) 2000 m で空気塊 5 ℃、周囲 4 ℃。その上を $x$ m 上がると、空気塊 $5-0.005x$、周囲 $4-0.002x$。等しくなるのは $x\\fallingdotseq333$ m、つまり約 2300 m。ここで浮力がなくなり、雲の成長が止まる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stability",
+  "adiabatic"
+ ],
+ "laws": [
+  "dry-adiabatic",
+  "moist-adiabatic"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "大気の安定",
+  "条件付き不安定",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "空気塊と周囲の温度の直線が交わる点をさがす"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "abs-stable"
+ }
+}

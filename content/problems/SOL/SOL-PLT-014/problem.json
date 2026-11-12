@@ -1,0 +1,92 @@
+{
+ "id": "SOL-PLT-014",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "断裂帯の段差",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海洋底の水深 $d$ [m] は、海洋底の年代 $t$ [百万年] を使って $d=2500+350\\sqrt{t}$ で近似できる。ある海嶺はトランスフォーム断層で東西にずれている。断層の延長の断裂帯をはさんだ2地点 P、Q の海洋底の年代は、それぞれ 400 万年と 1600 万年だった。海嶺の両側の拡大の速さ（片側）はどこも 2.0 cm/年とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P と Q の水深の差を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "このトランスフォーム断層による海嶺のずれ（海嶺の軸どうしの距離）を求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 700 m",
+    "grading": "約{700|2} [m]"
+   },
+   {
+    "id": "2",
+    "tex": "約 240 km",
+    "grading": "約{240|2} [km]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) P：$2500+350\\sqrt4=3200$ m、Q：$2500+350\\sqrt{16}=3900$ m。差は 700 m で、断裂帯には年代の差による段差（がけ）ができる。(2) 断裂帯の両側で年代が 1200 万年ちがうのは、2つの海嶺の軸がずれているから。片側の拡大の速さ 2.0 cm/年で 1200 万年分 → $2.0\\times1.2\\times10^{7}=2.4\\times10^{7}$ cm $=240$ km。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "seafloor-spreading",
+  "plate-boundaries"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "断裂帯",
+  "海洋底の年代",
+  "水深",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "海洋底は冷えて重くなり、年代の平方根で深くなる"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "fracture-zone"
+ }
+}

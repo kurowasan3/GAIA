@@ -1,5 +1,5 @@
 // グラフ：走時曲線（地震）、HR図（恒星）。画面に依存しない
-export const FILE_VERSION = '0.1.2';
+export const FILE_VERSION = '0.1.3';
 
 const f1 = (n) => (+n).toFixed(1);
 

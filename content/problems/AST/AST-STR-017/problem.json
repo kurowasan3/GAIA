@@ -1,0 +1,71 @@
+{
+ "id": "AST-STR-017",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "食連星の深い食",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "半径の大きい赤色巨星と、小さく高温の主系列星からなる食連星がある。公転面は視線方向とほぼ平行で、1 周期に2回の食がある。深い方の食（主極小）が起こるのはどのときか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "小さい高温の星が、巨星の後ろにかくれるとき",
+    "grading": "選ぶ{小さい高温の星が、巨星の後ろにかくれるとき|小さい高温の星が、巨星の前を通るとき|どちらの食も同じ深さになる|2つの星が最も離れて見えるとき}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "食で減る明るさは「かくされた面積 × かくされた星の単位面積あたりの明るさ」。どちらの食でもかくされる面積は小さい星の円盤の面積と同じくらいなので、単位面積あたり明るい（高温の）星がかくされる方が、減る明るさが大きい。小さい高温の星が巨星の後ろにかくれる食が深い。（大きい星の方がかくされる面積が大きい、と考えると誤る。）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stellar-properties"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "食連星",
+  "連星"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "かくされる面積は同じ → 表面の明るさが決め手"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "eclipse-sat"
+ }
+}

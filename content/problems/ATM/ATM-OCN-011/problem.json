@@ -1,0 +1,90 @@
+{
+ "id": "ATM-OCN-011",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "満潮の時刻",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある港で、今日の満潮は午前 6 時 00 分だった。月の南中は 1 日に約 50 分ずつおそくなる。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "今日の2回目の満潮はおよそ何時何分か。"
+     },
+     {
+      "id": "2",
+      "tex": "明日の1回目の満潮はおよそ何時何分か。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 18 時 25 分",
+    "grading": "語{18時25分|18:25|午後6時25分}"
+   },
+   {
+    "id": "2",
+    "tex": "約 6 時 50 分",
+    "grading": "語{6時50分|6:50|午前6時50分}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "月が南中してから次に南中するまでは約 24 時間 50 分。満潮は1日に2回なので、満潮の間隔は約 12 時間 25 分。(1) $6:00+12:25=18:25$。(2) $6:00+24:50=$ 翌日の 6:50。潮の満ち引きは毎日約 50 分ずつおそくなる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ocean-currents",
+  "moon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "潮汐",
+  "満潮"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "潮の周期は「月の1日」の半分"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "tide"
+ }
+}

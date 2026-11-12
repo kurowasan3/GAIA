@@ -1,0 +1,72 @@
+{
+ "id": "ATM-OCN-012",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "南半球の沿岸湧昇",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "南アメリカ大陸の西岸（ペルー沖）では、海岸に沿って南から北へ向かう風が吹き続けている。このときの表層の海水の動きと結果の組み合わせとして最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "海水は沖へ（西へ）運ばれ、沿岸で冷たい水がわき上がる",
+    "grading": "選ぶ{海水は沖へ（西へ）運ばれ、沿岸で冷たい水がわき上がる|海水は岸へ（東へ）運ばれ、沿岸で海水が沈みこむ|海水は風と同じ北へ運ばれ、水温は変わらない|海水は南へ運ばれ、暖かい水が集まる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "南半球では転向力は進行方向の左向き。風の向き（北向き）の左直角＝西（沖）へ表層の海水が運ばれる（エクマン輸送）。運ばれた分を補うように、深い所から冷たく栄養塩に富む水がわき上がる（沿岸湧昇）。北半球の右直角の規則をそのまま使うと、岸へ運ばれると誤る。貿易風が弱まるとこの湧昇が弱まり、エルニーニョ現象につながる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エクマン輸送",
+  "沿岸湧昇",
+  "南半球"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "南半球は左へ曲がる"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "ekman"
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "id": "GEO-FOS-014",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-04",
+ "topic": "花こう岩の年代をしぼる",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある地域で、ビカリアの化石をふくむ泥岩層 A に花こう岩が貫入し、A は接触部でホルンフェルスになっていた。花こう岩と A は不整合面で削られ、その上を地層 B がおおっている。B の最下部の火山灰層の放射年代は 250 万年だった。花こう岩の放射年代として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "1400 万年",
+    "grading": "選ぶ{3 億年|1 億年|7000 万年|1400 万年|200 万年}=4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ビカリアは新第三紀（約 2300 万〜260 万年前）の示準化石。花こう岩は A より新しいので 2300 万年より新しい。また、不整合で削られて B におおわれているので 250 万年より古く、しかも深成岩が地表に出るまで削られる時間が必要。選択肢の中でこの範囲に入るのは 1400 万年だけ。（200 万年は B より新しくなってしまう。）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "radiometric-dating",
+  "stratigraphy"
+ ],
+ "laws": [
+  "cross-cutting"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "示準化石",
+  "切断の法則",
+  "不整合",
+  "ビカリア"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "下限は貫入された地層、上限はおおう地層"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "vicaria"
+ }
+}

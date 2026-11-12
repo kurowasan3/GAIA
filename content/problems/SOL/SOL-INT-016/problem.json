@@ -1,0 +1,101 @@
+{
+ "id": "SOL-INT-016",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "地殻熱流量の内訳",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある大陸地域の地殻熱流量は $6.5\\times10^{-2}\\ \\mathrm{W/m^2}$ である。この地域の地殻は、上部の花こう岩質の層（厚さ 15 km、放射性元素による発熱量 $2.5\\times10^{-6}\\ \\mathrm{W/m^3}$）と、下部の玄武岩質の層（厚さ 20 km、発熱量 $3.1\\times10^{-7}\\ \\mathrm{W/m^3}$）からなる。地殻内の発熱はすべて地表に流れ出るとする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地表の熱流量のうち、地殻内の放射性元素の発熱による分は何%か。"
+     },
+     {
+      "id": "2",
+      "tex": "地表付近の岩石の熱伝導率を 2.5 W/(m·K) として、地温勾配を求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "海洋地域の熱流量は大陸と同じくらいか、むしろ大きい。海洋地殻のつくりから考えて、その熱の源について述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 67 %",
+    "grading": "約{67|2} [%]"
+   },
+   {
+    "id": "2",
+    "tex": "約 26 ℃/km",
+    "grading": "約{26|2} [℃/km]"
+   },
+   {
+    "id": "3",
+    "tex": "（例）海洋地殻は薄く、発熱量の小さい玄武岩でできているので、海洋の地殻熱流量の大部分は地殻より下（冷えていくリソスフェアとマントル）から運ばれる熱である。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 地殻の発熱 $=2.5\\times10^{-6}\\times1.5\\times10^{4}+3.1\\times10^{-7}\\times2.0\\times10^{4}=3.75\\times10^{-2}+0.62\\times10^{-2}=4.37\\times10^{-2}\\ \\mathrm{W/m^2}$。$4.37/6.5\\fallingdotseq0.67$ で約 67%。(2) 熱流量 = 熱伝導率 × 地温勾配 なので、地温勾配 $=\\dfrac{6.5\\times10^{-2}}{2.5}=2.6\\times10^{-2}$ K/m $=26$ ℃/km。(3) 厚さ 6 km の玄武岩の発熱は $3.1\\times10^{-7}\\times6\\times10^{3}\\fallingdotseq2\\times10^{-3}\\ \\mathrm{W/m^2}$ ほどしかない。海洋の熱流量（平均 約 0.1 W/m²）はむしろ大陸より大きく、その大部分は海嶺でできた高温のリソスフェアが冷えていく熱である。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-interior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地殻熱流量",
+  "地温勾配",
+  "放射性元素",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "発熱量 [W/m³] × 厚さ [m] ＝ 熱流量 [W/m²]"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "heat-flow"
+ }
+}

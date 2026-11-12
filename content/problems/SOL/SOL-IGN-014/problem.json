@@ -1,0 +1,91 @@
+{
+ "id": "SOL-IGN-014",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "結晶分化の物質収支",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "SiO₂ を 50.0 質量% ふくむ玄武岩質マグマ 100 g から、かんらん石と輝石の結晶（平均の SiO₂ 43.0 質量%）が晶出して取り除かれる。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "結晶が 40 g 晶出したとき、残りのマグマの SiO₂ は何質量%か（小数第1位まで）。"
+     },
+     {
+      "id": "2",
+      "tex": "残りのマグマの SiO₂ が 56.0 質量% になるのは、結晶が何 g 晶出したときか。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 54.7 %",
+    "grading": "約{54.7|3} [%]"
+   },
+   {
+    "id": "2",
+    "tex": "約 46 g",
+    "grading": "約{46|2} [g]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 結晶 40 g が持ち去る SiO₂ は $40\\times0.430=17.2$ g。残りのマグマ 60 g には $50.0-17.2=32.8$ g の SiO₂ があるので $\\dfrac{32.8}{60}\\fallingdotseq0.547$、約 54.7%。(2) 晶出した質量を $m$ [g] とすると $\\dfrac{50.0-0.430m}{100-m}=0.560$ → $50.0-0.430m=56.0-0.560m$ → $0.130m=6.0$ → $m\\fallingdotseq46$ g。SiO₂ の少ない結晶が抜けるほど、残りのマグマは SiO₂ に富む（玄武岩質 → 安山岩質）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "crystallization",
+  "igneous-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "結晶分化作用",
+  "物質収支",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "SiO₂ の量は「残ったマグマ＋結晶」で保存される"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "crystallization-diff"
+ }
+}

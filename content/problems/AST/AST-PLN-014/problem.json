@@ -1,0 +1,102 @@
+{
+ "id": "AST-PLN-014",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "すい星の近日点と遠日点",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "あるすい星は、離心率 0.50 の楕円軌道で、512 年の周期で太陽のまわりを公転している。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "軌道の長半径を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "近日点距離を求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "遠日点距離を求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "64 天文単位",
+    "grading": "約{64|2} [天文単位]"
+   },
+   {
+    "id": "2",
+    "tex": "32 天文単位",
+    "grading": "約{32|2} [天文単位]"
+   },
+   {
+    "id": "3",
+    "tex": "96 天文単位",
+    "grading": "約{96|2} [天文単位]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $a^3=P^2=512^2=2^{18}$ より $a=2^{6}=64$ 天文単位。(2)(3) 太陽（焦点）と中心の距離は $ae=32$。近日点距離 $=a-ae=32$、遠日点距離 $=a+ae=96$ 天文単位。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "kepler",
+  "solar-system"
+ ],
+ "laws": [
+  "kepler-third"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "すい星",
+  "離心率",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "焦点は中心から ae ずれている"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "eccentricity"
+ }
+}

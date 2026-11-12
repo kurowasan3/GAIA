@@ -1,0 +1,101 @@
+{
+ "id": "SOL-SHP-011",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "山頂の重力異常",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "同じ緯度にある2地点で重力を測った。平野の地点 A（標高 0 m）では、測定値は標準重力より 10.0 mgal 大きかった。山頂の地点 B（標高 400 m）では、測定値は標準重力より 100.0 mgal 小さかった。フリーエア補正は $+0.3086H$ [mgal]、ブーゲー補正は $-0.0419\\rho H$ [mgal]（$H$ は標高 [m]、$\\rho$ は岩石の密度 [g/cm³]）とし、$\\rho=2.67$ とする。地形補正は考えない。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "B のフリーエア異常を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "B のブーゲー異常を求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の結果から、B の地下について考えられることを述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 +23 mgal",
+    "grading": "約{23|2} [mgal]"
+   },
+   {
+    "id": "2",
+    "tex": "約 −21 mgal",
+    "grading": "約{-21|2} [mgal]"
+   },
+   {
+    "id": "3",
+    "tex": "（例）B のブーゲー異常は負なので、B の地下には周囲より密度の小さい物質（山の根の地殻）が深くまでのびている。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) フリーエア異常 $=-100.0+0.3086\\times400=-100.0+123.4=+23.4$ mgal。(2) ブーゲー補正 $=-0.0419\\times2.67\\times400=-44.7$ mgal なので、ブーゲー異常 $=23.4-44.7\\fallingdotseq-21$ mgal。(3) 測定値そのものは B の方が小さいが、それは主に標高が高い（地球の中心から遠い）せいで、地下の様子は表していない。補正後のブーゲー異常が負になることから、山の下では軽い地殻が厚くなっている（アイソスタシーの「山の根」）と考えられる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gravity-earth",
+  "isostasy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ブーゲー異常",
+  "フリーエア補正",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "生の測定値の差は標高の差。補正してから地下を読む"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "bouguer"
+ }
+}

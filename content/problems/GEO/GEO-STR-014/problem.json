@@ -1,0 +1,90 @@
+{
+ "id": "GEO-STR-014",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "3点から走向・傾斜",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "平らでない土地で、ある地層の境界面を3地点で確認した。基準点 P から東へ $x$ m、北へ $y$ m の位置を $(x,\\ y)$ で表すと、境界面は P $(0,\\ 0)$ と Q $(100,\\ 100)$ でともに標高 200 m、R $(200,\\ 0)$ で標高 100 m にあった。境界面は平面とする。$\\tan35^\\circ=0.70$、$\\sqrt2=1.41$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "走向を答えよ。"
+     },
+     {
+      "id": "2",
+      "tex": "傾斜を答えよ（角度と傾く向き）。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "N45°E",
+    "grading": "語{N45°E|N45E|北45°東}"
+   },
+   {
+    "id": "2",
+    "tex": "35°SE",
+    "grading": "語{35°SE|35SE|南東に35°|南東へ35°}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 同じ標高の2点 P、Q を結ぶ線が走向線。P から Q は東へ 100 m、北へ 100 m なので N45°E。(2) R から走向線（直線 $y=x$）までの水平距離は $\\dfrac{200}{\\sqrt2}\\fallingdotseq141$ m。この間に 100 m 低くなるので $\\tan\\theta=\\dfrac{100}{141}=0.71$、$\\theta\\fallingdotseq35^\\circ$。低い R は走向線の南東側にあるので、南東へ傾く。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geologic-structures"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "走向",
+  "傾斜",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "同じ標高の2点 → 走向。走向線からの水平距離と高さの差 → 傾斜"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "strike-dip"
+ }
+}

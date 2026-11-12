@@ -14,7 +14,7 @@ import {
   subjectsWithFields, pool, pickPractice, pickReview, dueEntries, nextReviewTime, loadKnowledge, loadLab,
 } from './catalog.js';
 
-const VERSION = '0.1.2';
+const VERSION = '0.1.3';
 const KEY = 'gaia.v1';   // 同じドメインの Lemma（lemma.v2）・ぶつりば（lemma-physics.v1）・CELESTIA（celestia.v1）と混ざらない名前
 let sync = null, syncApplying = false, syncStatus = null;   // アカウントと同期（initSync で用意）
 const $ = (sel, el = document) => el.querySelector(sel);

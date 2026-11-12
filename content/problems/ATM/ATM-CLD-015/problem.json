@@ -1,0 +1,112 @@
+{
+ "id": "ATM-CLD-015",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "フェーンのあとの湿度",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気温 25 ℃、水蒸気圧 17.0 hPa の空気が海面から標高 2000 m の山を越え、風下の海面まで吹き下りた。雲ができた後の水分はすべて山頂までに雨として降ったとする。乾燥断熱減率 1.0 ℃/100 m、湿潤断熱減率 0.5 ℃/100 m とし、露点は高さによらず変わらないとする。飽和水蒸気圧は表のとおり。$$\\begin{array}{c|cccccc}\\text{気温[℃]}&5&10&15&20&25&30\\\\\\hline\\text{飽和水蒸気圧[hPa]}&8.7&12.3&17.0&23.4&31.7&42.4\\end{array}$$"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "風上の海面での相対湿度を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "雲ができ始める高さを求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "風下の海面での気温を求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "風下の海面での相対湿度を求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "54 %",
+    "grading": "約{54|2} [%]"
+   },
+   {
+    "id": "2",
+    "tex": "1000 m",
+    "grading": "約{1000|2} [m]"
+   },
+   {
+    "id": "3",
+    "tex": "30 ℃",
+    "grading": "約{30|2} [℃]"
+   },
+   {
+    "id": "4",
+    "tex": "約 29 %",
+    "grading": "約{29|2} [%]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $17.0/31.7\\fallingdotseq0.54$。(2) 露点は 15 ℃（飽和水蒸気圧 17.0 hPa）なので、$25-15=10$ ℃ 下がる 1000 m で雲ができる。(3) 山頂は $15-0.5\\times10=10$ ℃。風下は乾燥断熱で 2000 m 下りるので $10+20=30$ ℃。(4) 山頂で飽和していたので、空気の水蒸気圧は 10 ℃ の飽和水蒸気圧 12.3 hPa。そのまま下りるので $12.3/42.4\\fallingdotseq0.29$、約 29%。風下は高温で乾いた空気になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "foehn",
+  "humidity"
+ ],
+ "laws": [
+  "foehn-temp",
+  "relative-humidity"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "フェーン現象",
+  "相対湿度",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "山頂で飽和 → そのときの水蒸気圧を風下まで持っていく"
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "adiabatic"
+ }
+}

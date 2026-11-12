@@ -13,7 +13,7 @@ import { phenomenaPage } from './lab/phenomena.js';
 import { skyPage } from './lab/sky.js';
 import { termsPage } from './lab/terms.js';
 
-export const FILE_VERSION = '0.1.2';
+export const FILE_VERSION = '0.1.3';
 
 export const PAGES = [
   { id: 'identify', name: '地図・画像からの識別', desc: '岩石の組織・化石・天気図・地形図（等高線）を見分ける。図鑑とクイズ', icon: 'lens' },

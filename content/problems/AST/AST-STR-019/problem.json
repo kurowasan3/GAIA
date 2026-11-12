@@ -1,0 +1,75 @@
+{
+ "id": "AST-STR-019",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "主系列を重ねて距離",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2つの散開星団 X、Y の HR 図（縦軸は見かけの等級）をかくと、主系列の形は同じで、Y の主系列は X より 5.0 等暗い位置にあった。星間物質による吸収はないとする。Y までの距離は X の何倍か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "10 倍",
+    "grading": "約{10|1} [倍]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同じ種類の主系列星は絶対等級が等しい。5 等暗いのは明るさが $\\dfrac1{100}$ ということで、明るさは距離の2乗に反比例するから、距離は 10 倍。（吸収があると暗く見えて遠く見積もりすぎる。実際には色も赤くなるので補正する。）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hr-diagram"
+ ],
+ "laws": [
+  "distance-modulus"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "星団",
+  "主系列",
+  "距離",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "同じ絶対等級の星を「ものさし」にする"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "hr-diagram"
+ }
+}

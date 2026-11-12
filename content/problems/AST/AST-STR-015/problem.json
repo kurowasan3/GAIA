@@ -1,0 +1,102 @@
+{
+ "id": "AST-STR-015",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "重い星の寿命",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある主系列星は 100 パーセクの距離にあり、見かけの等級は 0 等である。質量は太陽の 17 倍である。太陽の絶対等級を 5 等、寿命を 100 億年とし、恒星の寿命は（質量）÷（光度）に比例するとする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この恒星の絶対等級を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "この恒星の光度は太陽の何倍か。"
+     },
+     {
+      "id": "3",
+      "tex": "この恒星の寿命を求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "−5 等",
+    "grading": "約{-5|1} [等級]"
+   },
+   {
+    "id": "2",
+    "tex": "1 万倍",
+    "grading": "約{1e4|1} [倍]"
+   },
+   {
+    "id": "3",
+    "tex": "約 1700 万年",
+    "grading": "約{1.7e7|2} [年]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 100 パーセクを 10 パーセクに近づけると距離は $\\dfrac1{10}$、明るさは 100 倍＝5 等明るい。$M=0-5=-5$ 等。(2) 太陽との差は 10 等なので、光度は $100^2=10^4$ 倍。(3) 寿命 $=100$ 億年 $\\times\\dfrac{17}{10^4}=1.7\\times10^{7}$ 年。質量は 17 倍でも燃やす速さが 1 万倍なので、ずっと短命。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stellar-properties",
+  "stellar-evolution"
+ ],
+ "laws": [
+  "distance-modulus"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "絶対等級",
+  "恒星の寿命",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "5 等で 100 倍。寿命 ∝ 燃料 ÷ 燃やす速さ"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "mass-luminosity"
+ }
+}

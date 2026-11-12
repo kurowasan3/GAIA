@@ -1,0 +1,73 @@
+{
+ "id": "AST-PLN-013",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "会合周期のグラフ",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽のまわりを円軌道で公転する天体の公転周期 $P$ [年] と、地球との会合周期 $S$ [年] の関係について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$P$ が 1 年に近いほど $S$ は限りなく長くなり、$P$ が非常に長いと $S$ は 1 年に近づく",
+    "grading": "選ぶ{$P$ が 1 年に近いほど $S$ は限りなく長くなり、$P$ が非常に長いと $S$ は 1 年に近づく|$P$ が長いほど $S$ も長くなる|$P=1$ 年のとき $S$ は最小になる|$S$ はつねに $P$ より長い}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "内側の天体では $\\dfrac1S=\\dfrac1P-1$、外側では $\\dfrac1S=1-\\dfrac1P$。$P\\to1$ では右辺が 0 に近づくので $S\\to\\infty$（地球となかなか追い越し合わない）。$P$ が非常に長いと $\\dfrac1S\\to1$、つまり $S\\to1$ 年（ほとんど止まっている天体を地球が1年ごとに追い越す）。$P$ が非常に短いと $S\\to P$。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "planet-motion"
+ ],
+ "laws": [
+  "synodic-period"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "会合周期",
+  "グラフ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "追い越しの間隔は「速さの差」で決まる"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "synodic-period"
+ }
+}

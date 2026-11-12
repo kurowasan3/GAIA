@@ -1,0 +1,89 @@
+{
+ "id": "AST-GAL-014",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "平らな回転曲線",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銀河系の円盤部の回転速度は、中心から 2 万光年より外側でもほぼ一定（約 220 km/s）である。半径 $r$ の円軌道の速さは $v=\\sqrt{\\dfrac{GM(r)}{r}}$（$M(r)$：半径 $r$ の内側の質量）とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "半径 8 万光年の内側の質量は、半径 4 万光年の内側の質量の何倍か。"
+     },
+     {
+      "id": "2",
+      "tex": "この結果から考えられることを選べ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "2 倍",
+    "grading": "約{2|1} [倍]"
+   },
+   {
+    "id": "2",
+    "tex": "光では見えない質量（ダークマター）が外側まで広がっている",
+    "grading": "選ぶ{光では見えない質量（ダークマター）が外側まで広がっている|銀河系の質量はすべて中心のブラックホールにある|外側の星ほど軽い|外側では万有引力がはたらかない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $M(r)=\\dfrac{v^2r}{G}$。$v$ が一定なら $M\\propto r$ なので、半径 2 倍では 2 倍。(2) 星やガス（光る物質）は中心ほど多く、外側ではほとんど増えない。それでも質量が $r$ に比例して増え続けるのは、見えない物質があるからである。光る物質しかなければ、外側では $v\\propto\\dfrac1{\\sqrt r}$ と遅くなるはず。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "galaxy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "回転曲線",
+  "ダークマター"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "v 一定 → M ∝ r"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "dark-matter"
+ }
+}

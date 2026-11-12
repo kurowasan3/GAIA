@@ -1,0 +1,90 @@
+{
+ "id": "GEO-SED-014",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "流れが速まるとき・遅くなるとき",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "泥（直径 0.01 mm）、砂（0.5 mm）、礫（10 mm）がまじって静かに積もっている川底で、流れがしだいに速くなり、その後しだいに遅くなった。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "流れが速くなるとき、動き始める順に並べよ。"
+     },
+     {
+      "id": "2",
+      "tex": "流れが遅くなるとき、堆積し始める順に並べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "砂 → 泥 → 礫",
+    "grading": "並べる{泥|礫|砂}=3>1>2"
+   },
+   {
+    "id": "2",
+    "tex": "礫 → 砂 → 泥",
+    "grading": "並べる{砂|礫|泥}=2>1>3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 動き始める流速（侵食速度）は砂（0.1〜1 mm）で最も小さい。泥は粒が小さく、くっつき合う性質があるので、礫と同じくらい速い流れでないと動き出さない。(2) 流れが遅くなると、沈む速さの大きい粗い粒から順に堆積する。泥はほとんど流れが止まるまで運ばれ続ける。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "weathering-erosion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ユールストローム図",
+  "侵食",
+  "堆積"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "泥は「動かしにくく、沈みにくい」"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "erosion-process"
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "id": "ATM-OCN-013",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "海面の高さと地衡流",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "北半球のある海域で、海面の高さの等高線が東西に引かれ、南ほど海面が高い。等高線の間隔は、海域 P では海域 Q の半分である。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "流れの向きを選べ。"
+     },
+     {
+      "id": "2",
+      "tex": "P と Q の流れの速さの関係を選べ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "東向き",
+    "grading": "選ぶ{東向き|西向き|北向き|南向き}=1"
+   },
+   {
+    "id": "2",
+    "tex": "P の方が速く、約 2 倍",
+    "grading": "選ぶ{P の方が速く、約 2 倍|P の方が遅く、約半分|ほぼ同じ|P の方が速く、約 4 倍}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "海面の傾きによる水圧の差（高い方から低い方への力）と転向力がつり合って流れる（地衡流）。北半球では、高い方を右手に見て流れる。南が高いので、流れは東向き。流れの速さは海面の傾きに比例する。等高線の間隔が半分なら傾きは 2 倍で、速さも約 2 倍。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地衡流",
+  "海面の高さ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "北半球では高い方を右に見て流れる"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "geostrophic-current"
+ }
+}

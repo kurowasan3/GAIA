@@ -5,7 +5,7 @@
 //   侵食：ある高さより上のマスを空気にする
 //   貫入：岩脈（帯）・深成岩体（楕円）の中の岩石を火成岩に、まわりを接触変成岩にする
 // 断面は x：0〜W（左→右）、y：0〜H（下→上）。
-export const FILE_VERSION = '0.1.2';
+export const FILE_VERSION = '0.1.3';
 
 export const MATERIALS = {
   air: { name: '空気', color: null },

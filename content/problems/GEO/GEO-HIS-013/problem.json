@@ -1,0 +1,73 @@
+{
+ "id": "GEO-HIS-013",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "有孔虫の酸素同位体比",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "深海底の有孔虫の殻の酸素同位体比（¹⁸O/¹⁶O）は、氷期に大きく、間氷期に小さくなる。その理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "軽い ¹⁶O をふくむ水が蒸発しやすく、それが氷床として陸にたくわえられるため、海水の ¹⁸O の割合が大きくなるから",
+    "grading": "選ぶ{軽い ¹⁶O をふくむ水が蒸発しやすく、それが氷床として陸にたくわえられるため、海水の ¹⁸O の割合が大きくなるから|氷期には ¹⁸O が放射性壊変で増えるから|氷期には有孔虫が ¹⁶O を好んで取りこむから|氷期には宇宙線が強く ¹⁸O がつくられるから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "¹⁶O をふくむ水分子は軽く蒸発しやすい。氷期には蒸発した水が雪になって氷床としてとどまり海に戻らないので、海水に重い ¹⁸O が多く残る。殻は海水の酸素でつくられるので、殻の ¹⁸O/¹⁶O も大きくなる（水温が低いことも同じ向きにはたらく）。このため、殻の酸素同位体比の変化から、過去の氷床の量（海面の高さ）の変化がわかる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "life-history",
+  "environment"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸素同位体比",
+  "氷期",
+  "有孔虫"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "軽い水は空へ、重い水は海に残る"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "foraminifera"
+ }
+}

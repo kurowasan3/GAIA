@@ -1,0 +1,71 @@
+{
+ "id": "ATM-CIR-015",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "海風の鉛直分布",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海岸の地点で、晴れた日の昼過ぎに上空の風を観測した。海から陸へ向かう風を正とするとき、高さによる風の向きの変化として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "地表付近は正、上空は負",
+    "grading": "選ぶ{地表付近は正、上空は負|地表付近は負、上空は正|どの高さでも正|どの高さでも負}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "昼は陸が海より温まり、陸の上で上昇気流、海の上で下降気流ができる。地表付近では海から陸へ（海風：正）、上空ではその戻りの流れが陸から海へ（負）流れる循環になる。夜は向きが逆になる（陸風）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "winds"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "海陸風",
+  "局地風"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "地表の風には必ず上空の戻りの流れがある"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "sea-breeze"
+ }
+}

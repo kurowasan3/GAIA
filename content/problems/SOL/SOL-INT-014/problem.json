@@ -1,0 +1,110 @@
+{
+ "id": "SOL-INT-014",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "屈折波から地殻の厚さ",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "浅い地震の観測で、震央距離 120 km の地点には地震発生の 20.0 秒後に P波が直接届いた。遠い地点では、マントルを通ってくる屈折波が先に届き、その到着時刻は震央距離 240 km で 38.0 秒後、320 km で 48.0 秒後だった。地殻とマントルはそれぞれ一様で、境界は水平とする。屈折波の走時は $t=\\dfrac{x}{V_2}+\\dfrac{2d\\sqrt{V_2^2-V_1^2}}{V_1V_2}$（$x$：震央距離、$d$：地殻の厚さ）で表される。$\\sqrt7=2.65$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地殻の P波の速さ $V_1$ を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "マントル最上部の P波の速さ $V_2$ を求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "走時曲線が折れ曲がる震央距離を求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "地殻の厚さ $d$ を求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "6.0 km/s",
+    "grading": "約{6.0|2} [km/s]"
+   },
+   {
+    "id": "2",
+    "tex": "8.0 km/s",
+    "grading": "約{8.0|2} [km/s]"
+   },
+   {
+    "id": "3",
+    "tex": "192 km",
+    "grading": "約{192|3} [km]"
+   },
+   {
+    "id": "4",
+    "tex": "約 36 km",
+    "grading": "約{36|2} [km]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $V_1=120/20.0=6.0$ km/s。(2) 屈折波の走時の傾きから $V_2=\\dfrac{320-240}{48.0-38.0}=8.0$ km/s。(3) 屈折波の式で $x=240$ を入れると $38.0=30.0+t_0$、切片 $t_0=8.0$ 秒。直接波と同時に届く距離は $\\dfrac{x}{6.0}=\\dfrac{x}{8.0}+8.0$ から $x=192$ km（走時曲線の折れ曲がり点）。(4) $t_0=\\dfrac{2d\\sqrt{64-36}}{6.0\\times8.0}=\\dfrac{2d\\times2\\sqrt7}{48}=0.221d$ なので $d=\\dfrac{8.0}{0.221}\\fallingdotseq36$ km。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "seismic-structure",
+  "earth-interior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "走時曲線",
+  "屈折波",
+  "モホ面",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "問題集の類題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "折れ曲がり点の距離より、切片（屈折波の遅れ）から厚さを出す"
+ },
+ "lab": {
+  "page": "terms",
+  "key": "refracted-wave"
+ }
+}
