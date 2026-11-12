@@ -1,0 +1,69 @@
+{
+ "id": "SOL-MAG-005",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "地磁気の逆転",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "最も新しい地磁気の逆転（現在の向きになった逆転）の時期として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 77 万年前",
+    "grading": "選ぶ{約 77 万年前|約 7700 年前|約 7700 万年前|約 77 億年前}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "約 77 万年前に地磁気が現在の向きになった。千葉県の地層にこの逆転が記録されており、約 77.4 万〜12.9 万年前の時代が「チバニアン」と名づけられた。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geomagnetism",
+  "seafloor-spreading"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地磁気の逆転",
+  "チバニアン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "reversal"
+ }
+}

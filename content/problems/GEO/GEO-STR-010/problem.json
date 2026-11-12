@@ -1,0 +1,105 @@
+{
+ "id": "GEO-STR-010",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "2つの不整合",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "figure",
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の地質断面図で、A〜I は地層である。地層の逆転はない。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-sec",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "できごとを古い順に並べよ。"
+     },
+     {
+      "id": "2",
+      "tex": "この地域が隆起して侵食を受けたのは少なくとも何回か。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-sec",
+   "role": "question",
+   "kind": "section",
+   "alt": "褶曲した A〜D層、それを不整合でおおう傾いた E〜G層、さらにそれを不整合でおおう水平な H・I層がある地質断面図",
+   "format": "svg",
+   "src": "q-sec.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A〜D層の堆積 → 褶曲 → 不整合 → E〜G層の堆積 → 傾斜 → 不整合 → H・I層の堆積",
+    "grading": "並べる{E〜G層の堆積|褶曲|2回目の隆起・侵食（不整合）|地層の傾斜（傾動）|A〜D層の堆積|1回目の隆起・侵食（不整合）|H・I層の堆積}=5>2>6>1>4>3>7"
+   },
+   {
+    "id": "2",
+    "tex": "2回",
+    "grading": "2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "褶曲した A〜D層を傾いた E〜G層が不整合でおおい、さらにそれを水平な H・I層が不整合でおおう。E〜G層だけが傾いているので、E〜G層の堆積後に傾動があった。不整合面は2つあるので、隆起・侵食は少なくとも2回起こった。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "unconformity",
+  "geologic-structures"
+ ],
+ "laws": [
+  "superposition"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "地質断面図",
+  "地史",
+  "不整合"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "strata",
+  "key": "two-unconf"
+ }
+}

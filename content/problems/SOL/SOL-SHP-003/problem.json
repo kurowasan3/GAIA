@@ -1,0 +1,69 @@
+{
+ "id": "SOL-SHP-003",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "エラトステネスの測定",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "夏至の日の正午、シエネでは太陽が真上にあり、そこから北に 925 km 離れたアレクサンドリアでは、太陽が天頂から $7.2^\\circ$ 南に傾いていた。2地点が同じ経線上にあるとして、地球の全周の長さを求めよ（有効数字2桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$4.6\\times10^{4}$ km",
+    "grading": "約{4.6e4|2} [km]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "2地点の南中高度の差 $7.2^\\circ$ は、地球の中心から見た2地点の間の角に等しい。弧の長さは中心角に比例するので、全周 $=925\\times\\dfrac{360}{7.2}=46250\\fallingdotseq4.6\\times10^{4}$ km。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-shape"
+ ],
+ "laws": [
+  "eratosthenes"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "エラトステネス",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "太陽光は平行。高度の差＝中心角"
+ }
+}

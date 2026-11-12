@@ -1,0 +1,66 @@
+{
+ "id": "SOL-SHP-004",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "緯度差と距離",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "同じ経線上の2地点で北極星の高度を測ったところ、$3.0^\\circ$ 違った。地球の全周を $4.0\\times10^{4}$ km として、2地点の距離を求めよ（有効数字2桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$3.3\\times10^{2}$ km",
+    "grading": "約{3.3e2|2} [km]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "北極星の高度はその地点の緯度に等しいので、緯度差は $3.0^\\circ$。距離 $=4.0\\times10^{4}\\times\\dfrac{3.0}{360}\\fallingdotseq3.3\\times10^{2}$ km（緯度 $1^\\circ$ あたり約 111 km）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-shape"
+ ],
+ "laws": [
+  "eratosthenes"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "緯度",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "ATM-STR-007",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "熱圏",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "熱圏について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "太陽の紫外線や X線を吸収して高温になり、オーロラが見られる",
+    "grading": "選ぶ{太陽の紫外線や X線を吸収して高温になり、オーロラが見られる|オゾン層があり、上ほど気温が低い|雲や雨などの気象現象が起こる|地表からの赤外線で暖められている}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "熱圏（約 80 km 以上）では、大気が太陽の紫外線・X線を吸収して 1000 ℃ 以上の高温になる。ただし空気は非常にうすい。オーロラは熱圏で光る。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atmosphere-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱圏",
+  "オーロラ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "thermosphere"
+ }
+}

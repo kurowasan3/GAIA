@@ -1,0 +1,110 @@
+{
+ "id": "ATM-CLD-011",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "フェーン現象（凝結高度から）",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気温 30 ℃、露点 22 ℃ の空気が、高さ 1800 m の山を越える。空気塊の温度は、飽和していなければ 1.0 ℃/100 m、飽和していれば 0.5 ℃/100 m で変化し、露点は上昇とともに 0.2 ℃/100 m 下がる。風上で凝結した水はすべて雨となって落ち、風下では雲は消えていたとする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "凝結高度を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "山頂での気温を求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "風下のふもと（標高 0 m）での気温を求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "風下の気温が風上より高くなる理由を述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "1000 m",
+    "grading": "約{1.0e3|2} [m]"
+   },
+   {
+    "id": "2",
+    "tex": "16 ℃",
+    "grading": "約{16|2} [℃]"
+   },
+   {
+    "id": "3",
+    "tex": "34 ℃",
+    "grading": "約{34|2} [℃]"
+   },
+   {
+    "id": "4",
+    "tex": "（例）風上側で水蒸気が凝結したときの潜熱で空気が暖められ、その分の熱を持ったまま、乾燥断熱減率で下りてくるから。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 差 8 ℃ が 0.8 ℃/100 m で縮まるので 1000 m。(2) $30-10-0.5\\times8=16$ ℃。(3) $16+1.0\\times18=34$ ℃（風上より 4 ℃ 高い）。(4) 風上で放出された潜熱の分だけ高温・乾燥になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "foehn",
+  "adiabatic"
+ ],
+ "laws": [
+  "foehn-temp",
+  "condensation-height"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "フェーン現象",
+  "計算",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "adiabatic"
+ }
+}

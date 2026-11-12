@@ -1,0 +1,67 @@
+{
+ "id": "SOL-INT-011",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "後氷期の隆起",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "約 1 万年前まで厚い氷床におおわれ、現在も 1 年に最大 1 cm ほどの速さで隆起が続いている地域として適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "スカンジナビア半島",
+    "grading": "選ぶ{スカンジナビア半島|アラビア半島|インドシナ半島|イベリア半島}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "最終氷期にはスカンジナビア半島やカナダ北部が厚い氷床におおわれていた。氷がとけたあと、アイソスタシーを回復するために今も隆起している。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "isostasy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "後氷期の隆起"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "postglacial-rebound"
+ }
+}

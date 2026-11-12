@@ -1,0 +1,67 @@
+{
+ "id": "SOL-IGN-002",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "等粒状組織",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "同じくらいの大きさの結晶だけからなる等粒状組織をもつのはどれか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "花こう岩",
+    "grading": "選ぶ{玄武岩|安山岩|流紋岩|花こう岩}=4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "深成岩（花こう岩・閃緑岩・はんれい岩）はマグマが地下深くでゆっくり冷えたので、どの鉱物も大きく成長して等粒状組織になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "igneous-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "等粒状組織"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "rock:granite"
+ }
+}

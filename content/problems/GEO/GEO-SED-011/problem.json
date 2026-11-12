@@ -1,0 +1,94 @@
+{
+ "id": "GEO-SED-011",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "流水の侵食・運搬・堆積",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "川の流れの速さと、粒の侵食・運搬・堆積の関係について答えよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "止まっている粒が、最も遅い流れで動き始める（侵食される）のはどれか。"
+     },
+     {
+      "id": "2",
+      "tex": "流れがしだいに遅くなるとき、最初に堆積するのはどれか。"
+     },
+     {
+      "id": "3",
+      "tex": "泥が砂より侵食されにくい理由を述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "砂（直径 0.1〜1 mm 程度）",
+    "grading": "選ぶ{泥|砂（直径 0.1〜1 mm 程度）|礫}=2"
+   },
+   {
+    "id": "2",
+    "tex": "礫",
+    "grading": "選ぶ{泥|砂|礫}=3"
+   },
+   {
+    "id": "3",
+    "tex": "（例）泥の粒は小さく、粒どうしがくっつき合い、川底の表面がなめらかで流れの力を受けにくいから。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 最も遅い流れで侵食されるのは砂（細砂〜中砂）。(2) 流れが遅くなると、大きく重い礫から先に堆積する。(3) 泥は一度たまると粘着性があって侵食されにくいが、一度巻き上げられると流れが遅くてもなかなか沈まない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "weathering-erosion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "侵食",
+  "運搬",
+  "堆積",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

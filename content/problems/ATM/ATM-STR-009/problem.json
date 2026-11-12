@@ -1,0 +1,63 @@
+{
+ "id": "ATM-STR-009",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "1気圧",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地表付近の平均的な気圧（1 気圧）として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 1013 hPa",
+    "grading": "選ぶ{約 1013 hPa|約 101.3 hPa|約 10130 hPa|約 1.013 hPa}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "1 気圧 $=1013\\ \\mathrm{hPa}=1.013\\times10^{5}\\ \\mathrm{Pa}$。水銀柱 760 mm、水柱では約 10 m の重さにあたる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atm-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気圧"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

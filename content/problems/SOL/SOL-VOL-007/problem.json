@@ -1,0 +1,64 @@
+{
+ "id": "SOL-VOL-007",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "海嶺のマグマ",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海嶺でマグマができるしくみとして最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "マントル物質が上昇して圧力が下がり、部分溶融する",
+    "grading": "選ぶ{マントル物質が上昇して圧力が下がり、部分溶融する|水が加わって融点が下がる|地殻が厚くなって温度が上がる|隕石の衝突熱でとける}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "海嶺の下ではマントルが上昇する。温度はあまり下がらないまま圧力が下がるので、融点が下がって部分溶融する（減圧融解）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "magma-generation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "マグマの発生",
+  "海嶺"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

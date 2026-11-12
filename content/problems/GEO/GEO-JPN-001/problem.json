@@ -1,0 +1,67 @@
+{
+ "id": "GEO-JPN-001",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-06",
+ "topic": "付加体",
+ "course": "地学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海洋プレートが沈み込むとき、海洋プレートの上の堆積物などがはぎ取られて陸側に付け加わったものを何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "付加体",
+    "grading": "語{付加体}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "日本列島の土台の多くは付加体でできている。遠洋の深海でたまったチャートや、海山の上でできた石灰岩・玄武岩が、海溝付近の泥岩・砂岩といっしょに付け加わる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-geology"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "付加体"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "accretionary-prism"
+ }
+}

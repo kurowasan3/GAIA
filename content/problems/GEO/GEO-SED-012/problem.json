@@ -1,0 +1,82 @@
+{
+ "id": "GEO-SED-012",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "地形図を読む",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は、ある地域の地形を等高線で表したものである（上が北）。この地形として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-map",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-map",
+   "role": "question",
+   "kind": "map",
+   "alt": "南側が海で、海岸線に平行に、平らな面と急ながけが階段状に並ぶ地形図",
+   "format": "svg",
+   "src": "q-map.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "海岸段丘",
+    "grading": "選ぶ{海岸段丘|河岸段丘|扇状地|三角州}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "海岸線に平行に平坦面と急ながけが階段状にくり返す。波の侵食でできた平らな面（海食台）が、地震などによる隆起で何度も持ち上げられた海岸段丘（室戸岬など）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "landforms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地形図",
+  "海岸段丘"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "topo:coastal"
+ }
+}

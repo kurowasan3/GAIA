@@ -1,0 +1,67 @@
+{
+ "id": "ATM-ENV-002",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "ヒートアイランド",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "都市部の気温が周辺より高くなる現象を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ヒートアイランド現象",
+    "grading": "語{ヒートアイランド現象|ヒートアイランド}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "舗装や建物が熱をためこむこと、緑地や水面が少なく蒸発による冷却が弱いこと、人工排熱などが原因。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "environment"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ヒートアイランド"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "heat-island"
+ }
+}

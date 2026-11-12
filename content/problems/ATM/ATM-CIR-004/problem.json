@@ -1,0 +1,68 @@
+{
+ "id": "ATM-CIR-004",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "地上風",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地表付近を吹く風（地上風）が、等圧線を斜めに横切って低圧側に吹きこむ理由として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "地表との摩擦力がはたらいて風が弱まり、転向力が小さくなるから",
+    "grading": "選ぶ{地表との摩擦力がはたらいて風が弱まり、転向力が小さくなるから|地表付近では転向力が大きいから|地表付近では気圧傾度力がはたらかないから|地表付近の空気は重いから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "摩擦で風速が小さくなると転向力も小さくなり、気圧傾度力とつり合わなくなる。そのため低圧側にそれて、等圧線を斜めに横切る。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "winds"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地上風",
+  "摩擦"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "friction-wind"
+ }
+}

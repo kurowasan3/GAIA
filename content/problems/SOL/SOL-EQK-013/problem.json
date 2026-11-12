@@ -1,0 +1,68 @@
+{
+ "id": "SOL-EQK-013",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "液状化",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地震のときに液状化現象が起こりやすい場所として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "海岸の埋立地",
+    "grading": "選ぶ{海岸の埋立地|かたい岩盤の山地|火山の山頂|乾燥した台地}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "液状化は、地下水位が高く、ゆるく積もった砂の地盤で起こりやすい（埋立地・旧河道・砂丘のすそなど）。ゆれで砂粒どうしのかみ合わせがはずれ、水に浮いた状態になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earthquake-types"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "液状化",
+  "災害"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "liquefaction"
+ }
+}

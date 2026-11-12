@@ -1,0 +1,67 @@
+{
+ "id": "AST-SUN-002",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "光球の温度",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽の光球の温度として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 5800 K",
+    "grading": "選ぶ{約 5800 K|約 580 K|約 58000 K|約 1600 万 K}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "光球（太陽の見えている表面）は約 5800 K（約 6000 ℃）。中心部は約 1600 万 K、コロナは 100 万 K 以上。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光球"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "photosphere"
+ }
+}

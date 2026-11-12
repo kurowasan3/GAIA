@@ -1,0 +1,67 @@
+{
+ "id": "AST-SSY-001",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "地球型惑星",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球型惑星をすべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "水星・金星・地球・火星",
+    "grading": "すべて選ぶ{水星|金星|地球|火星|木星|土星}=1,2,3,4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地球型惑星は岩石と金属でできていて、小さく密度が大きい。木星・土星・天王星・海王星は木星型惑星（天王星・海王星を天王星型惑星と分けることもある）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solar-system"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地球型惑星"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "terrestrial-planet"
+ }
+}

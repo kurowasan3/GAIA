@@ -1,0 +1,68 @@
+{
+ "id": "SOL-PLT-006",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "地磁気の縞模様",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "term"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海嶺の両側で、海嶺に平行で、海嶺をはさんで対称な地磁気の縞模様が見られる。この縞模様は、何の証拠と考えられているか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "海洋底拡大",
+    "grading": "選ぶ{海洋底拡大|大陸の衝突|ホットスポットの移動|地球の膨張}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "海嶺でできた岩石は、そのときの地磁気の向きに磁化する。地磁気がくり返し逆転したため、広がる海洋底に縞模様が記録され、海嶺をはさんで対称になった。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "seafloor-spreading"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地磁気の縞模様",
+  "用語の関係"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "magnetic-stripes"
+ }
+}

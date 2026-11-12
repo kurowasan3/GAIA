@@ -1,0 +1,68 @@
+{
+ "id": "ATM-OCN-008",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "大潮",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "干満の差が大きい大潮になるのは、月がどのような形のときか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "新月と満月のころ",
+    "grading": "選ぶ{新月と満月のころ|上弦と下弦のころ|満月のころだけ|月の形とは関係ない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "太陽と月の起潮力の向きがそろう新月・満月のころに大潮、直角になる上弦・下弦のころに小潮になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ocean-currents",
+  "moon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "潮汐"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "tide"
+ }
+}

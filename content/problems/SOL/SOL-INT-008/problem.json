@@ -1,0 +1,73 @@
+{
+ "id": "SOL-INT-008",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "山の根",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "高さ 3.0 km の山脈が、アイソスタシーが成り立った状態にある。地殻の密度を $2.7\\ \\mathrm{g/cm^3}$、マントルの密度を $3.3\\ \\mathrm{g/cm^3}$ として、山の下に地殻が根のように沈みこんでいる深さ（山の根）を求めよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "13.5 km",
+    "grading": "約{13.5|3} [km]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "補償面での圧力のつり合いから $\\rho_c h=(\\rho_m-\\rho_c)r$。$r=\\dfrac{2.7\\times3.0}{3.3-2.7}=13.5$ km。山の高さの 4.5 倍。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "isostasy"
+ ],
+ "laws": [
+  "isostasy-airy"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "アイソスタシー",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "補償面で、柱の重さが等しい"
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "isostasy"
+ }
+}

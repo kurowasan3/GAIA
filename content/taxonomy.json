@@ -1,0 +1,184 @@
+{
+ "schema": "gaia.taxonomy/1",
+ "fields": [
+  {
+   "key": "SOL",
+   "name": "固体地球",
+   "order": 1
+  },
+  {
+   "key": "GEO",
+   "name": "地層・岩石と地球の歴史",
+   "order": 2
+  },
+  {
+   "key": "ATM",
+   "name": "大気と海洋",
+   "order": 3
+  },
+  {
+   "key": "AST",
+   "name": "宇宙",
+   "order": 4
+  }
+ ],
+ "units": [
+  {
+   "key": "SOL-01",
+   "field": "SOL",
+   "name": "地球の形と大きさ・重力",
+   "order": 1
+  },
+  {
+   "key": "SOL-02",
+   "field": "SOL",
+   "name": "地球の内部構造",
+   "order": 2
+  },
+  {
+   "key": "SOL-03",
+   "field": "SOL",
+   "name": "プレートテクトニクス",
+   "order": 3
+  },
+  {
+   "key": "SOL-04",
+   "field": "SOL",
+   "name": "地震",
+   "order": 4
+  },
+  {
+   "key": "SOL-05",
+   "field": "SOL",
+   "name": "火山とマグマ",
+   "order": 5
+  },
+  {
+   "key": "SOL-06",
+   "field": "SOL",
+   "name": "鉱物と火成岩",
+   "order": 6
+  },
+  {
+   "key": "SOL-07",
+   "field": "SOL",
+   "name": "地磁気",
+   "order": 7
+  },
+  {
+   "key": "GEO-01",
+   "field": "GEO",
+   "name": "風化・侵食・堆積と堆積岩",
+   "order": 8
+  },
+  {
+   "key": "GEO-02",
+   "field": "GEO",
+   "name": "地層と地質構造",
+   "order": 9
+  },
+  {
+   "key": "GEO-03",
+   "field": "GEO",
+   "name": "変成作用と変成岩",
+   "order": 10
+  },
+  {
+   "key": "GEO-04",
+   "field": "GEO",
+   "name": "化石と地質時代",
+   "order": 11
+  },
+  {
+   "key": "GEO-05",
+   "field": "GEO",
+   "name": "地球と生命の歴史",
+   "order": 12
+  },
+  {
+   "key": "GEO-06",
+   "field": "GEO",
+   "name": "日本列島の成り立ち",
+   "order": 13
+  },
+  {
+   "key": "ATM-01",
+   "field": "ATM",
+   "name": "大気の構造と組成",
+   "order": 14
+  },
+  {
+   "key": "ATM-02",
+   "field": "ATM",
+   "name": "大気中の水と雲（断熱変化）",
+   "order": 15
+  },
+  {
+   "key": "ATM-03",
+   "field": "ATM",
+   "name": "地球の熱収支",
+   "order": 16
+  },
+  {
+   "key": "ATM-04",
+   "field": "ATM",
+   "name": "大気の大循環と風",
+   "order": 17
+  },
+  {
+   "key": "ATM-05",
+   "field": "ATM",
+   "name": "日本の天気",
+   "order": 18
+  },
+  {
+   "key": "ATM-06",
+   "field": "ATM",
+   "name": "海洋の構造と海水の運動",
+   "order": 19
+  },
+  {
+   "key": "ATM-07",
+   "field": "ATM",
+   "name": "地球環境と自然災害",
+   "order": 20
+  },
+  {
+   "key": "AST-01",
+   "field": "AST",
+   "name": "天球と天体の動き",
+   "order": 21
+  },
+  {
+   "key": "AST-02",
+   "field": "AST",
+   "name": "惑星の運動と見え方",
+   "order": 22
+  },
+  {
+   "key": "AST-03",
+   "field": "AST",
+   "name": "太陽系の天体と月",
+   "order": 23
+  },
+  {
+   "key": "AST-04",
+   "field": "AST",
+   "name": "太陽",
+   "order": 24
+  },
+  {
+   "key": "AST-05",
+   "field": "AST",
+   "name": "恒星の性質と進化",
+   "order": 25
+  },
+  {
+   "key": "AST-06",
+   "field": "AST",
+   "name": "銀河と宇宙",
+   "order": 26
+  }
+ ],
+ "retired": []
+}

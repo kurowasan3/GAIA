@@ -1,0 +1,67 @@
+{
+ "id": "SOL-MAG-002",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "伏角",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "伏角について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "磁気赤道で 0°、磁極で 90° になる",
+    "grading": "選ぶ{磁気赤道で 0°、磁極で 90° になる|どこでも約 45° である|磁気赤道で 90° になる|高緯度ほど小さい}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地球の磁場は棒磁石の磁場に近く、北半球では磁針の N 極が下を向く。伏角は高緯度ほど大きく、磁極で 90°。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geomagnetism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "伏角"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "inclination"
+ }
+}

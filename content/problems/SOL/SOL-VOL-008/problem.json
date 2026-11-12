@@ -1,0 +1,82 @@
+{
+ "id": "SOL-VOL-008",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "等高線から火山の形を読む",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は、ある火山の地形を等高線で表したものである。この火山の形として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-map",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-map",
+   "role": "question",
+   "kind": "map",
+   "alt": "等高線が同心円状に並び、中心ほど間隔がせまい地形図",
+   "format": "svg",
+   "src": "q-map.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "成層火山",
+    "grading": "選ぶ{成層火山|盾状火山|カルデラ|溶岩台地}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "等高線が山頂を中心とする同心円で、山頂付近ほど間隔がせまい（傾斜が急）。山頂に小さな火口がある円錐形の火山なので、成層火山。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "volcano-forms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地形図",
+  "成層火山"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "topo:volcano"
+ }
+}

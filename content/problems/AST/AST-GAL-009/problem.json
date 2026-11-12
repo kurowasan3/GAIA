@@ -1,0 +1,67 @@
+{
+ "id": "AST-GAL-009",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "太陽の位置",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銀河系の中での太陽系の位置として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "円盤部の中で、中心から約 2.6 万光年の所",
+    "grading": "選ぶ{円盤部の中で、中心から約 2.6 万光年の所|銀河系の中心|ハローの外側|銀河系の外}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "太陽系は円盤部の中にあり、中心からは約 2.6 万光年。夏の天の川（いて座の方向）が濃いのは、銀河系の中心方向を見ているから。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "galaxy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "銀河系"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "galactic-disk"
+ }
+}

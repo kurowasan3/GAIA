@@ -1,0 +1,97 @@
+{
+ "id": "SOL-IGN-012",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "固溶体と結晶分化",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "鉱物とマグマの組成について答えよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "かんらん石は Mg と Fe の割合が連続的に変わる固溶体である。高温で晶出するかんらん石はどちらに富むか。"
+     },
+     {
+      "id": "2",
+      "tex": "高温で晶出する斜長石は、Ca と Na のどちらに富むか。"
+     },
+     {
+      "id": "3",
+      "tex": "マグマから鉱物が晶出して取り除かれていくと、残りのマグマの組成はどう変わるか。理由とともに述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "Mg に富むもの",
+    "grading": "選ぶ{Mg に富むもの|Fe に富むもの}=1"
+   },
+   {
+    "id": "2",
+    "tex": "Ca に富むもの",
+    "grading": "選ぶ{Ca に富むもの|Na に富むもの}=1"
+   },
+   {
+    "id": "3",
+    "tex": "（例）SiO₂ の少ない鉱物（かんらん石・Ca に富む斜長石など）が先に晶出して取り除かれるので、残りのマグマは SiO₂ や Na・K に富むようになる。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) かんらん石は Mg と Fe が入れかわる固溶体で、高温では Mg に富むものが晶出する。(2) 斜長石は高温で Ca に富むもの、低温で Na に富むものが晶出する。(3) 結晶分化作用で、玄武岩質マグマから安山岩質・デイサイト質のマグマができうる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "crystallization"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "固溶体",
+  "結晶分化",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "solid-solution"
+ }
+}

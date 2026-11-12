@@ -1,0 +1,67 @@
+{
+ "id": "AST-GAL-004",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "宇宙背景放射",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "全天からほぼ一様にやってくる、約 2.7 K の物体が出す放射にあたる電波（宇宙背景放射）は、何の証拠と考えられているか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "宇宙がかつて高温・高密度だったこと（ビッグバン）",
+    "grading": "選ぶ{宇宙がかつて高温・高密度だったこと（ビッグバン）|太陽系の外に惑星があること|銀河系が回転していること|地球の大気に二酸化炭素があること}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "宇宙が高温だったころの光が、宇宙の膨張で波長がのびて電波になったもの。ビッグバン宇宙論の重要な証拠。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cosmology"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "宇宙背景放射"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "cmb"
+ }
+}

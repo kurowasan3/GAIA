@@ -1,0 +1,67 @@
+{
+ "id": "AST-SSY-005",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "小惑星帯",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "小惑星が多く集まっている小惑星帯（メインベルト）はどこにあるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "火星と木星の軌道の間",
+    "grading": "選ぶ{火星と木星の軌道の間|地球と火星の軌道の間|水星の軌道の内側|海王星の軌道の外側だけ}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "小惑星の多くは火星と木星の間を回る。木星の重力の影響で、大きな惑星に成長できなかったと考えられている。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solar-system"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "小惑星"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "asteroid"
+ }
+}

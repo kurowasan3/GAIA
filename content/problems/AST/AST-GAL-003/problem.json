@@ -1,0 +1,67 @@
+{
+ "id": "AST-GAL-003",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "球状星団",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "球状星団について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "年老いた恒星が数十万個集まり、主に銀河系のハローに分布する",
+    "grading": "選ぶ{年老いた恒星が数十万個集まり、主に銀河系のハローに分布する|若い恒星が数十個集まり、円盤部に分布する|銀河系の外にある別の銀河である|ガスだけでできていて恒星をふくまない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "球状星団は年齢 100 億年以上の古い星の集団で、銀河系をとりまくハローに分布する。散開星団は若い星の集団で、円盤部にある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "galaxy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "球状星団"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "globular-cluster"
+ }
+}

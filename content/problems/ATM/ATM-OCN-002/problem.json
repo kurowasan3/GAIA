@@ -1,0 +1,67 @@
+{
+ "id": "ATM-OCN-002",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "黒潮",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "日本の南岸を北東に流れる黒潮について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "暖流である",
+    "grading": "選ぶ{暖流である|寒流である|深層を流れる海流である|南極から流れてくる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "黒潮は北太平洋の亜熱帯環流の一部で、低緯度の暖かい海水を運ぶ暖流。親潮は千島列島から南下する寒流。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "黒潮"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "kuroshio"
+ }
+}

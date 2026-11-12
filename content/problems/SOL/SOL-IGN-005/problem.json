@@ -1,0 +1,82 @@
+{
+ "id": "SOL-IGN-005",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "岩石の組織を見分ける",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はある火成岩の表面をルーペで見たようすである。この岩石の名称として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-rock",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-rock",
+   "role": "question",
+   "kind": "specimen",
+   "alt": "灰色の石基の中に、白い短冊形の斜長石と黒い角閃石・輝石の斑晶が散らばっている",
+   "format": "svg",
+   "src": "q-rock.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "安山岩",
+    "grading": "選ぶ{安山岩|閃緑岩|流紋岩|玄武岩}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "斑状組織なので火山岩。灰色で、白い斜長石の斑晶が目立ち、角閃石・輝石をふくむので安山岩（日本の火山に最も多い）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "igneous-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "岩石の識別",
+  "火成岩"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "rock:andesite"
+ }
+}

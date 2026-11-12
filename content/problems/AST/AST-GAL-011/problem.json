@@ -1,0 +1,63 @@
+{
+ "id": "AST-GAL-011",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "銀河系の形",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銀河系（天の川銀河）の形として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "中心部に棒状の構造をもつ渦巻銀河（棒渦巻銀河）",
+    "grading": "選ぶ{中心部に棒状の構造をもつ渦巻銀河（棒渦巻銀河）|球形の楕円銀河|決まった形のない不規則銀河|円盤のない球状星団}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "銀河系は、ふくらんだバルジ（棒状構造をもつ）と、渦巻腕のある円盤部、それをとりまくハローからなる棒渦巻銀河。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "galaxy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "銀河系"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

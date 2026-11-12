@@ -1,0 +1,70 @@
+{
+ "id": "AST-PLN-004",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "火星の会合周期",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "火星の公転周期を 1.88 年として、火星の会合周期を求めよ（有効数字2桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "2.1 年",
+    "grading": "約{2.1|2} [年]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "外惑星の会合周期 $S$ は $\\dfrac1S=\\dfrac11-\\dfrac1{1.88}\\fallingdotseq0.468$ より $S\\fallingdotseq2.1$ 年。火星の衝は約 2 年 2 か月ごとにくる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "planet-motion"
+ ],
+ "laws": [
+  "synodic-period"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "会合周期",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "planets"
+ }
+}

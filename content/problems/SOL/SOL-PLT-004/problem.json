@@ -1,0 +1,67 @@
+{
+ "id": "SOL-PLT-004",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "ヒマラヤ山脈",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ヒマラヤ山脈ができたしくみとして最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "大陸プレートどうしが衝突した",
+    "grading": "選ぶ{大陸プレートどうしが衝突した|海洋プレートが沈み込んだ|プレートが生まれて広がった|ホットスポットの上にある}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "インド亜大陸をのせたプレートがユーラシアプレートに衝突し、地殻が押し縮められて厚くなり、大山脈ができた。大陸地殻は軽いので沈み込みにくい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plate-boundaries"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "衝突帯"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "collision"
+ }
+}

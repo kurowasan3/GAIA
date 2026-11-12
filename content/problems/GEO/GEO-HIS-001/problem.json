@@ -1,0 +1,63 @@
+{
+ "id": "GEO-HIS-001",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "地球の誕生",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球が誕生したのはおよそ何年前か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 46 億年前",
+    "grading": "選ぶ{約 46 億年前|約 138 億年前|約 5.4 億年前|約 4.6 億年前}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "太陽系は約 46 億年前に、原始太陽系円盤の中で微惑星が衝突・合体してできた。いん石の放射年代などからわかる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "early-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地球の誕生"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "id": "AST-PLN-010",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "楕円軌道",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "火星の軌道長半径は 1.52 天文単位、離心率は 0.093 である。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "近日点距離を求めよ（有効数字3桁）。"
+     },
+     {
+      "id": "2",
+      "tex": "遠日点距離を求めよ（有効数字3桁）。"
+     },
+     {
+      "id": "3",
+      "tex": "近日点での速さは遠日点での速さの何倍か（有効数字3桁）。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "1.38 天文単位",
+    "grading": "約{1.38|3} [天文単位]"
+   },
+   {
+    "id": "2",
+    "tex": "1.66 天文単位",
+    "grading": "約{1.66|3} [天文単位]"
+   },
+   {
+    "id": "3",
+    "tex": "1.20 倍",
+    "grading": "約{1.20|3} [倍]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 近日点距離 $a(1-e)=1.52\\times0.907\\fallingdotseq1.38$。(2) 遠日点距離 $a(1+e)=1.52\\times1.093\\fallingdotseq1.66$。(3) 面積速度一定 $r_1v_1=r_2v_2$ より、$\\dfrac{v_1}{v_2}=\\dfrac{1.66}{1.38}\\fallingdotseq1.20$ 倍。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "kepler"
+ ],
+ "laws": [
+  "kepler-second"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "ケプラーの法則",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "kepler"
+ }
+}

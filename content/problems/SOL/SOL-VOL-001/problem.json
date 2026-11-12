@@ -1,0 +1,70 @@
+{
+ "id": "SOL-VOL-001",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "マグマの粘性",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "マグマの粘性（ねばりけ）について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "SiO₂ が多く、温度が低いマグマほど粘性が大きい",
+    "grading": "選ぶ{SiO₂ が多く、温度が低いマグマほど粘性が大きい|SiO₂ が少なく、温度が高いマグマほど粘性が大きい|粘性はマグマの温度だけで決まる|玄武岩質マグマが最も粘性が大きい}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "SiO₄ 四面体がつながり合うので SiO₂ が多いほど粘性が大きい。また低温ほど粘性が大きい。流紋岩質マグマ（約 900 ℃）は粘性大、玄武岩質マグマ（約 1200 ℃）は粘性小。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "volcano-forms"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-VISCOSITY"
+ ],
+ "tags": [
+  "粘性",
+  "マグマ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "viscosity"
+ }
+}

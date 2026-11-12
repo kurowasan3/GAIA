@@ -1,0 +1,87 @@
+{
+ "id": "GEO-STR-007",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "断層を切る岩脈",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "figure",
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の地質断面図で、A〜H は地層、X は岩脈、f は断層である。地層の逆転はない。この地域で起こったできごとを古い順に並べよ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-sec",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-sec",
+   "role": "question",
+   "kind": "section",
+   "alt": "A〜E層が逆断層 f でずれ、その断層を岩脈 X がずれずに横切っている。上を不整合で F〜H層がおおう地質断面図",
+   "format": "svg",
+   "src": "q-sec.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "A〜E層の堆積 → 断層 f → 岩脈 X の貫入 → 不整合の形成 → F〜H層の堆積",
+    "grading": "並べる{A〜E層の堆積|岩脈 X の貫入|断層 f の活動|隆起・侵食（不整合面の形成）・沈降|F〜H層の堆積}=1>3>2>4>5"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "岩脈 X は断層 f を横切っていて、ずれていない。したがって f の活動のあとに X が貫入した。X は不整合面で削られていて F〜H層には入っていないので、不整合より古い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stratigraphy"
+ ],
+ "laws": [
+  "cross-cutting"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "地質断面図",
+  "地史",
+  "岩脈",
+  "断層"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "strata",
+  "key": "fault-dike"
+ }
+}

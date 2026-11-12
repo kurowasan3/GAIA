@@ -1,0 +1,67 @@
+{
+ "id": "GEO-SED-001",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "礫岩",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "粒の直径が 2 mm 以上の礫が固まってできた堆積岩を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "礫岩",
+    "grading": "語{礫岩}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "砕屑岩は粒の大きさで分ける：礫岩（2 mm 以上）、砂岩（1/16〜2 mm）、泥岩（1/16 mm 以下）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sedimentary-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "砕屑岩"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "rock:conglomerate"
+ }
+}

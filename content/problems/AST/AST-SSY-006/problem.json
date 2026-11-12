@@ -1,0 +1,67 @@
+{
+ "id": "AST-SSY-006",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "上弦の月",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "上弦の月が南中するのはおよそ何時ごろか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "午後 6 時ごろ（夕方）",
+    "grading": "選ぶ{午前 6 時ごろ（明け方）|正午ごろ|午後 6 時ごろ（夕方）|午前 0 時ごろ（真夜中）}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "上弦の月は太陽から東に $90^\\circ$ 離れているので、太陽より 6 時間おくれて南中する。夕方に南の空に見え、真夜中ごろ西に沈む。右半分（西側）が光る。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "moon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "月の満ち欠け"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "moon"
+ }
+}

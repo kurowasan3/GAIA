@@ -1,0 +1,68 @@
+{
+ "id": "AST-PLN-003",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "宵の明星",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "夕方の西の空に明るく見える金星（宵の明星）は、どの位置の近くにあるときか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "東方最大離角",
+    "grading": "選ぶ{東方最大離角|西方最大離角|内合|外合}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "太陽の東側（東方）にある金星は、太陽が沈んだあと西の空に見える。太陽から最も離れて見える東方最大離角のころが見やすい。明け方の東の空に見える明けの明星は西方最大離角のころ。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "planet-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "金星",
+  "最大離角"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "planets"
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "id": "AST-SKY-009",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "季節の原因",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "日本で夏が暑く冬が寒い理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "地軸が傾いたまま公転するので、太陽の南中高度と昼の長さが季節によって変わるから",
+    "grading": "選ぶ{地軸が傾いたまま公転するので、太陽の南中高度と昼の長さが季節によって変わるから|夏は地球が太陽に近づくから|夏は太陽の活動が活発になるから|冬は地球の自転がおそくなるから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "夏は南中高度が高く（単位面積あたりの日射が強い）、昼が長い。地球と太陽の距離による差は小さく、北半球の夏（7月はじめ）に地球は太陽から最も遠い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "diurnal-annual"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-SEASON-DIST"
+ ],
+ "tags": [
+  "季節"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "seasons"
+ }
+}

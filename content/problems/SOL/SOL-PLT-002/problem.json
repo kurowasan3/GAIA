@@ -1,0 +1,67 @@
+{
+ "id": "SOL-PLT-002",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "海溝",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海洋プレートが、もう一方のプレートの下に沈み込む場所にできる、深い溝状の地形を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "海溝",
+    "grading": "語{海溝}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "海溝は収束境界の一つ。日本付近には日本海溝・千島海溝・伊豆小笠原海溝などがある（南海トラフは浅い海溝）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plate-boundaries"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "海溝"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "trench"
+ }
+}

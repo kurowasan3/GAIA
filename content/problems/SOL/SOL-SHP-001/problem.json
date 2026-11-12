@@ -1,0 +1,68 @@
+{
+ "id": "SOL-SHP-001",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "地球楕円体",
+ "course": "地学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の形を回転楕円体（地球楕円体）で表すとき、赤道半径と極半径の関係として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "赤道半径の方が約 21 km 大きい",
+    "grading": "選ぶ{赤道半径の方が約 21 km 大きい|極半径の方が約 21 km 大きい|両者は等しい|赤道半径の方が約 210 km 大きい}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地球は自転による遠心力で赤道方向にふくらんでいるので、赤道半径（約 6378 km）の方が極半径（約 6357 km）より約 21 km 大きい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-shape"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地球楕円体",
+  "偏平率"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "earth-ellipsoid"
+ }
+}

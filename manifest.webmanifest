@@ -1,0 +1,16 @@
+{
+  "name": "GAIA 高校地学",
+  "short_name": "GAIA",
+  "description": "地図・断面図・シミュレーション・天体の図と問題演習で、現象のつながりから理解する高校地学アプリ",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f4ee",
+  "theme_color": "#5a3a22",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

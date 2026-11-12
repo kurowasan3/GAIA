@@ -1,0 +1,67 @@
+{
+ "id": "AST-SSY-002",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "天文単位",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "1 天文単位（地球と太陽の平均距離）として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 1.5 億 km",
+    "grading": "選ぶ{約 1.5 億 km|約 38 万 km|約 1.5 万 km|約 9.5 兆 km}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "1 天文単位 $\\fallingdotseq1.5\\times10^{8}$ km。光で約 8 分 20 秒かかる距離。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solar-system"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "天文単位"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "au"
+ }
+}

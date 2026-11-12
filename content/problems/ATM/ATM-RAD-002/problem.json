@@ -1,0 +1,67 @@
+{
+ "id": "ATM-RAD-002",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "太陽定数",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の大気の上端で、太陽光に垂直な面が 1 秒間に $1\\ \\mathrm{m^2}$ あたり受け取るエネルギー（太陽定数）として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 $1.37\\ \\mathrm{kW/m^2}$",
+    "grading": "選ぶ{約 1.37 kW/m²|約 137 kW/m²|約 13.7 W/m²|約 1.37 W/m²}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "太陽定数は約 $1.37\\times10^{3}\\ \\mathrm{W/m^2}$。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "radiation-balance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "太陽定数"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "solar-constant"
+ }
+}

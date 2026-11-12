@@ -1,0 +1,67 @@
+{
+ "id": "GEO-SED-009",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "扇状地の土地利用",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "扇状地について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "扇央は水はけがよく、扇端では地下水がわき出しやすい",
+    "grading": "選ぶ{扇央は水はけがよく、扇端では地下水がわき出しやすい|扇央は水はけが悪く、水田に適している|扇状地は河口にできる|扇状地は泥が主にたまってできる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "扇央は礫が多く水がしみこみやすい（水無川になることもある）ので、果樹園などに利用される。しみこんだ水が扇端でわき出すので、扇端に集落ができやすい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "landforms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "扇状地"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "alluvial-fan"
+ }
+}

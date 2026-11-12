@@ -1,0 +1,67 @@
+{
+ "id": "SOL-INT-002",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "核の成分",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の核の主成分である元素は何か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "鉄",
+    "grading": "語{鉄|Fe}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "核は主に鉄でできており、ニッケルなどもふくむ。外核は液体、内核は固体。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-interior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "核"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "core"
+ }
+}

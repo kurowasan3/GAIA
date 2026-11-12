@@ -1,0 +1,82 @@
+{
+ "id": "ATM-JWX-006",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "移動性高気圧",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は春の日本付近の天気図である。この時期の天気の特徴として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-wx",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-wx",
+   "role": "question",
+   "kind": "map",
+   "alt": "九州付近に移動性の高気圧、東北の東に前線をともなう低気圧、大陸にも低気圧がある天気図",
+   "format": "svg",
+   "src": "q-wx.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "高気圧と低気圧が交互に西から東へ通過し、天気が数日の周期で変わる",
+    "grading": "選ぶ{高気圧と低気圧が交互に西から東へ通過し、天気が数日の周期で変わる|同じ天気が数週間続く|北西の季節風が強く、日本海側で雪が多い|太平洋高気圧におおわれ、蒸し暑い晴天が続く}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "春・秋は、偏西風に流されて移動性高気圧と温帯低気圧が交互にやってくる。そのため晴れと雨が数日ごとにくり返す。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-weather"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "天気図",
+  "移動性高気圧"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "weather:spring"
+ }
+}

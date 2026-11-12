@@ -1,0 +1,94 @@
+{
+ "id": "SOL-EQK-008",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "震源の深さ",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある観測点の初期微動継続時間は 12.5 秒で、震央距離は 60 km であった。大森公式の比例定数を $k=8.0$ km/s とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "震源距離を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "震源の深さを求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "100 km",
+    "grading": "約{100|3} [km]"
+   },
+   {
+    "id": "2",
+    "tex": "80 km",
+    "grading": "約{80|2} [km]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $D=8.0\\times12.5=100$ km。(2) 震源の深さ $h=\\sqrt{D^2-d^2}=\\sqrt{100^2-60^2}=80$ km。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hypocenter-location"
+ ],
+ "laws": [
+  "omori"
+ ],
+ "misconceptions": [
+  "MC-PS-EPI"
+ ],
+ "tags": [
+  "大森公式",
+  "震源の深さ",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "震源・震央・観測点は直角三角形"
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "seismic"
+ }
+}

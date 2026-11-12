@@ -1,0 +1,67 @@
+{
+ "id": "GEO-MET-005",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-03",
+ "topic": "広域変成作用",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "広域変成作用で、比較的低温・高圧の条件でできる変成岩はどれか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "結晶片岩",
+    "grading": "選ぶ{結晶片岩|片麻岩|ホルンフェルス|結晶質石灰岩}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "沈み込み帯の深い所は、温度のわりに圧力が高い（低温高圧）。ここで結晶片岩ができる。高温の条件では片麻岩ができる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "metamorphism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "広域変成"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "regional-metamorphism"
+ }
+}

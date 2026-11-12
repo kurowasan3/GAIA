@@ -1,0 +1,63 @@
+{
+ "id": "GEO-SED-002",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "粒の大きさ",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "砕屑物を、粒の直径が大きいものから順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "礫 → 砂 → 泥",
+    "grading": "並べる{礫|泥|砂}=1>3>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "礫は 2 mm 以上、砂は 1/16〜2 mm、泥は 1/16 mm 以下（泥はさらにシルトと粘土に分ける）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sedimentary-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "砕屑物"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

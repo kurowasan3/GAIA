@@ -1,0 +1,67 @@
+{
+ "id": "GEO-HIS-008",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "石炭紀",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "石炭紀について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "リンボクなどの大型のシダ植物が大森林をつくり、それが石炭のもとになった",
+    "grading": "選ぶ{リンボクなどの大型のシダ植物が大森林をつくり、それが石炭のもとになった|恐竜が最も繁栄した|被子植物が大森林をつくった|人類が現れた}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "古生代石炭紀には、リンボク・ロボクなどの木生シダが大森林をつくった。その遺骸がたまって石炭になった。大気中の酸素濃度が高く、大型の昆虫もいた。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "life-history"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "石炭紀"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "fossil:lepidodendron"
+ }
+}

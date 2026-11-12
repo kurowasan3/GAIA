@@ -1,0 +1,67 @@
+{
+ "id": "GEO-FOS-002",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-04",
+ "topic": "示相化石",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地層から造礁サンゴの化石が見つかった。この地層ができた環境として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "暖かく浅い、きれいな海",
+    "grading": "選ぶ{暖かく浅い、きれいな海|冷たい深海|河口付近の汽水|寒冷な陸地}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "造礁サンゴは褐虫藻と共生していて光が必要なので、暖かく浅い、にごっていない海にすむ。このように環境を示す化石を示相化石という。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "fossils"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "示相化石"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "fossil:coral"
+ }
+}

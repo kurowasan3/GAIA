@@ -1,0 +1,95 @@
+{
+ "id": "ATM-RAD-009",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "地球の熱収支",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球に届く太陽放射を 100 とすると、雲・大気・地表で反射されて宇宙にもどる量が 30 である。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地球のアルベドを求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "大気の温室効果がないときの地表温度は 255 K、実際の平均気温は 15 ℃（288 K）である。温室効果によって何 K 高くなっているか。"
+     },
+     {
+      "id": "3",
+      "tex": "温室効果のしくみを述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "0.30",
+    "grading": "約{0.30|2}"
+   },
+   {
+    "id": "2",
+    "tex": "約 33 K",
+    "grading": "約{33|2} [K]"
+   },
+   {
+    "id": "3",
+    "tex": "（例）大気中の水蒸気や二酸化炭素が地表からの赤外線を吸収し、その一部を地表に向けて再び放射するので、地表は太陽放射だけのときより多くのエネルギーを受け取って高温になる。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) アルベド $=\\dfrac{30}{100}=0.30$。(2) 実際の平均気温 288 K（15 ℃）と放射平衡温度 255 K の差は約 33 K。(3) 温室効果。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "radiation-balance"
+ ],
+ "laws": [
+  "stefan-boltzmann"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "熱収支",
+  "温室効果",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

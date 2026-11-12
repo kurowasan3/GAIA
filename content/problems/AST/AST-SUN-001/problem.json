@@ -1,0 +1,69 @@
+{
+ "id": "AST-SUN-001",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "黒点",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽の光球の表面に見える、まわりより温度が低いために黒く見える部分を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "黒点",
+    "grading": "語{黒点}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "黒点は約 4000 K（光球は約 5800 K）。強い磁場が対流をさまたげて、内部からの熱が運ばれにくいので温度が低い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-SUNSPOT-HOT"
+ ],
+ "tags": [
+  "黒点"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "sunspot"
+ }
+}

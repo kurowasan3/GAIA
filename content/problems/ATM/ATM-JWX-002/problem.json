@@ -1,0 +1,83 @@
+{
+ "id": "ATM-JWX-002",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "天気図を読む",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は日本付近の天気図（模式図）である。この天気図の気圧配置として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-wx",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-wx",
+   "role": "question",
+   "kind": "map",
+   "alt": "日本の南東の海上に 1024 hPa の高気圧が張り出し、大陸に低気圧がある。等圧線の間隔が広い天気図",
+   "format": "svg",
+   "src": "q-wx.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "南高北低（夏型）",
+    "grading": "選ぶ{西高東低（冬型）|南高北低（夏型）|梅雨前線（停滞前線）|台風}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "太平洋高気圧が日本の南東から張り出し、等圧線の間隔が広い。夏の南高北低の気圧配置で、蒸し暑い晴天が続く。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-weather",
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "天気図",
+  "南高北低（夏型）"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "weather:summer"
+ }
+}

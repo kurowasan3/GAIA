@@ -1,0 +1,63 @@
+{
+ "id": "ATM-JWX-010",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "台風の危険半円",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "北半球で北に進む台風について、風が特に強くなりやすいのはどちら側か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "進行方向の右側",
+    "grading": "選ぶ{進行方向の右側|進行方向の左側|中心の目の中|どちら側も同じ}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "台風の風は反時計回り。進行方向の右側では、台風の風の向きと台風の移動の向きが同じになるので風が強くなる（危険半円）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "台風"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

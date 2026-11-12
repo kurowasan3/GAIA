@@ -1,0 +1,68 @@
+{
+ "id": "ATM-CIR-006",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "亜熱帯高圧帯",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "緯度 30° 付近に砂漠が多い理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ハドレー循環の下降気流で高圧帯ができ、雲ができにくいから",
+    "grading": "選ぶ{ハドレー循環の下降気流で高圧帯ができ、雲ができにくいから|上昇気流がさかんで、雨がすぐに降りきるから|太陽から最も遠いから|偏西風が強いから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "赤道付近で上昇した空気が緯度 30° 付近で下降し、亜熱帯高圧帯をつくる。下降気流は断熱圧縮で暖まり乾燥するので雨が少ない（サハラ砂漠など）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "general-circulation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ハドレー循環",
+  "亜熱帯高圧帯"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "hadley"
+ }
+}

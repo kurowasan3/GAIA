@@ -1,0 +1,45 @@
+{
+ "id": "col-weather",
+ "schema": "gaia.collection/1",
+ "title": "天気図を読む：日本の四季",
+ "description": "気圧配置から季節を見分け、前線の通過や季節風のしくみまで説明できるように。",
+ "order": 2,
+ "items": [
+  {
+   "id": "ATM-JWX-001"
+  },
+  {
+   "id": "ATM-JWX-002"
+  },
+  {
+   "id": "ATM-JWX-003"
+  },
+  {
+   "id": "ATM-JWX-004"
+  },
+  {
+   "id": "ATM-JWX-006"
+  },
+  {
+   "id": "ATM-JWX-005"
+  },
+  {
+   "id": "ATM-JWX-007"
+  },
+  {
+   "id": "ATM-JWX-008"
+  },
+  {
+   "id": "ATM-JWX-009"
+  },
+  {
+   "id": "ATM-JWX-010"
+  },
+  {
+   "id": "ATM-JWX-011"
+  },
+  {
+   "id": "ATM-JWX-012"
+  }
+ ]
+}

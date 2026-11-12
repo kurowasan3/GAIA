@@ -1,0 +1,67 @@
+{
+ "id": "AST-SSY-004",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "太陽系のでき方",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽系の惑星ができるまでの過程を古い順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "原始太陽系円盤 → 微惑星 → 原始惑星 → 惑星",
+    "grading": "並べる{原始惑星|惑星|微惑星|原始太陽系円盤}=4>3>1>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "原始太陽のまわりのガスとちりの円盤（原始太陽系円盤）で、ちりが集まって微惑星（直径数 km）ができ、衝突・合体して原始惑星になり、さらに成長して惑星になった。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solar-system"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "太陽系の形成"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "planetesimal"
+ }
+}

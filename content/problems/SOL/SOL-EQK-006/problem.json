@@ -1,0 +1,67 @@
+{
+ "id": "SOL-EQK-006",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "マグニチュードとエネルギー",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地震のマグニチュードが 1 大きくなると、地震のエネルギーはおよそ何倍になるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 32 倍",
+    "grading": "選ぶ{約 2 倍|約 10 倍|約 32 倍|約 1000 倍}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\log_{10}E=4.8+1.5M$ より、M が 1 増えると E は $10^{1.5}\\fallingdotseq32$ 倍。2 増えると $10^{3}=1000$ 倍。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "magnitude-intensity"
+ ],
+ "laws": [
+  "magnitude-energy"
+ ],
+ "misconceptions": [
+  "MC-MAG-LINEAR"
+ ],
+ "tags": [
+  "マグニチュード"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

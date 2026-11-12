@@ -1,0 +1,98 @@
+{
+ "id": "GEO-FOS-011",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-04",
+ "topic": "化石による地層の対比",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "離れた2つの地域 I・II の地層を調べた。地域 I の地層 a からはフズリナ、地層 b からはアンモナイトの化石が見つかった。地域 II の地層 c からはアンモナイト、地層 d からはビカリアの化石が、地層 e からは造礁サンゴの化石が見つかった。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "同じ時代にできたと考えられる地層の組を選べ。"
+     },
+     {
+      "id": "2",
+      "tex": "a〜d のうち、最も新しい時代の地層を選べ。"
+     },
+     {
+      "id": "3",
+      "tex": "示準化石には「分布が広い」ことが必要な理由を述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "b と c",
+    "grading": "選ぶ{a と c|b と c|a と d|b と e}=2"
+   },
+   {
+    "id": "2",
+    "tex": "d",
+    "grading": "選ぶ{a|b|c|d}=4"
+   },
+   {
+    "id": "3",
+    "tex": "（例）分布が広くないと、離れた地域で同じ化石が見つからず、地層を比べられないから。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 同じ示準化石（アンモナイト）をふくむ b と c は、同じ時代（中生代）の地層と考えられる（地層同定の法則）。(2) ビカリアは新生代（新第三紀）なので d が最も新しい。造礁サンゴは示相化石で、時代は決められない。(3) 示準化石は分布が広いことが必要。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "correlation",
+  "fossils"
+ ],
+ "laws": [
+  "faunal-succession"
+ ],
+ "misconceptions": [
+  "MC-INDEX-FACIES"
+ ],
+ "tags": [
+  "対比",
+  "示準化石",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

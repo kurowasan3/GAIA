@@ -1,0 +1,277 @@
+{
+ "schema": "gaia.misconceptions/1",
+ "misconceptions": [
+  {
+   "id": "MC-CORE-SOLID",
+   "wrong": "外核は固体の鉄でできている",
+   "right": "外核は液体（S波が伝わらない）。内核は高圧のため固体",
+   "concepts": [
+    "earth-interior",
+    "seismic-structure"
+   ],
+   "remedy": [
+    "SOL-INT-003",
+    "SOL-INT-010"
+   ]
+  },
+  {
+   "id": "MC-MANTLE-LIQUID",
+   "wrong": "マントルはどろどろにとけた液体",
+   "right": "マントルはほとんど固体（S波が伝わる）。長い時間ではゆっくり流れる（対流）",
+   "concepts": [
+    "earth-interior"
+   ],
+   "remedy": []
+  },
+  {
+   "id": "MC-PLATE-CRUST",
+   "wrong": "プレート＝地殻",
+   "right": "プレートはリソスフェア（地殻＋マントル最上部、厚さ約100 km）",
+   "concepts": [
+    "plate-boundaries"
+   ],
+   "remedy": [
+    "SOL-INT-007"
+   ]
+  },
+  {
+   "id": "MC-MAG-INTENSITY",
+   "wrong": "マグニチュードが大きいほど、どこでも震度が大きい",
+   "right": "マグニチュードは地震の規模（1つの地震に1つ）、震度は場所ごとのゆれ。震源から遠いと震度は小さい",
+   "concepts": [
+    "magnitude-intensity"
+   ],
+   "remedy": [
+    "SOL-EQK-010"
+   ]
+  },
+  {
+   "id": "MC-MAG-LINEAR",
+   "wrong": "マグニチュードが 2 大きいとエネルギーは 2 倍",
+   "right": "M が 1 大きいとエネルギーは約 32 倍、2 大きいと 1000 倍",
+   "concepts": [
+    "magnitude-intensity"
+   ],
+   "remedy": [
+    "SOL-EQK-006",
+    "SOL-EQK-007"
+   ]
+  },
+  {
+   "id": "MC-PS-EPI",
+   "wrong": "初期微動継続時間から震央距離が直接求まる",
+   "right": "大森公式で求まるのは震源距離。震源が深いと震央距離より大きい",
+   "concepts": [
+    "hypocenter-location"
+   ],
+   "remedy": [
+    "SOL-EQK-008",
+    "SOL-EQK-012"
+   ]
+  },
+  {
+   "id": "MC-VOLCANIC-COLOR",
+   "wrong": "黒い岩石は深成岩、白い岩石は火山岩",
+   "right": "色は SiO₂ の量（有色鉱物の割合）で決まる。火山岩か深成岩かは組織（斑状か等粒状か）で決まる",
+   "concepts": [
+    "igneous-rocks"
+   ],
+   "remedy": [
+    "SOL-IGN-011"
+   ]
+  },
+  {
+   "id": "MC-VISCOSITY",
+   "wrong": "玄武岩質マグマは粘性が大きい",
+   "right": "玄武岩質マグマは SiO₂ が少なく高温で、粘性は小さい（さらさら）。流紋岩質マグマは粘性が大きい",
+   "concepts": [
+    "volcano-forms"
+   ],
+   "remedy": [
+    "SOL-VOL-001",
+    "SOL-VOL-011"
+   ]
+  },
+  {
+   "id": "MC-LOWER-YOUNGER",
+   "wrong": "断層や岩脈が切っている地層の方が新しい",
+   "right": "切っている断層・岩脈の方が新しい（切断の法則）",
+   "concepts": [
+    "stratigraphy"
+   ],
+   "remedy": [
+    "GEO-STR-003",
+    "GEO-STR-006"
+   ]
+  },
+  {
+   "id": "MC-UNCONF-GAP",
+   "wrong": "不整合面の上下の地層は連続して堆積した",
+   "right": "不整合面は堆積の中断と侵食の跡。上下で長い時間の空白がある（隆起・侵食・沈降）",
+   "concepts": [
+    "unconformity"
+   ],
+   "remedy": [
+    "GEO-STR-002"
+   ]
+  },
+  {
+   "id": "MC-INDEX-FACIES",
+   "wrong": "示準化石は地層ができた環境を示す",
+   "right": "示準化石は時代、示相化石は環境を示す",
+   "concepts": [
+    "fossils"
+   ],
+   "remedy": [
+    "GEO-FOS-001",
+    "GEO-FOS-011"
+   ]
+  },
+  {
+   "id": "MC-DINO-HUMAN",
+   "wrong": "恐竜と人類は同じ時代に生きていた",
+   "right": "恐竜（鳥類以外）は中生代末（約6600万年前）に絶滅。人類が現れたのは新生代の終わりごろ（約700万年前以降）",
+   "concepts": [
+    "life-history"
+   ],
+   "remedy": [
+    "GEO-FOS-012",
+    "GEO-HIS-010"
+   ]
+  },
+  {
+   "id": "MC-OXYGEN-EARLY",
+   "wrong": "地球は誕生したときから酸素を多く含む大気をもっていた",
+   "right": "原始大気は主に CO₂・水蒸気・N₂。酸素は光合成生物が出して、約25億年前ごろから増えた",
+   "concepts": [
+    "early-earth"
+   ],
+   "remedy": [
+    "GEO-HIS-004"
+   ]
+  },
+  {
+   "id": "MC-STRATO-COLD",
+   "wrong": "成層圏は上ほど寒い",
+   "right": "成層圏はオゾンが紫外線を吸収するので、上ほど気温が高い（対流圏とは逆）",
+   "concepts": [
+    "atmosphere-structure"
+   ],
+   "remedy": [
+    "ATM-STR-004"
+   ]
+  },
+  {
+   "id": "MC-MOIST-FASTER",
+   "wrong": "雲ができると空気塊は速く冷える",
+   "right": "凝結で潜熱が出るので、雲ができてからの方がゆっくり冷える（湿潤断熱減率 約0.5℃/100 m）",
+   "concepts": [
+    "adiabatic"
+   ],
+   "remedy": [
+    "ATM-CLD-007"
+   ]
+  },
+  {
+   "id": "MC-FOEHN-SAME",
+   "wrong": "山を越えればどんな風でも高温になる",
+   "right": "風上で雲ができて雨を降らせたときだけ、風下で気温が上がる（潜熱の分）",
+   "concepts": [
+    "foehn"
+   ],
+   "remedy": [
+    "ATM-CLD-012"
+   ]
+  },
+  {
+   "id": "MC-WIND-HIGH",
+   "wrong": "風は高気圧から低気圧へまっすぐ吹く",
+   "right": "転向力で北半球では右にそれる。上空では等圧線に平行（地衡風）、地上では摩擦で斜めに低圧側へ吹く",
+   "concepts": [
+    "winds"
+   ],
+   "remedy": [
+    "ATM-CIR-003"
+   ]
+  },
+  {
+   "id": "MC-SEASON-DIST",
+   "wrong": "夏は地球が太陽に近いので暑い",
+   "right": "季節の原因は地軸の傾き（南中高度と昼の長さの変化）。北半球の夏に地球は太陽から遠い（遠日点は7月はじめ）",
+   "concepts": [
+    "diurnal-annual"
+   ],
+   "remedy": [
+    "AST-SKY-009"
+   ]
+  },
+  {
+   "id": "MC-MIDNIGHT-VENUS",
+   "wrong": "金星は真夜中に南の空に見える",
+   "right": "内惑星の金星は太陽から最大で約47°しか離れないので、真夜中には見えない（明け方か夕方）",
+   "concepts": [
+    "planet-motion"
+   ],
+   "remedy": [
+    "AST-PLN-008"
+   ]
+  },
+  {
+   "id": "MC-MOON-SHADOW",
+   "wrong": "月の満ち欠けは地球の影でおこる",
+   "right": "満ち欠けは太陽・地球・月の位置関係で、光の当たった面の見え方が変わるため。地球の影に入るのは月食",
+   "concepts": [
+    "moon"
+   ],
+   "remedy": [
+    "AST-SSY-011",
+    "AST-SSY-012"
+   ]
+  },
+  {
+   "id": "MC-BRIGHT-NEAR",
+   "wrong": "明るく見える星ほど地球に近い",
+   "right": "見かけの明るさは光度と距離の両方で決まる。比べるには絶対等級を使う",
+   "concepts": [
+    "stellar-properties"
+   ],
+   "remedy": [
+    "AST-STR-012"
+   ]
+  },
+  {
+   "id": "MC-RED-COOL-FAINT",
+   "wrong": "赤い星はすべて暗い",
+   "right": "赤い（低温の）星でも、半径が大きい赤色巨星・超巨星は非常に明るい（L = 4πR²σT⁴）",
+   "concepts": [
+    "hr-diagram"
+   ],
+   "remedy": [
+    "AST-STR-011"
+   ]
+  },
+  {
+   "id": "MC-SUNSPOT-HOT",
+   "wrong": "黒点は周りより温度が高い",
+   "right": "黒点は周り（約5800 K）より低温（約4000 K）なので暗く見える。強い磁場が対流をさまたげている",
+   "concepts": [
+    "sun"
+   ],
+   "remedy": [
+    "AST-SUN-001",
+    "AST-SUN-003"
+   ]
+  },
+  {
+   "id": "MC-EXPANSION-CENTER",
+   "wrong": "宇宙は地球（銀河系）を中心に膨張している",
+   "right": "どの銀河から見ても、遠くの銀河ほど速く遠ざかって見える。宇宙全体が一様に膨張していて中心はない",
+   "concepts": [
+    "cosmology"
+   ],
+   "remedy": [
+    "AST-GAL-007"
+   ]
+  }
+ ]
+}

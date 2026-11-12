@@ -1,0 +1,68 @@
+{
+ "id": "SOL-VOL-006",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "沈み込み帯のマグマ",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "沈み込み帯でマグマができるしくみとして最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "沈み込むプレートから放出された水がマントルに加わり、岩石のとけ始める温度が下がる",
+    "grading": "選ぶ{沈み込むプレートから放出された水がマントルに加わり、岩石のとけ始める温度が下がる|沈み込むプレートとの摩擦熱でマントル全体がとける|プレートが沈み込むと圧力が下がってとける|海水が直接マグマになる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "沈み込んだ海洋プレートから水がしぼり出され、上にあるマントル（ウェッジマントル）に加わる。水が加わると岩石の融点が下がるので、部分溶融してマグマができる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "magma-generation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "マグマの発生",
+  "沈み込み帯"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "partial-melting"
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "id": "AST-SSY-010",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "太陽の光が届く時間",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽と地球の距離を $1.5\\times10^{11}$ m、光の速さを $3.0\\times10^{8}$ m/s とする。太陽の光が地球に届くまでの時間は何分か（有効数字2桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "8.3 分",
+    "grading": "約{8.3|2} [分]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\dfrac{1.5\\times10^{11}}{3.0\\times10^{8}}=500$ 秒 $\\fallingdotseq8.3$ 分。いま見ている太陽は約 8 分前の姿。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solar-system"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "天文単位",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

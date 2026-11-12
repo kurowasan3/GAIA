@@ -1,0 +1,101 @@
+{
+ "id": "GEO-STR-004",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "断層の種類",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の地質断面図で、断層 f の左右の地層のずれ方を見て、断層の種類と、この断層をつくった力を答えよ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-sec",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "断層の種類を選べ。"
+     },
+     {
+      "id": "2",
+      "tex": "この断層をつくった力を選べ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-sec",
+   "role": "question",
+   "kind": "section",
+   "alt": "地層 A〜E が傾いた断層 f で切られ、断層の上盤側が下がっている。その上を不整合で F〜H層がおおう地質断面図",
+   "format": "svg",
+   "src": "q-sec.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "正断層",
+    "grading": "選ぶ{正断層|逆断層|横ずれ断層}=1"
+   },
+   {
+    "id": "2",
+    "tex": "引っぱる力（張力）",
+    "grading": "選ぶ{引っぱる力（張力）|押し縮める力（圧縮力）}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "断層面の上側（上盤）が、断層面に沿ってずり下がっているので正断層。正断層は両側から引っぱる力（張力）がはたらいてできる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "faults",
+  "geologic-structures"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "断層",
+  "地質断面図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "strata",
+  "key": "fault-unconf"
+ }
+}

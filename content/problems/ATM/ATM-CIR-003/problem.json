@@ -1,0 +1,69 @@
+{
+ "id": "ATM-CIR-003",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "地衡風",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "北半球の上空で、気圧傾度力と転向力がつり合って吹く風（地衡風）について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "等圧線に平行に、高圧側を右に見て吹く",
+    "grading": "選ぶ{等圧線に平行に、高圧側を右に見て吹く|等圧線に平行に、高圧側を左に見て吹く|等圧線に垂直に、高圧側から低圧側へ吹く|等圧線に垂直に、低圧側から高圧側へ吹く}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "気圧傾度力（高圧 → 低圧）と、転向力（風向の右向き）がつり合うには、風は等圧線に平行で、高圧側が右になる向きに吹く。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "winds"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-WIND-HIGH"
+ ],
+ "tags": [
+  "地衡風"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "geostrophic"
+ }
+}

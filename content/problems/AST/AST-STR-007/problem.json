@@ -1,0 +1,98 @@
+{
+ "id": "AST-STR-007",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "光度と半径・温度",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "恒星の光度 $L$ は、半径 $R$、表面温度 $T$ を用いて $L=4\\pi R^2\\sigma T^4$ と表される。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "表面温度が太陽と同じで、半径が太陽の 2 倍の恒星の光度は、太陽の何倍か。"
+     },
+     {
+      "id": "2",
+      "tex": "半径が太陽と同じで、表面温度が太陽の 2 倍の恒星の光度は、太陽の何倍か。"
+     },
+     {
+      "id": "3",
+      "tex": "表面温度が太陽と同じで、光度が太陽の $10^{-4}$ 倍の恒星の半径は、太陽の何倍か。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "4 倍",
+    "grading": "約{4.0|2} [倍]"
+   },
+   {
+    "id": "2",
+    "tex": "16 倍",
+    "grading": "約{16|2} [倍]"
+   },
+   {
+    "id": "3",
+    "tex": "0.01 倍",
+    "grading": "約{0.010|2} [倍]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $L\\propto R^2$ なので $2^2=4$ 倍。(2) $L\\propto T^4$ なので $2^4=16$ 倍。(3) $R\\propto\\dfrac{\\sqrt L}{T^2}$。$\\dfrac{\\sqrt{10^{-4}}}{1^2}=0.01$ 倍。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stellar-properties",
+  "hr-diagram"
+ ],
+ "laws": [
+  "luminosity"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "光度",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "hr"
+ }
+}

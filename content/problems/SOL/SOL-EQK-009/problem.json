@@ -1,0 +1,67 @@
+{
+ "id": "SOL-EQK-009",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "断層と力",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水平に押し縮める力（圧縮力）がはたらいてできる断層はどれか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "逆断層",
+    "grading": "選ぶ{正断層|逆断層|トランスフォーム断層|不整合}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "圧縮力では上盤がずり上がる逆断層ができる。引っぱる力（張力）では上盤がずり落ちる正断層。日本列島は東西に圧縮されているので、逆断層が多い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "faults"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "断層"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "reverse-fault"
+ }
+}

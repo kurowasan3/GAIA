@@ -1,0 +1,67 @@
+{
+ "id": "SOL-IGN-007",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "有色鉱物",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の鉱物のうち、有色鉱物をすべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "かんらん石・輝石・角閃石・黒雲母",
+    "grading": "すべて選ぶ{かんらん石|石英|輝石|斜長石|角閃石|カリ長石|黒雲母}=1,3,5,7"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "Fe や Mg をふくむ鉱物は黒〜緑色の有色鉱物。石英・長石（斜長石・カリ長石）は Fe・Mg をふくまない無色鉱物。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "rock-forming-minerals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "造岩鉱物"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "mafic-mineral"
+ }
+}

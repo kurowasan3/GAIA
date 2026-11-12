@@ -1,0 +1,71 @@
+{
+ "id": "SOL-INT-003",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "S波が伝わらない層",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球内部の層のうち、S波が伝わらない層はどれか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "外核",
+    "grading": "選ぶ{地殻|マントル|外核|内核}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "S波（横波）は液体中を伝わらない。外核で S波が伝わらないことから、外核は液体だとわかる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-interior",
+  "seismic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-CORE-SOLID"
+ ],
+ "tags": [
+  "S波",
+  "外核"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "outer-core"
+ }
+}

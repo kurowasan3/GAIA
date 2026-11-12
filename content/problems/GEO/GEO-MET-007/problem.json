@@ -1,0 +1,64 @@
+{
+ "id": "GEO-MET-007",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-03",
+ "topic": "接触変成の範囲",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "接触変成作用と広域変成作用の違いについて正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "接触変成作用はマグマに接する狭い範囲、広域変成作用は造山帯などの広い範囲で起こる",
+    "grading": "選ぶ{接触変成作用はマグマに接する狭い範囲、広域変成作用は造山帯などの広い範囲で起こる|どちらも岩石がとけてマグマになる作用である|接触変成作用の方が広い範囲で起こる|広域変成作用は地表付近で起こる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "接触変成はマグマの熱による（数 m〜数 km の範囲）。広域変成は沈み込み帯や造山帯の高温・高圧による（幅数十 km、長さ数百 km にもなる）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "metamorphism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "接触変成",
+  "広域変成"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

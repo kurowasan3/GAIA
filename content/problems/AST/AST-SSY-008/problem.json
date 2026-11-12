@@ -1,0 +1,68 @@
+{
+ "id": "AST-SSY-008",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "雪線と惑星",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "木星型惑星が地球型惑星より大きく成長できた理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "雪線より外側では氷も材料になり、大きな固体の核ができて、まわりのガスを大量に集めたから",
+    "grading": "選ぶ{雪線より外側では氷も材料になり、大きな固体の核ができて、まわりのガスを大量に集めたから|太陽に近いほど材料が多かったから|木星型惑星は太陽より先にできたから|木星型惑星は太陽系の外から来たから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "太陽から遠い雪線（約 2.7 天文単位）の外側では水が氷になり、固体の材料が多かった。大きな核ができると、その重力で原始太陽系円盤の水素・ヘリウムを集めて巨大になった。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solar-system"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "太陽系の形成",
+  "雪線"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "snow-line"
+ }
+}

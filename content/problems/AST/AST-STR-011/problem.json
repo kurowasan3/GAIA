@@ -1,0 +1,117 @@
+{
+ "id": "AST-STR-011",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "HR図と恒星の大きさ",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "figure",
+  "calc",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の HR図で、A は太陽、B はシリウスB、C はベテルギウスである。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-hr",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A〜C のうち、半径が最も大きいものを選べ。"
+     },
+     {
+      "id": "2",
+      "tex": "B の表面温度は約 25000 K、光度は太陽の約 0.056 倍である。B の半径は太陽のおよそ何倍か選べ。"
+     },
+     {
+      "id": "3",
+      "tex": "赤色巨星が、表面温度が低いのに非常に明るい理由を述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-hr",
+   "role": "question",
+   "kind": "graph",
+   "alt": "HR図。A（太陽）は中央付近、B は左下（高温で暗い）、C は右上（低温で非常に明るい）にある",
+   "format": "svg",
+   "src": "q-hr.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "C",
+    "grading": "選ぶ{A|B|C}=3"
+   },
+   {
+    "id": "2",
+    "tex": "約 0.01 倍",
+    "grading": "選ぶ{約 100 倍|約 1 倍|約 0.01 倍|約 0.0001 倍}=3"
+   },
+   {
+    "id": "3",
+    "tex": "（例）赤色巨星は外層が大きくふくらんで表面積が非常に大きいので、表面温度が低く単位面積あたりの放射は小さくても、全体の光度は大きくなる。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 低温で光度の大きい C（右上）が最も半径が大きい。(2) シリウスB は表面温度 約 25000 K、光度 約 0.056 倍。$R=\\dfrac{\\sqrt{0.056}}{(25000/5772)^2}\\fallingdotseq\\dfrac{0.24}{18.8}\\fallingdotseq0.013$、約 0.01 倍（地球くらいの大きさ）。(3) $L=4\\pi R^2\\sigma T^4$。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hr-diagram",
+  "stellar-properties"
+ ],
+ "laws": [
+  "luminosity"
+ ],
+ "misconceptions": [
+  "MC-RED-COOL-FAINT"
+ ],
+ "tags": [
+  "HR図",
+  "計算",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "hr"
+ }
+}

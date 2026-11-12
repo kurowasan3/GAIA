@@ -1,0 +1,69 @@
+{
+ "id": "ATM-RAD-004",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "地球放射",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地表や大気が宇宙に向けて出している電磁波（地球放射）の主な波長域として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "赤外線",
+    "grading": "選ぶ{赤外線|可視光線|紫外線|X線}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "放射の波長は温度で決まる（ウィーンの変位則）。約 6000 K の太陽は可視光が中心、約 300 K の地球は波長 10 μm 前後の赤外線が中心。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "radiation-balance"
+ ],
+ "laws": [
+  "wien"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "地球放射"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "infrared"
+ }
+}

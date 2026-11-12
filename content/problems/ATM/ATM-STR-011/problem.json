@@ -1,0 +1,92 @@
+{
+ "id": "ATM-STR-011",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "気温の高度分布",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大気の気温の高度分布について答えよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "高さ約 50 km の、気温が極大になるところは何と何の境界か。"
+     },
+     {
+      "id": "2",
+      "tex": "高さ約 100 km 以上で、高いほど気温が上がる層を選べ。"
+     },
+     {
+      "id": "3",
+      "tex": "対流圏で対流が起こり、雲や雨ができる理由を述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "成層圏と中間圏の境界",
+    "grading": "選ぶ{成層圏と中間圏の境界|対流圏と成層圏の境界|中間圏と熱圏の境界}=1"
+   },
+   {
+    "id": "2",
+    "tex": "熱圏",
+    "grading": "選ぶ{熱圏|中間圏|成層圏}=1"
+   },
+   {
+    "id": "3",
+    "tex": "（例）対流圏では地表が太陽放射で暖められ、下が暖かく上が冷たいので、暖かく軽い空気が上昇して対流が起こる。上昇した空気が冷えて雲ができる。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 成層圏の上端（成層圏界面、約 50 km）で気温が極大。(2) 熱圏は太陽の紫外線・X線の吸収で高温。(3) 対流圏は地表から暖められる（大気は太陽放射をあまり吸収しない）ため、下が暖かい不安定な状態になりやすい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atmosphere-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "大気の層",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

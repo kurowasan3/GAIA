@@ -1,0 +1,66 @@
+{
+ "id": "GEO-FOS-012",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-04",
+ "topic": "恐竜と人類",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の文のうち、正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "恐竜（鳥類を除く）は、人類が現れるよりずっと前に絶滅した",
+    "grading": "選ぶ{恐竜（鳥類を除く）は、人類が現れるよりずっと前に絶滅した|恐竜と人類は同じ時代に生きていた|恐竜は古生代に繁栄した|人類は中生代に現れた}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "恐竜（鳥類を除く）は中生代末（約6600万年前）に絶滅した。人類（猿人）が現れたのは約700万年前で、恐竜と同じ時代には生きていない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "life-history"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-DINO-HUMAN"
+ ],
+ "tags": [
+  "恐竜",
+  "人類"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

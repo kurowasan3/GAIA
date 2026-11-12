@@ -1,0 +1,67 @@
+{
+ "id": "SOL-VOL-002",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "盾状火山",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "傾斜のゆるやかな盾状火山の例として適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "マウナロア（ハワイ）",
+    "grading": "選ぶ{マウナロア（ハワイ）|富士山|昭和新山|雲仙普賢岳}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "盾状火山は、粘性の小さい玄武岩質の溶岩が流れて広がってできる。ハワイのマウナロア・キラウエアなど。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "volcano-forms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "盾状火山"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "shield-volcano"
+ }
+}

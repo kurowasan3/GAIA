@@ -1,0 +1,82 @@
+{
+ "id": "GEO-SED-006",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "地形図を読む",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は、ある地域の地形を等高線で表したものである（上が北）。この地形として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-map",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-map",
+   "role": "question",
+   "kind": "map",
+   "alt": "川の両側に、等高線のまばらな平らな面と、等高線が集まった急ながけが階段状にくり返す地形図",
+   "format": "svg",
+   "src": "q-map.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "河岸段丘",
+    "grading": "選ぶ{河岸段丘|扇状地|V字谷|三角州}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "川に平行に、等高線がまばらな平坦面（段丘面）と、等高線が集まった急ながけ（段丘崖）が階段状に並ぶ。土地の隆起などで川が下刻をくり返してできた河岸段丘。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "landforms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地形図",
+  "河岸段丘"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "topo:terrace"
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": "GEO-MET-006",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-03",
+ "topic": "日本の変成帯",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "西南日本の中央構造線をはさむ2つの変成帯について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "外帯側の三波川変成帯は低温高圧型、内帯側の領家変成帯は高温低圧型",
+    "grading": "選ぶ{外帯側の三波川変成帯は低温高圧型、内帯側の領家変成帯は高温低圧型|外帯側の三波川変成帯は高温低圧型、内帯側の領家変成帯は低温高圧型|どちらも接触変成でできた|どちらも火山岩でできている}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "中央構造線の太平洋側（外帯）に三波川変成帯（結晶片岩）、日本海側（内帯）に領家変成帯（片麻岩・花こう岩）が並ぶ（対の変成帯）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "metamorphism",
+  "japan-geology"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "変成帯",
+  "三波川",
+  "領家"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "median-tectonic-line"
+ }
+}

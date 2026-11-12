@@ -1,0 +1,88 @@
+{
+ "id": "SOL-INT-009",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "氷床と地殻の沈降",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "厚さ 2.0 km の氷床がある地域では、氷の重さで地殻が沈んでつり合っている。氷の密度を $0.90\\ \\mathrm{g/cm^3}$、マントルの密度を $3.3\\ \\mathrm{g/cm^3}$ として、地殻が沈んだ深さを求めよ（有効数字2桁）。また、氷床がとけるとこの地域はどうなるか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "沈んだ深さを求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "氷床がとけたあとの変化を選べ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 550 m",
+    "grading": "約{5.5e2|2} [m]"
+   },
+   {
+    "id": "2",
+    "tex": "ゆっくり隆起する",
+    "grading": "選ぶ{ゆっくり隆起する|さらに沈降する|変化しない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "沈んだ深さを $d$ とすると、氷の柱の重さと押しのけたマントルの重さがつり合う：$0.90\\times2.0=3.3\\times d$、$d\\fallingdotseq0.55$ km $=5.5\\times10^{2}$ m。氷がとけると荷重がなくなり、アイソスタシーを回復するように隆起する（後氷期の隆起：スカンジナビア半島など）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "isostasy"
+ ],
+ "laws": [
+  "isostasy-airy"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "アイソスタシー",
+  "後氷期の隆起"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "isostasy"
+ }
+}

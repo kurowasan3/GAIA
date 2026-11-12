@@ -1,0 +1,67 @@
+{
+ "id": "AST-PLN-002",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "衝",
+ "course": "地学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "外惑星が、地球から見て太陽と正反対の方向にある位置を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "衝",
+    "grading": "語{衝}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "衝のとき外惑星は真夜中に南中し、地球に最も近いので明るく見える。太陽と同じ方向にあるときは合。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "planet-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "衝"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "planets"
+ }
+}

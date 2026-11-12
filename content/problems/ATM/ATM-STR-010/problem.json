@@ -1,0 +1,64 @@
+{
+ "id": "ATM-STR-010",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "大気の重さ",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地表の気圧を $1.0\\times10^{5}$ Pa、重力加速度を $9.8\\ \\mathrm{m/s^2}$ とする。地表 $1\\ \\mathrm{m^2}$ の上にある大気の柱の質量を求めよ（有効数字2桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$1.0\\times10^{4}$ kg",
+    "grading": "約{1.0e4|2} [kg]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "気圧は大気の柱の重さ ÷ 面積。$mg=pS$ より $m=\\dfrac{1.0\\times10^{5}\\times1}{9.8}\\fallingdotseq1.0\\times10^{4}$ kg（約 10 t）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atm-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気圧",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

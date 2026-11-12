@@ -1,0 +1,93 @@
+{
+ "id": "SOL-SHP-010",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "地球楕円体の大きさ",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球楕円体の赤道半径を 6378 km、偏平率を $\\dfrac{1}{298}$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "極半径を求めよ（整数で）。"
+     },
+     {
+      "id": "2",
+      "tex": "赤道半径と極半径の差を求めよ（整数で）。"
+     },
+     {
+      "id": "3",
+      "tex": "地球がこのような形になった理由を簡潔に述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 6357 km",
+    "grading": "約{6357|4} [km]"
+   },
+   {
+    "id": "2",
+    "tex": "約 21 km",
+    "grading": "約{21|2} [km]"
+   },
+   {
+    "id": "3",
+    "tex": "（例）自転による遠心力で赤道方向に引きのばされ、極方向につぶれた形になったから。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 極半径 $b=a(1-f)=6378\\times\\left(1-\\dfrac{1}{298}\\right)\\fallingdotseq6378-21.4=6356.6$ km。(2) 差は約 21 km。(3) 地球の自転で赤道付近ほど遠心力が大きく、長い時間をかけて地球がわずかに変形した。地球の半径約 6400 km にくらべて 21 km は小さいので、地球はほとんど球である。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-shape"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "偏平率",
+  "計算",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

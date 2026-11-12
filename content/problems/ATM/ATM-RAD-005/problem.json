@@ -1,0 +1,67 @@
+{
+ "id": "ATM-RAD-005",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "温室効果ガス",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のうち、温室効果ガスをすべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "水蒸気・二酸化炭素・メタン",
+    "grading": "すべて選ぶ{水蒸気|二酸化炭素|メタン|窒素|酸素}=1,2,3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "水蒸気・二酸化炭素・メタン・一酸化二窒素などは赤外線を吸収・再放射する。窒素・酸素は赤外線をほとんど吸収しない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "radiation-balance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "温室効果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "greenhouse"
+ }
+}

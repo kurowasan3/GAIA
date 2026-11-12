@@ -1,0 +1,70 @@
+{
+ "id": "ATM-STR-004",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "成層圏の気温",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "成層圏で、高いところほど気温が高くなる理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "オゾンが太陽の紫外線を吸収するから",
+    "grading": "選ぶ{オゾンが太陽の紫外線を吸収するから|地表からの赤外線を水蒸気が吸収するから|高いところほど太陽に近いから|対流で暖かい空気が上昇するから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "成層圏のオゾン（オゾン層、高さ 20〜30 km 付近で濃い）が紫外線を吸収して大気を暖める。紫外線は上から入ってくるので、上ほど暖められる（最も高温なのは高さ約 50 km）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atmosphere-structure"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-STRATO-COLD"
+ ],
+ "tags": [
+  "成層圏",
+  "オゾン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "stratosphere"
+ }
+}

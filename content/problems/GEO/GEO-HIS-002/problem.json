@@ -1,0 +1,67 @@
+{
+ "id": "GEO-HIS-002",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "ストロマトライト",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "シアノバクテリアの活動でできた、層状の模様をもつ岩石を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ストロマトライト",
+    "grading": "語{ストロマトライト}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "シアノバクテリアが出す粘液に泥がつき、その上でまた増える…をくり返してできる。約27億年前ごろから多く見られ、現在もオーストラリアの海岸などでできている。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "early-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ストロマトライト"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "stromatolite"
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": "AST-PLN-005",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "金星の会合周期",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金星の公転周期を 0.615 年として、金星の会合周期を求めよ（有効数字2桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "1.6 年",
+    "grading": "約{1.6|2} [年]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "内惑星の会合周期は $\\dfrac1S=\\dfrac1{0.615}-\\dfrac11\\fallingdotseq0.626$ より $S\\fallingdotseq1.6$ 年（約 584 日）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "planet-motion"
+ ],
+ "laws": [
+  "synodic-period"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "会合周期",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "planets"
+ }
+}

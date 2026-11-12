@@ -1,0 +1,63 @@
+{
+ "id": "ATM-STR-008",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "圏界面の高さ",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "対流圏と成層圏の境界（圏界面）の高さについて正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "赤道付近で高く（約 17 km）、極付近で低い（約 8 km）",
+    "grading": "選ぶ{赤道付近で高く（約 17 km）、極付近で低い（約 8 km）|どこでもちょうど 11 km|極付近で高く、赤道付近で低い|季節によって 50 km 以上変わる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "低緯度ほど地表が暖かく対流がさかんなので、対流圏が厚い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atmosphere-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "圏界面"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

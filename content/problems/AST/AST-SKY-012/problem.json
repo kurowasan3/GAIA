@@ -1,0 +1,67 @@
+{
+ "id": "AST-SKY-012",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "黄道",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の公転によって、太陽が星座の間を1年かけて1周するように見える。天球上の太陽の通り道を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "黄道",
+    "grading": "語{黄道}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "黄道は天の赤道と約 $23.4^\\circ$ 傾いている（地軸の傾き）。黄道と天の赤道の交点が春分点と秋分点。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "celestial-sphere"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "黄道"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "ecliptic"
+ }
+}

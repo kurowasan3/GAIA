@@ -1,0 +1,65 @@
+{
+ "id": "ATM-CIR-008",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "赤道と台風",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "台風（熱帯低気圧）が、緯度 5° より赤道に近いところではほとんど発生しない理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "赤道付近では転向力がほとんどはたらかず、渦ができにくいから",
+    "grading": "選ぶ{赤道付近では転向力がほとんどはたらかず、渦ができにくいから|赤道付近は海水温が低いから|赤道付近は水蒸気が少ないから|赤道付近は常に高気圧だから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "転向力は $\\sin(\\text{緯度})$ に比例し、赤道で 0。渦をつくる力がはたらかないので、熱帯低気圧は赤道直下ではほとんど発生しない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "winds",
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "転向力",
+  "台風"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

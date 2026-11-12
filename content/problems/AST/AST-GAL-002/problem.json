@@ -1,0 +1,67 @@
+{
+ "id": "AST-GAL-002",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "銀河系の大きさ",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銀河系（天の川銀河）の円盤部の直径として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 10 万光年",
+    "grading": "選ぶ{約 10 万光年|約 100 光年|約 1 億光年|約 1 光年}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "銀河系は約 1000 億〜数千億個の恒星の集団で、円盤部の直径は約 10 万光年。太陽は中心から約 2.6 万光年の所にある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "galaxy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "銀河系"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "milky-way"
+ }
+}

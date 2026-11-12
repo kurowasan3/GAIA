@@ -1,0 +1,67 @@
+{
+ "id": "GEO-JPN-004",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-06",
+ "topic": "フォッサマグナ",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "本州の中央部を南北に横切る、新しい地層で埋められた大きな溝状の地帯（フォッサマグナ）の西の縁にあたる断層を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "糸魚川－静岡構造線",
+    "grading": "語{糸魚川-静岡構造線|糸魚川静岡構造線|糸静線}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "フォッサマグナは日本海が開いたときにできた大きな溝で、新第三紀以降の地層や火山岩で埋まっている。西縁が糸魚川－静岡構造線。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-geology"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フォッサマグナ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "fossa-magna"
+ }
+}

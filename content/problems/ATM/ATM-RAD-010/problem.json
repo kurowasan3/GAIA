@@ -1,0 +1,69 @@
+{
+ "id": "ATM-RAD-010",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "二酸化炭素と温暖化",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "term"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "「大気中の二酸化炭素の増加」と「地球温暖化」の関係として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "二酸化炭素の増加が、温室効果を強めて温暖化の原因になっている",
+    "grading": "選ぶ{二酸化炭素の増加が、温室効果を強めて温暖化の原因になっている|温暖化が起きたことで、二酸化炭素がすべて生じた|二酸化炭素は太陽光を反射して地球を冷やす|2つは関係がない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "化石燃料の燃焼などで二酸化炭素が増え、地表からの赤外線を吸収する量が増えた。そのため地表に再放射される量が増え、気温が上がっている。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "radiation-balance",
+  "environment"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "用語の関係",
+  "温暖化"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "co2"
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "AST-SUN-006",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "太陽の光度",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽定数を $1.37\\times10^{3}\\ \\mathrm{W/m^2}$、地球と太陽の距離を $1.50\\times10^{11}$ m とする。太陽が 1 秒間に放出する全エネルギー（光度）を求めよ（有効数字2桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$3.9\\times10^{26}$ W",
+    "grading": "約{3.9e26|2} [W]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "太陽を中心とする半径 $1.50\\times10^{11}$ m の球面全体を太陽の光が通過する。$L=1.37\\times10^{3}\\times4\\pi\\times(1.50\\times10^{11})^2\\fallingdotseq3.9\\times10^{26}$ W。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sun",
+  "stellar-properties"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "光度",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "半径 1 天文単位の球面全体"
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "AST-GAL-001",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "宇宙の年齢",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "現在考えられている宇宙の年齢として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 138 億年",
+    "grading": "選ぶ{約 138 億年|約 46 億年|約 1 億年|約 1 兆年}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "宇宙背景放射の観測などから約 138 億年と求められている。地球の年齢（約 46 億年）の約 3 倍。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cosmology"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "宇宙の年齢"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "big-bang"
+ }
+}

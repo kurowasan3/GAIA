@@ -1,0 +1,68 @@
+{
+ "id": "SOL-SHP-007",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "重力の緯度変化",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "重力の大きさは赤道で最も小さく、極で最も大きい。その理由として正しいものを2つ選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "赤道では自転による遠心力が最も大きい。赤道は地球の中心からの距離が大きく、万有引力が小さい。",
+    "grading": "すべて選ぶ{赤道では自転による遠心力が最も大きい|赤道は地球の中心からの距離が大きく、万有引力が小さい|赤道では地殻が厚い|極では遠心力が万有引力と同じ向きにはたらく}=1,2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "重力は万有引力と遠心力の合力。遠心力は自転軸からの距離に比例し、赤道で最大（極で0）で、万有引力と逆向きにはたらく。また赤道は中心から遠いので万有引力も小さい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gravity-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重力",
+  "遠心力"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "gravity"
+ }
+}

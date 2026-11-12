@@ -1,0 +1,63 @@
+{
+ "id": "ATM-ENV-008",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "土砂災害",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大雨によって、谷にたまった土砂や石が水と一体となって高速で流れ下る災害を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "土石流",
+    "grading": "選ぶ{土石流|地すべり|液状化|高潮}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "土砂災害には、土石流・がけ崩れ（斜面が急に崩れる）・地すべり（斜面がゆっくり広い範囲で動く）がある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "environment"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "土砂災害"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

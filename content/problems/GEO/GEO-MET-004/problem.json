@@ -1,0 +1,82 @@
+{
+ "id": "GEO-MET-004",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-03",
+ "topic": "片麻岩",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はある変成岩をルーペで見たようすである。白っぽい部分と黒っぽい部分がしま模様をつくっている。この岩石の名称を選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-rock",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-rock",
+   "role": "question",
+   "kind": "specimen",
+   "alt": "白っぽい鉱物の帯と黒っぽい鉱物の帯が交互にしま模様をつくる岩石",
+   "format": "svg",
+   "src": "q-rock.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "片麻岩",
+    "grading": "選ぶ{片麻岩|結晶片岩|花こう岩|ホルンフェルス}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "石英・長石の白い部分と、黒雲母などの黒い部分がしま模様（片麻状組織）をつくるのは片麻岩。高温の広域変成作用でできる（領家変成帯など）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "metamorphism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "岩石の識別",
+  "変成岩"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "rock:gneiss"
+ }
+}

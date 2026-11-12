@@ -1,0 +1,67 @@
+{
+ "id": "ATM-OCN-001",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "海水の塩分",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海水の平均的な塩分（海水 1 kg にとけている塩類の質量）として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 35 g（35 ‰）",
+    "grading": "選ぶ{約 35 g（35 ‰）|約 3.5 g（3.5 ‰）|約 350 g（350 ‰）|約 0.35 g（0.35 ‰）}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "平均約 3.5%（35 ‰）。主な成分は塩化ナトリウム。塩分は場所によって少し違うが、塩類の成分の割合はほぼ一定。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ocean-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "塩分"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "salinity"
+ }
+}

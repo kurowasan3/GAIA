@@ -1,0 +1,64 @@
+{
+ "id": "ATM-CLD-004",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "露点を求める",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "温度と飽和水蒸気量の関係は次の通りである。10 ℃：$9.4\\ \\mathrm{g/m^3}$、15 ℃：$12.8\\ \\mathrm{g/m^3}$、20 ℃：$17.3\\ \\mathrm{g/m^3}$、25 ℃：$23.0\\ \\mathrm{g/m^3}$。気温 25 ℃、相対湿度 約 56% の空気の露点として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "15 ℃",
+    "grading": "選ぶ{10 ℃|15 ℃|20 ℃|25 ℃}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "水蒸気量 $=23.0\\times0.56\\fallingdotseq12.9\\ \\mathrm{g/m^3}$。これが飽和水蒸気量になる温度は約 15 ℃。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "humidity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "露点",
+  "湿度"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

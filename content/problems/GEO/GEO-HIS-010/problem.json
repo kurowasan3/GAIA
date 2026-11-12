@@ -1,0 +1,65 @@
+{
+ "id": "GEO-HIS-010",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "人類の出現",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "最初の人類（猿人）が現れたのはおよそいつか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 700 万年前",
+    "grading": "選ぶ{約 700 万年前|約 7 億年前|約 6600 万年前|約 7000 年前}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "アフリカで約 700 万年前に猿人が現れ、原人・旧人を経て、約 30 万年前に新人（ホモ・サピエンス）が現れた。新生代の終わりのごく最近のできごと。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "life-history"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-DINO-HUMAN"
+ ],
+ "tags": [
+  "人類"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

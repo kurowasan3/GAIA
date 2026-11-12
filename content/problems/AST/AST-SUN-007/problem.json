@@ -1,0 +1,68 @@
+{
+ "id": "AST-SUN-007",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "フレア",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽で大規模なフレアが起こったとき、数日以内に地球で起こりやすい現象として適当なものをすべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "磁気嵐・低緯度でのオーロラ・通信や電力網への障害",
+    "grading": "すべて選ぶ{磁気嵐|低緯度でのオーロラ|通信や電力網への障害|地震|皆既日食}=1,2,3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "フレアで放出された X線は約 8 分で届き、短波通信の障害（デリンジャー現象）を起こす。高エネルギー粒子やコロナ質量放出は1〜数日で届き、磁気嵐やオーロラ、人工衛星・電力網への障害を起こす。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フレア",
+  "太陽活動"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "flare"
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "GEO-SED-013",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "用語の関係",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "term"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "「続成作用」と「堆積岩」の関係として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "〜から〜ができる",
+    "grading": "選ぶ{原因 → 結果|対比（ちがいを比べる）|証拠|〜から〜ができる|全体と部分・種類と例|測る・求める（手段）}=4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "堆積物が続成作用（圧縮・固結）を受けて堆積岩ができる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sedimentary-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "用語の関係",
+  "続成作用"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "diagenesis"
+ }
+}

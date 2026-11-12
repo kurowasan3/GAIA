@@ -1,0 +1,69 @@
+{
+ "id": "AST-SKY-005",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "周極星",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "北緯 $40^\\circ$ の地点で、一晩じゅう地平線の下に沈まない星（周極星）になるのは、赤緯が何度以上の星か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$50^\\circ$ 以上",
+    "grading": "約{50|2} [°]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "天の北極は北の地平線から $40^\\circ$ の高さにあり、天の北極から $40^\\circ$ 以内（赤緯 $90^\\circ-40^\\circ=50^\\circ$ 以上）の星は、地平線の下に沈まない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "celestial-sphere",
+  "diurnal-annual"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "周極星",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "sphere"
+ }
+}

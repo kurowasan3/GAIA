@@ -1,0 +1,68 @@
+{
+ "id": "AST-SKY-002",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "北極星の高度",
+ "course": "地学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "北半球のある地点で、北極星の高度が $35^\\circ$ であった。この地点の緯度として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "北緯 35°",
+    "grading": "選ぶ{北緯 35°|北緯 55°|北緯 90°|南緯 35°}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "天の北極の高度は、観測地の緯度に等しい。北極星は天の北極のすぐ近くにあるので、北極星の高度≒緯度。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "celestial-sphere"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "北極星",
+  "緯度"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "sphere"
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "AST-PLN-001",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "内惑星",
+ "course": "地学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球より内側を公転する内惑星をすべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "水星・金星",
+    "grading": "すべて選ぶ{水星|金星|火星|木星}=1,2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "内惑星は水星と金星。内惑星は太陽から大きく離れて見えることがない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "planet-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "内惑星"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "planets"
+ }
+}

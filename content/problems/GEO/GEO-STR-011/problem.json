@@ -1,0 +1,101 @@
+{
+ "id": "GEO-STR-011",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "柱状図の対比",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は、東西に並ぶ3地点 P・Q・R（西から順）でボーリングした柱状図である。緑の線は地表の標高。どの地点にも凝灰岩の層が1枚ずつあり、同じ時代のものとわかっている。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-col",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "凝灰岩の層が離れた地点の地層の対比に使える理由を選べ。"
+     },
+     {
+      "id": "2",
+      "tex": "この地域の地層は、どの方角に向かって低くなっているか。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-col",
+   "role": "question",
+   "kind": "section",
+   "alt": "3地点 P・Q・R の柱状図。凝灰岩層の上面の標高は P で約 152 m、Q で約 144 m、R で約 136 m",
+   "format": "svg",
+   "src": "q-col.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "凝灰岩（火山灰）は、一度の噴火で広い範囲にほぼ同時に積もるから",
+    "grading": "選ぶ{凝灰岩（火山灰）は、一度の噴火で広い範囲にほぼ同時に積もるから|凝灰岩は非常にかたいから|凝灰岩は化石を多くふくむから}=1"
+   },
+   {
+    "id": "2",
+    "tex": "東",
+    "grading": "選ぶ{東|西|傾いていない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 火山灰は短期間に広い範囲に積もるので、離れた場所の地層の対比に使える鍵層になる。(2) 凝灰岩層の標高は P > Q > R と東ほど低いので、地層は東に向かって低くなっている（東に傾斜）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "correlation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "柱状図",
+  "鍵層",
+  "対比"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "strata",
+  "key": "columns"
+ }
+}

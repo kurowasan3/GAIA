@@ -1,0 +1,72 @@
+{
+ "id": "ATM-CLD-007",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "湿潤断熱減率",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "雲ができてからの空気塊の温度の下がり方（湿潤断熱減率）が、乾燥断熱減率より小さい理由として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "水蒸気が凝結するときに潜熱を放出するから",
+    "grading": "選ぶ{水蒸気が凝結するときに潜熱を放出するから|雲が太陽光をさえぎるから|雲の中では空気が膨張しないから|水蒸気は空気より重いから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "凝結で放出される潜熱が、膨張による温度低下の一部を打ち消すので、約 0.5 ℃/100 m になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "adiabatic"
+ ],
+ "laws": [
+  "moist-adiabatic"
+ ],
+ "misconceptions": [
+  "MC-MOIST-FASTER"
+ ],
+ "tags": [
+  "潜熱",
+  "湿潤断熱減率"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "latent-heat"
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "id": "AST-SKY-003",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "夏至の南中高度",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "北緯 $35.0^\\circ$ の地点で、夏至の日の太陽の南中高度を求めよ。夏至の太陽の赤緯は $+23.4^\\circ$ とする。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$78.4^\\circ$",
+    "grading": "約{78.4|3} [°]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "南中高度 $=90^\\circ-35.0^\\circ+23.4^\\circ=78.4^\\circ$。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "diurnal-annual"
+ ],
+ "laws": [
+  "culmination-altitude"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "南中高度",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "sphere"
+ }
+}

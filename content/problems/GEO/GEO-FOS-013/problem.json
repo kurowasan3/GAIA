@@ -1,0 +1,70 @@
+{
+ "id": "GEO-FOS-013",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-04",
+ "topic": "用語の関係",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "term"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "「示準化石」と「離れた地域の地層の対比」の関係として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "測る・求める（手段）",
+    "grading": "選ぶ{原因 → 結果|対比（ちがいを比べる）|証拠|〜から〜ができる|全体と部分・種類と例|測る・求める（手段）}=6"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同じ示準化石をふくむ地層は同じ時代のものと考えられるので、示準化石は離れた地域の地層を対比する手段になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "correlation",
+  "fossils"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "用語の関係",
+  "示準化石",
+  "対比"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "index-fossil"
+ }
+}

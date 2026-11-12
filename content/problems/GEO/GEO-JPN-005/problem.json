@@ -1,0 +1,64 @@
+{
+ "id": "GEO-JPN-005",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-06",
+ "topic": "付加体の岩石",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "付加体の中に、遠洋の深海でできたチャートがふくまれている。このことからわかることとして最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "チャートは海洋プレートに乗って遠くから運ばれてきて、海溝で付け加わった",
+    "grading": "選ぶ{チャートは海洋プレートに乗って遠くから運ばれてきて、海溝で付け加わった|日本列島はかつて深海の底にあった|チャートは日本列島の火山の噴火でできた|チャートは陸上の川で運ばれた}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "チャートは陸から遠い深海で放散虫の殻がたまってできる。海洋プレートの移動で海溝まで運ばれ、陸側に付け加わった。チャートの年代（放散虫化石）と、付加の年代（海溝付近の砂岩・泥岩）は異なる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-geology"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "付加体",
+  "チャート"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

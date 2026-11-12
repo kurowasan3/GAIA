@@ -1,0 +1,71 @@
+{
+ "id": "GEO-FOS-010",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-04",
+ "topic": "放射年代の計算",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある岩石にふくまれる放射性同位体（半減期 13 億年）と、その壊変でできた娘核種の量の比は 親：娘 ＝ 1：7 であった。岩石ができたとき娘核種はなかったとして、岩石の年代を求めよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "39 億年",
+    "grading": "約{39|2} [億年]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "はじめの量を 8 とすると、いま親核種は 1 で $\\dfrac18=\\left(\\dfrac12\\right)^3$。半減期の 3 倍なので $13\\times3=39$ 億年。（$t=T\\log_2(1+D/P)=T\\log_2 8=3T$）"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "radiometric-dating"
+ ],
+ "laws": [
+  "radiometric-age",
+  "radioactive-decay"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "放射年代",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "radiometric"
+ }
+}

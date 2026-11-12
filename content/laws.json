@@ -1,0 +1,410 @@
+{
+ "schema": "gaia.laws/1",
+ "laws": [
+  {
+   "id": "superposition",
+   "name": "地層累重の法則",
+   "tex": "\\text{下の地層ほど古い}",
+   "conditions": "地層が逆転していないとき（級化層理・斜交葉理などで上下を確かめる）",
+   "concepts": [
+    "stratigraphy"
+   ],
+   "origin": "empirical",
+   "basis": "ステノ（1669年）が、水中で堆積物は下から順に積もることから示した。褶曲で逆転した地層では成り立たないので、堆積構造や化石で上下を判定する。"
+  },
+  {
+   "id": "cross-cutting",
+   "name": "切断の法則",
+   "tex": "\\text{切っているもの}\\ \\text{は}\\ \\text{切られているもの}\\ \\text{より新しい}",
+   "conditions": "断層・岩脈・貫入岩体・不整合面が、地層や岩体を切っているとき",
+   "concepts": [
+    "stratigraphy",
+    "geologic-structures"
+   ],
+   "origin": "empirical",
+   "basis": "切られる地層や岩体がまず存在しなければ、それを切ることはできないことから。貫入岩体のまわりの接触変成も、貫入された側が古い証拠になる。"
+  },
+  {
+   "id": "faunal-succession",
+   "name": "地層同定の法則",
+   "tex": "\\text{同じ示準化石}\\ \\Rightarrow\\ \\text{同じ時代の地層}",
+   "conditions": "生存期間が短く、広く分布した生物の化石（示準化石）を使うとき",
+   "concepts": [
+    "correlation",
+    "fossils"
+   ],
+   "origin": "empirical",
+   "basis": "W. スミス（19世紀初め）が、イギリス各地の地層で化石の種類が決まった順に現れることを見いだした。生物は進化し、絶滅した種は再び現れないことによる。"
+  },
+  {
+   "id": "uniformitarianism",
+   "name": "斉一説",
+   "tex": "\\text{現在は過去を解く鍵}",
+   "conditions": "過去の地層や地形を、現在観察できる作用（侵食・堆積・火山活動など）から解釈するとき",
+   "concepts": [
+    "stratigraphy"
+   ],
+   "origin": "fundamental",
+   "basis": "ハットンが唱え、ライエルが『地質学原理』で広めた考え方。過去にも現在と同じ自然法則・作用がはたらいていたとする。"
+  },
+  {
+   "id": "omori",
+   "name": "大森公式",
+   "tex": "D=kT,\\quad k=\\dfrac{V_PV_S}{V_P-V_S}",
+   "conditions": "P波・S波の速さが一定とみなせる範囲（震源距離 D、初期微動継続時間 T）",
+   "concepts": [
+    "hypocenter-location",
+    "seismic-waves"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "震源距離 $D$ の観測点に、P波は $t_P=\\dfrac{D}{V_P}$、S波は $t_S=\\dfrac{D}{V_S}$ で届く。"
+    },
+    {
+     "tex": "初期微動継続時間は $T=t_S-t_P=D\\left(\\dfrac{1}{V_S}-\\dfrac{1}{V_P}\\right)=D\\,\\dfrac{V_P-V_S}{V_PV_S}$。"
+    },
+    {
+     "tex": "よって $D=\\dfrac{V_PV_S}{V_P-V_S}\\,T=kT$。$V_P=6\\,\\mathrm{km/s}$、$V_S=3.5\\,\\mathrm{km/s}$ なら $k\\fallingdotseq 8.4\\,\\mathrm{km/s}$。"
+    }
+   ]
+  },
+  {
+   "id": "magnitude-energy",
+   "name": "マグニチュードとエネルギーの関係",
+   "tex": "\\log_{10}E=4.8+1.5M",
+   "conditions": "E は地震波のエネルギー [J]。M が 1 大きいと E は約 32 倍、2 大きいと 1000 倍",
+   "concepts": [
+    "magnitude-intensity"
+   ],
+   "origin": "empirical",
+   "basis": "グーテンベルクとリヒターが、多数の地震の観測から経験的に得た関係。$10^{1.5}\\fallingdotseq 31.6$ なので M が 1 増えるとエネルギーは約 32 倍。"
+  },
+  {
+   "id": "isostasy-airy",
+   "name": "アイソスタシー（山の根）",
+   "tex": "r=\\dfrac{\\rho_c}{\\rho_m-\\rho_c}\\,h",
+   "conditions": "地殻（密度 $\\rho_c$）がマントル（$\\rho_m$）に浮いてつり合っているとき。h は山の高さ、r は山の根の深さ",
+   "concepts": [
+    "isostasy"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "補償面（十分深いある面）では、どの柱の下でも圧力が等しい。圧力は上にある物質の（密度×厚さ）の和に比例する。"
+    },
+    {
+     "tex": "厚さ $t$ の平らな地殻の柱と、高さ $h$ の山（下に根 $r$）の柱を比べる：$\\rho_c t+\\rho_m r=\\rho_c(h+t+r)$。"
+    },
+    {
+     "tex": "整理して $(\\rho_m-\\rho_c)r=\\rho_c h$、よって $r=\\dfrac{\\rho_c}{\\rho_m-\\rho_c}h$。$\\rho_c=2.7$、$\\rho_m=3.3$ なら $r=4.5h$。"
+    }
+   ]
+  },
+  {
+   "id": "dry-adiabatic",
+   "name": "乾燥断熱減率",
+   "tex": "\\Gamma_d\\fallingdotseq 1\\,\\mathrm{^\\circ C/100\\,m}",
+   "conditions": "水蒸気が飽和していない空気塊が上昇・下降するとき",
+   "concepts": [
+    "adiabatic"
+   ],
+   "origin": "empirical",
+   "basis": "上昇した空気塊はまわりの気圧が低いので膨張し、外に仕事をする。熱の出入りがない（断熱）ので内部エネルギーが減り、温度が下がる。観測と熱力学の計算から約 9.8 ℃/km。"
+  },
+  {
+   "id": "moist-adiabatic",
+   "name": "湿潤断熱減率",
+   "tex": "\\Gamma_m\\fallingdotseq 0.5\\,\\mathrm{^\\circ C/100\\,m}",
+   "conditions": "水蒸気が飽和して凝結しながら上昇するとき（気温・気圧で 0.3〜0.9 ℃/100 m と変わる。高校では 0.5 を使う）",
+   "concepts": [
+    "adiabatic"
+   ],
+   "origin": "empirical",
+   "basis": "凝結で潜熱が放出され、膨張による温度の低下の一部を打ち消すので、乾燥断熱減率より小さい。"
+  },
+  {
+   "id": "condensation-height",
+   "name": "凝結高度（持ち上げ凝結高度）",
+   "tex": "h\\,[\\mathrm m]\\fallingdotseq 125\\,(T-T_d)",
+   "conditions": "地表の気温 T・露点 $T_d$ [℃]。上昇で露点も 0.2 ℃/100 m 下がるとしたとき（露点の低下を考えない問題では $100(T-T_d)$）",
+   "concepts": [
+    "adiabatic",
+    "humidity"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "空気塊の温度は乾燥断熱減率で $1\\,^\\circ\\mathrm C/100\\,\\mathrm m$ 下がる。"
+    },
+    {
+     "tex": "露点は上昇とともに約 $0.2\\,^\\circ\\mathrm C/100\\,\\mathrm m$ 下がるので、気温と露点の差は $100\\,\\mathrm m$ ごとに $0.8\\,^\\circ\\mathrm C$ 縮まる。"
+    },
+    {
+     "tex": "差 $T-T_d$ が 0 になる高さが凝結高度：$h=\\dfrac{T-T_d}{0.8}\\times100=125(T-T_d)$ [m]。"
+    }
+   ]
+  },
+  {
+   "id": "foehn-temp",
+   "name": "フェーン現象の気温の上がり方",
+   "tex": "\\Delta T=(\\Gamma_d-\\Gamma_m)\\,(H-h)",
+   "conditions": "風上側の凝結高度 h から山頂 H まで雲ができて雨が降り、風下側は乾燥断熱減率で下りるとき",
+   "concepts": [
+    "foehn",
+    "adiabatic"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "風上：ふもと〜凝結高度 $h$ は $\\Gamma_d$、$h$〜山頂 $H$ は $\\Gamma_m$ で温度が下がる。"
+    },
+    {
+     "tex": "風下：山頂〜ふもと $H$ を $\\Gamma_d$ で温度が上がる。"
+    },
+    {
+     "tex": "差し引き $\\Delta T=\\Gamma_d H-\\{\\Gamma_d h+\\Gamma_m(H-h)\\}=(\\Gamma_d-\\Gamma_m)(H-h)$。雲ができなければ $\\Delta T=0$。"
+    }
+   ]
+  },
+  {
+   "id": "culmination-altitude",
+   "name": "南中高度",
+   "tex": "h=90^\\circ-\\varphi+\\delta",
+   "conditions": "北半球の緯度 $\\varphi$ で、赤緯 $\\delta$ の天体が天頂より南で南中するとき（$\\delta<\\varphi$）",
+   "concepts": [
+    "diurnal-annual",
+    "celestial-sphere"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "天の北極の高度は観測地の緯度 $\\varphi$ に等しい。天の赤道は天の北極から $90^\\circ$ 離れているので、南の地平線から $90^\\circ-\\varphi$ の高さで子午線と交わる。"
+    },
+    {
+     "tex": "赤緯 $\\delta$ の天体は、天の赤道より $\\delta$ だけ北にあるので、南中高度は $h=90^\\circ-\\varphi+\\delta$。"
+    },
+    {
+     "tex": "例：北緯 $35^\\circ$ で夏至の太陽（$\\delta=+23.4^\\circ$）は $78.4^\\circ$、冬至（$-23.4^\\circ$）は $31.6^\\circ$。"
+    }
+   ]
+  },
+  {
+   "id": "kepler-second",
+   "name": "ケプラーの第2法則（面積速度一定）",
+   "tex": "\\dfrac{1}{2}r v_\\perp=\\text{一定}",
+   "conditions": "太陽のまわりを回る1つの惑星について",
+   "concepts": [
+    "kepler"
+   ],
+   "origin": "empirical",
+   "basis": "ケプラーがティコ・ブラーエの火星の観測記録から見いだした（1609年）。のちにニュートンが、太陽からの力が太陽の向き（中心力）であることから導いた（角運動量の保存）。"
+  },
+  {
+   "id": "kepler-third",
+   "name": "ケプラーの第3法則",
+   "tex": "\\dfrac{P^2}{a^3}=\\text{一定}\\quad(P\\,[\\text{年}],\\ a\\,[\\text{天文単位}]\\ \\text{なら}\\ 1)",
+   "conditions": "同じ天体（太陽）のまわりを回る天体どうしで比べるとき",
+   "concepts": [
+    "kepler"
+   ],
+   "origin": "empirical",
+   "basis": "ケプラーが惑星の公転周期と軌道の大きさの関係として見いだした（1619年）。ニュートンの万有引力の法則から導くことができる。"
+  },
+  {
+   "id": "synodic-period",
+   "name": "会合周期",
+   "tex": "\\dfrac{1}{S}=\\left|\\dfrac{1}{E}-\\dfrac{1}{P}\\right|",
+   "conditions": "地球の公転周期 E（1年）、惑星の公転周期 P。どちらも円軌道とみなす",
+   "concepts": [
+    "planet-motion"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "1 日あたりに公転で進む角度は、地球 $\\dfrac{360^\\circ}{E}$、惑星 $\\dfrac{360^\\circ}{P}$。"
+    },
+    {
+     "tex": "会合周期 $S$ の間に、速い方は遅い方より1周（$360^\\circ$）多く回る：$\\left|\\dfrac{360^\\circ}{E}-\\dfrac{360^\\circ}{P}\\right|S=360^\\circ$。"
+    },
+    {
+     "tex": "よって $\\dfrac{1}{S}=\\left|\\dfrac{1}{E}-\\dfrac{1}{P}\\right|$。内惑星は $\\dfrac1S=\\dfrac1P-\\dfrac1E$、外惑星は $\\dfrac1S=\\dfrac1E-\\dfrac1P$。"
+    }
+   ]
+  },
+  {
+   "id": "stefan-boltzmann",
+   "name": "シュテファン・ボルツマンの法則",
+   "tex": "E=\\sigma T^4",
+   "conditions": "黒体（恒星や地球はおよそ黒体とみなせる）の表面 1 m² から 1 秒間に出るエネルギー。$\\sigma=5.67\\times10^{-8}\\,\\mathrm{W/(m^2K^4)}$",
+   "concepts": [
+    "stellar-properties",
+    "radiation-balance"
+   ],
+   "origin": "empirical",
+   "basis": "シュテファンが実験から（1879年）、ボルツマンが熱力学から（1884年）示した。"
+  },
+  {
+   "id": "luminosity",
+   "name": "恒星の光度",
+   "tex": "L=4\\pi R^2\\sigma T^4",
+   "conditions": "半径 R、表面温度 T の恒星（黒体とみなす）",
+   "concepts": [
+    "stellar-properties",
+    "hr-diagram"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "シュテファン・ボルツマンの法則より、表面 1 m² から毎秒 $\\sigma T^4$ のエネルギーが出る。"
+    },
+    {
+     "tex": "球の表面積は $4\\pi R^2$ なので、全体では $L=4\\pi R^2\\sigma T^4$。"
+    },
+    {
+     "tex": "太陽を基準にすると $\\dfrac{L}{L_\\odot}=\\left(\\dfrac{R}{R_\\odot}\\right)^2\\left(\\dfrac{T}{T_\\odot}\\right)^4$。同じ温度なら光度の大きい星ほど半径が大きい（巨星）。"
+    }
+   ]
+  },
+  {
+   "id": "wien",
+   "name": "ウィーンの変位則",
+   "tex": "\\lambda_{\\max}T\\fallingdotseq 2.9\\times10^{-3}\\,\\mathrm{m\\cdot K}",
+   "conditions": "黒体放射で、最も強く放射される波長 $\\lambda_{\\max}$",
+   "concepts": [
+    "stellar-properties"
+   ],
+   "origin": "empirical",
+   "basis": "ウィーンが熱力学と実験から示した（1893年）。表面温度が高い星ほど青白く、低い星ほど赤い。太陽（約 5800 K）では約 0.5 μm（可視光）。"
+  },
+  {
+   "id": "magnitude-def",
+   "name": "等級と明るさ",
+   "tex": "m_1-m_2=-2.5\\log_{10}\\dfrac{F_1}{F_2}",
+   "conditions": "F は地球に届く明るさ（エネルギー）。5 等級の差が明るさ 100 倍",
+   "concepts": [
+    "stellar-properties"
+   ],
+   "origin": "definition",
+   "basis": "ヒッパルコス以来の「1等星〜6等星」をもとに、ポグソンが 5 等級差を 100 倍と定めた。1 等級差は $100^{1/5}\\fallingdotseq 2.5$ 倍。"
+  },
+  {
+   "id": "distance-modulus",
+   "name": "見かけの等級と絶対等級",
+   "tex": "m-M=5\\log_{10}d-5",
+   "conditions": "d は距離 [パーセク]。星間物質による減光を考えないとき",
+   "concepts": [
+    "stellar-properties"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "明るさは距離の2乗に反比例する。絶対等級 $M$ は $10\\,\\mathrm{pc}$ に置いたときの等級なので、$\\dfrac{F_m}{F_M}=\\left(\\dfrac{10}{d}\\right)^2$。"
+    },
+    {
+     "tex": "$m-M=-2.5\\log_{10}\\left(\\dfrac{10}{d}\\right)^2=5\\log_{10}\\dfrac{d}{10}=5\\log_{10}d-5$。"
+    },
+    {
+     "tex": "$d=10\\,\\mathrm{pc}$ のとき $m=M$。$d=100\\,\\mathrm{pc}$ なら $m$ は $M$ より 5 等級大きい（暗い）。"
+    }
+   ]
+  },
+  {
+   "id": "parallax",
+   "name": "年周視差と距離",
+   "tex": "d\\,[\\mathrm{pc}]=\\dfrac{1}{p\\,[^{\\prime\\prime}]}",
+   "conditions": "年周視差 p が小さいとき（近似 $\\tan p\\fallingdotseq p$）",
+   "concepts": [
+    "stellar-properties"
+   ],
+   "origin": "definition",
+   "basis": "年周視差が 1″ になる距離を 1 パーセク（約 3.26 光年）と定める。距離は年周視差に反比例する。"
+  },
+  {
+   "id": "hubble",
+   "name": "ハッブル・ルメートルの法則",
+   "tex": "v=H_0\\,r",
+   "conditions": "遠方の銀河（局部銀河群の外）。$H_0\\fallingdotseq 70\\,\\mathrm{km/s/Mpc}$",
+   "concepts": [
+    "cosmology"
+   ],
+   "origin": "empirical",
+   "basis": "ルメートル（1927年）とハッブル（1929年）が、銀河の赤方偏移（後退速度）と距離が比例することを見いだした。宇宙膨張の証拠。$1/H_0$ はおよその宇宙年齢（約 140 億年）を与える。"
+  },
+  {
+   "id": "radioactive-decay",
+   "name": "放射性同位体の壊変",
+   "tex": "N=N_0\\left(\\dfrac12\\right)^{t/T}",
+   "conditions": "T は半減期。温度や圧力によらない",
+   "concepts": [
+    "radiometric-dating"
+   ],
+   "origin": "empirical",
+   "basis": "放射性同位体の原子核は、一定の確率で壊変する。そのため、一定時間（半減期）ごとに残りの量が半分になる。"
+  },
+  {
+   "id": "radiometric-age",
+   "name": "放射年代の求め方",
+   "tex": "t=T\\log_2\\left(1+\\dfrac{D}{P}\\right)",
+   "conditions": "岩石ができたとき娘核種がなく、その後に出入りもないとき（P：親核種、D：娘核種の量）",
+   "concepts": [
+    "radiometric-dating"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "はじめの親核種の量は $N_0=P+D$（壊変した分が娘核種になる）。"
+    },
+    {
+     "tex": "壊変の法則 $P=N_0\\left(\\dfrac12\\right)^{t/T}$ より $\\dfrac{N_0}{P}=1+\\dfrac{D}{P}=2^{t/T}$。"
+    },
+    {
+     "tex": "よって $t=T\\log_2\\left(1+\\dfrac{D}{P}\\right)$。$D:P=3:1$ なら $t=2T$。"
+    }
+   ]
+  },
+  {
+   "id": "eratosthenes",
+   "name": "エラトステネスの方法",
+   "tex": "2\\pi R=L\\times\\dfrac{360^\\circ}{\\theta}",
+   "conditions": "同じ経線上の2地点（距離 L）で、同じ日の太陽の南中高度の差が θ のとき",
+   "concepts": [
+    "earth-shape"
+   ],
+   "origin": "derived",
+   "derivation": [
+    {
+     "tex": "太陽はとても遠いので、2地点に届く太陽光は平行とみなせる。"
+    },
+    {
+     "tex": "2地点の南中高度の差 θ は、地球の中心から見た2地点の間の角（緯度差）に等しい。"
+    },
+    {
+     "tex": "弧の長さは中心角に比例するので、$L:2\\pi R=\\theta:360^\\circ$。エラトステネスは約 $7.2^\\circ$ と約 900 km から地球の周囲を約 4.5 万 km と求めた。"
+    }
+   ]
+  },
+  {
+   "id": "tsunami-speed",
+   "name": "津波の速さ",
+   "tex": "v=\\sqrt{gh}",
+   "conditions": "水深 h が波長に比べて十分浅い波（長波）",
+   "concepts": [
+    "earthquake-types"
+   ],
+   "origin": "empirical",
+   "basis": "浅水波の速さは水深だけで決まる（流体力学から導かれる）。水深 4000 m では約 200 m/s（ジェット機なみ）、浅くなると遅くなり、後ろの波が追いついて波高が高くなる。"
+  },
+  {
+   "id": "relative-humidity",
+   "name": "相対湿度",
+   "tex": "\\text{湿度}\\,[\\%]=\\dfrac{\\text{水蒸気量}}{\\text{飽和水蒸気量}}\\times100",
+   "conditions": "同じ温度の飽和水蒸気量で割る",
+   "concepts": [
+    "humidity"
+   ],
+   "origin": "definition",
+   "basis": "空気が含む水蒸気の量が、その温度で含める最大量（飽和水蒸気量）の何 % かを表す。露点では湿度 100 %。"
+  }
+ ]
+}

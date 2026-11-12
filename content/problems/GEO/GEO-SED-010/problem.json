@@ -1,0 +1,82 @@
+{
+ "id": "GEO-SED-010",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "堆積岩の組織",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はある堆積岩の表面をルーペで見たようすである。直径 2 mm 以上の丸みをおびた粒が多くふくまれている。この岩石の名称を選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-rock",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-rock",
+   "role": "question",
+   "kind": "specimen",
+   "alt": "大小の丸い礫が、細かい粒の基質の中につまっている岩石",
+   "format": "svg",
+   "src": "q-rock.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "礫岩",
+    "grading": "選ぶ{礫岩|砂岩|泥岩|凝灰岩}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "2 mm 以上の礫からなるので礫岩。礫が丸いのは、川などで長い距離運ばれる間に角がとれたから。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sedimentary-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "岩石の識別",
+  "堆積岩"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "rock:conglomerate"
+ }
+}

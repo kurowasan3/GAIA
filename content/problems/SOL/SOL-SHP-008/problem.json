@@ -1,0 +1,67 @@
+{
+ "id": "SOL-SHP-008",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "重力異常",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある地域で重力を測定し、標準重力との差（ブーゲー異常）を求めたところ、まわりより大きな正の値になった。この地域の地下について考えられることを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "地下に密度の大きい岩石がある",
+    "grading": "選ぶ{地下に密度の大きい岩石がある|地下に密度の小さい堆積物が厚くたまっている|地下に空洞やマグマだまりがある|標高が高い}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地下に密度の大きい物質があると、その真上では引力が大きくなり、正の重力異常になる。逆に、密度の小さい堆積物が厚くたまった盆地などでは負になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gravity-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重力異常"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "gravity-anomaly"
+ }
+}

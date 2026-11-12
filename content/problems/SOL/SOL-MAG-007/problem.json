@@ -1,0 +1,69 @@
+{
+ "id": "SOL-MAG-007",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "古地磁気の伏角と緯度",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の磁場を地球の中心に置いた棒磁石の磁場とみなすと、伏角 $I$ と磁気緯度 $\\varphi$ の間には $\\tan I=2\\tan\\varphi$ の関係がある。ある岩石に記録された古地磁気の伏角が $49^\\circ$ であった。この岩石ができたときの磁気緯度を求めよ（$\\tan49^\\circ=1.15$）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 30°",
+    "grading": "約{30|2} [°]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\tan\\varphi=\\dfrac{1.15}{2}=0.575$。$\\tan30^\\circ\\fallingdotseq0.577$ なので $\\varphi\\fallingdotseq30^\\circ$。古地磁気から、大陸が昔どの緯度にあったかがわかる（大陸移動の証拠）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geomagnetism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "古地磁気",
+  "伏角",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "paleomagnetism"
+ }
+}

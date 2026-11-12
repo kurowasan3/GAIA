@@ -1,0 +1,82 @@
+{
+ "id": "GEO-SED-005",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "地形図を読む",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は、ある地域の地形を等高線で表したものである（上が北）。この地形として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-map",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-map",
+   "role": "question",
+   "kind": "map",
+   "alt": "川に沿って、等高線が上流（北）に向かって V 字にとがり、両側の等高線の間隔がせまい地形図",
+   "format": "svg",
+   "src": "q-map.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "V字谷",
+    "grading": "選ぶ{V字谷|扇状地|河岸段丘|尾根}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "等高線が上流（高い方）に向かって V 字にとがり、川の両側が急斜面。川の下刻（下方侵食）でできた V字谷。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "landforms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地形図",
+  "V字谷"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "topo:valley"
+ }
+}

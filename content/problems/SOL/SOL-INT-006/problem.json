@@ -1,0 +1,67 @@
+{
+ "id": "SOL-INT-006",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "大陸地殻と海洋地殻",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大陸地殻と海洋地殻について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "大陸地殻は厚く、上部は花こう岩質の岩石でできている",
+    "grading": "選ぶ{大陸地殻は厚く、上部は花こう岩質の岩石でできている|海洋地殻の方が大陸地殻より厚い|海洋地殻は主に花こう岩でできている|大陸地殻と海洋地殻は同じ岩石でできている}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "大陸地殻は厚さ 30〜60 km で上部が花こう岩質、下部が玄武岩質。海洋地殻は厚さ約 6 km で玄武岩質。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-interior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地殻"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "crust"
+ }
+}

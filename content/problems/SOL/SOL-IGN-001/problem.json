@@ -1,0 +1,67 @@
+{
+ "id": "SOL-IGN-001",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "斑晶",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "火山岩の斑状組織で、細かい結晶やガラス（石基）の中に散らばる大きな結晶を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "斑晶",
+    "grading": "語{斑晶}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "斑晶はマグマが地下でゆっくり冷えるうちに成長した結晶。そのあと地表付近で急に冷えた部分が石基になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "igneous-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "斑状組織"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "porphyritic"
+ }
+}

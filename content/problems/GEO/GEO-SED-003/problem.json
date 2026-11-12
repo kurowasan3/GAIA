@@ -1,0 +1,68 @@
+{
+ "id": "GEO-SED-003",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "石灰岩とチャート",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "石灰岩とチャートを見分ける方法として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "うすい塩酸をかけると、石灰岩だけが泡（二酸化炭素）を出す",
+    "grading": "選ぶ{うすい塩酸をかけると、石灰岩だけが泡（二酸化炭素）を出す|うすい塩酸をかけると、チャートだけが泡を出す|どちらも塩酸と反応しない|石灰岩の方がかたい}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "石灰岩は炭酸カルシウム（$\\ce{CaCO3}$）なので塩酸と反応して二酸化炭素を出す。チャートは $\\ce{SiO2}$ で反応しない。チャートは非常にかたく、鋼鉄のくぎでも傷がつかない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sedimentary-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "石灰岩",
+  "チャート"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "rock:limestone"
+ }
+}

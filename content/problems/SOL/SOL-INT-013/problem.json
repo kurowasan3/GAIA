@@ -1,0 +1,69 @@
+{
+ "id": "SOL-INT-013",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "用語の関係",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "term"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "「地殻」と「マントル」の関係として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "対比（ちがいを比べる）",
+    "grading": "選ぶ{原因 → 結果|対比（ちがいを比べる）|証拠|〜から〜ができる|全体と部分・種類と例|測る・求める（手段）}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地殻（花こう岩質・玄武岩質）とマントル（かんらん岩質）は、岩石の種類（化学組成）がちがう層で、境界がモホ面である。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-interior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "用語の関係",
+  "地殻",
+  "マントル"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "crust"
+ }
+}

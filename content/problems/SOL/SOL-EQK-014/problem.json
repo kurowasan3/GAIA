@@ -1,0 +1,113 @@
+{
+ "id": "SOL-EQK-014",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "走時曲線から速さを求める",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "figure",
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はある地震の走時曲線で、観測点 X（震源距離 120 km）の P波・S波の到着も示してある。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-tt",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P波の速さを求めよ（有効数字2桁）。"
+     },
+     {
+      "id": "2",
+      "tex": "S波の速さを求めよ（有効数字2桁）。"
+     },
+     {
+      "id": "3",
+      "tex": "大森公式の比例定数 k を求めよ（有効数字2桁）。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-tt",
+   "role": "question",
+   "kind": "graph",
+   "alt": "走時曲線。P波の直線（300 km で 50 秒）、S波の直線（300 km で約 86 秒）。震源距離 120 km の観測点 X で P波 20 秒、S波 約 34 秒に印がある",
+   "format": "svg",
+   "src": "q-tt.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "6.0 km/s",
+    "grading": "約{6.0|2} [km/s]"
+   },
+   {
+    "id": "2",
+    "tex": "3.5 km/s",
+    "grading": "約{3.5|2} [km/s]"
+   },
+   {
+    "id": "3",
+    "tex": "8.4 km/s",
+    "grading": "約{8.4|2} [km/s]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 120 km を 20 秒で伝わるので $6.0$ km/s。(2) 120 km を約 34 秒で伝わるので $\\fallingdotseq3.5$ km/s。(3) $k=\\dfrac{6.0\\times3.5}{6.0-3.5}=8.4$ km/s。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hypocenter-location",
+  "seismic-waves"
+ ],
+ "laws": [
+  "omori"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "走時曲線",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "seismic"
+ }
+}

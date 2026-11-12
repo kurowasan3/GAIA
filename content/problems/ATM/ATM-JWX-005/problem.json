@@ -1,0 +1,82 @@
+{
+ "id": "ATM-JWX-005",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "寒冷前線の通過",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の天気図で、低気圧の中心から南西にのびる前線が、ある地点を通過した。このときこの地点で起こる変化として適当なものをすべて選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-wx",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-wx",
+   "role": "question",
+   "kind": "map",
+   "alt": "日本海に 992 hPa の低気圧があり、中心から南東に温暖前線、南西に寒冷前線がのびている天気図",
+   "format": "svg",
+   "src": "q-wx.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "気温が急に下がる・風向が南寄りから北寄りに変わる・強い雨が短時間降る",
+    "grading": "すべて選ぶ{気温が急に下がる|風向が南寄りから北寄りに変わる|強い雨が短時間降る|弱い雨が長時間降る|気温が上がる}=1,2,3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "南西にのびるのは寒冷前線。寒気が暖気の下にもぐりこみ、暖気が急に持ち上げられて積乱雲ができる。通過時に短時間の強い雨、通過後は気温が下がり、風向が北寄りに変わる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "天気図",
+  "寒冷前線"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "weather:cyclone"
+ }
+}

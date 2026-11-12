@@ -1,0 +1,67 @@
+{
+ "id": "ATM-RAD-003",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "地表の平均の日射",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽定数を $1.37\\times10^{3}\\ \\mathrm{W/m^2}$ とする。地球が受け取る太陽放射を地球の表面全体で平均すると、$1\\ \\mathrm{m^2}$ あたり何 W か（有効数字2桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 $3.4\\times10^{2}\\ \\mathrm{W/m^2}$",
+    "grading": "約{3.4e2|2} [W/m^2]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地球が受ける光の断面積は $\\pi R^2$、表面積は $4\\pi R^2$。平均すると太陽定数の $\\dfrac14$：$\\dfrac{1.37\\times10^{3}}{4}\\fallingdotseq3.4\\times10^{2}\\ \\mathrm{W/m^2}$。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "radiation-balance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "太陽定数",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "受ける面積 πR²、ならす面積 4πR²"
+ }
+}

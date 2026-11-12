@@ -1,0 +1,64 @@
+{
+ "id": "GEO-HIS-009",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "原始大気の変化",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "原始地球の大気に多くふくまれていた二酸化炭素が減った理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "海に溶けこみ、炭酸カルシウムとして石灰岩などにとりこまれた",
+    "grading": "選ぶ{海に溶けこみ、炭酸カルシウムとして石灰岩などにとりこまれた|宇宙空間に逃げ出した|すべて窒素に変化した|オゾンに変化した}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "原始大気は二酸化炭素と水蒸気が主だった。水蒸気が雨になって海ができると、二酸化炭素は海に溶け、カルシウムイオンと結びついて石灰岩として固定された。のちには光合成でも消費された。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "early-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "原始大気",
+  "二酸化炭素"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

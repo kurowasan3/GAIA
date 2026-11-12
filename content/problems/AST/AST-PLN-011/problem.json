@@ -1,0 +1,68 @@
+{
+ "id": "AST-PLN-011",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "金星の満ち欠け",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "望遠鏡で見た金星の見え方について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "内合に近いほど大きく、細く欠けて見える",
+    "grading": "選ぶ{内合に近いほど大きく、細く欠けて見える|内合に近いほど小さく、丸く見える|いつも同じ大きさで、満ち欠けしない|外合に近いほど大きく見える}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "金星は内合の近くで地球に近づくので大きく見えるが、太陽の光が当たった面の多くが地球と反対を向くので細く見える。外合に近いと小さく丸い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "planet-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "金星",
+  "満ち欠け"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "planets"
+ }
+}

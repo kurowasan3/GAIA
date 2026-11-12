@@ -1,0 +1,92 @@
+{
+ "id": "ATM-ENV-009",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "二酸化炭素の季節変化",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ハワイのマウナロアで観測された大気中の二酸化炭素濃度は、毎年増加しながら、1年の中でも周期的に増減している。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "1年の中で濃度が下がっていくのはどの季節か。"
+     },
+     {
+      "id": "2",
+      "tex": "1年あたりの増加量として最も適当なものを選べ。"
+     },
+     {
+      "id": "3",
+      "tex": "1年の中で濃度が増減する理由を述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "北半球の夏",
+    "grading": "選ぶ{北半球の夏|北半球の冬}=1"
+   },
+   {
+    "id": "2",
+    "tex": "約 2〜3 ppm",
+    "grading": "選ぶ{約 0.02 ppm|約 2〜3 ppm|約 20〜30 ppm|約 200 ppm}=2"
+   },
+   {
+    "id": "3",
+    "tex": "（例）陸地の多い北半球では、夏に植物の光合成がさかんになって二酸化炭素が吸収され、冬は光合成が弱まり、呼吸や分解で放出される量が上回るから。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 北半球の夏から秋に濃度が下がり、冬から春に上がる。(2) 年平均では毎年約 2〜3 ppm 増加している。(3) 植物の活動の季節変化による。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "environment"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二酸化炭素",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

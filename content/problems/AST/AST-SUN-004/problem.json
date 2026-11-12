@@ -1,0 +1,67 @@
+{
+ "id": "AST-SUN-004",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "太陽のエネルギー源",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽の中心部で、4 個の水素原子核から 1 個のヘリウム原子核ができる反応を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "核融合反応",
+    "grading": "語{核融合反応|核融合|水素核融合}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "このとき減った質量（約 0.7%）が $E=mc^2$ のエネルギーになる。太陽は毎秒約 $4\\times10^{9}$ kg ずつ軽くなっている。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "核融合"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "nuclear-fusion"
+ }
+}

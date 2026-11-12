@@ -1,0 +1,64 @@
+{
+ "id": "GEO-FOS-008",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-04",
+ "topic": "古生代の紀",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "古生代の紀を古い順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "カンブリア紀 → オルドビス紀 → シルル紀 → デボン紀 → 石炭紀 → ペルム紀",
+    "grading": "並べる{ペルム紀|オルドビス紀|デボン紀|シルル紀|カンブリア紀|石炭紀}=5>2>4>3>6>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "覚え方の例：「かお（カンブリア・オルドビス）しる（シルル）でぼ（デボン）っと せき（石炭）ぺ（ペルム）」など。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geologic-time"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地質時代",
+  "古生代"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

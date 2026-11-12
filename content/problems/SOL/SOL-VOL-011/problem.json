@@ -1,0 +1,95 @@
+{
+ "id": "SOL-VOL-011",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "マグマの性質と噴火",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "玄武岩質マグマと流紋岩質マグマを比べる。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "温度が高いのはどちらか。"
+     },
+     {
+      "id": "2",
+      "tex": "爆発的な噴火をしやすいのはどちらか。"
+     },
+     {
+      "id": "3",
+      "tex": "SiO₂ が多いマグマほど粘性が大きい理由を述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "玄武岩質マグマ",
+    "grading": "選ぶ{玄武岩質マグマ|流紋岩質マグマ}=1"
+   },
+   {
+    "id": "2",
+    "tex": "流紋岩質マグマ",
+    "grading": "選ぶ{玄武岩質マグマ|流紋岩質マグマ}=2"
+   },
+   {
+    "id": "3",
+    "tex": "（例）SiO₂ が多いと SiO₄ 四面体どうしが酸素を共有して鎖状・網目状につながり、流れにくくなるから。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 玄武岩質マグマは約 1200 ℃、流紋岩質マグマは約 900 ℃。(2) 粘性が大きいと火山ガスが抜けにくく、爆発的な噴火になりやすい。(3) SiO₄ 四面体のつながりが流れをさまたげる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "volcano-forms",
+  "magma-generation"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-VISCOSITY"
+ ],
+ "tags": [
+  "マグマ",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "GEO-STR-013",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "背斜",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地層が褶曲してできた波状の構造のうち、上に向かって凸になった部分を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "背斜",
+    "grading": "語{背斜}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "上に凸が背斜、下に凸が向斜。背斜の中心部には古い地層が、向斜の中心部には新しい地層が出る。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geologic-structures"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "褶曲",
+  "背斜"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "anticline"
+ }
+}

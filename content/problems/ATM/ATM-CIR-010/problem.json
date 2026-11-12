@@ -1,0 +1,93 @@
+{
+ "id": "ATM-CIR-010",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "大気の大循環",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "大気の大循環について答えよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "赤道付近で上昇気流が生じ、雨が多い帯を何というか。"
+     },
+     {
+      "id": "2",
+      "tex": "中緯度の上空を吹く西風を何というか。"
+     },
+     {
+      "id": "3",
+      "tex": "中緯度で熱が南北に運ばれるしくみを述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "熱帯収束帯",
+    "grading": "選ぶ{熱帯収束帯|亜熱帯高圧帯|寒帯前線帯|極高圧帯}=1"
+   },
+   {
+    "id": "2",
+    "tex": "偏西風",
+    "grading": "選ぶ{偏西風|貿易風|極偏東風}=1"
+   },
+   {
+    "id": "3",
+    "tex": "（例）偏西風が南北に大きく蛇行し、暖かい空気を高緯度へ、冷たい空気を低緯度へ運んで混ぜ合わせることで、熱を運ぶ。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 赤道付近は貿易風が集まり上昇気流がさかんな熱帯収束帯で、雨が多い。(2) 中緯度上空は偏西風。(3) 中緯度では、ハドレー循環のような南北の閉じた循環ではなく、偏西風の蛇行（とそれにともなう温帯低気圧・移動性高気圧）が熱を運ぶ。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "general-circulation",
+  "heat-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "大気の大循環",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

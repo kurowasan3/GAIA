@@ -1,0 +1,82 @@
+{
+ "id": "AST-STR-006",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "HR図を読む",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の HR図に、いくつかの恒星をかき入れてある。X で示した恒星は何に分類されるか。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-hr",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-hr",
+   "role": "question",
+   "kind": "graph",
+   "alt": "横軸が表面温度（左ほど高温）、縦軸が光度の HR図。X は右上（低温で光度が太陽の約 10 万倍）にある",
+   "format": "svg",
+   "src": "q-hr.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "赤色超巨星",
+    "grading": "選ぶ{赤色超巨星|白色矮星|主系列星|原始星}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "右上（低温なのに非常に明るい）にあるので、半径が非常に大きい赤色超巨星（ベテルギウス）。$L=4\\pi R^2\\sigma T^4$ より、低温で明るい星は半径が大きい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hr-diagram"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "HR図",
+  "赤色超巨星"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "hr"
+ }
+}

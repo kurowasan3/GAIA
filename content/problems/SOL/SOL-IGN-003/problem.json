@@ -1,0 +1,82 @@
+{
+ "id": "SOL-IGN-003",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "岩石の組織を見分ける",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はある火成岩の表面をルーペで見たようすである。この岩石の名称として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-rock",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-rock",
+   "role": "question",
+   "kind": "specimen",
+   "alt": "白っぽい岩石。灰白色の石英、淡桃色のカリ長石、白い斜長石、黒い黒雲母の、同じくらいの大きさの結晶がつまっている",
+   "format": "svg",
+   "src": "q-rock.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "花こう岩",
+    "grading": "選ぶ{花こう岩|流紋岩|はんれい岩|閃緑岩}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同じくらいの大きさの結晶がつまった等粒状組織なので深成岩。白っぽく、石英・淡桃色のカリ長石・黒雲母が見えるので花こう岩。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "igneous-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "岩石の識別",
+  "火成岩"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "rock:granite"
+ }
+}

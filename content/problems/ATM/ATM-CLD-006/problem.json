@@ -1,0 +1,94 @@
+{
+ "id": "ATM-CLD-006",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "フェーン現象",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気温 25 ℃、露点 17 ℃ の空気が、高さ 2000 m の山を越えて反対側のふもと（風上と同じ標高）に吹き下りた。凝結高度は 1000 m で、そこから山頂まで雲ができて雨が降り、風下側では雲は消えていた。乾燥断熱減率を 1 ℃/100 m、湿潤断熱減率を 0.5 ℃/100 m とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "山頂での空気塊の温度を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "風下のふもとでの気温を求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "10 ℃",
+    "grading": "約{10|2} [℃]"
+   },
+   {
+    "id": "2",
+    "tex": "30 ℃",
+    "grading": "約{30|2} [℃]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 凝結高度まで $25-10=15$ ℃、そこから山頂まで $15-0.5\\times10=10$ ℃。(2) 風下は乾燥断熱減率で 2000 m 下りるので $10+20=30$ ℃。風上より 5 ℃ 高い（フェーン現象）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "foehn",
+  "adiabatic"
+ ],
+ "laws": [
+  "foehn-temp",
+  "dry-adiabatic",
+  "moist-adiabatic"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "フェーン現象",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "凝結高度までは 1 ℃、山頂までは 0.5 ℃、下りは 1 ℃（/100 m）"
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "adiabatic"
+ }
+}

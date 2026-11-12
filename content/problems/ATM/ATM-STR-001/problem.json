@@ -1,0 +1,67 @@
+{
+ "id": "ATM-STR-001",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "対流圏",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地表から高さ約 11 km までの、雲の発生や降水などの気象現象が起こる大気の層を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "対流圏",
+    "grading": "語{対流圏}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "対流圏では高さとともに気温が下がる（平均 約 0.65 ℃/100 m）。地表で暖められた空気が上昇しやすく、対流が起こる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atmosphere-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "対流圏"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "troposphere"
+ }
+}

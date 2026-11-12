@@ -1,0 +1,69 @@
+{
+ "id": "AST-GAL-007",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "膨張の中心",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "宇宙の膨張について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "どの銀河から見ても、遠くの銀河ほど速く遠ざかって見え、膨張に中心はない",
+    "grading": "選ぶ{どの銀河から見ても、遠くの銀河ほど速く遠ざかって見え、膨張に中心はない|銀河系が宇宙の中心で、ほかの銀河は銀河系から遠ざかっている|近くの銀河ほど速く遠ざかっている|銀河どうしの距離は変わっていない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "宇宙全体が一様に膨張しているので、どこから見ても同じように見える（ふくらむ風船の表面の点にたとえられる）。銀河系が宇宙の中心というわけではない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cosmology"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-EXPANSION-CENTER"
+ ],
+ "tags": [
+  "宇宙の膨張"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "expanding-universe"
+ }
+}

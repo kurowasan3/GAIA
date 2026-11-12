@@ -1,0 +1,72 @@
+{
+ "id": "ATM-CLD-005",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "凝結高度",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地表の気温が 25 ℃、露点が 17 ℃ の空気塊が上昇する。空気塊の温度は 1 ℃/100 m、露点は 0.2 ℃/100 m の割合で下がるとして、雲ができ始める高さ（凝結高度）を求めよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "1000 m",
+    "grading": "約{1.0e3|2} [m]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "気温と露点の差（8 ℃）が 100 m ごとに $1-0.2=0.8$ ℃ ずつ縮まるので、$\\dfrac{8}{0.8}\\times100=1000$ m。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "adiabatic",
+  "humidity"
+ ],
+ "laws": [
+  "condensation-height",
+  "dry-adiabatic"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "凝結高度",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "adiabatic"
+ }
+}

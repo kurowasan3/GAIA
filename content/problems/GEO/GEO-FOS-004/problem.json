@@ -1,0 +1,101 @@
+{
+ "id": "GEO-FOS-004",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-04",
+ "topic": "化石を見分ける",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はある地層から見つかった化石のスケッチである。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fos",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この化石の名称を選べ。"
+     },
+     {
+      "id": "2",
+      "tex": "この化石が示す地質時代を選べ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fos",
+   "role": "question",
+   "kind": "specimen",
+   "alt": "からだが縦に3つの部分に分かれ、横にたくさんの節がある節足動物の化石",
+   "format": "svg",
+   "src": "q-fos.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "三葉虫",
+    "grading": "選ぶ{三葉虫|アンモナイト|デスモスチルス|イノセラムス}=1"
+   },
+   {
+    "id": "2",
+    "tex": "古生代",
+    "grading": "選ぶ{古生代|中生代|新生代}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "体が中央の軸部と左右の側葉の3つに分かれる三葉虫。古生代の示準化石（カンブリア紀〜ペルム紀）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "fossils",
+  "geologic-time"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化石の識別",
+  "示準化石"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "fossil:trilobite"
+ }
+}

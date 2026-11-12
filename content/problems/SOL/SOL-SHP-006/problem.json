@@ -1,0 +1,67 @@
+{
+ "id": "SOL-SHP-006",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "ジオイド",
+ "course": "地学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "平均海水面を陸地の下までのばしたと考えた、重力の方向に垂直な面を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ジオイド",
+    "grading": "語{ジオイド}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ジオイドは重力の等ポテンシャル面で、地下の密度の分布を反映してわずかに凹凸がある（地球楕円体との差は最大 ±100 m 程度）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gravity-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ジオイド"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "geoid"
+ }
+}

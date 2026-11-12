@@ -1,0 +1,64 @@
+{
+ "id": "SOL-SHP-009",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "遠心力の緯度変化",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "自転による遠心力の大きさは、自転軸からの距離に比例する。地球を球として、北緯 $60^\\circ$ の地点での遠心力は、赤道での遠心力の何倍か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$0.5$ 倍",
+    "grading": "約{0.50|2} [倍]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "北緯 $\\varphi$ の地点の自転軸からの距離は $R\\cos\\varphi$。$\\cos60^\\circ=0.5$ なので 0.5 倍。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "gravity-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遠心力",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "id": "SOL-MAG-008",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "地磁気の3要素",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある地点で、全磁力が $4.6\\times10^{4}$ nT、伏角が $49^\\circ$ であった（$\\sin49^\\circ=0.755$、$\\cos49^\\circ=0.656$）。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水平分力を求めよ（有効数字2桁）。"
+     },
+     {
+      "id": "2",
+      "tex": "鉛直分力を求めよ（有効数字2桁）。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.0\\times10^{4}$ nT",
+    "grading": "約{3.0e4|2} [nT]"
+   },
+   {
+    "id": "2",
+    "tex": "$3.5\\times10^{4}$ nT",
+    "grading": "約{3.5e4|2} [nT]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 水平分力 $H=F\\cos I=4.6\\times10^{4}\\times0.656\\fallingdotseq3.0\\times10^{4}$ nT。(2) 鉛直分力 $Z=F\\sin I=4.6\\times10^{4}\\times0.755\\fallingdotseq3.5\\times10^{4}$ nT。地磁気は偏角・伏角・全磁力（または水平分力）の3要素で表す。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geomagnetism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地磁気の要素",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

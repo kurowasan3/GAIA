@@ -1,0 +1,69 @@
+{
+ "id": "AST-SSY-012",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "月食",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "月が地球の影に入って暗くなる現象を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "月食",
+    "grading": "語{月食}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "月食は満月のときに起こる。皆既月食のとき、月が赤く見えるのは、地球の大気で屈折した赤い光が影の中に入るから。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "moon"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-MOON-SHADOW"
+ ],
+ "tags": [
+  "月食"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "lunar-eclipse"
+ }
+}

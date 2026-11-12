@@ -1,0 +1,67 @@
+{
+ "id": "GEO-MET-002",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-03",
+ "topic": "結晶質石灰岩",
+ "course": "地学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "石灰岩がマグマの熱で接触変成作用を受けてできる岩石はどれか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "結晶質石灰岩（大理石）",
+    "grading": "選ぶ{結晶質石灰岩（大理石）|ホルンフェルス|片麻岩|チャート}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "方解石の結晶が大きく成長し、ふくまれていた化石は消えてしまう。主成分は炭酸カルシウムのままなので、塩酸をかけると泡を出す。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "metamorphism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "接触変成"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "rock:marble"
+ }
+}

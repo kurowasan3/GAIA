@@ -1,0 +1,67 @@
+{
+ "id": "SOL-EQK-001",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "震央",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地下で断層の破壊が始まった点を震源という。震源の真上の地表の点を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "震央",
+    "grading": "語{震央}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "震源から観測点までの距離を震源距離、震央から観測点までの距離を震央距離という。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hypocenter-location"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "震央"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "epicenter"
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "id": "GEO-STR-008",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "深成岩の貫入と接触変成",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の地質断面図で、A〜H は地層、Y は花こう岩である。Y のまわりには、Y に接して灰色の部分がある。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-sec",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "砂岩や泥岩が Y に接して変化した灰色の岩石を何というか。"
+     },
+     {
+      "id": "2",
+      "tex": "石灰岩が Y に接して変化した岩石を何というか。"
+     },
+     {
+      "id": "3",
+      "tex": "Y ができた時期について正しいものを選べ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-sec",
+   "role": "question",
+   "kind": "section",
+   "alt": "A〜E層に花こう岩 Y が貫入し、そのまわりに接触変成した部分がある。侵食された上を F〜H層が不整合でおおう地質断面図",
+   "format": "svg",
+   "src": "q-sec.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ホルンフェルス",
+    "grading": "語{ホルンフェルス}"
+   },
+   {
+    "id": "2",
+    "tex": "結晶質石灰岩",
+    "grading": "語{結晶質石灰岩|大理石|マーブル}"
+   },
+   {
+    "id": "3",
+    "tex": "A〜E層より新しく、F〜H層より古い",
+    "grading": "選ぶ{A〜E層より新しく、F〜H層より古い|A〜E層より古い|F〜H層より新しい}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1)(2) 花こう岩のマグマの熱で、まわりの地層が接触変成を受けた。泥岩・砂岩・チャートはホルンフェルスに、石灰岩は結晶質石灰岩（大理石）になる。(3) Y は A〜E層に貫入して変成させているので A〜E層より新しく、侵食された Y の上を F〜H層が不整合でおおっているので、F〜H層より古い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "metamorphism",
+  "stratigraphy"
+ ],
+ "laws": [
+  "cross-cutting"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "接触変成",
+  "地質断面図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "strata",
+  "key": "pluton"
+ }
+}

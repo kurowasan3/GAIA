@@ -1,0 +1,69 @@
+{
+ "id": "AST-STR-014",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "用語の関係",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "term"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "「年周視差」と「地球の公転（地動説）」の関係として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "証拠",
+    "grading": "選ぶ{原因 → 結果|対比（ちがいを比べる）|証拠|〜から〜ができる|全体と部分・種類と例|測る・求める（手段）}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地球が太陽のまわりを公転しているので、近い恒星の見える方向が1年周期で変わる（年周視差）。年周視差の発見（ベッセル、1838年）は地動説の証拠になった。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stellar-properties"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "用語の関係",
+  "年周視差",
+  "地動説"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "annual-parallax"
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "AST-GAL-012",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "用語の関係",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "term"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "「ハッブル・ルメートルの法則」と「宇宙の膨張」の関係として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "証拠",
+    "grading": "選ぶ{原因 → 結果|対比（ちがいを比べる）|証拠|〜から〜ができる|全体と部分・種類と例|測る・求める（手段）}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "遠くの銀河ほど速く遠ざかっていること（ハッブル・ルメートルの法則）は、宇宙全体が膨張している証拠である。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cosmology"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "用語の関係",
+  "宇宙の膨張"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "hubble-law"
+ }
+}

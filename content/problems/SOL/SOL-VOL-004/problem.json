@@ -1,0 +1,63 @@
+{
+ "id": "SOL-VOL-004",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "火山の形とマグマの粘性",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の火山の形を、それをつくるマグマの粘性が小さいものから順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "盾状火山 → 成層火山 → 溶岩ドーム",
+    "grading": "並べる{溶岩ドーム|盾状火山|成層火山}=2>3>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "粘性が小さいと溶岩が流れて平たい盾状火山、中間的なマグマは溶岩と火山砕屑物が積み重なって成層火山、粘性が大きいと流れずに盛り上がって溶岩ドームになる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "volcano-forms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "火山の形"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "GEO-JPN-003",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-06",
+ "topic": "中央構造線",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "西南日本を、日本海側の内帯と太平洋側の外帯に分ける大断層を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "中央構造線",
+    "grading": "語{中央構造線}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "中央構造線は関東から九州まで約 1000 km 続く。内帯側に領家変成帯、外帯側に三波川変成帯がある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-geology"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "中央構造線"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "median-tectonic-line"
+ }
+}

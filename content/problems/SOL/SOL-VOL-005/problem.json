@@ -1,0 +1,67 @@
+{
+ "id": "SOL-VOL-005",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "火山前線",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "日本列島の火山は、海溝からある距離をおいた線より大陸側にだけ分布している。この線を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "火山前線（火山フロント）",
+    "grading": "語{火山前線|火山フロント}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "沈み込んだプレートが深さ約 100 km に達した所の真上付近から火山が現れる。火山前線は海溝とほぼ平行。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "magma-generation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "火山前線"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "volcanic-front"
+ }
+}

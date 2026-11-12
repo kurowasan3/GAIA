@@ -1,0 +1,68 @@
+{
+ "id": "GEO-MET-001",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-03",
+ "topic": "ホルンフェルス",
+ "course": "地学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "泥岩がマグマの熱で接触変成作用を受けてできる、かたく緻密な岩石を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ホルンフェルス",
+    "grading": "語{ホルンフェルス}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "接触変成作用では、泥岩・砂岩がホルンフェルスに、石灰岩が結晶質石灰岩（大理石）になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "metamorphism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "接触変成",
+  "ホルンフェルス"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "rock:hornfels"
+ }
+}

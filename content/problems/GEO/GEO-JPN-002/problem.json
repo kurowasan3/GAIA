@@ -1,0 +1,68 @@
+{
+ "id": "GEO-JPN-002",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-06",
+ "topic": "日本海の形成",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "日本海ができて、日本列島が大陸から離れたのはおよそいつか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 2000 万〜1500 万年前",
+    "grading": "選ぶ{約 2000 万〜1500 万年前|約 2 億年前|約 1 万年前|約 46 億年前}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "新第三紀の中新世に日本海が開き、大陸の縁にあった日本列島が離れて現在の位置に移動した。このとき西南日本は時計回り、東北日本は反時計回りに回転した（古地磁気からわかる）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-geology"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "日本海",
+  "日本列島"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "japan-sea"
+ }
+}

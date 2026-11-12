@@ -1,0 +1,70 @@
+{
+ "id": "SOL-EQK-003",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "大森公式",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある観測点で、初期微動継続時間が 10 秒だった。大森公式の比例定数を $k=8.0$ km/s として、震源距離を求めよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "80 km",
+    "grading": "約{80|2} [km]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "大森公式 $D=kT=8.0\\times10=80$ km。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hypocenter-location"
+ ],
+ "laws": [
+  "omori"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "大森公式",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "seismic"
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "id": "ATM-CLD-009",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "上昇気流のでき方",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "空気が上昇して雲ができる場合として適当なものをすべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "前線で暖かい空気が冷たい空気の上にはい上がる・低気圧の中心付近・風が山の斜面をのぼる・地表が強く熱せられる",
+    "grading": "すべて選ぶ{前線で暖かい空気が冷たい空気の上にはい上がる|低気圧の中心付近|風が山の斜面をのぼる|地表が強く熱せられる|高気圧の中心付近}=1,2,3,4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "雲は空気が上昇して断熱膨張で冷えるとできる。前線・低気圧（収束）・地形・対流が代表的。高気圧の中心付近は下降気流なので雲ができにくい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "adiabatic",
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "雲",
+  "上昇気流"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

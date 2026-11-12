@@ -1,0 +1,69 @@
+{
+ "id": "AST-PLN-008",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "真夜中の金星",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金星について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "真夜中に南の空に見えることはない",
+    "grading": "選ぶ{真夜中に南の空に見えることはない|衝のころ真夜中に南中する|一晩じゅう見えることがある|いつも満月のような丸い形に見える}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "内惑星の金星は太陽から最大でも約 $46^\\circ$ しか離れて見えないので、夕方の西の空か明け方の東の空にしか見えない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "planet-motion"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-MIDNIGHT-VENUS"
+ ],
+ "tags": [
+  "金星"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "planets"
+ }
+}

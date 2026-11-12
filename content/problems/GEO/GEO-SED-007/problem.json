@@ -1,0 +1,68 @@
+{
+ "id": "GEO-SED-007",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "化学的風化",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "石灰岩地域で鍾乳洞ができるしくみとして最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "二酸化炭素をふくむ雨水や地下水が、炭酸カルシウムをとかす",
+    "grading": "選ぶ{二酸化炭素をふくむ雨水や地下水が、炭酸カルシウムをとかす|水がこおって割れ目を広げる|昼夜の温度変化で岩石がくずれる|風が砂を吹きつけて削る}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\ce{CaCO3 + CO2 + H2O -> Ca^2+ + 2HCO3-}$ の反応で石灰岩がとける（化学的風化）。カルスト地形・鍾乳洞ができる。化学的風化は高温多湿で進みやすい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "weathering-erosion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学的風化",
+  "鍾乳洞"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "chemical-weathering"
+ }
+}

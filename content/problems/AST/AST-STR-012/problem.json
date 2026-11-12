@@ -1,0 +1,66 @@
+{
+ "id": "AST-STR-012",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "明るさと距離",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "夜空で明るく見える星について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "明るく見えるのは、本当に明るい（光度が大きい）か、近いかのどちらか（または両方）である",
+    "grading": "選ぶ{明るく見えるのは、本当に明るい（光度が大きい）か、近いかのどちらか（または両方）である|明るく見える星ほど必ず地球に近い|明るく見える星ほど必ず光度が大きい|星の明るさは距離と関係がない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "見かけの明るさは光度と距離で決まる。デネブは遠い（約 2600 光年）が、光度が非常に大きいので明るく見える。本当の明るさは絶対等級で比べる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stellar-properties"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-BRIGHT-NEAR"
+ ],
+ "tags": [
+  "見かけの等級",
+  "絶対等級"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

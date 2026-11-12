@@ -1,0 +1,68 @@
+{
+ "id": "AST-SUN-005",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "太陽の自転",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "黒点の位置を毎日観察すると、黒点は東から西へ移動していった。このことからわかることとして最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "太陽が自転している（赤道付近で約 25 日周期）",
+    "grading": "選ぶ{太陽が自転している（赤道付近で約 25 日周期）|地球が太陽のまわりを公転している|黒点が太陽の表面を泳いでいる|太陽が膨張している}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "黒点の移動から太陽の自転がわかる。太陽は気体なので、赤道付近（約 25 日）より高緯度（約 30 日）の方が自転周期が長い（差動回転）。周辺部の黒点がだ円にゆがんで見えることから、太陽が球形であることもわかる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "太陽の自転",
+  "黒点"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "solar-rotation"
+ }
+}

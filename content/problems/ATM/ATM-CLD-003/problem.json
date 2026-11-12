@@ -1,0 +1,66 @@
+{
+ "id": "ATM-CLD-003",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "相対湿度",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気温 25 ℃ の空気 $1\\ \\mathrm{m^3}$ が水蒸気を 11.5 g ふくんでいる。25 ℃ の飽和水蒸気量を $23.0\\ \\mathrm{g/m^3}$ として、相対湿度を求めよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "50 %",
+    "grading": "約{50|2} [%]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$\\dfrac{11.5}{23.0}\\times100=50$ %。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "humidity"
+ ],
+ "laws": [
+  "relative-humidity"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "湿度",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

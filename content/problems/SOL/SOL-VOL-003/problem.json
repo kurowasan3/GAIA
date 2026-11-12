@@ -1,0 +1,67 @@
+{
+ "id": "SOL-VOL-003",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "溶岩ドーム",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "粘性の大きいマグマが地表に盛り上がってできた溶岩ドームの例として適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "昭和新山",
+    "grading": "選ぶ{昭和新山|マウナロア|キラウエア|三原山}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "昭和新山（北海道）や雲仙普賢岳の平成新山は、粘性の大きいデイサイト質のマグマが盛り上がった溶岩ドーム。溶岩ドームの崩壊で火砕流が起こることがある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "volcano-forms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "溶岩ドーム"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "lava-dome"
+ }
+}

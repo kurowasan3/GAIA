@@ -1,0 +1,83 @@
+{
+ "id": "SOL-EQK-005",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "走時曲線を読む",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure",
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は、ある地震の P波・S波が届くまでの時間と震源距離の関係（走時曲線）である。震源距離 150 km の観測点での初期微動継続時間を、図から読み取って求めよ（有効数字2桁）。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-tt",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-tt",
+   "role": "question",
+   "kind": "graph",
+   "alt": "走時曲線。横軸 震源距離 0〜300 km、縦軸 時間 0〜90 秒。P波は原点から 300 km で 50 秒、S波は 300 km で約 86 秒に達する直線",
+   "format": "svg",
+   "src": "q-tt.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 18 秒",
+    "grading": "約{18|2} [s]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "震源距離 150 km では、P波が約 25 秒、S波が約 43 秒で届く。差は約 18 秒（$150/3.5-150/6.0\\fallingdotseq17.9$）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hypocenter-location"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "走時曲線",
+  "グラフの読み取り"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "seismic"
+ }
+}

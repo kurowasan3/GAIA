@@ -1,0 +1,70 @@
+{
+ "id": "GEO-HIS-004",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "縞状鉄鉱層",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "縞状鉄鉱層ができたしくみとして最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "光合成生物が出した酸素で、海水中の鉄イオンが酸化されて沈殿した",
+    "grading": "選ぶ{光合成生物が出した酸素で、海水中の鉄イオンが酸化されて沈殿した|いん石が大量に落ちてきた|火山から鉄の溶岩が流れ出た|大陸の鉄が風で運ばれてたまった}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "海水に溶けていた鉄イオン（$\\ce{Fe^2+}$）が、シアノバクテリアの光合成でできた酸素と結びついて酸化鉄になり、沈殿した。今日の鉄鉱石の多くはこの地層からとれる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "early-earth"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-OXYGEN-EARLY"
+ ],
+ "tags": [
+  "縞状鉄鉱層",
+  "酸素"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "banded-iron"
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "id": "SOL-INT-012",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "地球の平均密度",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の半径を $6.4\\times10^{6}$ m、質量を $6.0\\times10^{24}$ kg とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地球の平均密度を $\\mathrm{g/cm^3}$ の単位で求めよ（有効数字2桁）。"
+     },
+     {
+      "id": "2",
+      "tex": "地表の岩石の密度は約 $2.7\\ \\mathrm{g/cm^3}$ である。ここから推定できることを選べ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$5.5\\ \\mathrm{g/cm^3}$",
+    "grading": "約{5.5|2} [g/cm^3]"
+   },
+   {
+    "id": "2",
+    "tex": "地球の内部（中心部）に、地表の岩石より密度の大きい物質がある",
+    "grading": "選ぶ{地球の内部（中心部）に、地表の岩石より密度の大きい物質がある|地球の内部は空洞が多い|地球全体が同じ岩石でできている}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 体積 $V=\\dfrac43\\pi R^3=\\dfrac43\\times3.14\\times(6.4\\times10^{6})^3\\fallingdotseq1.10\\times10^{21}\\ \\mathrm{m^3}$。密度 $=\\dfrac{6.0\\times10^{24}}{1.10\\times10^{21}}\\fallingdotseq5.5\\times10^{3}\\ \\mathrm{kg/m^3}=5.5\\ \\mathrm{g/cm^3}$。(2) 地表の岩石の密度（約 $2.7\\ \\mathrm{g/cm^3}$）よりずっと大きいので、内部に密度の大きい物質（鉄の核）があると考えられる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-interior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "密度",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

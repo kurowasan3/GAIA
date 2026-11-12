@@ -1,0 +1,66 @@
+{
+ "id": "AST-STR-003",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "等級差と明るさ",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "3 等級違う2つの星の明るさの比は約何倍か。1 等級の差を $100^{1/5}\\fallingdotseq2.51$ 倍として求めよ（有効数字2桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 16 倍",
+    "grading": "約{16|2} [倍]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$2.51^3\\fallingdotseq15.8\\fallingdotseq16$ 倍。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stellar-properties"
+ ],
+ "laws": [
+  "magnitude-def"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "等級",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

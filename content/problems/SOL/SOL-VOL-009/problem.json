@@ -1,0 +1,82 @@
+{
+ "id": "SOL-VOL-009",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "カルデラ",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の地形図のように、円形の急ながけで囲まれた大きなくぼ地の中に湖がある。このくぼ地を何というか。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-map",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-map",
+   "role": "question",
+   "kind": "map",
+   "alt": "外輪山に囲まれた円形のくぼ地と湖、中に小さな火山がある地形図",
+   "format": "svg",
+   "src": "q-map.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "カルデラ",
+    "grading": "語{カルデラ}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "大規模な噴火で地下のマグマが大量に出たあと、陥没してできた直径数 km 以上のくぼ地をカルデラという（阿蘇・洞爺湖・十和田湖など）。中に中央火口丘ができることもある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "volcano-forms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "カルデラ",
+  "地形図"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "topo:caldera"
+ }
+}

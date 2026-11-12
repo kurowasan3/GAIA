@@ -1,0 +1,65 @@
+{
+ "id": "ATM-ENV-004",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "二酸化炭素の濃度",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2020年代の大気中の二酸化炭素濃度として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 420 ppm",
+    "grading": "選ぶ{約 420 ppm|約 42 ppm|約 4200 ppm|約 280 ppm}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "産業革命前は約 280 ppm だったが、化石燃料の燃焼などで増え続け、2020年代には 420 ppm 前後になっている（毎年約 2〜3 ppm 増加）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "environment",
+  "radiation-balance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "二酸化炭素",
+  "温暖化"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

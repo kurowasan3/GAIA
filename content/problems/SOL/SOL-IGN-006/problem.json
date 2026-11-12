@@ -1,0 +1,82 @@
+{
+ "id": "SOL-IGN-006",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "岩石の組織を見分ける",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はある火成岩の表面をルーペで見たようすである。この岩石の名称として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-rock",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-rock",
+   "role": "question",
+   "kind": "specimen",
+   "alt": "黒っぽい岩石。白い短冊形の斜長石と黒緑色の輝石、黄緑色のかんらん石の大きな結晶がつまっている",
+   "format": "svg",
+   "src": "q-rock.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "はんれい岩",
+    "grading": "選ぶ{はんれい岩|閃緑岩|花こう岩|玄武岩}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "大きな結晶がつまった等粒状組織なので深成岩。黒っぽく（有色鉱物が多い）、輝石・かんらん石をふくむのではんれい岩（玄武岩と同じ化学組成）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "igneous-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "岩石の識別",
+  "火成岩"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "rock:gabbro"
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "GEO-FOS-006",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-04",
+ "topic": "フズリナ",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の化石は、米粒くらいの大きさで、紡錘形をしている。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-fos",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この化石の名称を選べ。"
+     },
+     {
+      "id": "2",
+      "tex": "この化石が示す時代を選べ。"
+     },
+     {
+      "id": "3",
+      "tex": "この化石が多くふくまれる岩石を選べ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-fos",
+   "role": "question",
+   "kind": "specimen",
+   "alt": "両端がとがった紡錘形で、内部にうずまき状の層が見える化石",
+   "format": "svg",
+   "src": "q-fos.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "フズリナ（紡錘虫）",
+    "grading": "選ぶ{フズリナ（紡錘虫）|カヘイ石|三葉虫|アンモナイト}=1"
+   },
+   {
+    "id": "2",
+    "tex": "古生代（石炭紀〜ペルム紀）",
+    "grading": "選ぶ{古生代（石炭紀〜ペルム紀）|中生代（白亜紀）|新生代（古第三紀）}=1"
+   },
+   {
+    "id": "3",
+    "tex": "石灰岩",
+    "grading": "選ぶ{石灰岩|チャート|凝灰岩|花こう岩}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "フズリナは大型の有孔虫で、殻は炭酸カルシウム。古生代後期（石炭紀〜ペルム紀）の示準化石で、石灰岩の中に多く見つかる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "fossils"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化石の識別",
+  "フズリナ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "fossil:fusulina"
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "id": "ATM-CLD-012",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "フェーン現象の条件",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のうち、風下で気温が上がる（フェーン現象が起こる）のはどの場合か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "風上側の斜面で雲ができて雨が降った場合",
+    "grading": "選ぶ{風上側の斜面で雲ができて雨が降った場合|風上側で雲ができなかった場合|風下側の斜面で雲ができた場合|風が山を越えればいつでも}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "風上で雲ができなければ、上りも下りも乾燥断熱減率なので、ふもとの気温は変わらない。雲ができて雨を降らせた（水分を失った）ときに、潜熱の分だけ風下が高温・乾燥になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "foehn"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-FOEHN-SAME"
+ ],
+ "tags": [
+  "フェーン現象"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "adiabatic"
+ }
+}

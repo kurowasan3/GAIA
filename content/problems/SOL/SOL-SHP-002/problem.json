@@ -1,0 +1,85 @@
+{
+ "id": "SOL-SHP-002",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "偏平率",
+ "course": "地学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球楕円体のつぶれ具合を表す「（赤道半径 − 極半径）÷ 赤道半径」を何というか。また、その値はおよそいくらか。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "名称を答えよ。"
+     },
+     {
+      "id": "2",
+      "tex": "値として最も近いものを選べ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "偏平率",
+    "grading": "語{偏平率|扁平率}"
+   },
+   {
+    "id": "2",
+    "tex": "約 1/300（1/298）",
+    "grading": "選ぶ{1/3|1/30|1/300|1/3000}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "偏平率 $f=\\dfrac{a-b}{a}\\fallingdotseq\\dfrac{1}{298}$。地球はほとんど球だが、わずかに赤道方向にふくらんでいる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-shape"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "偏平率"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "flattening"
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "id": "AST-STR-002",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "恒星の色",
+ "course": "地学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "恒星の色が青白いものから赤いものまであるのは、主に何が違うからか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "表面温度",
+    "grading": "選ぶ{表面温度|地球からの距離|大きさ|年齢}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "表面温度が高い星ほど短い波長の光を強く出すので青白く、低い星ほど赤い（ウィーンの変位則）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stellar-properties"
+ ],
+ "laws": [
+  "wien"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "恒星の色"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "surface-temperature"
+ }
+}

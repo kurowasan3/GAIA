@@ -1,0 +1,74 @@
+{
+ "id": "SOL-EQK-004",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "比例定数 k",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "P波の速さを 6.0 km/s、S波の速さを 3.5 km/s とする。初期微動継続時間が 12 秒の観測点の震源距離を求めよ（有効数字2桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$1.0\\times10^{2}$ km",
+    "grading": "約{1.0e2|2} [km]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "震源距離 $D$ の点では $T=\\dfrac{D}{3.5}-\\dfrac{D}{6.0}$。$D=\\dfrac{6.0\\times3.5}{6.0-3.5}T=8.4\\times12\\fallingdotseq1.0\\times10^{2}$ km。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hypocenter-location",
+  "seismic-waves"
+ ],
+ "laws": [
+  "omori"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "大森公式",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "$T=t_S-t_P$ を D で表す"
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "seismic"
+ }
+}

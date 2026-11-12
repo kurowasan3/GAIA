@@ -1,0 +1,67 @@
+{
+ "id": "SOL-INT-005",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "シャドーゾーン",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある地震で、震央距離 $103^\\circ$ から $143^\\circ$ の範囲では P波が直接届かなかった。この理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "P波が外核の境界で大きく屈折するから",
+    "grading": "選ぶ{P波が外核の境界で大きく屈折するから|P波は液体の中を伝わらないから|内核で P波が反射されるから|マントルが液体だから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "P波はマントルと外核の境界で速さが急に小さくなり、大きく屈折する。そのため $103^\\circ$〜$143^\\circ$ には届かない（シャドーゾーン）。S波は外核を通れないので $103^\\circ$ より遠くには直接届かない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "seismic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "シャドーゾーン"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "shadow-zone"
+ }
+}

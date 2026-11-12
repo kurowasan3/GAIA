@@ -1,0 +1,69 @@
+{
+ "id": "SOL-IGN-008",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "色指数",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある火成岩は、体積で斜長石 55%、輝石 30%、かんらん石 15% をふくむ。この岩石の色指数を求めよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "45",
+    "grading": "45"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "色指数は有色鉱物の体積の割合。輝石とかんらん石が有色鉱物なので $30+15=45$。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "igneous-rocks",
+  "rock-forming-minerals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "色指数",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "color-index"
+ }
+}

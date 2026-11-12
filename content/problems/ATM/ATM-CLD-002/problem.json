@@ -1,0 +1,69 @@
+{
+ "id": "ATM-CLD-002",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "乾燥断熱減率",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水蒸気が飽和していない空気塊が上昇するとき、温度はおよそどのような割合で下がるか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "100 m につき約 1 ℃",
+    "grading": "選ぶ{100 m につき約 1 ℃|100 m につき約 0.5 ℃|100 m につき約 0.1 ℃|100 m につき約 6 ℃}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "上昇した空気は膨張して外に仕事をし、温度が下がる（断熱膨張）。飽和していなければ約 1 ℃/100 m（乾燥断熱減率）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "adiabatic"
+ ],
+ "laws": [
+  "dry-adiabatic"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "断熱変化"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "adiabatic"
+ }
+}

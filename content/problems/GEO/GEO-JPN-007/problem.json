@@ -1,0 +1,68 @@
+{
+ "id": "GEO-JPN-007",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-06",
+ "topic": "島弧",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "日本列島で地震や火山活動が多い理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "海洋プレートが沈み込む境界の近くにあるから",
+    "grading": "選ぶ{海洋プレートが沈み込む境界の近くにあるから|ホットスポットの上にあるから|プレートが生まれる海嶺の上にあるから|大陸どうしが衝突しているから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "日本列島は沈み込み帯にできた島弧で、プレートの沈み込みにともなって地震が起こり、マグマができて火山ができる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-geology",
+  "plate-boundaries"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "島弧"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "island-arc"
+ }
+}

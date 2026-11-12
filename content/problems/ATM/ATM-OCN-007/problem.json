@@ -1,0 +1,64 @@
+{
+ "id": "ATM-OCN-007",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "西岸強化",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "黒潮やメキシコ湾流のように、大洋の西側を流れる海流が、東側を流れる海流より速く幅がせまい理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "転向力の大きさが緯度によって違うことの影響で、環流の中心が西にかたよるから",
+    "grading": "選ぶ{転向力の大きさが緯度によって違うことの影響で、環流の中心が西にかたよるから|大洋の西側は水深が深いから|西側の方が塩分が高いから|西側の方が貿易風が強いから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "転向力が高緯度ほど大きいこと（地球が球であること）の影響で、環流の西側に流れが集中する（西岸強化）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "西岸強化",
+  "黒潮"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "id": "GEO-SED-004",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "地形図を読む",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は、ある地域の地形を等高線で表したものである（上が北）。この地形として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-map",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-map",
+   "role": "question",
+   "kind": "map",
+   "alt": "北側の山地から平地に出たところを中心に、等高線が同心円状の弧になって南に広がる地形図",
+   "format": "svg",
+   "src": "q-map.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "扇状地",
+    "grading": "選ぶ{扇状地|三角州|V字谷|カルデラ}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "等高線が谷の出口（扇頂）を中心とする同心円状の弧になっている。山地から平地に出たところで川の流れが急に弱まり、礫や砂がたまった扇状地。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "landforms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地形図",
+  "扇状地"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "topo:fan"
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "ATM-OCN-005",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "風成循環",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "北太平洋の中緯度〜低緯度の表層の海流（亜熱帯環流）の向きとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "時計回り",
+    "grading": "選ぶ{時計回り|反時計回り|東西に往復する|向きは季節によって逆になる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "低緯度の貿易風（東風）と中緯度の偏西風（西風）によって、北太平洋では時計回りの環流ができる（黒潮・北太平洋海流・カリフォルニア海流・北赤道海流）。南半球では反時計回り。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "風成循環"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "wind-driven"
+ }
+}

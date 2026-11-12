@@ -1,0 +1,45 @@
+{
+ "id": "col-strata-start",
+ "schema": "gaia.collection/1",
+ "title": "地層の読み方：断面図から地史を組み立てる",
+ "description": "地層累重の法則と切断の法則で、断層・不整合・岩脈・貫入の新旧を判断する。",
+ "order": 1,
+ "items": [
+  {
+   "id": "GEO-STR-001"
+  },
+  {
+   "id": "GEO-STR-002"
+  },
+  {
+   "id": "GEO-STR-012"
+  },
+  {
+   "id": "GEO-STR-003"
+  },
+  {
+   "id": "GEO-STR-004"
+  },
+  {
+   "id": "GEO-STR-005"
+  },
+  {
+   "id": "GEO-STR-006"
+  },
+  {
+   "id": "GEO-STR-007"
+  },
+  {
+   "id": "GEO-STR-008"
+  },
+  {
+   "id": "GEO-STR-011"
+  },
+  {
+   "id": "GEO-STR-009"
+  },
+  {
+   "id": "GEO-STR-010"
+  }
+ ]
+}

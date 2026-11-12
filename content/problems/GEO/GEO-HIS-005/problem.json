@@ -1,0 +1,69 @@
+{
+ "id": "GEO-HIS-005",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "オゾン層と陸上進出",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "term"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "「オゾン層の形成」と「生物の陸上進出」の関係として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "オゾン層ができて有害な紫外線が弱まったことが、陸上進出を可能にした",
+    "grading": "選ぶ{オゾン層ができて有害な紫外線が弱まったことが、陸上進出を可能にした|生物が陸上に進出したことで、オゾン層ができた|2つは関係がない|オゾン層は陸上の植物が直接つくった}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "大気中の酸素が増えると、成層圏にオゾン層ができた。オゾン層が生物に有害な紫外線を吸収するので、生物が陸上で生活できるようになった。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "life-history",
+  "atmosphere-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "用語の関係",
+  "オゾン層"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "ozone-layer"
+ }
+}

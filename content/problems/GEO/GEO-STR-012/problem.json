@@ -1,0 +1,70 @@
+{
+ "id": "GEO-STR-012",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "級化層理",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある地層の中で、粒の大きさが下から上に向かってしだいに小さくなっていた（級化層理）。この地層について言えることを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "粒の細かい側が上（新しい側）である",
+    "grading": "選ぶ{粒の細かい側が上（新しい側）である|粒の粗い側が上（新しい側）である|地層は必ず逆転している|上下は判定できない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "混濁流などで運ばれた粒は、大きく重いものから先に沈み、細かいものはあとから沈む。そのため1枚の層の中で上ほど細かくなる。地層が逆転していないかを判定できる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sedimentary-structures"
+ ],
+ "laws": [
+  "superposition"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "級化層理",
+  "上下判定"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "graded-bedding"
+ }
+}

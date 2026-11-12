@@ -1,0 +1,45 @@
+{
+ "id": "col-calc",
+ "schema": "gaia.collection/1",
+ "title": "地学の計算：まずこの12問",
+ "description": "大森公式・断熱変化・南中高度・会合周期・放射年代・光度。地学の計算の型をひと通り。",
+ "order": 3,
+ "items": [
+  {
+   "id": "SOL-EQK-003"
+  },
+  {
+   "id": "SOL-EQK-004"
+  },
+  {
+   "id": "SOL-EQK-008"
+  },
+  {
+   "id": "ATM-CLD-005"
+  },
+  {
+   "id": "ATM-CLD-006"
+  },
+  {
+   "id": "AST-SKY-003"
+  },
+  {
+   "id": "AST-SKY-006"
+  },
+  {
+   "id": "AST-PLN-004"
+  },
+  {
+   "id": "AST-PLN-006"
+  },
+  {
+   "id": "GEO-FOS-009"
+  },
+  {
+   "id": "AST-STR-004"
+  },
+  {
+   "id": "AST-STR-007"
+  }
+ ]
+}

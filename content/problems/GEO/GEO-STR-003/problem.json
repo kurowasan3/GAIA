@@ -1,0 +1,91 @@
+{
+ "id": "GEO-STR-003",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "断層と不整合",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure",
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図はある地域の地質断面図である。A〜H は地層、f は断層を表す。地層の逆転はない。この地域で起こったできごとを古い順に並べよ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-sec",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-sec",
+   "role": "question",
+   "kind": "section",
+   "alt": "A〜E層が断層 f でずれ、その上を不整合面をはさんで水平な F〜H層がおおっている地質断面図",
+   "format": "svg",
+   "src": "q-sec.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "A〜E層の堆積 → 断層 f → 不整合の形成 → F〜H層の堆積",
+    "grading": "並べる{F〜H層の堆積|A〜E層の堆積|断層 f の活動|隆起・侵食（不整合面の形成）・沈降}=2>3>4>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "A〜E層は下から順に堆積した（地層累重の法則）。断層 f は A〜E層を切っているが F〜H層は切っていないので、A〜E層の堆積後、不整合の形成より前に活動した。その後、隆起して侵食され（不整合面）、沈降して F〜H層が堆積した。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stratigraphy",
+  "unconformity"
+ ],
+ "laws": [
+  "superposition",
+  "cross-cutting"
+ ],
+ "misconceptions": [
+  "MC-LOWER-YOUNGER"
+ ],
+ "tags": [
+  "地質断面図",
+  "地史",
+  "断層",
+  "不整合"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "strata",
+  "key": "fault-unconf"
+ }
+}

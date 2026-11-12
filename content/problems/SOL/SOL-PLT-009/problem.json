@@ -1,0 +1,68 @@
+{
+ "id": "SOL-PLT-009",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "ハワイ・天皇海山列",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ハワイ諸島から天皇海山列へとつづく火山島・海山の列は、途中で向きが「く」の字に変わっている。このことからわかることとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 4700 万年前に、太平洋プレートの動く向きが変わった",
+    "grading": "選ぶ{約 4700 万年前に、太平洋プレートの動く向きが変わった|ホットスポットが西に動いた|海山列の北の端が最も新しい|ハワイ島の下にプレートが沈み込んでいる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ホットスポットはほとんど動かず、その上を通過するプレートに火山島がつくられる。列の向きはプレートの動く向き（の記録）なので、列が曲がった所（年代 約 4700 万年）でプレートの向きが北北西から西北西に変わったとわかる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hotspot"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ホットスポット",
+  "ハワイ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "hotspot"
+ }
+}

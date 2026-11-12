@@ -1,0 +1,68 @@
+{
+ "id": "AST-STR-010",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "重い星の最期",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽の約 8 倍以上の質量をもつ恒星の最期として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "超新星爆発を起こし、中性子星やブラックホールが残る",
+    "grading": "選ぶ{超新星爆発を起こし、中性子星やブラックホールが残る|静かに白色矮星になる|主系列星のまま一生を終える|惑星に変わる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "重い恒星は中心で鉄までの元素をつくったあと、重力でつぶれて超新星爆発を起こす。あとに中性子星、さらに重い星ではブラックホールが残る。鉄より重い元素の多くは超新星爆発などでつくられた。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stellar-evolution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "超新星",
+  "恒星の進化"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "supernova"
+ }
+}

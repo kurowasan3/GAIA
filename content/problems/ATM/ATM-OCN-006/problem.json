@@ -1,0 +1,67 @@
+{
+ "id": "ATM-OCN-006",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "エルニーニョ現象",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "エルニーニョ現象について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "貿易風が弱まり、太平洋赤道域の東部（ペルー沖）の海面水温が平年より高くなる",
+    "grading": "選ぶ{貿易風が弱まり、太平洋赤道域の東部（ペルー沖）の海面水温が平年より高くなる|貿易風が強まり、東部の海面水温が低くなる|黒潮が南に流れを変える|北大西洋の海水が沈まなくなる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ふだんは貿易風で暖かい海水が西に吹き寄せられ、東部では冷たい水が湧き上がる。貿易風が弱まると暖水が東に広がり、東部の水温が上がる。世界各地の天候に影響する。逆に東部が低温になるのがラニーニャ現象。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エルニーニョ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "el-nino"
+ }
+}

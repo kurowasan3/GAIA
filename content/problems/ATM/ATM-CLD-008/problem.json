@@ -1,0 +1,67 @@
+{
+ "id": "ATM-CLD-008",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "大気の安定性",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "周囲の大気の気温減率が 0.7 ℃/100 m であった。この大気の安定性について正しいものを選べ（乾燥断熱減率 1 ℃/100 m、湿潤断熱減率 0.5 ℃/100 m）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "条件付き不安定（飽和していなければ安定、飽和していれば不安定）",
+    "grading": "選ぶ{条件付き不安定（飽和していなければ安定、飽和していれば不安定）|絶対安定|絶対不安定|中立}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "気温減率が湿潤断熱減率より大きく乾燥断熱減率より小さいとき条件付き不安定。飽和した空気塊は上昇してもまわりより暖かいので、さらに上昇する（積乱雲が発達しやすい）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stability"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "大気の安定・不安定"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "atm-stability"
+ }
+}

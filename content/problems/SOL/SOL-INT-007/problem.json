@@ -1,0 +1,71 @@
+{
+ "id": "SOL-INT-007",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "リソスフェア",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "リソスフェアとアセノスフェアの区分の基準として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "かたさ（流れやすさ）",
+    "grading": "選ぶ{かたさ（流れやすさ）|化学組成|密度|鉱物の色}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地殻・マントルは岩石の種類（化学組成）による区分。リソスフェア（かたい）とアセノスフェア（やわらかく流れやすい）は、かたさ（力学的性質）による区分で、リソスフェアは地殻とマントル最上部をふくむ。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-interior",
+  "plate-boundaries"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-PLATE-CRUST"
+ ],
+ "tags": [
+  "リソスフェア",
+  "アセノスフェア"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "lithosphere"
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "id": "GEO-STR-001",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "地層累重の法則",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地層が逆転していなければ、下にある地層ほど古い。この法則を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "地層累重の法則",
+    "grading": "語{地層累重の法則|累重の法則}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ステノ（17世紀）が示した。褶曲で逆転していないかは、級化層理や斜交葉理などの堆積構造で確かめる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stratigraphy"
+ ],
+ "laws": [
+  "superposition"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "地層累重の法則"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "laws",
+  "key": "superposition"
+ }
+}

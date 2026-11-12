@@ -1,0 +1,67 @@
+{
+ "id": "SOL-PLT-001",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "海嶺",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "プレートが生まれて両側に広がっていく、海底の大山脈を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "海嶺",
+    "grading": "語{海嶺|中央海嶺}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "海嶺では、マントル物質が上昇して減圧融解し、玄武岩質マグマが新しい海洋地殻をつくる（発散境界）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plate-boundaries"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "海嶺"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "ridge"
+ }
+}

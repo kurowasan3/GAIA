@@ -1,0 +1,88 @@
+{
+ "id": "AST-STR-004",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "年周視差と距離",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある恒星の年周視差は $0.25$ である。1 パーセク $=3.26$ 光年とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この恒星までの距離を何パーセクか求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "それは何光年か（有効数字2桁）。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "4.0 パーセク",
+    "grading": "約{4.0|2} [パーセク]"
+   },
+   {
+    "id": "2",
+    "tex": "13 光年",
+    "grading": "約{13|2} [光年]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 距離〔パーセク〕＝ $\\dfrac{1}{0.25}=4.0$。(2) $4.0\\times3.26\\fallingdotseq13$ 光年。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stellar-properties"
+ ],
+ "laws": [
+  "parallax"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "年周視差",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "annual-parallax"
+ }
+}

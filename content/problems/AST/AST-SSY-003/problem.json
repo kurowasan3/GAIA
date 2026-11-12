@@ -1,0 +1,67 @@
+{
+ "id": "AST-SSY-003",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "木星型惑星",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "木星型惑星の特徴として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "大きいが平均密度が小さく、多くの衛星と環をもつ",
+    "grading": "選ぶ{大きいが平均密度が小さく、多くの衛星と環をもつ|小さく平均密度が大きい|主に岩石と金属でできている|衛星をもたない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "木星型惑星は水素とヘリウムが主成分で、半径・質量は大きいが平均密度は小さい（土星は 0.7 g/cm³ で水より小さい）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solar-system"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "木星型惑星"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "jovian-planet"
+ }
+}

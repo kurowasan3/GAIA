@@ -1,0 +1,82 @@
+{
+ "id": "AST-STR-005",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "HR図を読む",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の HR図に、いくつかの恒星をかき入れてある。X で示した恒星は何に分類されるか。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-hr",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-hr",
+   "role": "question",
+   "kind": "graph",
+   "alt": "横軸が表面温度（左ほど高温）、縦軸が光度の HR図。X は左下（高温で光度が太陽の 1/20 ほど）にある",
+   "format": "svg",
+   "src": "q-hr.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "白色矮星",
+    "grading": "選ぶ{白色矮星|主系列星|赤色巨星|超巨星}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "左下（高温なのに暗い）にあるので、半径が小さい白色矮星（シリウスB）。太陽程度の質量の恒星の最期の姿。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hr-diagram"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "HR図",
+  "白色矮星"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "hr"
+ }
+}

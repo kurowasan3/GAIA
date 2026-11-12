@@ -1,0 +1,63 @@
+{
+ "id": "SOL-MAG-003",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "日本の偏角",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "日本付近の偏角として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "西に 5〜10° 程度",
+    "grading": "選ぶ{西に 5〜10° 程度|東に 5〜10° 程度|ほぼ 0°|西に 30° 程度}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "日本では磁北が真北より西に 5〜10° ほどずれている（西偏）。高緯度の北海道の方が大きい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geomagnetism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "偏角"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

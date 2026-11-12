@@ -1,0 +1,67 @@
+{
+ "id": "SOL-MAG-001",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "偏角",
+ "course": "地学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "方位磁針の N 極がさす向き（磁北）と、真北とのずれの角を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "偏角",
+    "grading": "語{偏角}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "偏角は水平面内の角。水平面と磁針のなす角は伏角という。日本では磁北は真北より西に数度ずれている（西偏）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geomagnetism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "偏角"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "declination"
+ }
+}

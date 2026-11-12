@@ -1,0 +1,67 @@
+{
+ "id": "ATM-CIR-005",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "貿易風",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "亜熱帯高圧帯から赤道に向かって吹く、東よりの風を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "貿易風",
+    "grading": "語{貿易風}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "赤道へ向かう風が転向力で右（北半球）にそれ、北東の風になる。帆船時代に貿易に使われた。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "general-circulation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "貿易風"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "trade-wind"
+ }
+}

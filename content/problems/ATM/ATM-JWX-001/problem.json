@@ -1,0 +1,83 @@
+{
+ "id": "ATM-JWX-001",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "天気図を読む",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は日本付近の天気図（模式図）である。この天気図の気圧配置として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-wx",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-wx",
+   "role": "question",
+   "kind": "map",
+   "alt": "大陸に 1052 hPa の高気圧、日本の東の海上に 968 hPa の低気圧があり、日本付近で等圧線が南北にのびて混み合っている天気図",
+   "format": "svg",
+   "src": "q-wx.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "西高東低（冬型）",
+    "grading": "選ぶ{西高東低（冬型）|南高北低（夏型）|梅雨前線（停滞前線）|台風}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "大陸に高気圧、日本の東に発達した低気圧があり、等圧線が南北に混み合う。冬の西高東低の気圧配置で、北西の季節風が強い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-weather",
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "天気図",
+  "西高東低（冬型）"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "weather:winter"
+ }
+}

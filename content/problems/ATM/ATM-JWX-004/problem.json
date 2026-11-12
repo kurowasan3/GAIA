@@ -1,0 +1,83 @@
+{
+ "id": "ATM-JWX-004",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "天気図を読む",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は日本付近の天気図（模式図）である。この天気図の気圧配置として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-wx",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-wx",
+   "role": "question",
+   "kind": "map",
+   "alt": "九州の南の海上に、中心気圧 950 hPa で、等圧線がほぼ同心円状に密集した低気圧がある天気図",
+   "format": "svg",
+   "src": "q-wx.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "台風",
+    "grading": "選ぶ{西高東低（冬型）|南高北低（夏型）|梅雨前線（停滞前線）|台風}=4"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "等圧線がほぼ同心円状で、間隔がとてもせまく、前線をともなわない。台風（熱帯低気圧が発達したもの）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-weather",
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "天気図",
+  "台風"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "weather:typhoon"
+ }
+}

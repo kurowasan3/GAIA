@@ -1,0 +1,67 @@
+{
+ "id": "AST-SKY-010",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "昼の長さ",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "北緯 $35^\\circ$ の地点で、夏至の日に太陽が地平線の上にある時間（昼の長さ）として最も近いものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 14 時間",
+    "grading": "選ぶ{約 12 時間|約 14 時間|約 16 時間|約 18 時間}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "日の出・日の入りの時角 $H_0$ は $\\cos H_0=-\\tan\\varphi\\tan\\delta=-\\tan35^\\circ\\tan23.4^\\circ\\fallingdotseq-0.30$ より $H_0\\fallingdotseq107^\\circ$。昼の長さは $\\dfrac{2\\times107^\\circ}{15^\\circ/\\text{時}}\\fallingdotseq14.3$ 時間。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "diurnal-annual"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "昼の長さ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "sphere"
+ }
+}

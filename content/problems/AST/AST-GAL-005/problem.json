@@ -1,0 +1,70 @@
+{
+ "id": "AST-GAL-005",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "ハッブル・ルメートルの法則",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ハッブル定数を $70$ km/s/Mpc とする。距離 100 Mpc（メガパーセク）の銀河が遠ざかる速さを求めよ（有効数字2桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "$7.0\\times10^{3}$ km/s",
+    "grading": "約{7.0e3|2} [km/s]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$v=H_0r=70\\times100=7.0\\times10^{3}$ km/s。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "cosmology"
+ ],
+ "laws": [
+  "hubble"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "ハッブル",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "hubble-law"
+ }
+}

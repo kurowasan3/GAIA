@@ -1,0 +1,65 @@
+{
+ "id": "ATM-ENV-007",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "線状降水帯",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "同じ場所で数時間にわたって非常に強い雨が降り続く「線状降水帯」のしくみとして最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "積乱雲が次々に発生して列をつくり、同じ場所を通過し続ける",
+    "grading": "選ぶ{積乱雲が次々に発生して列をつくり、同じ場所を通過し続ける|1つの巨大な乱層雲が何日も動かない|台風の目が停滞する|高気圧の中心で下降気流が強まる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "湿った空気が流れこみ続ける所で、積乱雲が風上側で次々に発生し、風下に流されて線状に並ぶ。1つの積乱雲の寿命は約1時間だが、次々に入れかわるので大雨が続く。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "environment",
+  "stability"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "線状降水帯",
+  "災害"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

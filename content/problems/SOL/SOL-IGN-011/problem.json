@@ -1,0 +1,69 @@
+{
+ "id": "SOL-IGN-011",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "火成岩の色と組織",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "火成岩について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "火山岩か深成岩かは組織で、ケイ長質か苦鉄質かは SiO₂ の量（色）で分ける",
+    "grading": "選ぶ{火山岩か深成岩かは組織で、ケイ長質か苦鉄質かは SiO₂ の量（色）で分ける|黒っぽい岩石はすべて深成岩である|白っぽい岩石はすべて火山岩である|SiO₂ が多いほど有色鉱物が多い}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "冷え方（組織）で火山岩と深成岩、化学組成（SiO₂ の量）で苦鉄質〜ケイ長質に分ける。黒っぽい深成岩（はんれい岩）も、白っぽい火山岩（流紋岩）もある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "igneous-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-VOLCANIC-COLOR"
+ ],
+ "tags": [
+  "火成岩の分類"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "rock"
+ }
+}

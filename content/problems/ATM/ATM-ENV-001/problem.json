@@ -1,0 +1,67 @@
+{
+ "id": "ATM-ENV-001",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "オゾンホール",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "南極上空のオゾンホールの主な原因として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "フロンなどから出る塩素",
+    "grading": "選ぶ{フロンなどから出る塩素|二酸化炭素|硫黄酸化物|火山灰}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "フロンは成層圏で紫外線により分解され、塩素原子がオゾンを連鎖的に分解する。南極の春（9〜10月）に特に大きくなる。フロンの生産はモントリオール議定書で規制された。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "environment"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "オゾンホール"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "ozone-hole"
+ }
+}

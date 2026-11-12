@@ -1,0 +1,68 @@
+{
+ "id": "ATM-STR-006",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "気圧と高さ",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気圧は高さ約 5.5 km ごとにほぼ半分になる。地表の気圧を 1000 hPa とすると、高さ 11 km（対流圏の上端付近）の気圧はおよそ何 hPa か。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 250 hPa",
+    "grading": "約{2.5e2|2} [hPa]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "5.5 km で 500 hPa、11 km でその半分の 250 hPa。大気の質量の約 4 分の 3 は対流圏にある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atm-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気圧",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "atm-pressure"
+ }
+}

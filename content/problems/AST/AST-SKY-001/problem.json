@@ -1,0 +1,67 @@
+{
+ "id": "AST-SKY-001",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "日周運動",
+ "course": "地学",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の自転によって、天体が天球上を 1 日に 1 回、東から西へ回って見える運動を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "日周運動",
+    "grading": "語{日周運動}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "星は天の北極（北極星の近く）を中心に、1時間に約 15° 回って見える。地球の公転による見かけの運動は年周運動。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "diurnal-annual"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "日周運動"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "sphere"
+ }
+}

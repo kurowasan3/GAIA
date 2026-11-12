@@ -1,0 +1,64 @@
+{
+ "id": "ATM-CLD-010",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "冷たい雨",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "日本付近の雨の多くは「冷たい雨」である。そのしくみとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "雲の中で氷晶が水蒸気をとりこんで大きくなり、落ちる途中でとけて雨になる",
+    "grading": "選ぶ{雲の中で氷晶が水蒸気をとりこんで大きくなり、落ちる途中でとけて雨になる|雲粒がそのままの大きさで落ちてくる|水蒸気が地表付近で直接凝結する|雲の中の水滴が蒸発して雨になる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "0 ℃ 以下でも凍らない過冷却の水滴と氷晶が混在する雲では、氷晶の方が水蒸気を集めやすく大きく成長する。これが落ちてとけると雨、とけなければ雪。熱帯では、水滴どうしが衝突・合体して雨になる「暖かい雨」が多い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "adiabatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "雨",
+  "氷晶"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "ATM-STR-002",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "大気の組成",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地表付近の乾燥した大気の成分を、体積の割合が大きい順に並べたものとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "窒素 → 酸素 → アルゴン → 二酸化炭素",
+    "grading": "選ぶ{窒素 → 酸素 → アルゴン → 二酸化炭素|酸素 → 窒素 → 二酸化炭素 → アルゴン|窒素 → 酸素 → 二酸化炭素 → アルゴン|酸素 → 窒素 → アルゴン → 二酸化炭素}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "窒素 約 78%、酸素 約 21%、アルゴン 約 0.9%、二酸化炭素 約 0.04%。水蒸気は場所によって 0〜4% と大きく変わるので、乾燥大気で比べる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "atmosphere-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "大気の組成"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

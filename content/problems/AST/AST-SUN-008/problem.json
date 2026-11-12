@@ -1,0 +1,64 @@
+{
+ "id": "AST-SUN-008",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "黒点の周期",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "黒点の数の変化について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 11 年の周期で増減し、黒点が多い時期は太陽の活動が活発である",
+    "grading": "選ぶ{約 11 年の周期で増減し、黒点が多い時期は太陽の活動が活発である|約 11 日の周期で増減する|黒点が多いほど太陽の活動はおだやかである|黒点の数は変化しない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "黒点数は約 11 年周期で増減する。黒点が多い（極大期）ほどフレアが起こりやすく、太陽の活動が活発。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "黒点",
+  "太陽活動"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

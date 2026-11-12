@@ -1,0 +1,68 @@
+{
+ "id": "ATM-RAD-007",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "緯度による熱の過不足",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "緯度による熱の収支について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "低緯度では受け取る太陽放射が出ていく地球放射より多く、高緯度では少ない。その差を大気と海洋が運んでいる",
+    "grading": "選ぶ{低緯度では受け取る太陽放射が出ていく地球放射より多く、高緯度では少ない。その差を大気と海洋が運んでいる|どの緯度でも、受け取る量と出ていく量がつり合っている|高緯度の方が太陽放射を多く受け取る|熱は高緯度から低緯度へ運ばれている}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "低緯度は熱が余り、高緯度は不足する。それでも低緯度が暑くなりつづけないのは、大気の大循環や海流が熱を高緯度へ運ぶから。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "heat-transport"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱収支",
+  "熱の輸送"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "heat-transport"
+ }
+}

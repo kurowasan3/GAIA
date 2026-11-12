@@ -1,0 +1,69 @@
+{
+ "id": "GEO-STR-002",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "不整合",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "不整合について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "堆積が中断して侵食を受けたあと、その上に新しい地層がたまった重なり方",
+    "grading": "選ぶ{堆積が中断して侵食を受けたあと、その上に新しい地層がたまった重なり方|地層が連続してたまった重なり方|地層がずれた面|地層が波状に曲がったもの}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "不整合は、地層の堆積 → 隆起して陸上で侵食 → 沈降して再び堆積、という過程を示す。不整合面の上には、下の地層の岩石の礫をふくむ基底礫岩が見られることが多い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "unconformity"
+ ],
+ "laws": [],
+ "misconceptions": [
+  "MC-UNCONF-GAP"
+ ],
+ "tags": [
+  "不整合"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "unconformity"
+ }
+}

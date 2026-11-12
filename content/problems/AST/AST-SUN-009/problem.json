@@ -1,0 +1,85 @@
+{
+ "id": "AST-SUN-009",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "太陽のエネルギー",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽の中心部では、4 個の水素原子核が 1 個のヘリウム原子核になり、反応前の質量の約 0.7% がエネルギーに変わる。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水素 1 kg が核融合したときに出るエネルギーを求めよ。光の速さを $3.0\times10^{8}$ m/s とする（有効数字2桁）。"
+     },
+     {
+      "id": "2",
+      "tex": "核融合が進むと、太陽は将来どうなると考えられているか述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$6.3\\times10^{14}$ J",
+    "grading": "約{6.3e14|2} [J]"
+   },
+   {
+    "id": "2",
+    "tex": "（例）中心部の水素がしだいにヘリウムに変わり、やがて中心部の水素を使い果たすと、主系列星の段階を終えて赤色巨星へと進化する。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $E=mc^2=1\\times0.007\\times(3.0\\times10^{8})^2=6.3\\times10^{14}$ J。(2) 太陽は誕生から約 46 億年で、中心部の水素の約半分を使っている。主系列星の寿命は約 100 億年。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "sun",
+  "stellar-evolution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "核融合",
+  "計算",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

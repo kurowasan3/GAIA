@@ -1,0 +1,68 @@
+{
+ "id": "SOL-VOL-010",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "火砕流",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "火砕流について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "高温の火山ガスと火山灰・軽石などが一体となり、時速 100 km をこえる速さで流れ下ることがある",
+    "grading": "選ぶ{高温の火山ガスと火山灰・軽石などが一体となり、時速 100 km をこえる速さで流れ下ることがある|溶岩がゆっくり流れる現象で、歩いて逃げられる|火山灰が雨で流れる冷たい泥流のこと|粘性の小さいマグマの噴火でだけ起こる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "火砕流は数百 ℃ の高温で高速なので、発生してから避難することは難しい。雲仙普賢岳（1991年）では溶岩ドームの崩壊で火砕流が発生した。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "volcano-forms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "火砕流",
+  "災害"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "pyroclastic-flow"
+ }
+}

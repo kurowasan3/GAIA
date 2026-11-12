@@ -1,0 +1,67 @@
+{
+ "id": "SOL-INT-001",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "モホ面",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地殻とマントルの境界で、地震波の速さが急に大きくなる面を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "モホロビチッチ不連続面（モホ面）",
+    "grading": "語{モホロビチッチ不連続面|モホ面|モホロビチッチ面|モホロビチッチ不連続}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "モホロビチッチが1909年、地震波の到着時間の解析から発見した。大陸では深さ 30〜60 km、海洋では約 6 km（海底下）にある。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-interior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "モホ面"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "moho"
+ }
+}

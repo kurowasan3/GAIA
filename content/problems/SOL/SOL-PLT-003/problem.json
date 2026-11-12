@@ -1,0 +1,67 @@
+{
+ "id": "SOL-PLT-003",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "トランスフォーム断層",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "2つのプレートがすれ違う境界を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "トランスフォーム断層",
+    "grading": "選ぶ{海溝|海嶺|トランスフォーム断層|衝突帯}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "トランスフォーム断層は海嶺と海嶺の間をつなぐ横ずれ断層。陸上ではアメリカのサンアンドレアス断層が有名。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plate-boundaries"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "プレート境界"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "transform"
+ }
+}

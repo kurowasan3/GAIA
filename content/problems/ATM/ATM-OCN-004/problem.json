@@ -1,0 +1,67 @@
+{
+ "id": "ATM-OCN-004",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "深層水の沈み込み",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "深層循環（熱塩循環）で、表層の海水が深層に沈み込む主な場所として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "北大西洋のグリーンランド付近と、南極大陸のまわり",
+    "grading": "選ぶ{北大西洋のグリーンランド付近と、南極大陸のまわり|赤道付近の太平洋|日本海溝|インド洋の中央部}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "冷たく、海氷ができるときに塩分が濃くなった重い海水が沈み込む。沈んだ水は約 1000〜2000 年かけて世界の海をめぐる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "深層循環"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "thermohaline"
+ }
+}

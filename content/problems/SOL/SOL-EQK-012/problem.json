@@ -1,0 +1,100 @@
+{
+ "id": "SOL-EQK-012",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "3地点での震源決定",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある地震で、震央の真上にある観測点 B の初期微動継続時間は 3.75 秒、別の観測点 A の初期微動継続時間は 6.25 秒であった。大森公式の比例定数を $k=8.0$ km/s とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "震源の深さを求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "観測点 A の震源距離を求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "観測点 A の震央距離を求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "30 km",
+    "grading": "約{30|2} [km]"
+   },
+   {
+    "id": "2",
+    "tex": "50 km",
+    "grading": "約{50|2} [km]"
+   },
+   {
+    "id": "3",
+    "tex": "40 km",
+    "grading": "約{40|2} [km]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) B は震央にあるので、震源距離＝震源の深さ $=8.0\\times3.75=30$ km。(2) A の震源距離 $=8.0\\times6.25=50$ km。(3) 震央距離 $=\\sqrt{50^2-30^2}=40$ km。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hypocenter-location"
+ ],
+ "laws": [
+  "omori"
+ ],
+ "misconceptions": [
+  "MC-PS-EPI"
+ ],
+ "tags": [
+  "大森公式",
+  "震源の深さ",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "phenomena",
+  "key": "seismic"
+ }
+}

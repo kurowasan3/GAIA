@@ -1,0 +1,63 @@
+{
+ "id": "GEO-FOS-007",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-04",
+ "topic": "地質時代の順",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地質時代を古い順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "先カンブリア時代 → 古生代 → 中生代 → 新生代",
+    "grading": "並べる{古生代|新生代|先カンブリア時代|中生代}=3>1>4>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "先カンブリア時代（約46億〜5.4億年前）、古生代（〜約2.5億年前）、中生代（〜約6600万年前）、新生代（〜現在）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geologic-time"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地質時代"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

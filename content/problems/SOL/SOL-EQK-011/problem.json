@@ -1,0 +1,98 @@
+{
+ "id": "SOL-EQK-011",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "津波の速さ",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "津波の速さは、水深を $h$、重力加速度を $g=9.8\\ \\mathrm{m/s^2}$ として $\\sqrt{gh}$ で表される。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水深 4000 m での速さを求めよ（有効数字2桁）。"
+     },
+     {
+      "id": "2",
+      "tex": "水深 10 m での速さを求めよ（有効数字2桁）。"
+     },
+     {
+      "id": "3",
+      "tex": "津波が海岸に近づくと高くなる理由を述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.0\\times10^{2}$ m/s",
+    "grading": "約{2.0e2|2} [m/s]"
+   },
+   {
+    "id": "2",
+    "tex": "9.9 m/s",
+    "grading": "約{9.9|2} [m/s]"
+   },
+   {
+    "id": "3",
+    "tex": "（例）浅くなると速さが遅くなり、後ろの波が追いついて波が高くなるから。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\sqrt{9.8\\times4000}\\fallingdotseq198$ m/s（時速 700 km 以上）。(2) $\\sqrt{9.8\\times10}\\fallingdotseq9.9$ m/s。(3) 沿岸で速さが遅くなると、後ろから来る海水がつまって波高が高くなる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earthquake-types"
+ ],
+ "laws": [
+  "tsunami-speed"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "津波",
+  "計算",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "tsunami"
+ }
+}

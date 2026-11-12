@@ -1,0 +1,65 @@
+{
+ "id": "SOL-IGN-009",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "鉱物の晶出順",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "玄武岩質マグマが冷えていくとき、有色鉱物は一般に決まった順に晶出する。次の鉱物を、晶出する温度が高いものから順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "かんらん石 → 輝石 → 角閃石 → 黒雲母",
+    "grading": "並べる{輝石|黒雲母|かんらん石|角閃石}=3>1>4>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "有色鉱物は、高温から かんらん石 → 輝石 → 角閃石 → 黒雲母 の順に晶出する（ボーエンの反応系列）。この順に SiO₄ 四面体のつながり方が、独立 → 単鎖 → 複鎖 → 層状 と複雑になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "crystallization",
+  "rock-forming-minerals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "結晶分化",
+  "晶出順"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

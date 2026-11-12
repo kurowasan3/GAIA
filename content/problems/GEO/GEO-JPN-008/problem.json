@@ -1,0 +1,93 @@
+{
+ "id": "GEO-JPN-008",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-06",
+ "topic": "西南日本の地帯構造",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "西南日本の地質について答えよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "中央構造線より太平洋側を何というか。"
+     },
+     {
+      "id": "2",
+      "tex": "中央構造線の太平洋側に接する、結晶片岩が多い変成帯を選べ。"
+     },
+     {
+      "id": "3",
+      "tex": "外帯の付加体が太平洋側ほど新しい理由を述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "外帯",
+    "grading": "選ぶ{外帯|内帯}=1"
+   },
+   {
+    "id": "2",
+    "tex": "三波川変成帯",
+    "grading": "選ぶ{三波川変成帯|領家変成帯}=1"
+   },
+   {
+    "id": "3",
+    "tex": "（例）付加は海溝で起こり、あとから付け加わるものほど海側に加わるから、海側ほど新しい。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 中央構造線より太平洋側を外帯、日本海側を内帯という。(2) 外帯側に低温高圧型の三波川変成帯、内帯側に高温低圧型の領家変成帯。(3) 四万十帯（白亜紀〜古第三紀）が最も太平洋側で新しい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-geology",
+  "metamorphism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地帯構造",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

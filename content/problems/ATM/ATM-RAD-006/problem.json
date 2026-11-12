@@ -1,0 +1,66 @@
+{
+ "id": "ATM-RAD-006",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "放射平衡温度",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽定数を $1.37\\times10^{3}\\ \\mathrm{W/m^2}$、地球のアルベドを 0.30、シュテファン・ボルツマン定数を $\\sigma=5.67\\times10^{-8}\\ \\mathrm{W/(m^2K^4)}$ とする。大気の温室効果がないとしたときの地球の表面温度（放射平衡温度）を求めよ（有効数字3桁）。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 255 K（約 −18 ℃）",
+    "grading": "約{255|3} [K]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "吸収する量 $=\\dfrac{1.37\\times10^{3}\\times(1-0.30)}{4}\\fallingdotseq240\\ \\mathrm{W/m^2}$。これが $\\sigma T^4$ に等しいので $T^4=\\dfrac{240}{5.67\\times10^{-8}}\\fallingdotseq4.23\\times10^{9}$、$T\\fallingdotseq255$ K。実際の平均気温（約 288 K）との差は温室効果による。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "radiation-balance"
+ ],
+ "laws": [
+  "stefan-boltzmann"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "放射平衡",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

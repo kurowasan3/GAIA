@@ -1,0 +1,87 @@
+{
+ "id": "GEO-HIS-011",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "全球凍結",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の歴史の中で、地球全体が氷におおわれた「全球凍結」が起きたと考えられている。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "全球凍結が起きた時期として最も適当なものを選べ。"
+     },
+     {
+      "id": "2",
+      "tex": "全球凍結が終わったしくみとして考えられていることを述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 22 億年前と約 7 億〜6 億年前",
+    "grading": "選ぶ{約 22 億年前と約 7 億〜6 億年前|約 2 億年前と約 6600 万年前|約 2 万年前（最終氷期）だけ|約 46 億年前だけ}=1"
+   },
+   {
+    "id": "2",
+    "tex": "（例）火山活動で放出された二酸化炭素が、海が凍って溶けこめないため大気中にたまり、その温室効果で気温が上がった。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 原生代に少なくとも2回（約 22 億年前、約 7 億〜6 億年前）。(2) 凍結中も火山から二酸化炭素が出つづけ、海や岩石の風化で取り除かれないので大気中にたまり、強い温室効果で氷がとけた。そのあと、多細胞生物（エディアカラ生物群）が現れた。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "early-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "全球凍結",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "snowball-earth"
+ }
+}

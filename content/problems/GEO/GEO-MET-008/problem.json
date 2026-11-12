@@ -1,0 +1,64 @@
+{
+ "id": "GEO-MET-008",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-03",
+ "topic": "同質異像",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "紅柱石・珪線石・藍晶石は、同じ化学組成（$\\ce{Al2SiO5}$）で結晶構造が違う鉱物（同質異像）である。このうち高い圧力でできるものはどれか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "藍晶石",
+    "grading": "選ぶ{藍晶石|紅柱石|珪線石}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "同じ組成でも、できるときの温度・圧力で結晶構造が変わる。藍晶石は高圧、紅柱石は低圧、珪線石は高温でできる。変成岩にふくまれる鉱物から、変成作用の温度・圧力を推定できる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "metamorphism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "同質異像",
+  "変成鉱物"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "id": "ATM-ENV-003",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "酸性雨",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "酸性雨について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "硫黄酸化物や窒素酸化物がとけこみ、pH がおよそ 5.6 より小さくなった雨",
+    "grading": "選ぶ{硫黄酸化物や窒素酸化物がとけこみ、pH がおよそ 5.6 より小さくなった雨|pH が 7 より大きい雨|フロンがとけこんだ雨|火山灰をふくむ雨のこと}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "二酸化炭素がとけるだけで雨は pH 約 5.6 になる。それより酸性が強いものを酸性雨という。原因は化石燃料の燃焼などで出る硫黄酸化物・窒素酸化物。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "environment"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "酸性雨"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "acid-rain"
+ }
+}

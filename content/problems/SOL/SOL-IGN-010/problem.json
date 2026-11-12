@@ -1,0 +1,68 @@
+{
+ "id": "SOL-IGN-010",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "ケイ酸塩鉱物の構造",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "SiO₄ 四面体が平面状（シート状）につながった構造をもち、うすくはがれる性質（へき開）をもつ鉱物はどれか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "黒雲母",
+    "grading": "選ぶ{黒雲母|かんらん石|輝石|石英}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "雲母のなかまは SiO₄ 四面体が層状につながり、層の間の結合が弱いのでうすくはがれる。かんらん石は独立、輝石は単鎖、角閃石は複鎖、石英・長石は立体網目構造。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "rock-forming-minerals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "SiO4四面体",
+  "へき開"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "si-tetrahedron"
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "id": "SOL-MAG-006",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "磁気圏とオーロラ",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "オーロラについて正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "太陽風の荷電粒子が地球の磁力線に沿って高緯度の上空に入り、大気を光らせる",
+    "grading": "選ぶ{太陽風の荷電粒子が地球の磁力線に沿って高緯度の上空に入り、大気を光らせる|雲に太陽光が反射して見える|成層圏のオゾンが光る|赤道付近で最もよく見られる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地球の磁場は太陽風をさえぎる（磁気圏）。一部の荷電粒子が磁力線に沿って極域の熱圏（高さ約 100〜500 km）に入り、酸素や窒素を光らせる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geomagnetism",
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "オーロラ",
+  "磁気圏"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "aurora"
+ }
+}

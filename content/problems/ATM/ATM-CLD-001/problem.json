@@ -1,0 +1,67 @@
+{
+ "id": "ATM-CLD-001",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "露点",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "空気を冷やしていったとき、ふくまれている水蒸気が飽和して凝結が始まる温度を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "露点",
+    "grading": "語{露点|露点温度}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "露点では、空気がふくむ水蒸気量と飽和水蒸気量が等しく、相対湿度は 100%。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "humidity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "露点"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "dew-point"
+ }
+}

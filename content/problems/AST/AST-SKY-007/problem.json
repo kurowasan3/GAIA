@@ -1,0 +1,67 @@
+{
+ "id": "AST-SKY-007",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "恒星日",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある恒星が南中してから、次に南中するまでの時間（恒星日）として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "約 23 時間 56 分",
+    "grading": "選ぶ{約 23 時間 56 分|ちょうど 24 時間|約 24 時間 4 分|約 23 時間}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地球は1日の間に公転で約 $1^\\circ$ 進むので、太陽が南中するまで（太陽日 24 時間）より、恒星が南中するまでの方が約 4 分短い。そのため同じ星は毎日約 4 分ずつ早く南中する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "diurnal-annual"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "恒星日"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "sidereal-day"
+ }
+}

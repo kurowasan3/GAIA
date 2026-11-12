@@ -1,0 +1,64 @@
+{
+ "id": "GEO-HIS-007",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "白亜紀末の絶滅",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "白亜紀末の大量絶滅の原因として有力な説の根拠になっているものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "世界各地の白亜紀と古第三紀の境界の地層に、イリジウムが多くふくまれている",
+    "grading": "選ぶ{世界各地の白亜紀と古第三紀の境界の地層に、イリジウムが多くふくまれている|境界の地層に縞状鉄鉱層が多い|境界の地層からシアノバクテリアの化石が多く見つかる|境界の地層は世界中で石炭層になっている}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "イリジウムは地表の岩石には少なく、いん石に多い。世界中の境界層でイリジウムが多いことや、メキシコのユカタン半島の巨大なクレーターから、巨大いん石の衝突説が有力になった。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "life-history"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "大量絶滅",
+  "いん石"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

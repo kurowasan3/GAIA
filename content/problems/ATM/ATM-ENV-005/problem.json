@@ -1,0 +1,64 @@
+{
+ "id": "ATM-ENV-005",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "海面上昇",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球温暖化によって海面が上昇する原因として適当なものをすべて選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "海水の温度が上がって膨張する・陸上の氷河や氷床がとけて海に流れこむ",
+    "grading": "すべて選ぶ{海水の温度が上がって膨張する|陸上の氷河や氷床がとけて海に流れこむ|北極海に浮かぶ海氷がとける|雨が増えて海の水が増える}=1,2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "海水の熱膨張と、陸の氷（山岳氷河・グリーンランドや南極の氷床）の融解が主な原因。海に浮いている海氷がとけても、海面はほとんど変わらない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "environment"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "温暖化",
+  "海面上昇"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

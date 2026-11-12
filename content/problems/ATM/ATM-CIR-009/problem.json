@@ -1,0 +1,68 @@
+{
+ "id": "ATM-CIR-009",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "季節風",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "冬に日本付近で北西の季節風が吹く理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "大陸が海洋より冷えて、大陸に高気圧ができるから",
+    "grading": "選ぶ{大陸が海洋より冷えて、大陸に高気圧ができるから|大陸が海洋より暖まって、大陸に低気圧ができるから|偏西風が地表まで下りてくるから|貿易風が北にずれるから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "陸は海より温まりやすく冷えやすい（比熱が小さい）。冬は大陸が冷えてシベリア高気圧ができ、海洋の方へ風が吹き出す。夏は逆に大陸が暖まって低圧になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "general-circulation",
+  "japan-weather"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "季節風"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "monsoon"
+ }
+}

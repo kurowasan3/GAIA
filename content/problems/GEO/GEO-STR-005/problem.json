@@ -1,0 +1,89 @@
+{
+ "id": "GEO-STR-005",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-02",
+ "topic": "傾斜・不整合・岩脈",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "figure",
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図の地質断面図で、A〜I は地層、X は岩脈である。地層の逆転はない。この地域で起こったできごとを古い順に並べよ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-sec",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-sec",
+   "role": "question",
+   "kind": "section",
+   "alt": "傾いた A〜F層の上に、不整合面をはさんで水平な G〜I層が重なり、岩脈 X が全体を貫いている地質断面図",
+   "format": "svg",
+   "src": "q-sec.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "A〜F層の堆積 → 傾斜 → 不整合の形成 → G〜I層の堆積 → 岩脈 X の貫入",
+    "grading": "並べる{岩脈 X の貫入|G〜I層の堆積|隆起・侵食（不整合面の形成）・沈降|A〜F層の堆積|地層の傾斜（傾動）}=4>5>3>2>1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "傾いた A〜F層の上を、水平な G〜I層が不整合でおおっているので、A〜F層は堆積後に傾き、侵食されてから G〜I層が堆積した。岩脈 X は G〜I層まで貫いているので最も新しい（切断の法則）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stratigraphy",
+  "unconformity"
+ ],
+ "laws": [
+  "superposition",
+  "cross-cutting"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "地質断面図",
+  "地史",
+  "岩脈",
+  "不整合"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "strata",
+  "key": "tilt-unconf-dike"
+ }
+}

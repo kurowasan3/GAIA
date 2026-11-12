@@ -1,0 +1,100 @@
+{
+ "id": "AST-SKY-011",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "南半球での太陽",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "南緯 $35.0^\\circ$ の地点で、北半球の夏至の日（太陽の赤緯 $+23.4^\\circ$）に太陽を観測する。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "太陽が最も高くなるときの高度を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "そのとき太陽が見える方角を選べ。"
+     },
+     {
+      "id": "3",
+      "tex": "(2)の方角になる理由を述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$31.6^\\circ$",
+    "grading": "約{31.6|3} [°]"
+   },
+   {
+    "id": "2",
+    "tex": "北",
+    "grading": "選ぶ{北|南|東|西}=1"
+   },
+   {
+    "id": "3",
+    "tex": "（例）南半球では天の南極が南の空にあり、天の赤道は北の空に傾いている。赤緯が正の太陽は天の赤道よりさらに北にあるので、北の空で南中（正中）する。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 天の赤道は北の地平線から $90^\\circ-35.0^\\circ=55.0^\\circ$ の高さ。太陽はそれより $23.4^\\circ$ 北なので $55.0^\\circ-23.4^\\circ=31.6^\\circ$。(2) 北の空。南半球ではこの日は冬至にあたる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "celestial-sphere",
+  "diurnal-annual"
+ ],
+ "laws": [
+  "culmination-altitude"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "南半球",
+  "南中高度",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "sphere"
+ }
+}

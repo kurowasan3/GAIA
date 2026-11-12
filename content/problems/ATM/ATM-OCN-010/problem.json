@@ -1,0 +1,63 @@
+{
+ "id": "ATM-OCN-010",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "沿岸湧昇",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ペルー沖のように、沿岸で深いところの海水が湧き上がる海域について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "栄養塩に富む冷たい水が湧き上がり、プランクトンが増えて好漁場になる",
+    "grading": "選ぶ{栄養塩に富む冷たい水が湧き上がり、プランクトンが増えて好漁場になる|暖かい水が湧き上がり、サンゴ礁ができる|塩分の低い水が湧き上がり、生物が少ない|湧昇は海水の動きとは関係なく起こる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "沿岸に沿う風と転向力で表層の水が沖に運ばれ、深い所の水が湧き上がる（湧昇）。深層水は栄養塩に富むので、プランクトンや魚が多い。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "湧昇"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

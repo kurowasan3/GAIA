@@ -1,0 +1,63 @@
+{
+ "id": "SOL-PLT-010",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "海洋プレートの一生",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海洋プレートの一生を、起こる順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "海嶺で生まれる → 移動しながら冷えて厚く重くなる → 海溝で沈み込む",
+    "grading": "並べる{移動しながら冷えて厚く重くなる|海嶺で生まれる|海溝で沈み込む}=2>1>3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "海嶺で生まれたプレートは、移動しながら冷えて厚く・重くなり、海溝で沈み込んでマントルに戻る。沈み込むプレートが引っぱる力が、プレートを動かす大きな力と考えられている。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "plate-boundaries"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "プレート"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

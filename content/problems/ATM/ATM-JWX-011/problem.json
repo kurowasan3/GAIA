@@ -1,0 +1,67 @@
+{
+ "id": "ATM-JWX-011",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "温暖前線",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "温暖前線について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "暖気が寒気の上にゆるやかにはい上がり、乱層雲などができて広い範囲で弱い雨が長く続く",
+    "grading": "選ぶ{暖気が寒気の上にゆるやかにはい上がり、乱層雲などができて広い範囲で弱い雨が長く続く|寒気が暖気の下にもぐりこみ、積乱雲ができて短時間に強い雨が降る|前線の通過後に気温が下がる|前線をともなわない低気圧である}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "温暖前線面の傾きはゆるやかなので、前線の前方の広い範囲に層状の雲ができる。通過後は気温が上がり、風向は南寄りになる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "温暖前線"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "warm-front"
+ }
+}

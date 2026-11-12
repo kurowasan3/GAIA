@@ -1,0 +1,65 @@
+{
+ "id": "AST-SSY-009",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "金星の大気",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "金星の表面温度が約 460 ℃ と、太陽により近い水星の昼側よりも高い理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "厚い二酸化炭素の大気による強い温室効果",
+    "grading": "選ぶ{厚い二酸化炭素の大気による強い温室効果|金星の中心核が非常に高温だから|金星の自転が速いから|金星には大気がなく、太陽の光が直接当たるから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "金星の大気は 90 気圧ほどの厚さがあり、ほとんどが二酸化炭素。強い温室効果で、昼も夜も高温になっている。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "solar-system",
+  "radiation-balance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "金星",
+  "温室効果"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

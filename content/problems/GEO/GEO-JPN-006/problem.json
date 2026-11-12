@@ -1,0 +1,63 @@
+{
+ "id": "GEO-JPN-006",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-06",
+ "topic": "付加体の年代",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "日本列島の付加体について、一般に成り立つことを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "太平洋側（海溝側）のものほど新しい",
+    "grading": "選ぶ{太平洋側（海溝側）のものほど新しい|日本海側のものほど新しい|どこでもほぼ同じ年代|付加体は大陸側から運ばれてきた}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "付加は海溝で起こるので、新しく付け加わる付加体はより海側に加わる。そのため西南日本では、日本海側から太平洋側に向かって付加体の年代が新しくなる（四万十帯が最も新しい）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-geology"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "付加体"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

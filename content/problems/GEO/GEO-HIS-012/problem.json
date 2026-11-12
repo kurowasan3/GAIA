@@ -1,0 +1,64 @@
+{
+ "id": "GEO-HIS-012",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "中生代と新生代の生物",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "中生代と新生代の生物について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "中生代は恐竜と裸子植物、新生代は哺乳類と被子植物が繁栄した",
+    "grading": "選ぶ{中生代は恐竜と裸子植物、新生代は哺乳類と被子植物が繁栄した|中生代は哺乳類、新生代は恐竜が繁栄した|中生代は三葉虫、新生代はアンモナイトが繁栄した|中生代も新生代もシダ植物の大森林が中心だった}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "中生代は「爬虫類の時代」で、恐竜やアンモナイト、ソテツ・イチョウなどの裸子植物が栄えた。新生代は「哺乳類の時代」で、被子植物が広がった。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "life-history"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "中生代",
+  "新生代"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

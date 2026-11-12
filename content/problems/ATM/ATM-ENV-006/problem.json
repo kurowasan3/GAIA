@@ -1,0 +1,68 @@
+{
+ "id": "ATM-ENV-006",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "ハザードマップ",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ハザードマップの使い方として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "自分の住む地域で想定される災害の範囲や避難場所・避難経路を事前に確かめる",
+    "grading": "選ぶ{自分の住む地域で想定される災害の範囲や避難場所・避難経路を事前に確かめる|災害が起きたあとに被害の大きさを記録する|天気予報のかわりに使う|地震の発生時刻を予測する}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ハザードマップは、洪水・土砂災害・津波・火山などで被害が予想される範囲と、避難場所などを示した地図。災害が起こる前に確認しておくことが大切。想定をこえる災害もあることに注意する。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "environment"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ハザードマップ",
+  "防災"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "hazard-map"
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "SOL-PLT-012",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "ホットスポットの成因",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ホットスポットについて正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "マントル深部から上昇するプルームがマグマの供給源で、プレートが動いてもほとんど位置が変わらない",
+    "grading": "選ぶ{マントル深部から上昇するプルームがマグマの供給源で、プレートが動いてもほとんど位置が変わらない|海溝で沈み込んだプレートがとけてできる|プレートといっしょに移動する|大陸の内部にだけ存在する}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ホットスポットはプレート境界とは関係なく、マントル深部からの上昇流（プルーム）の上にある。ハワイ・アイスランドなど。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "hotspot"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ホットスポット",
+  "プルーム"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "hotspot"
+ }
+}

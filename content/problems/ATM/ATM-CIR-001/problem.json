@@ -1,0 +1,67 @@
+{
+ "id": "ATM-CIR-001",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "転向力の向き",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "北半球で、運動している物体にはたらく転向力（コリオリの力）の向きとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "運動の向きに対して右向き",
+    "grading": "選ぶ{運動の向きに対して右向き|運動の向きに対して左向き|運動と同じ向き|運動と逆向き}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地球の自転による見かけの力。北半球では運動の向きの右向き、南半球では左向きにはたらく。赤道で 0、高緯度ほど大きい。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "winds"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "転向力"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "coriolis"
+ }
+}

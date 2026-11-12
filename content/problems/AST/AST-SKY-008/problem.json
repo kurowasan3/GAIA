@@ -1,0 +1,67 @@
+{
+ "id": "AST-SKY-008",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "南中時刻の変化",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある星が今日の午後 10 時に南中した。30 日後にこの星が南中する時刻はおよそ何時か。同じ星は毎日約 4 分ずつ早く南中するものとする。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "午後 8 時ごろ",
+    "grading": "約{20|2} [時]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$4\\times30=120$ 分＝2 時間早くなるので、午後 8 時ごろ（20 時）。1か月で約 2 時間、1年で 24 時間早くなり、もとにもどる（年周運動）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "diurnal-annual"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "年周運動",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "1日に約4分早く南中"
+ }
+}

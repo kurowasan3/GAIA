@@ -1,0 +1,68 @@
+{
+ "id": "ATM-JWX-007",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "冬の日本海側の雪",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "冬に日本海側で雪が多く降る理由として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "北西の季節風が日本海から水蒸気を補給され、山地にぶつかって上昇するから",
+    "grading": "選ぶ{北西の季節風が日本海から水蒸気を補給され、山地にぶつかって上昇するから|太平洋から湿った風が吹くから|日本海側の方が太平洋側より暖かいから|梅雨前線が日本海側にあるから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "冷たく乾いたシベリア高気圧からの季節風が、比較的暖かい日本海の上で熱と水蒸気を受け取って雪雲（筋状の雲）をつくり、山地で上昇してさらに雪を降らせる。太平洋側は山を越えた乾いた風で晴れる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-weather"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "冬の天気",
+  "季節風"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "winter-pattern"
+ }
+}

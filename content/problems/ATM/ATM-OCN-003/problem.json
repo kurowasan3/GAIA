@@ -1,0 +1,67 @@
+{
+ "id": "ATM-OCN-003",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "海洋の層構造",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "中緯度の海洋の層を、海面から深い順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "表層混合層 → 水温躍層 → 深層",
+    "grading": "並べる{表層混合層|深層|水温躍層}=1>3>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "表層混合層は風でかき混ぜられて水温がほぼ一様。その下の水温躍層で水温が急に下がり、深層は 2〜4 ℃ でほぼ一様。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "ocean-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "海洋の層構造"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "thermocline"
+ }
+}

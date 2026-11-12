@@ -1,0 +1,83 @@
+{
+ "id": "ATM-JWX-003",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "天気図を読む",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "figure"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は日本付近の天気図（模式図）である。この天気図の気圧配置として最も適当なものを選べ。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-wx",
+    "placement": "block"
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-wx",
+   "role": "question",
+   "kind": "map",
+   "alt": "オホーツク海と日本の南の海上に高気圧があり、その間の日本の南岸に沿って東西に停滞前線がのびている天気図",
+   "format": "svg",
+   "src": "q-wx.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "梅雨前線（停滞前線）",
+    "grading": "選ぶ{西高東低（冬型）|南高北低（夏型）|梅雨前線（停滞前線）|台風}=3"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "オホーツク海高気圧と太平洋高気圧の間に、停滞前線が東西にのびている。梅雨の時期の天気図。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-weather",
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "天気図",
+  "梅雨前線（停滞前線）"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "weather:baiu"
+ }
+}

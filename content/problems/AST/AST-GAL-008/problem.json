@@ -1,0 +1,67 @@
+{
+ "id": "AST-GAL-008",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "ダークマター",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銀河系の円盤部の回転速度を測ると、中心から遠く離れたところでも速さがあまり小さくならない。このことからわかることとして最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "光を出さないが重力をおよぼす物質（ダークマター）が、銀河系の外側まで大量に分布している",
+    "grading": "選ぶ{光を出さないが重力をおよぼす物質（ダークマター）が、銀河系の外側まで大量に分布している|銀河系の中心にだけ質量が集中している|銀河系は回転していない|銀河系の外側には何もない}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "見えている星やガスの質量だけでは、外側ほど回転が遅くなるはず。実際には速いままなので、見えない質量（ダークマター）が大量にあると考えられている。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "galaxy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ダークマター"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "dark-matter"
+ }
+}

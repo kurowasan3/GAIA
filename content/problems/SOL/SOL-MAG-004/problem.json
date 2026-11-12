@@ -1,0 +1,68 @@
+{
+ "id": "SOL-MAG-004",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "地磁気の成因",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地磁気をつくっていると考えられているものとして最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "外核の液体の鉄の流れ（ダイナモ作用）",
+    "grading": "選ぶ{外核の液体の鉄の流れ（ダイナモ作用）|内核が大きな永久磁石になっている|地殻の磁鉄鉱|太陽風}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "電気を通す液体の鉄が外核で対流し、電流と磁場をつくり続けている（ダイナモ作用）。永久磁石では、高温の地球内部で磁化を保てない。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geomagnetism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地磁気",
+  "ダイナモ"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "geomagnetism"
+ }
+}

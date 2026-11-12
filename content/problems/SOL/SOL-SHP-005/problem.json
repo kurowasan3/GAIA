@@ -1,0 +1,67 @@
+{
+ "id": "SOL-SHP-005",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "緯度1°の長さ",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球楕円体の上で、同じ経線に沿って緯度が $1^\\circ$ 違う2地点の距離（子午線の弧の長さ）について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "高緯度ほど長い",
+    "grading": "選ぶ{どこでも等しい|高緯度ほど長い|低緯度ほど長い|中緯度で最も長い}=2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "地球楕円体は極付近で平たく、曲がり方がゆるい（曲率半径が大きい）。同じ角度 $1^\\circ$ に対する弧の長さは、曲率半径が大きいほど長いので、高緯度ほど長い（赤道付近 約 110.6 km、極付近 約 111.7 km）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "earth-shape"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地球楕円体",
+  "子午線"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "idea": {
+  "tex": "極付近は平たい＝曲がり方がゆるい"
+ }
+}

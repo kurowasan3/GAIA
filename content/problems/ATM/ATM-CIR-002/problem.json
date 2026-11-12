@@ -1,0 +1,67 @@
+{
+ "id": "ATM-CIR-002",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "偏西風",
+ "course": "地学基礎",
+ "level": 0,
+ "minutes": 2,
+ "format": [
+  "qa"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "中緯度の上空を、西から東へ地球をとりまくように吹く風を何というか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "偏西風",
+    "grading": "語{偏西風}"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "偏西風は南北に蛇行しながら吹き、低緯度の熱を高緯度へ運ぶ。中でも特に強い流れをジェット気流という。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "general-circulation"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "偏西風"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "westerlies"
+ }
+}

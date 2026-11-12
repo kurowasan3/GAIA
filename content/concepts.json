@@ -1,0 +1,576 @@
+{
+ "schema": "gaia.concepts/1",
+ "concepts": [
+  {
+   "id": "earth-shape",
+   "name": "地球の形と大きさ",
+   "field": "SOL",
+   "requires": [],
+   "laws": [
+    "eratosthenes"
+   ]
+  },
+  {
+   "id": "gravity-earth",
+   "name": "重力と重力異常",
+   "field": "SOL",
+   "requires": [
+    "earth-shape"
+   ],
+   "laws": []
+  },
+  {
+   "id": "earth-interior",
+   "name": "地球の内部構造（地殻・マントル・核）",
+   "field": "SOL",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "seismic-structure",
+   "name": "地震波による内部構造の推定",
+   "field": "SOL",
+   "requires": [
+    "earth-interior",
+    "seismic-waves"
+   ],
+   "laws": []
+  },
+  {
+   "id": "isostasy",
+   "name": "アイソスタシー",
+   "field": "SOL",
+   "requires": [
+    "earth-interior"
+   ],
+   "laws": [
+    "isostasy-airy"
+   ]
+  },
+  {
+   "id": "plate-boundaries",
+   "name": "プレートとプレート境界",
+   "field": "SOL",
+   "requires": [
+    "earth-interior"
+   ],
+   "laws": []
+  },
+  {
+   "id": "seafloor-spreading",
+   "name": "海洋底拡大と地磁気の縞模様",
+   "field": "SOL",
+   "requires": [
+    "plate-boundaries",
+    "geomagnetism"
+   ],
+   "laws": []
+  },
+  {
+   "id": "hotspot",
+   "name": "ホットスポット",
+   "field": "SOL",
+   "requires": [
+    "plate-boundaries"
+   ],
+   "laws": []
+  },
+  {
+   "id": "seismic-waves",
+   "name": "地震波（P波・S波）",
+   "field": "SOL",
+   "requires": [],
+   "laws": [
+    "omori"
+   ]
+  },
+  {
+   "id": "hypocenter-location",
+   "name": "震源の決定（大森公式）",
+   "field": "SOL",
+   "requires": [
+    "seismic-waves"
+   ],
+   "laws": [
+    "omori"
+   ]
+  },
+  {
+   "id": "magnitude-intensity",
+   "name": "マグニチュードと震度",
+   "field": "SOL",
+   "requires": [],
+   "laws": [
+    "magnitude-energy"
+   ]
+  },
+  {
+   "id": "faults",
+   "name": "断層の種類と力のかかり方",
+   "field": "SOL",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "earthquake-types",
+   "name": "プレート境界地震と内陸地震",
+   "field": "SOL",
+   "requires": [
+    "plate-boundaries",
+    "faults"
+   ],
+   "laws": [
+    "tsunami-speed"
+   ]
+  },
+  {
+   "id": "magma-generation",
+   "name": "マグマの発生",
+   "field": "SOL",
+   "requires": [
+    "plate-boundaries"
+   ],
+   "laws": []
+  },
+  {
+   "id": "volcano-forms",
+   "name": "火山の形と噴火（マグマの粘性）",
+   "field": "SOL",
+   "requires": [
+    "magma-generation"
+   ],
+   "laws": []
+  },
+  {
+   "id": "rock-forming-minerals",
+   "name": "造岩鉱物",
+   "field": "SOL",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "igneous-rocks",
+   "name": "火成岩の分類（組織と SiO₂）",
+   "field": "SOL",
+   "requires": [
+    "rock-forming-minerals"
+   ],
+   "laws": []
+  },
+  {
+   "id": "crystallization",
+   "name": "マグマの結晶分化",
+   "field": "SOL",
+   "requires": [
+    "igneous-rocks"
+   ],
+   "laws": []
+  },
+  {
+   "id": "geomagnetism",
+   "name": "地磁気の要素",
+   "field": "SOL",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "weathering-erosion",
+   "name": "風化・侵食・運搬・堆積",
+   "field": "GEO",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "sedimentary-rocks",
+   "name": "堆積岩の分類",
+   "field": "GEO",
+   "requires": [
+    "weathering-erosion"
+   ],
+   "laws": []
+  },
+  {
+   "id": "landforms",
+   "name": "河川・海岸がつくる地形",
+   "field": "GEO",
+   "requires": [
+    "weathering-erosion"
+   ],
+   "laws": []
+  },
+  {
+   "id": "sedimentary-structures",
+   "name": "堆積構造（級化層理・斜交葉理）と上下判定",
+   "field": "GEO",
+   "requires": [
+    "weathering-erosion"
+   ],
+   "laws": []
+  },
+  {
+   "id": "stratigraphy",
+   "name": "地層の新旧（累重・切断の法則）",
+   "field": "GEO",
+   "requires": [],
+   "laws": [
+    "superposition",
+    "cross-cutting",
+    "uniformitarianism"
+   ]
+  },
+  {
+   "id": "unconformity",
+   "name": "整合と不整合",
+   "field": "GEO",
+   "requires": [
+    "stratigraphy"
+   ],
+   "laws": []
+  },
+  {
+   "id": "geologic-structures",
+   "name": "地質構造（褶曲・断層・走向傾斜）",
+   "field": "GEO",
+   "requires": [
+    "stratigraphy"
+   ],
+   "laws": [
+    "cross-cutting"
+   ]
+  },
+  {
+   "id": "correlation",
+   "name": "地層の対比（鍵層・示準化石）",
+   "field": "GEO",
+   "requires": [
+    "stratigraphy"
+   ],
+   "laws": [
+    "faunal-succession"
+   ]
+  },
+  {
+   "id": "metamorphism",
+   "name": "変成作用と変成岩",
+   "field": "GEO",
+   "requires": [
+    "igneous-rocks"
+   ],
+   "laws": []
+  },
+  {
+   "id": "fossils",
+   "name": "示準化石と示相化石",
+   "field": "GEO",
+   "requires": [],
+   "laws": [
+    "faunal-succession"
+   ]
+  },
+  {
+   "id": "geologic-time",
+   "name": "地質時代の区分",
+   "field": "GEO",
+   "requires": [
+    "fossils"
+   ],
+   "laws": []
+  },
+  {
+   "id": "radiometric-dating",
+   "name": "放射年代",
+   "field": "GEO",
+   "requires": [],
+   "laws": [
+    "radioactive-decay",
+    "radiometric-age"
+   ]
+  },
+  {
+   "id": "early-earth",
+   "name": "原始地球と先カンブリア時代",
+   "field": "GEO",
+   "requires": [
+    "geologic-time"
+   ],
+   "laws": []
+  },
+  {
+   "id": "life-history",
+   "name": "古生代・中生代・新生代の生物",
+   "field": "GEO",
+   "requires": [
+    "geologic-time"
+   ],
+   "laws": []
+  },
+  {
+   "id": "japan-geology",
+   "name": "日本列島の地質と成り立ち",
+   "field": "GEO",
+   "requires": [
+    "plate-boundaries"
+   ],
+   "laws": []
+  },
+  {
+   "id": "atmosphere-structure",
+   "name": "大気の層構造と組成",
+   "field": "ATM",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "atm-pressure",
+   "name": "気圧",
+   "field": "ATM",
+   "requires": [
+    "atmosphere-structure"
+   ],
+   "laws": []
+  },
+  {
+   "id": "humidity",
+   "name": "水蒸気と湿度・露点",
+   "field": "ATM",
+   "requires": [],
+   "laws": [
+    "condensation-height",
+    "relative-humidity"
+   ]
+  },
+  {
+   "id": "adiabatic",
+   "name": "断熱変化と雲の発生",
+   "field": "ATM",
+   "requires": [
+    "humidity"
+   ],
+   "laws": [
+    "dry-adiabatic",
+    "moist-adiabatic",
+    "condensation-height",
+    "foehn-temp"
+   ]
+  },
+  {
+   "id": "foehn",
+   "name": "フェーン現象",
+   "field": "ATM",
+   "requires": [
+    "adiabatic"
+   ],
+   "laws": [
+    "foehn-temp"
+   ]
+  },
+  {
+   "id": "stability",
+   "name": "大気の安定・不安定",
+   "field": "ATM",
+   "requires": [
+    "adiabatic"
+   ],
+   "laws": []
+  },
+  {
+   "id": "radiation-balance",
+   "name": "地球の熱収支と温室効果",
+   "field": "ATM",
+   "requires": [],
+   "laws": [
+    "stefan-boltzmann"
+   ]
+  },
+  {
+   "id": "heat-transport",
+   "name": "緯度による熱の過不足と輸送",
+   "field": "ATM",
+   "requires": [
+    "radiation-balance"
+   ],
+   "laws": []
+  },
+  {
+   "id": "winds",
+   "name": "風を生む力（気圧傾度力・転向力・摩擦力）",
+   "field": "ATM",
+   "requires": [
+    "atm-pressure"
+   ],
+   "laws": []
+  },
+  {
+   "id": "general-circulation",
+   "name": "大気の大循環",
+   "field": "ATM",
+   "requires": [
+    "heat-transport",
+    "winds"
+   ],
+   "laws": []
+  },
+  {
+   "id": "weather-systems",
+   "name": "高気圧・低気圧と前線",
+   "field": "ATM",
+   "requires": [
+    "winds"
+   ],
+   "laws": []
+  },
+  {
+   "id": "japan-weather",
+   "name": "日本の四季の天気",
+   "field": "ATM",
+   "requires": [
+    "weather-systems"
+   ],
+   "laws": []
+  },
+  {
+   "id": "ocean-structure",
+   "name": "海洋の層構造と塩分",
+   "field": "ATM",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "ocean-currents",
+   "name": "海流と深層循環",
+   "field": "ATM",
+   "requires": [
+    "ocean-structure",
+    "general-circulation"
+   ],
+   "laws": []
+  },
+  {
+   "id": "environment",
+   "name": "地球環境問題と自然災害",
+   "field": "ATM",
+   "requires": [
+    "radiation-balance"
+   ],
+   "laws": []
+  },
+  {
+   "id": "celestial-sphere",
+   "name": "天球と天体の座標",
+   "field": "AST",
+   "requires": [],
+   "laws": [
+    "culmination-altitude"
+   ]
+  },
+  {
+   "id": "diurnal-annual",
+   "name": "日周運動・年周運動と季節",
+   "field": "AST",
+   "requires": [
+    "celestial-sphere"
+   ],
+   "laws": [
+    "culmination-altitude"
+   ]
+  },
+  {
+   "id": "planet-motion",
+   "name": "惑星の運動と見え方",
+   "field": "AST",
+   "requires": [
+    "celestial-sphere"
+   ],
+   "laws": [
+    "synodic-period"
+   ]
+  },
+  {
+   "id": "kepler",
+   "name": "ケプラーの法則",
+   "field": "AST",
+   "requires": [
+    "planet-motion"
+   ],
+   "laws": [
+    "kepler-second",
+    "kepler-third"
+   ]
+  },
+  {
+   "id": "solar-system",
+   "name": "太陽系の天体と形成",
+   "field": "AST",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "moon",
+   "name": "月の運動と満ち欠け・食",
+   "field": "AST",
+   "requires": [
+    "celestial-sphere"
+   ],
+   "laws": []
+  },
+  {
+   "id": "sun",
+   "name": "太陽の構造と活動",
+   "field": "AST",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "stellar-properties",
+   "name": "恒星の明るさ・距離・温度",
+   "field": "AST",
+   "requires": [],
+   "laws": [
+    "stefan-boltzmann",
+    "luminosity",
+    "wien",
+    "magnitude-def",
+    "distance-modulus",
+    "parallax"
+   ]
+  },
+  {
+   "id": "hr-diagram",
+   "name": "HR図",
+   "field": "AST",
+   "requires": [
+    "stellar-properties"
+   ],
+   "laws": [
+    "luminosity"
+   ]
+  },
+  {
+   "id": "stellar-evolution",
+   "name": "恒星の誕生と進化",
+   "field": "AST",
+   "requires": [
+    "hr-diagram"
+   ],
+   "laws": []
+  },
+  {
+   "id": "galaxy",
+   "name": "銀河系と銀河",
+   "field": "AST",
+   "requires": [],
+   "laws": []
+  },
+  {
+   "id": "cosmology",
+   "name": "宇宙の膨張と誕生",
+   "field": "AST",
+   "requires": [
+    "galaxy"
+   ],
+   "laws": [
+    "hubble"
+   ]
+  }
+ ]
+}

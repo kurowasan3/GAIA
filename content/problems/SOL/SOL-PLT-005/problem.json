@@ -1,0 +1,63 @@
+{
+ "id": "SOL-PLT-005",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "海洋底の年代",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海洋底の岩石の年代について正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "海嶺から離れるほど古く、最も古いものでも約 2 億年である",
+    "grading": "選ぶ{海嶺から離れるほど古く、最も古いものでも約 2 億年である|海嶺に近いほど古い|どこでもほぼ同じ年代で、約 40 億年である|海溝付近が最も新しい}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "海洋底は海嶺でつくられて両側に広がり、海溝で沈み込むので、海嶺から離れるほど古い。古い海洋底は沈み込んで失われるので、約 2 億年より古い海洋底はない（大陸には40億年前の岩石もある）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "seafloor-spreading"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "海洋底拡大"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

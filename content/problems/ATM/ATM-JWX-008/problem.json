@@ -1,0 +1,67 @@
+{
+ "id": "ATM-JWX-008",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "梅雨前線",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "梅雨前線ができるしくみとして正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "オホーツク海高気圧と太平洋高気圧の間に、勢力のつり合った前線ができる",
+    "grading": "選ぶ{オホーツク海高気圧と太平洋高気圧の間に、勢力のつり合った前線ができる|シベリア高気圧と太平洋高気圧の間にできる|台風と温帯低気圧の間にできる|移動性高気圧の中心にできる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "冷たく湿ったオホーツク海高気圧と、暖かく湿った太平洋高気圧の勢力がつり合い、その境界に停滞前線（梅雨前線）ができる。太平洋高気圧が強まると梅雨明け。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-weather"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "梅雨"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "baiu"
+ }
+}

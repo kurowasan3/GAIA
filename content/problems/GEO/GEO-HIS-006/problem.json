@@ -1,0 +1,67 @@
+{
+ "id": "GEO-HIS-006",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "最大の大量絶滅",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の歴史上で最大の大量絶滅（海の生物の種の 90% 以上が絶滅したと考えられている）が起きたのはいつか。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "ペルム紀末（古生代と中生代の境界）",
+    "grading": "選ぶ{ペルム紀末（古生代と中生代の境界）|白亜紀末（中生代と新生代の境界）|カンブリア紀のはじめ|第四紀}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "ペルム紀末（約 2.5 億年前）の大量絶滅で、三葉虫やフズリナが絶滅した。大規模な火山活動（シベリアの洪水玄武岩）による環境変化が原因とする説が有力。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "life-history"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "大量絶滅"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "mass-extinction"
+ }
+}

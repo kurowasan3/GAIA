@@ -1,0 +1,93 @@
+{
+ "id": "GEO-MET-009",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-03",
+ "topic": "変成作用",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "変成作用について答えよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "変成作用について正しいものを選べ。"
+     },
+     {
+      "id": "2",
+      "tex": "化石をふくむ石灰岩が結晶質石灰岩になると、ふくまれていた化石はどうなることが多いか。"
+     },
+     {
+      "id": "3",
+      "tex": "地層の中に接触変成を受けた部分があることから、地層と貫入岩体の新旧についてわかることを述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "岩石は固体のままで、鉱物の種類や組織が変わる",
+    "grading": "選ぶ{岩石は固体のままで、鉱物の種類や組織が変わる|岩石がとけてから、冷えて固まる|岩石が風化して細かくなる}=1"
+   },
+   {
+    "id": "2",
+    "tex": "化石は消えてしまう",
+    "grading": "選ぶ{化石は消えてしまう|化石はそのまま残る|化石が大きくなる}=1"
+   },
+   {
+    "id": "3",
+    "tex": "（例）ホルンフェルスや結晶質石灰岩は、マグマの熱を受けてできたので、変成された地層は貫入した岩体より古い。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 変成作用は岩石がとけずに固体のまま変わる。とけるとマグマになる。(2) 再結晶で鉱物が大きく成長するので、化石は消えてしまうことが多い。(3) 接触変成された地層は、貫入より前からあった。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "metamorphism",
+  "stratigraphy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "変成作用",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

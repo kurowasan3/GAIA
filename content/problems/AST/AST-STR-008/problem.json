@@ -1,0 +1,70 @@
+{
+ "id": "AST-STR-008",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "距離指数",
+ "course": "地学",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "見かけの等級が 5 等、絶対等級が 0 等の恒星までの距離を求めよ。$m-M=5\\log_{10}d-5$（$d$ はパーセク）を用いよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "100 パーセク",
+    "grading": "約{100|2} [パーセク]"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "$5-0=5\\log_{10}d-5$ より $\\log_{10}d=2$、$d=100$ パーセク。10 パーセクより遠いので、見かけの等級の方が大きい（暗い）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "stellar-properties"
+ ],
+ "laws": [
+  "distance-modulus"
+ ],
+ "misconceptions": [],
+ "tags": [
+  "絶対等級",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "absolute-mag"
+ }
+}

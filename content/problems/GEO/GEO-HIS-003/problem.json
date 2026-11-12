@@ -1,0 +1,64 @@
+{
+ "id": "GEO-HIS-003",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "生命の歴史",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "order"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のできごとを古い順に並べよ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "最古の生命の誕生 → 縞状鉄鉱層が多くつくられる → カンブリア紀の爆発 → 生物の陸上進出",
+    "grading": "並べる{カンブリア紀の爆発|生物の陸上進出|縞状鉄鉱層が多くつくられる|最古の生命の誕生}=4>3>1>2"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "最古の生命の痕跡は約 40 億〜38 億年前。縞状鉄鉱層は約 25 億〜19 億年前に多い。カンブリア紀の爆発は約 5.4 億年前、植物・動物の陸上進出はオルドビス紀〜デボン紀（約 4.7 億〜3.7 億年前）。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "early-earth",
+  "life-history"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "生命の歴史"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ }
+}

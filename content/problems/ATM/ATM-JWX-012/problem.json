@@ -1,0 +1,113 @@
+{
+ "id": "ATM-JWX-012",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "冬型の気圧配置",
+ "course": "地学基礎",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "figure",
+  "choice",
+  "written"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "図は冬の日本付近の天気図（模式図）である。"
+   },
+   {
+    "type": "figure",
+    "ref": "q-wx",
+    "placement": "block"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この気圧配置を何というか。"
+     },
+     {
+      "id": "2",
+      "tex": "日本付近で等圧線の間隔がせまいことからわかることを選べ。"
+     },
+     {
+      "id": "3",
+      "tex": "このとき日本海側で雪が多く降るしくみを述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [
+  {
+   "id": "q-wx",
+   "role": "question",
+   "kind": "map",
+   "alt": "大陸に 1052 hPa の高気圧、日本の東に 968 hPa の低気圧があり、日本付近で等圧線が南北に混み合っている天気図",
+   "format": "svg",
+   "src": "q-wx.svg"
+  }
+ ],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "西高東低",
+    "grading": "語{西高東低|西高東低の気圧配置|冬型|冬型の気圧配置}"
+   },
+   {
+    "id": "2",
+    "tex": "風が強い",
+    "grading": "選ぶ{風が強い|風が弱い|気温が高い|雨が降らない}=1"
+   },
+   {
+    "id": "3",
+    "tex": "（例）シベリア高気圧から吹き出した冷たく乾いた季節風が、暖かい日本海の上で熱と水蒸気を受け取って雪雲をつくり、日本列島の山地にぶつかって上昇することで、日本海側に多くの雪を降らせる。",
+    "grading": "記述"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 大陸に高気圧、東の海上に低気圧があるので西高東低。(2) 等圧線の間隔がせまいほど気圧傾度力が大きく、風が強い。(3) 日本海側は雪、太平洋側は乾燥した晴天になる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "japan-weather",
+  "winds"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "天気図",
+  "冬の天気",
+  "記述"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "identify",
+  "key": "weather:winter"
+ }
+}

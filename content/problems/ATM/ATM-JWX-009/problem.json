@@ -1,0 +1,68 @@
+{
+ "id": "ATM-JWX-009",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-05",
+ "topic": "台風のエネルギー",
+ "course": "地学基礎",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "台風が発達するためのエネルギー源として最も適当なものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "暖かい海面から蒸発した水蒸気が凝結するときに出す潜熱",
+    "grading": "選ぶ{暖かい海面から蒸発した水蒸気が凝結するときに出す潜熱|南北の気温の差|太陽からの紫外線|陸地の摩擦熱}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "海面水温が高い（約 27 ℃ 以上）海で大量の水蒸気が供給され、凝結の潜熱で上昇気流が強まって発達する。上陸したり冷たい海に進むと、水蒸気の供給が減って衰える。温帯低気圧のエネルギー源（南北の温度差）とは異なる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "台風",
+  "潜熱"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "typhoon"
+ }
+}

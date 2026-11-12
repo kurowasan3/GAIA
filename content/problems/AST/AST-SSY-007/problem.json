@@ -1,0 +1,67 @@
+{
+ "id": "AST-SSY-007",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "日食が毎月起こらない理由",
+ "course": "地学基礎",
+ "level": 2,
+ "minutes": 5,
+ "format": [
+  "choice"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "日食は新月のときに起こるが、新月のたびに起こるわけではない。その理由として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "月の公転軌道面が、地球の公転軌道面に対して約 5° 傾いているから",
+    "grading": "選ぶ{月の公転軌道面が、地球の公転軌道面に対して約 5° 傾いているから|月の大きさが毎月変わるから|月は新月のとき地球から最も遠いから|太陽の活動に周期があるから}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "月の軌道面が黄道面に対して約 $5^\\circ$ 傾いているので、新月でも多くの場合、月は太陽の少し上か下を通る。2つの軌道面の交線上に月があるときだけ食が起こる。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "moon"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "日食"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "sky",
+  "key": "moon"
+ }
+}

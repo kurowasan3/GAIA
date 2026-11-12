@@ -1,0 +1,69 @@
+{
+ "id": "SOL-MAG-009",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "逆転と縞模様",
+ "course": "地学",
+ "level": 1,
+ "minutes": 3,
+ "format": [
+  "term"
+ ],
+ "examStyle": "original",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "「地磁気の逆転」と「海洋底の地磁気の縞模様」の関係として正しいものを選べ。"
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "main",
+    "tex": "地磁気の逆転がくり返されたことが、縞模様ができた原因である",
+    "grading": "選ぶ{地磁気の逆転がくり返されたことが、縞模様ができた原因である|縞模様ができたことが、地磁気の逆転の原因である|2つは無関係である|縞模様は大陸の上にだけ見られる}=1"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "海嶺でできた岩石は、そのときの地磁気の向きに磁化される。地磁気が逆転するたびに逆向きに磁化された岩石ができ、海洋底の拡大とともに縞模様になった。"
+    }
+   ]
+  }
+ ],
+ "concepts": [
+  "geomagnetism",
+  "seafloor-spreading"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "用語の関係",
+  "地磁気の逆転"
+ ],
+ "provenance": {
+  "created": "2026-11-12",
+  "method": "GAIA 初期問題（Claude 作成）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "facts": true
+  }
+ },
+ "lab": {
+  "page": "terms",
+  "key": "reversal"
+ }
+}
