@@ -3,7 +3,7 @@ import { C, Z, $, $$, e, f1, head, tabs, bindTabs, probButton, done, quiz, choic
 import { rockSVG, fossilSVG, MINERAL_LOOK } from './model/specimens.js';
 import { weatherSVG, WEATHER, topoSVG, TOPO } from './model/maps.js';
 
-export const FILE_VERSION = '0.1.1';
+export const FILE_VERSION = '0.1.2';
 
 const MODES = [['rock', '岩石'], ['fossil', '化石'], ['weather', '天気図'], ['topo', '地形図']];
 

@@ -1,7 +1,7 @@
 // 地学用語の関連付け：用語のネットワーク・関係を当てる練習・経路さがし・単元ごとの一覧
 import { C, Z, $, $$, e, f1, head, tabs, bindTabs, probButton, done, quiz, choicesFrom, shuffle } from './common.js';
 
-export const FILE_VERSION = '0.1.1';
+export const FILE_VERSION = '0.1.2';
 
 // 向きのある関係（A → B）。そのほかは向きなし（説明文で読む）
 const DIRECTED = { cause: '原因', form: 'できる', evidence: '証拠' };
@@ -38,12 +38,12 @@ function linkText(l, from) {
 }
 
 function searchBox(id, ph) {
-  return `<input class="tr-search" id="${id}" list="${id}-dl" placeholder="${e(ph)}" autocomplete="off"><datalist id="${id}-dl">${T.terms.map(t => `<option value="${e(t.name)}"></option>`).join('')}</datalist>`;
+  return `<input class="tr-search" id="${id}" list="${id}-dl" placeholder="${e(ph)}" autocomplete="off"><datalist id="${id}-dl">${T.terms.flatMap(t => [t.name, ...(t.aka || [])]).map(n => `<option value="${e(n)}"></option>`).join('')}</datalist>`;
 }
 function findTerm(q) {
   const s = q.trim();
   if (!s) return null;
-  return T.terms.find(t => t.name === s) || T.terms.find(t => t.name.includes(s)) || T.terms.find(t => t.def.includes(s)) || null;
+  return T.terms.find(t => t.name === s) || T.terms.find(t => (t.aka || []).includes(s)) || T.terms.find(t => t.name.includes(s)) || T.terms.find(t => (t.aka || []).some(a => a.includes(s))) || T.terms.find(t => t.def.includes(s)) || null;
 }
 
 // ---------------------------------------------------------------- つながり（中心の用語とその近く）
@@ -87,7 +87,7 @@ function net(box, key) {
     });
     $('#trhist').innerHTML = hist.length ? `<button class="linkbtn" id="trback">‹ ${e(by[hist[hist.length - 1]].name)} に戻る</button>` : '';
     $('#trback')?.addEventListener('click', () => { cur = hist.pop(); draw(); });
-    $('#trdet').innerHTML = `<div class="panel zk-detail"><div class="zk-dhead">${e(t.name)}</div><div class="muted small">${e(unitName(t.unit))}</div><p>${e(t.def)}</p>
+    $('#trdet').innerHTML = `<div class="panel zk-detail"><div class="zk-dhead">${e(t.name)}</div><div class="muted small">${e(unitName(t.unit))}</div><p>${e(t.def)}</p>${t.aka && t.aka.length ? `<p class="muted small">別名・旧称：${e(t.aka.join('、'))}</p>` : ''}
       <h3>つながり（${ns.length}）</h3><ul class="tr-links">${ns.map(x => `<li><a class="linkbtn" data-go="${x.other}">${linkText(x.l, cur)}</a>${x.l.note ? `<small class="muted">${e(x.l.note)}</small>` : ''}</li>`).join('')}</ul>
       ${probButton('terms', cur, `「${t.name}」の問題を解く`)}</div>`;
     $$('#trdet [data-go]').forEach(a => a.addEventListener('click', () => { hist.push(cur); cur = a.dataset.go; draw(); window.scrollTo({ top: 0, behavior: 'smooth' }); }));
@@ -120,7 +120,7 @@ function practice(box) {
           const t = terms[Math.floor(Math.random() * terms.length)];
           const pool = T.terms.filter(x => x.unit === t.unit).map(x => x.name);
           const all = pool.length >= 4 ? pool : T.terms.map(x => x.name);
-          return { item: { t }, svg: `<div class="tr-q"><div class="muted small">次の説明にあてはまる用語は？</div><p>${e(t.def.split(t.name).join('〇〇'))}</p></div>`, answer: t.name, choices: choicesFrom(t.name, all) };
+          return { item: { t }, svg: `<div class="tr-q"><div class="muted small">次の説明にあてはまる用語は？</div><p>${e([t.name, ...(t.aka || [])].reduce((d, w) => d.split(w).join('〇〇'), t.def))}</p></div>`, answer: t.name, choices: choicesFrom(t.name, all) };
         }
         const cs = links.filter(l => DIRECTED[l.rel] === '原因' || l.rel === 'form');
         const l = cs[Math.floor(Math.random() * cs.length)] || links[0];

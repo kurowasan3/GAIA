@@ -1,5 +1,5 @@
 // 探究ページの共通部品
-export const FILE_VERSION = '0.1.1';
+export const FILE_VERSION = '0.1.2';
 
 export let C = null;     // アプリから渡される道具（esc・math・toast・prefs・save・problemsFor・openIds）
 export let Z = null;     // data/lab.json

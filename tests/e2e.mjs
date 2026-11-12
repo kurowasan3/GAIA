@@ -277,7 +277,7 @@ try {
     await page.goto(U + '#lab=identify'); await page.waitForTimeout(1500);
     const v = JSON.parse(fs.readFileSync(path.join(root, 'data/index.json'), 'utf8')).dataVersion;
     const keys = await page.evaluate(async () => caches.keys());
-    ok(keys.includes('gaia-data-' + v) && keys.includes('gaia-v0.1.1'), `コード用とデータ用のキャッシュ ${keys}`);
+    ok(keys.includes('gaia-data-' + v) && keys.includes('gaia-v0.1.2'), `コード用とデータ用のキャッシュ ${keys}`);
     ok(keys.includes('lemma-v0.9.0') && keys.includes('celestia-v0.5.0'), '同じドメインの他のアプリのキャッシュを消さない');
     await page.context().setOffline(true);
     await page.goto(U + '#today'); await page.waitForTimeout(1200);
