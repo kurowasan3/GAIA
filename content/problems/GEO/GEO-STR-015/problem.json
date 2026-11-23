@@ -25,7 +25,12 @@
    {
     "id": "main",
     "tex": "N53°E",
-    "grading": "語{N53°E|N53E|北53°東}"
+    "grading": "語{N53°E|N53E|北53°東}",
+    "distractors": [
+     "N67°E",
+     "N60°E",
+     "N53°W"
+    ]
    }
   ]
  },

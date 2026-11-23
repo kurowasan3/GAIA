@@ -8,7 +8,10 @@ export function createMockSupabase({ key = 'sb_publishable_test', code = '123456
   const rows = new Map();       // user id → { state, rev, updated_at }
   const sent = [];
   let n = 0;
-  const hooks = { beforePatch: null };
+  // hooks.db：PostgreSQL（PGlite）。指定すると、記録の作成・更新を表 public.gaia_state（supabase/guard.sql のトリガーつき）に通す。
+  //   トリガーに断られたら、PostgREST と同じく 400 と { code: 'GM00x', message } を返す（実際の Supabase の応答の形は未確認）
+  const hooks = { beforePatch: null, db: null };
+  const pgError = (e) => json(400, { code: e.code || 'XX000', message: e.message, details: null, hint: null });
 
   const issue = (u) => {
     n++;
@@ -49,12 +52,23 @@ export function createMockSupabase({ key = 'sb_publishable_test', code = '123456
     if (path === '/rest/v1/gaia_state') {
       const want = u.searchParams.get('user_id')?.replace(/^eq\./, '');
       if (method === 'GET') {
+        if (hooks.db) {
+          const q = await hooks.db.query('select state, rev from public.gaia_state where user_id = $1', [uid]);
+          return json(200, q.rows.length && (!want || want === uid) ? [{ state: q.rows[0].state, rev: q.rows[0].rev }] : []);
+        }
         const r = rows.get(uid);
         return json(200, r && (!want || want === uid) ? [{ state: r.state, rev: r.rev }] : []);   // 他人の行は見えない
       }
       if (method === 'POST') {
         if (data.user_id !== uid) return json(403, { code: '42501', message: 'new row violates row-level security policy' });
-        if (rows.has(uid)) return json(409, { code: '23505', message: 'duplicate key value violates unique constraint' });
+        if (!hooks.db && rows.has(uid)) return json(409, { code: '23505', message: 'duplicate key value violates unique constraint' });
+        if (hooks.db) {
+          try {
+            const r = await hooks.db.query('insert into public.gaia_state (user_id, state, rev) values ($1, $2::jsonb, $3) returning state, rev', [uid, JSON.stringify(data.state), data.rev]);
+            rows.set(uid, { state: r.rows[0].state, rev: r.rows[0].rev, updated_at: new Date().toISOString() });
+          } catch (e) { return e.code === '23505' ? json(409, { code: '23505', message: e.message }) : pgError(e); }
+          return json(201);
+        }
         rows.set(uid, { state: data.state, rev: data.rev, updated_at: new Date().toISOString() });
         return json(201);
       }
@@ -62,7 +76,16 @@ export function createMockSupabase({ key = 'sb_publishable_test', code = '123456
         if (hooks.beforePatch) await hooks.beforePatch(uid);
         const rev = Number(u.searchParams.get('rev')?.replace(/^eq\./, ''));
         const r = rows.get(uid);
-        if (want !== uid || !r || r.rev !== rev) return json(200, []);
+        if (want !== uid) return json(200, []);
+        if (!hooks.db && (!r || r.rev !== rev)) return json(200, []);
+        if (hooks.db) {
+          try {
+            const q = await hooks.db.query('update public.gaia_state set state = $1::jsonb, rev = $2 where user_id = $3 and rev = $4 returning state, rev', [JSON.stringify(data.state), data.rev, uid, rev]);
+            if (!q.rows.length) return json(200, []);
+            rows.set(uid, { state: q.rows[0].state, rev: q.rows[0].rev, updated_at: data.updated_at });
+            return json(200, [{ user_id: uid, rev: q.rows[0].rev }]);
+          } catch (e) { return pgError(e); }
+        }
         rows.set(uid, { state: data.state, rev: data.rev, updated_at: data.updated_at });
         return json(200, [{ user_id: uid, rev: data.rev }]);
       }
@@ -79,7 +102,7 @@ export function createMockSupabase({ key = 'sb_publishable_test', code = '123456
   // node の fetch の代わりに使う（単体テスト用）
   const fetch = async (url, init = {}) => {
     const r = await handle({ method: init.method || 'GET', url, headers: init.headers, body: init.body });
-    return { ok: r.status >= 200 && r.status < 300, status: r.status, text: async () => r.body };
+    return { ok: r.status >= 200 && r.status < 300, status: r.status, text: async () => r.body, json: async () => JSON.parse(r.body) };
   };
   return { handle, fetch, rows, users, tokens, refresh, sent, hooks };
 }

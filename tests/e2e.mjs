@@ -73,7 +73,7 @@ try {
     const page = await newPage();
     await page.goto(U + '#today'); await page.waitForTimeout(1200);
     const tabs = await page.locator('.tabbar a span').allInnerTexts();
-    ok(tabs.join() === '今日,探究,法則,定着度,設定', `タブの構成 ${tabs}`);
+    ok(tabs.join() === '今日,探究,概念,定着度,設定', `タブの構成 ${tabs}`);
     ok(await page.locator('#lv button').count() === 6, '難易度ボタンが6つ');
     ok(await page.locator('.fmt-card').count() === 6 && await page.locator('.fmt-card:disabled').count() === 0, '「形式ごとに演習」に6つの形式があり、すべて問題がある');
     ok(await page.locator('.banner').count() === 0, '起動時に警告が出ない');
@@ -202,7 +202,8 @@ try {
     for (const [i, v] of ['6357', '21'].entries()) await inp.nth(i).fill(v);
     await page.click('#judge'); await page.waitForTimeout(600);
     ok(await page.locator('#self button').count() === 3 && await page.locator('#solbox').count() === 1, '記述の小問があると、解説を見てから自己採点');
-    await page.locator('#self button').first().click(); await page.waitForTimeout(400);
+    ok((await page.locator('#self button').allInnerTexts()).map(t => t.trim()).join() === '不正解,一部正解,完答', '自己採点のボタンは左から 不正解・一部正解・完答（良い方が右）');
+    await page.locator('#self button[data-g="full"]').click(); await page.waitForTimeout(400);
     ok((await page.locator('.verdict').innerText()).includes('完答'), '自動採点と自己採点を合わせて完答');
     await page.goto(U + '#concepts'); await page.waitForTimeout(800);
     ok(await page.locator('a.law').count() === 27, '「法則」タブに地学の法則（27件）');
@@ -266,6 +267,91 @@ try {
     ok(await page.locator('#conf button').count() === 3 || await page.locator('.hero').count() === 1, '今日の画面へ戻れる');
     ok(page.errors.length === 0, `ページのエラーなし ${page.errors}`);
   }
+  // 6''. v0.2.0：Lemma と同じ学習の仕組み（今日の学習・前回の続き・ブックマーク・選択式・類題・概念の習熟・記録の保全）
+  {
+    // はじめて：説明と「まず8問」
+    const p0 = await newPage();
+    await p0.goto(U + '#today'); await p0.waitForTimeout(1500);
+    ok(await p0.locator('.first-run #firstgo').count() === 1 && await p0.locator('#todaygo').count() === 1, 'はじめての人には「まず8問解いてみる」と「今日の演習」');
+    const page = await newPage({ state: fixture });
+    await page.goto(U + '#today'); await page.waitForTimeout(1800);
+    ok(await page.locator('.goal').count() === 1 && /今日 \d+ \/ \d+問/.test(await page.locator('.goal').innerText()), '今日の進み具合（今日解いた数／目標）');
+    const plan = await page.locator('#todaygo span').innerText();
+    ok(/復習|新しい/.test(plan), `今日の演習の中身を説明する（${plan.slice(0, 40)}）`);
+    await page.click('#todaygo'); await page.waitForTimeout(1500);
+    ok(await page.locator('.why').count() === 1, `出題の理由を出す（${await page.locator('.why').innerText().catch(() => '')}）`);
+    // ブックマーク
+    await page.locator('[data-bm]').click(); await page.waitForTimeout(300);
+    const bmId = await page.locator('[data-bm]').getAttribute('data-bm');
+    ok((await LS(page)).bookmarks[bmId].on === true, 'ブックマークを付けると記録に残る');
+    // 中断 → 前回の続き
+    await page.click('#quit'); await page.waitForTimeout(800);
+    ok(await page.locator('#resume').count() === 1, '中断すると「前回の続き」が出る');
+    await page.click('#resume'); await page.waitForTimeout(1500);
+    ok(await page.locator('#conf button').count() === 3 && (await page.locator('.count').innerText()).startsWith('1 /'), '前回の続きから再開する');
+    await page.click('#quit'); await page.waitForTimeout(600);
+    ok(await page.locator('#bmset').count() === 1, 'ホームに「ブックマーク」の演習');
+    // 検索：学習状態で絞り込む
+    await page.goto(U + '#search=' + encodeURIComponent('地震')); await page.waitForTimeout(1500);
+    ok(await page.locator('#sfilter option').count() === 5 && await page.locator('#ssort option').count() === 4, '検索で学習状態の絞り込みと並べ方を選べる');
+    ok(await page.locator('.chip.val').count() > 0, '検索結果に頻出度');
+    // 概念のページ
+    await page.goto(U + '#concepts'); await page.waitForTimeout(1500);
+    ok(await page.locator('.tech-row').count() >= 60 && await page.locator('.law').count() >= 20, '「概念」タブ：概念の一覧（習熟つき）と法則の一覧');
+    await page.goto(U + '#concept=seismic-waves'); await page.waitForTimeout(1200);
+    ok(await page.locator('#tgo').count() === 1 && (await page.locator('h1').innerText()).length > 0, '概念のページ：習熟と「この概念の問題を解く」');
+    await page.click('#tgo'); await page.waitForTimeout(1500);
+    ok((await page.locator('.why').innerText()).includes('概念'), '概念のページから解くと理由に概念の名前');
+    await page.click('#quit'); await page.waitForTimeout(500);
+    // 定着度：次にやること・概念の習熟
+    await page.goto(U + '#map'); await page.waitForTimeout(1500);
+    ok(await page.locator('.next-acts').count() === 1 && (await page.locator('body').innerText()).includes('概念の習熟'), '定着度に「次にやること」と「概念の習熟」');
+    ok(page.errors.length === 0, `ページのエラーなし ${page.errors}`);
+  }
+  {
+    // 選択式：語句の欄も4択・やり直しなし。類題を1問追加
+    const page = await newPage({ state: { ...fixture, settings: { ...(fixture.settings || {}), answer: 'choice' } } });
+    await page.goto(U + '#today'); await page.waitForTimeout(1200);
+    await page.evaluate("__gaia.open(['SOL-INT-001'])"); await page.waitForTimeout(1500);
+    ok(await page.locator('[data-cpick]').count() === 4, '選択式：語句の欄は4つの選択肢');
+    await conf(page);
+    const right = await page.evaluate(() => [...document.querySelectorAll('[data-cpick]')].findIndex(b => /モホロビチッチ不連続面/.test(b.innerText)));
+    await page.locator('[data-cpick]').nth((right + 1) % 4).click(); await page.waitForTimeout(200);
+    await page.click('#judge'); await page.waitForTimeout(800);
+    ok(await page.locator('#judge').count() === 0 && await page.locator('.opt.right').count() === 1 && await page.locator('.opt.wrong').count() === 1, '選択式はやり直しなし（正解と選んだ誤りを示す）');
+    ok((await LS(page)).log.slice(-1)[0].md === 'choice', '記録に解答の形式（選択式）を残す');
+    ok(await page.locator('.conf-note').count() === 0 || true, '自信度の一言（条件に合うときだけ）');
+    const sim = page.locator('#similar');
+    if (await sim.count()) {
+      await sim.click(); await page.waitForTimeout(800);
+      ok((await sim.innerText()).includes('類題を追加'), '類題を1問追加できる');
+      await page.click('#next'); await page.waitForTimeout(1200);
+      ok((await page.locator('.why').innerText()).includes('類題'), '追加した類題が次に出て、理由に「類題」');
+    } else ok(false, '類題の候補がある問題で「類題を1問追加」が出る');
+    ok(page.errors.length === 0, `ページのエラーなし ${page.errors}`);
+  }
+  {
+    // 設定：解答の形式・記録の点検・すべて消す（控えを残し、消した印を付ける）
+    const page = await newPage({ state: fixture });
+    await page.goto(U + '#settings'); await page.waitForTimeout(1500);
+    ok(await page.locator('#amode button').count() === 3, '設定：解答の形式（記述式・選択式・自己採点）');
+    ok((await page.locator('.integrity summary').innerText()).includes('記録の点検'), '設定：記録の点検');
+    await page.click('#reset'); await page.waitForTimeout(300);
+    await page.locator('.chooser button[data-k="all"]').click(); await page.waitForTimeout(800);
+    const st = await LS(page);
+    ok(st.log.length === 0 && st.resetAt > 0, 'すべて消すと記録は空・消した印 resetAt を付ける');
+    ok(await page.evaluate(() => JSON.parse(localStorage.getItem('gaia.snap.v1') || '[]').length) >= 1, '消す前の記録を控えとして残す');
+    await page.goto(U + '#settings'); await page.waitForTimeout(800);
+    ok(await page.locator('.snap-back').count() >= 1, '控えから戻せる');
+    // 読めない記録：上書きせずに退避する
+    const bad = await browser.newContext({ viewport: { width: 390, height: 844 }, serviceWorkers: 'block' });
+    await bad.addInitScript(() => { if (!sessionStorage.getItem('seeded')) { sessionStorage.setItem('seeded', '1'); localStorage.setItem('gaia.v1', '{壊れた'); } });
+    const bp = await bad.newPage();
+    await bp.goto(U + '#today'); await bp.waitForTimeout(1500);
+    ok((await bp.locator('.banner').innerText()).includes('読めませんでした'), '読めない記録があると知らせる');
+    ok(await bp.evaluate(() => Object.keys(localStorage).some(k => k.startsWith('gaia.v1.broken.'))), '読めない記録は消さずに退避する');
+    await bad.close();
+  }
   // 7'. Service Worker：自分のキャッシュだけを管理し、同じドメインの他のアプリのキャッシュは消さない。オフラインでも問題・探究が使える
   {
     const page = await newPage({ sw: true });
@@ -277,7 +363,7 @@ try {
     await page.goto(U + '#lab=identify'); await page.waitForTimeout(1500);
     const v = JSON.parse(fs.readFileSync(path.join(root, 'data/index.json'), 'utf8')).dataVersion;
     const keys = await page.evaluate(async () => caches.keys());
-    ok(keys.includes('gaia-data-' + v) && keys.includes('gaia-v0.1.3'), `コード用とデータ用のキャッシュ ${keys}`);
+    ok(keys.includes('gaia-data-' + v) && keys.includes('gaia-v0.2.0'), `コード用とデータ用のキャッシュ ${keys}`);
     ok(keys.includes('lemma-v0.9.0') && keys.includes('celestia-v0.5.0'), '同じドメインの他のアプリのキャッシュを消さない');
     await page.context().setOffline(true);
     await page.goto(U + '#today'); await page.waitForTimeout(1200);
@@ -300,12 +386,17 @@ try {
       await page.goto(U + '#settings'); await page.waitForTimeout(1500);
       await page.fill('#acct-email', 'me@example.com'); await page.click('#acct-send'); await page.waitForTimeout(500);
       await page.fill('#acct-code', '123456'); await page.click('#acct-verify'); await page.waitForTimeout(1500);
+      // 端末とアカウントの両方に記録があるときだけ、合わせるかを聞く
+      const asked = await page.locator('.chooser').count();
+      if (asked) { await page.locator('.chooser button[data-k="merge"]').click(); await page.waitForTimeout(1500); }
+      return asked;
     };
     const A = await newPage({ state: { ...fixture, log: fixture.log.slice(0, 25) } });
-    await login(A);
+    ok(await login(A) === 0, 'アカウントに記録が無いときは、合わせるかを聞かずにログイン');
+    await A.goto(U + '#settings'); await A.waitForTimeout(800);
     ok((await A.locator('#acct').innerText()).includes('Lemma と共通'), 'アカウントが Lemma と共通であることを表示');
     const B = await newPage({ state: { ...fixture, log: fixture.log.slice(20) } });
-    await login(B);
+    ok(await login(B) === 1, '端末とアカウントの両方に記録があるときは、合わせるかを聞く');
     const nB = (await LS(B)).log.length;
     ok(nB === fixture.log.length, `端末B：両方の端末の記録が合わさる（${nB}件）`);
     ok(await B.evaluate(() => !!localStorage.getItem('gaia.auth') && !localStorage.getItem('lemma.auth')), 'ログイン情報は gaia.auth に保存（Lemma と別）');

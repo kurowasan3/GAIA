@@ -5,7 +5,7 @@
 // キャッシュ名は必ず gaia- で始める。同じドメイン（github.io）の Lemma・ぶつりば・CELESTIA と
 // キャッシュ置き場を共有しているので、消すときは自分の接頭辞のものだけを消す。
 const PREFIX = 'gaia-';
-const VERSION = PREFIX + 'v0.1.3';
+const VERSION = PREFIX + 'v0.2.0';
 const FILES = [
   "./",
   "index.html",
@@ -18,6 +18,8 @@ const FILES = [
   "js/answer.js",
   "js/ui.js",
   "js/sync.js",
+  "js/store.js",
+  "js/mastery.js",
   "js/problem/figures.js",
   "js/lab.js",
   "js/lab/common.js",
@@ -32,6 +34,7 @@ const FILES = [
   "js/lab/model/charts.js",
   "js/config.js",
   "privacy.html",
+  "terms.html",
   "vendor/katex.min.js",
   "vendor/katex.min.css",
   "vendor/auto-render.min.js",

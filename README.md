@@ -2,7 +2,7 @@
 
 <img src="icons/icon-192.png" width="96" alt="GAIA のアイコン：断面を切り出した地球（地殻・マントル・外核・内核）">
 
-地図・断面図・シミュレーション・天体の図と問題演習で、現象のつながりから理解する高校地学アプリ（試作版 v0.1）。
+地図・断面図・シミュレーション・天体の図と問題演習で、現象のつながりから理解する高校地学アプリ（試作版 v0.2）。
 [CELESTIA](https://github.com/kurowasan3/CELESTIA)（高校物理）と同じ仕組み（復習・自動採点・同期・オフライン・問題管理表からの取り込み）で、物理シミュレーションの代わりに「探究」の5ページを持っています。
 iPhone・iPad・PC のブラウザで動き、ホーム画面に追加するとアプリとして使えます（PWA）。
 
@@ -17,7 +17,14 @@ iPhone・iPad・PC のブラウザで動き、ホーム画面に追加すると�
 - **出題形式（6つ）**：一問一答（語句。別名・表記ゆれを吸収）、正誤・選択（1つ・すべて）、図の読み取り（天気図・地形図・断面図・岩石・化石・グラフ）、順序・新旧（並べかえ）、用語の関係、計算（有効数字で判定）。記述は自己採点
 - **問題 356問**：全26単元・基礎〜国公立2次（基礎 56・標準 123・入試基礎 116・国公立2次 61）。うち57問は標準問題集の類題（条件を逆にする・2つの考えを組み合わせるなど、ひと捻りした問題）。図つき 38問（図は探究と同じモデルから作る）。難関・最難関は問題管理表から取り込む前提
 - **法則 27件**（地層累重・切断・大森公式・アイソスタシー・断熱減率・凝結高度・南中高度・ケプラー・会合周期・シュテファン・ボルツマン・ウィーン・等級と距離・ハッブル・放射年代など。導出または根拠つき）、概念 61、誤概念 24
-- **全分野からランダム／形式ごと／単元ごと／復習／検索／問題セット（3つ）**、自信度、定着度、ライト・ダーク、アカウントと同期、オフライン（CELESTIA と同じ）
+- **今日の学習（Lemma と同じ仕組み）**：今日解いた数／目標、中断した演習の「前回の続き」、「今日の演習を始める」（復習の時期の問題・要復習の概念・まだ学んでいない概念・違う文脈の問題・苦手な単元・新しい問題を、出題の理由つきで）。はじめての人には「まず8問」
+- **概念の習熟**：概念 61個ごとに未学習・学習中・要復習・習得を判定（Lemma の「解法の習熟」と同じ基準）。「概念」タブから概念のページ（使う法則・よくある誤解・習熟・問題）へ。定着度に「次にやること」
+- **解答後**：自信なしで正解した問題は早めに復習、「確実」なのに解けなかったら思い込みの注意。主な概念が浮かんだかを任意で記録。「類題を1問追加」。★ ブックマーク
+- **解答の形式**（設定）：記述式（入力して自動採点）・選択式（語句・数値も4択。やり直しなし）・自己採点。選択肢は `tools/make_choices.mjs` が決まった手順で作る
+- **頻出度**（高・中・低）：問題ごとに表示し、まだ解いていない問題は頻出度の高いものほど先に出る。検索で並べ替え・学習状態（未着手・間違えた・復習待ち・ブックマーク）で絞り込み
+- **記録の保全**：読めない記録は退避、保存の失敗・複数タブ・移行・読み込み・消去の前に控え、バックアップの検証、消した印 `resetAt`、ログイン時の確認。サーバー側の制限 `supabase/guard.sql`
+- **全分野からランダム／形式ごと／単元ごと／復習／検索／問題セット（3つ）**、自信度、定着度、ライト・ダーク、アカウントと同期、オフライン
+- 仕組みの詳しい説明は [docs/learning-system.md](docs/learning-system.md)
 - マスコット：モグラの「ライエル」（地層を掘って調べる。名前は『地質学原理』のライエルから）
 
 ## データの正しさを守る仕組み
@@ -45,9 +52,12 @@ js/                      アプリ（app.js・lab.js（探究）・catalog.js・
   lab/                   探究の5ページ（identify・strata・phenomena・sky・terms）
   lab/model/             画面に依存しないモデル（strata：地史と断面、maps：等値線・天気図・地形図、specimens：岩石と化石の絵、charts：走時曲線・HR図）
 tools/                   変換・作図・検査（geofig.mjs：問題の図／import_items.py：問題管理表の取り込み）
-tests/                   検査（node tests/run.mjs）
+tests/                   検査（node tests/run.mjs。store・sync・mastery・recommend・server_guard・e2e・e2e_dist）
 docs/data-spec.md        データ仕様
+docs/learning-system.md  学習の仕組み（今日の学習・概念の習熟・選択式・頻出度・記録の保全・配信）
 supabase/schema.sql      同期用の表（Supabase の SQL Editor で1回実行）
+supabase/guard.sql       サーバー側で学習記録を守る制限（schema.sql のあとに1回実行）
+tools/build_dist.py      配信用の dist/（必要なファイルだけ＋CSP の _headers＋robots.txt）
 ```
 
 ## 問題を追加・修正する
@@ -57,6 +67,7 @@ pip3 install jsonschema
 node tools/geofig.mjs                    # 作図仕様（*.fig.json）から SVG を作る
 python3 tools/build_data.py              # content/ → data/
 python3 tools/validate_content.py --write-golden   # 新しい問題ID を台帳に足す（問題を足したとき）
+node tools/make_choices.mjs              # 選択式の選択肢（入力用の答えを変えたとき）
 node tests/run.mjs                       # 検査（全部 ✓ になればOK）
 ```
 
@@ -86,11 +97,16 @@ node tools/geofig.mjs && python3 tools/build_data.py && python3 tools/validate_c
 ## アカウントと同期（Supabase）
 
 - Supabase プロジェクトは **Lemma と共通**（`js/config.js` の値も同じ）。アカウントも共通で、記録は別の表 `gaia_state` に保存
-- 準備：`supabase/schema.sql` を SQL Editor で1回実行（表を1つ足すだけ。ほかのアプリの表には触れない）
+- 準備：`supabase/schema.sql` を SQL Editor で1回実行（表を1つ足すだけ。ほかのアプリの表には触れない）。続けて `supabase/guard.sql` も1回実行（記録が減る・古くなる書き込みをサーバーが断る。何度実行してもよい）
 - 退会はアカウントごと消すので、Lemma などの記録も消える（画面でもそう伝えている）
 - 端末の保存キーは `gaia.v1`・`gaia.auth`。同じドメインの Lemma・ぶつりば・CELESTIA・ALCHEMIA と混ざらない
 
-## GitHub Pages で公開する
+## 公開する
+
+`python3 tools/build_dist.py` で配信用の `dist/` を作れる（`content/`・`tools/`・`tests/` を入れない。CSP などの `_headers` と `robots.txt` つき）。
+`.github/workflows/ci.yml` が push のたびに検査し、Variables `CF_PAGES_PROJECT` と Secrets `CLOUDFLARE_API_TOKEN`・`CLOUDFLARE_ACCOUNT_ID` を登録すると、main への push で Cloudflare Pages に配置する。
+
+### GitHub Pages で公開する（リポジトリを公開しているとき）
 
 リポジトリの直下にこのフォルダの中身を置き、Settings → Pages で `main` / `/ (root)` を選ぶと `https://<ユーザー名>.github.io/<リポジトリ名>/` で開けます。
 

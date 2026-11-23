@@ -21,7 +21,7 @@
 
 import { parse, compile, freeVars, toTeX, toPlain } from './parser.js';
 
-export const FILE_VERSION = '0.1.3';
+export const FILE_VERSION = '0.2.0';
 
 const SELF_WORDS = /^(証明|図示|記述|略|解答参照)/;
 const UNIT_RE = /(°|個|通り|桁|本|人|回|枚|組|点|色|日|番目|倍|秒|分|円|度|段|列|行|面|辺|頂点|種類)$/;
@@ -147,13 +147,20 @@ export function roundSig(v, sig) {
   const u = sigUnit(v, sig);
   return Math.round(v / u) * u;
 }
-function sciTeX(v, sig) {
+// 単位の TeX（% は TeX では注釈の記号、° ℃ は上付きの丸で書く）
+export function unitTeX(u) {
+  if (!u) return '';
+  if (u === '%') return '\\,\\%';
+  if (u === '°') return '^\\circ';
+  return '\\ ' + u.replace(/%/g, '\\%').split('℃').map(x => (x ? `\\mathrm{${x}}` : '')).join('{}^\\circ\\mathrm{C}');
+}
+export function sciTeX(v, sig) {
   if (v === 0) return '0';
   const e = Math.floor(Math.log10(Math.abs(roundSig(v, sig))));
   const m = roundSig(v, sig) / 10 ** e;
   const ms = m.toFixed(Math.max(0, sig - 1));
   if (e >= -2 && e <= 3) return roundSig(v, sig).toFixed(Math.max(0, sig - 1 - e));
-  return `${ms}\times10^{${e}}`;
+  return `${ms}\\times10^{${e}}`;
 }
 function checkChem(field, input) {
   if (field.kind === 'word') {
@@ -476,7 +483,7 @@ export function fieldAnswerHTML(f) {
     case 'word': return chemOrText(f.accept[0]) + (f.accept.length > 1 ? `<span class="muted small">（${f.accept.slice(1).map(chemOrText).join('、')} も可）</span>` : '');
     case 'pick': return f.answer.map(i => f.options[i]).join('，');
     case 'order': return f.answer.map(i => f.options[i]).join(' ＞ ');
-    case 'approx': return `$${sciTeX(f.value, f.sig)}${f.unit ? `\\ \\mathrm{${f.unit}}` : ''}$`;
+    case 'approx': return `$${sciTeX(f.value, f.sig)}${unitTeX(f.unit)}$`;
   }
   return null;
 }

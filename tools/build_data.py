@@ -85,7 +85,7 @@ def plain(tex):
 
 def data_version(content, problem_dirs):
     h = hashlib.sha256()
-    files = [content / n for n in ('taxonomy.json', 'concepts.json', 'laws.json', 'misconceptions.json', 'tags.json')]
+    files = [content / n for n in ('taxonomy.json', 'concepts.json', 'laws.json', 'misconceptions.json', 'tags.json', 'choices.json')]
     files += sorted((content / 'geo').rglob('*.json'))
     files += sorted((content / 'collections').glob('*.json')) if (content / 'collections').exists() else []
     for d in problem_dirs:
@@ -119,6 +119,18 @@ def build(content=CONTENT, out=ROOT / 'data'):
         shutil.rmtree(out / 'assets')
 
     index, bodies, search, hidden = [], {}, [], 0
+    # 頻出度（1=低 2=中 3=高）：problem.json の frequency。無ければ、主な概念（concepts の先頭）を扱う問題の数から
+    #   10問以上＝高・5〜9問＝中・4問以下＝低（全体のおよそ 3割・5割・2割）（よく使われる考え方ほど、問題集・入試に繰り返し出る、という近似）
+    main_n = {}
+    for _, p in probs:
+        if p['quality']['status'] == 'published' and p['concepts']:
+            main_n[p['concepts'][0]] = main_n.get(p['concepts'][0], 0) + 1
+    def freq(p):
+        if p.get('frequency'):
+            return p['frequency']
+        n = main_n.get(p['concepts'][0], 0) if p['concepts'] else 0
+        return 3 if n >= 10 else 2 if n >= 5 else 1
+    choices = read(content / 'choices.json')['choices'] if (content / 'choices.json').exists() else {}
     for d, p in probs:
         if p['quality']['status'] != 'published':
             hidden += 1
@@ -144,6 +156,9 @@ def build(content=CONTENT, out=ROOT / 'data'):
             e['zk'] = p['lab']['page'] + ('/' + p['lab']['key'] if p['lab'].get('key') else '')
         if p['quality'].get('verified'):
             e['ok'] = 1
+        v = freq(p)
+        if v != 2:
+            e['v'] = v
         # 図：ファイルを data/assets/<ID>/ に写し、本文からは ID で引く
         figs = {}
         for fg in p['figures']:
@@ -174,6 +189,8 @@ def build(content=CONTENT, out=ROOT / 'data'):
         if spec:
             b['in'] = spec
             e['in'] = 1
+            if choices.get(p['id']):
+                b['ch'] = choices[p['id']]   # 選択式の選択肢（欄ごと。先頭が正解。tools/make_choices.mjs が作る）
         wrong = {pt['id']: pt['wrong'] for pt in p['answer']['parts'] if pt.get('wrong')}
         if wrong:
             b['wrong'] = wrong

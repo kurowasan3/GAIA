@@ -4,83 +4,13 @@
 //   ログインしなければ何も送らない（今まで通り端末の中だけ）。
 import { SUPABASE_URL, SUPABASE_KEY } from './config.js';
 
-export const FILE_VERSION = '0.1.3';
+export const FILE_VERSION = '0.2.0';
 const AUTH_KEY = 'gaia.auth';   // Lemma（lemma.auth）とは別に持つ（同じドメインでトークンの更新がぶつからないように）
 export const enabled = () => !!(SUPABASE_URL && SUPABASE_KEY);
 
-// ---------------------------------------------------------------- 記録の合わせ方（端末どうしで食い違ったとき）
-// 設定のように「最後に変えた方」を採るもの
-export const LWW_KEYS = ['settings', 'practice', 'labPrefs'];
-const entryKey = (l) => `${l.p}|${l.t}`;
-const nkeys = (o) => Object.keys(o || {}).length;
-
-export function mergeState(L, R) {
-  if (!R) return L;
-  if (!L) return R;
-  const out = { ...R, ...L };
-  // 解答の記録：両方を足す（同じ回＝同じ問題・同じ時刻は1つに。項目の多い方に、足りない項目を補う）
-  const m = new Map();
-  for (const r of R.log || []) m.set(entryKey(r), r);
-  for (const l of L.log || []) {
-    const r = m.get(entryKey(l));
-    if (r && nkeys(r) > nkeys(l)) Object.assign(l, r);
-    else if (r) for (const [k, v] of Object.entries(r)) if (!(k in l)) l[k] = v;
-    m.set(entryKey(l), l);   // 手元の記録はそのままのオブジェクトを使う（解いている途中の参照が切れないように）
-  }
-  out.log = [...m.values()].sort((a, b) => a.t - b.t).slice(-5000);
-  // 復習状態：問題ごとに、最後に解いた方
-  const newer = (a, b) => { const o = { ...(b || {}) }; for (const [k, v] of Object.entries(a || {})) if (!o[k] || (v && v.last >= o[k].last)) o[k] = v; return o; };
-  out.pstat = newer(L.pstat, R.pstat);
-  // 解いた問題：最後に解いた時刻は新しい方、回数は多い方（記録の数より少なくはしない）
-  const count = {};
-  for (const l of out.log) count[l.p] = (count[l.p] || 0) + 1;
-  out.problems = {};
-  for (const k of new Set([...Object.keys(L.problems || {}), ...Object.keys(R.problems || {})])) {
-    const a = (L.problems || {})[k], b = (R.problems || {})[k];
-    out.problems[k] = { last: Math.max(a ? a.last : 0, b ? b.last : 0), n: Math.max(a ? a.n : 0, b ? b.n : 0, count[k] || 0) };
-  }
-  // 気づきのメモ：両方を足して、問題ごとに新しい5件
-  out.explains = {};
-  for (const k of new Set([...Object.keys(L.explains || {}), ...Object.keys(R.explains || {})])) {
-    const all = new Map();
-    for (const e of [...((R.explains || {})[k] || []), ...((L.explains || {})[k] || [])]) all.set(`${e.t}|${e.text}`, e);
-    out.explains[k] = [...all.values()].sort((a, b) => a.t - b.t).slice(-5);
-  }
-  // 予測 → 実験の記録：両方を足す（同じ問題・同じ時刻は1つ）
-  if (L.predictions || R.predictions) {
-    const pm = new Map();
-    for (const x of [...(R.predictions || []), ...(L.predictions || [])]) pm.set(`${x.p}|${x.t}`, x);
-    out.predictions = [...pm.values()].sort((a, b) => a.t - b.t).slice(-2000);
-  }
-  // 誤概念の検出：誤概念ごとに、回数は多い方・最後の時刻は新しい方・解消は新しい方の判断
-  if (L.misc || R.misc) {
-    out.misc = {};
-    for (const k of new Set([...Object.keys(L.misc || {}), ...Object.keys(R.misc || {})])) {
-      const a = (L.misc || {})[k], b = (R.misc || {})[k];
-      if (!a || !b) { out.misc[k] = a || b; continue; }
-      const nw = (a.last || 0) >= (b.last || 0) ? a : b;
-      out.misc[k] = { ...nw, n: Math.max(a.n || 0, b.n || 0), last: Math.max(a.last || 0, b.last || 0) };
-    }
-  }
-  // 連続日数：最後に解いた日が新しい方（同じ日なら長い方）
-  const sl = L.streak || {}, sr = R.streak || {};
-  out.streak = (sl.last || '') > (sr.last || '') ? sl : (sr.last || '') > (sl.last || '') ? sr : ((sl.count || 0) >= (sr.count || 0) ? sl : sr);
-  out.csvExportedAt = Math.max(L.csvExportedAt || 0, R.csvExportedAt || 0) || undefined;
-  if (out.csvExportedAt === undefined) delete out.csvExportedAt;
-  // 設定・選んだ分野など：最後に変えた方
-  const lw = (L.settingsAt || 0) >= (R.settingsAt || 0) ? L : R;
-  for (const k of LWW_KEYS) { if (k in lw) out[k] = lw[k]; else delete out[k]; }
-  out.settingsAt = Math.max(L.settingsAt || 0, R.settingsAt || 0);
-  out.schema = L.schema;
-  return out;
-}
-
-// 比較用：キーの順番によらない JSON
-export function stable(v) {
-  if (Array.isArray(v)) return `[${v.map(stable).join(',')}]`;
-  if (v && typeof v === 'object') return `{${Object.keys(v).sort().filter(k => v[k] !== undefined).map(k => `${JSON.stringify(k)}:${stable(v[k])}`).join(',')}}`;
-  return JSON.stringify(v);
-}
+// 記録の合わせ方（mergeState など）は v0.23 から js/store.js にある（同期しない版でも、タブどうし・バックアップの読み込みで使うため）
+export { LWW_KEYS, mergeState, mergePstat, stable } from './store.js';
+import { mergeState, stable, structural, SCHEMA } from './store.js';
 
 // ---------------------------------------------------------------- 通信
 export class SyncError extends Error {
@@ -98,18 +28,54 @@ const MESSAGES = {
   otp_expired: 'コードが違うか、期限が切れています。もう一度コードを送ってください。',
   validation_failed: 'メールアドレスの形が正しくありません。',
   email_address_invalid: 'メールアドレスの形が正しくありません。',
+  // supabase/guard.sql（サーバー側の制限。GAIA では GM001〜）で断られたとき。どれも端末の記録はそのまま残る
+  GM001: 'サーバーが記録の形を受け付けませんでした（この端末の記録はそのまま残っています）。',
+  GM002: '別の端末と同時に同期しました。もう一度同期してください。',
+  GM003: 'サーバーには新しい版のアプリの記録があります。アプリを更新してから同期してください（この端末の記録はそのまま残っています）。',
+  GM004: 'サーバーにある解答の記録が無くなる書き込みだったため、サーバーが断りました（この端末の記録はそのまま残っています）。アプリを最新の版に更新してから「今すぐ同期」を押してください。',
+  GM005: '解答の記録の一部の項目を消す書き込みだったため、サーバーが断りました（この端末の記録はそのまま残っています）。アプリを最新の版に更新してから「今すぐ同期」を押してください。',
+  GM006: '「記録を消した時刻」が正しくないため、サーバーが断りました。端末の日時が正しいか確かめてから「今すぐ同期」を押してください。',
+  GM007: 'サーバーにある復習の状態・ブックマーク・メモが無くなる書き込みだったため、サーバーが断りました（この端末の記録はそのまま残っています）。アプリを最新の版に更新してから「今すぐ同期」を押してください。',
+  GM008: '同じ解答の記録を重ねて送る書き込みだったため、サーバーが断りました（この端末の記録はそのまま残っています）。',
+  GM009: '復習の状態・ブックマーク・メモを同じ時刻のまま書き換える書き込みだったため、サーバーが断りました（この端末の記録はそのまま残っています）。アプリを最新の版に更新してから「今すぐ同期」を押してください。',
 };
 
-export function createSync({ getState, applyState, onStatus = () => {} }) {
+// サーバーに送らないもの：localResetAt（この端末だけの「置き換えた」印）
+const forServer = (st) => { if (!st || !('localResetAt' in st)) return st; const o = { ...st }; delete o.localResetAt; return o; };
+const RETRY_MAX = 4;
+// 失敗の分類（v0.25）。kind ごとに、やり直すか・自動の同期を止めるかが決まる
+//   offline   通信できない            → 間をあけてやり直す
+//   conflict  同時の書き込み（GM002 含む）→ 間をあけてやり直す
+//   server    サーバーの一時的な不調（5xx・429・408）→ 間をあけてやり直す
+//   auth      ログイン切れ・ログアウト → やり直さない（もう一度ログイン）
+//   rejected  サーバー（guard.sql）が書き込みを断った（GM001・GM003〜GM009）→ やり直さず、自動の同期を止める
+//   data      サーバーか手元の記録が壊れている・新しい版 → やり直さず、自動の同期を止める
+//   other     そのほか → やり直さない
+export function classify(code) {
+  const c = String(code || '');
+  if (c === 'offline') return 'offline';
+  if (c === 'conflict' || c === 'GM002') return 'conflict';
+  if (/^(5\d\d|429|408)$/.test(c)) return 'server';
+  if (/^GM00\d$/.test(c)) return 'rejected';
+  if (['bad_remote', 'newer_remote', 'bad_local', 'newer_local'].includes(c)) return 'data';
+  if (['no_session', 'PGRST301', '401', 'refresh_token_not_found'].includes(c)) return 'auth';
+  return 'other';
+}
+const retryable = (e) => e && ['offline', 'conflict', 'server'].includes(classify(e.code));
+const halts = (e) => e && ['rejected', 'data'].includes(classify(e.code));
+export function createSync({ getState, applyState, onStatus = () => {}, retryDelay = 15000 }) {
   let session = loadSession();
-  let timer = null, running = null;
-  const st = { status: session ? 'idle' : 'out', lastSync: session?.lastSync || null, error: null };
+  let timer = null, running = null, retries = 0;
+  const st = { status: session ? 'idle' : 'out', lastSync: session?.lastSync || null, error: null, code: null, kind: null, halted: false };
   const emit = () => onStatus({ ...st, email: session?.user?.email || null });
 
   async function call(path, { method = 'GET', body, auth = false, prefer } = {}) {
     if (!enabled()) throw new SyncError('同期の設定がありません', 'not_configured');
     const headers = { apikey: SUPABASE_KEY, 'Content-Type': 'application/json' };
-    if (auth) headers.Authorization = `Bearer ${session.access_token}`;
+    if (auth) {
+      if (!session) throw new SyncError('ログインしていません', 'no_session');   // 通信の途中でログアウトした
+      headers.Authorization = `Bearer ${session.access_token}`;
+    }
     if (prefer) headers.Prefer = prefer;
     let res;
     try {
@@ -150,35 +116,52 @@ export function createSync({ getState, applyState, onStatus = () => {} }) {
     for (let attempt = 0; attempt < 4; attempt++) {
       const rows = await call(`/rest/v1/gaia_state?select=state,rev&user_id=eq.${uid}`, { auth: true });
       const local = getState();
+      if (structural(local).length) throw new SyncError('この端末の記録の形が正しくないため、同期を止めました。', 'bad_local');
+      if (Number.isInteger(local.schema) && local.schema > SCHEMA) throw new SyncError('この端末の記録は新しい版のアプリのものです。アプリを更新してから同期してください。', 'newer_local');
       if (!rows.length) {
         try {
-          await call('/rest/v1/gaia_state', { method: 'POST', auth: true, prefer: 'return=minimal', body: { user_id: uid, state: local, rev: 1 } });
+          await call('/rest/v1/gaia_state', { method: 'POST', auth: true, prefer: 'return=minimal', body: { user_id: uid, state: forServer(local), rev: 1 } });
           return local;
         } catch (e) { if (e.code === '23505' || e.code === '409') continue; throw e; }   // 別の端末が先に作った
       }
       const { state: remote, rev } = rows[0];
+      // v0.23：サーバーの記録を確かめてから合わせる。壊れた記録・新しい版の記録とは合わせず、書き戻しもしない（手元もサーバーも変えない）
+      if (structural(remote).length) throw new SyncError('アカウントの記録の形が正しくないため、同期を止めました。この端末の記録はそのまま残っています。', 'bad_remote');
+      if (Number.isInteger(remote.schema) && remote.schema > SCHEMA) throw new SyncError('新しい版のアプリで保存された記録です。アプリを更新してから同期してください（この端末の記録はそのまま残っています）。', 'newer_remote');
       const merged = mergeState(local, remote);
-      if (stable(merged) !== stable(remote)) {
+      const send = forServer(merged);
+      if (stable(send) !== stable(remote)) {
         const up = await call(`/rest/v1/gaia_state?user_id=eq.${uid}&rev=eq.${rev}`, { method: 'PATCH', auth: true, prefer: 'return=representation',
-          body: { state: merged, rev: rev + 1, updated_at: new Date().toISOString() } });
+          body: { state: send, rev: rev + 1, updated_at: new Date().toISOString() } });
         if (!up.length) continue;   // 同時に別の端末が書いた → 取り直して合わせ直す
       }
+      // 通信の途中でログアウトした：手元には反映しない（ログアウトで消すときに、サーバーの記録が戻らないように）
+      if (!session || session.user.id !== uid) throw new SyncError('ログアウトしました', 'no_session');
       applyState(merged);
       return merged;
     }
     throw new SyncError('同時に同期が重なりました。少し待ってからもう一度試してください。', 'conflict');
   }
 
-  async function syncNow() {
+  // auto：解答後・画面が隠れたとき・オンライン復帰・自動のやり直しなど、利用者が押したのではない同期。
+  //   サーバーに断られた（halted）後は、自動の同期をしない（同じ書き込みを何度も断られ続けないように）。利用者の操作でだけ再開する
+  async function syncNow({ auto = false } = {}) {
     if (!session) return null;
     if (running) return running;
-    st.status = 'syncing'; st.error = null; emit();
+    if (auto && st.halted) return null;
+    st.status = 'syncing'; st.error = null; st.code = null; st.kind = null; emit();
     running = syncOnce().then((r) => {
+      retries = 0; st.halted = false;
+      if (!session) { st.status = 'out'; emit(); return null; }
       st.status = 'ok'; st.lastSync = Date.now();
-      if (session) { session.lastSync = st.lastSync; saveSession(session); }
+      session.lastSync = st.lastSync; saveSession(session);
       emit(); return r;
     }).catch((e) => {
-      if (session) { st.status = e.code === 'offline' ? 'offline' : 'error'; st.error = e.message; }
+      if (session) { st.status = e.code === 'offline' ? 'offline' : 'error'; st.error = e.message; st.code = e.code || null; st.kind = classify(e.code); }
+      // 一時的な失敗（オフライン・同時の書き込み・サーバーの不調）は、間をあけて数回だけやり直す。
+      //   サーバーに断られた・記録の形の問題は、やり直さず自動の同期も止める（人が対処する）。ログイン切れもやり直さない
+      if (session && halts(e)) { st.halted = true; clearTimeout(timer); }
+      else if (session && retryable(e) && retries < RETRY_MAX) { retries++; clearTimeout(timer); timer = setTimeout(() => syncNow({ auto: true }), retryDelay * 2 ** (retries - 1)); }
       emit(); return null;
     }).finally(() => { running = null; });
     return running;
@@ -190,18 +173,27 @@ export function createSync({ getState, applyState, onStatus = () => {} }) {
     async sendCode(email) {
       await call('/auth/v1/otp', { method: 'POST', body: { email: String(email).trim(), create_user: true } });
     },
-    async verify(email, code) {
+    // autoSync:false のときは同期せずに戻る（アプリが、端末とサーバーの記録を合わせるかを先に聞くため）
+    async verify(email, code, { autoSync = true } = {}) {
       const d = await call('/auth/v1/verify', { method: 'POST', body: { type: 'email', email: String(email).trim(), token: String(code).replace(/\s/g, '') } });
       if (!d || !d.access_token) throw new SyncError('ログインできませんでした', 'no_session');
       setSession(d); st.status = 'idle'; st.error = null; emit();
-      return syncNow();
+      return autoSync ? syncNow() : null;
+    },
+    // サーバーの記録の概要（無ければ null）：{ n: 解答の数, last: 最後に解いた時刻 }
+    async peek() {
+      await fresh();
+      const rows = await call(`/rest/v1/gaia_state?select=state,rev&user_id=eq.${session.user.id}`, { auth: true });
+      if (!rows.length) return null;
+      const log = (rows[0].state && rows[0].state.log) || [];
+      return { n: log.length, last: log.length ? log[log.length - 1].t : 0 };
     },
     syncNow,
     // 問題を解いたあとなど：20秒まとめてから同期
     schedule(ms = 20000) {
-      if (!session) return;
+      if (!session || st.halted) return;
       clearTimeout(timer);
-      timer = setTimeout(() => syncNow(), ms);
+      timer = setTimeout(() => syncNow({ auto: true }), ms);
     },
     async logout() {
       clearTimeout(timer);
