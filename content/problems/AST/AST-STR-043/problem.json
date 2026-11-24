@@ -1,0 +1,108 @@
+{
+ "id": "AST-STR-043",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "恒星のふらつきから惑星の質量を求める",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある恒星 P は質量が太陽の $2.0$ 倍で，地球から見ると公転面を真横から見る位置にある1つの惑星をもつ．恒星 P の視線速度を長期間測定すると，平均値を中心に $\\pm12\\,\\mathrm{m/s}$ の範囲で周期 $2.0$ 年の変動をくり返していた．惑星は恒星 P のまわりを円軌道で公転し，恒星 P は惑星との共通重心のまわりを同じ周期で円運動しているものとする．惑星の質量は恒星 P にくらべて十分小さい．\n\n太陽質量を単位とした中心星の質量 $M$，天文単位で表した軌道半径 $a$，年で表した周期 $T$ の間には $a^3=MT^2$ が成り立つ．地球の公転の速さは $30\\,\\mathrm{km/s}$，地球の質量は太陽の $3.0\\times10^{-6}$ 倍とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "惑星の軌道半径は何天文単位か．"
+     },
+     {
+      "id": "2",
+      "tex": "惑星の公転の速さは何 $\\mathrm{km/s}$ か．"
+     },
+     {
+      "id": "3",
+      "tex": "惑星の質量は地球の何倍か．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ質量の惑星が，恒星 P から $8.0$ 天文単位の円軌道を回っていたとする．恒星 P の視線速度の変動の振幅（$\\pm$ 何 $\\mathrm{m/s}$）と周期（年）を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.0$ 天文単位"
+   },
+   {
+    "id": "2",
+    "tex": "$30\\,\\mathrm{km/s}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.7\\times10^{2}$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "振幅 $\\pm6.0\\,\\mathrm{m/s}$，周期 $16$ 年"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　共通重心は動かないので，恒星と惑星の運動量はつり合う：$M v_{\\ast}=m v_{\\mathrm{p}}$．恒星の「ふらつき」の速さから惑星の質量がわかる．\n\n(1) $a^3=MT^2=2.0\\times2.0^2=8.0$ より $a=\\boldsymbol{2.0}$ 天文単位．\n\n(2) 地球は 1 天文単位の円を 1 年で回って $30\\,\\mathrm{km/s}$．速さは（円周）÷（周期）に比例するので\n\\[ v_{\\mathrm{p}}=30\\times\\frac{2.0}{2.0}=\\boldsymbol{30}\\ \\mathrm{km/s} \\]\n\n(3) 公転面を真横から見ているので，視線速度の振幅 $12\\,\\mathrm{m/s}$ が恒星の円運動の速さ $v_\\ast$．\n\\[ m=M\\frac{v_\\ast}{v_{\\mathrm{p}}}=2.0\\times\\frac{0.012}{30}=8.0\\times10^{-4}\\ (\\text{太陽質量})=\\frac{8.0\\times10^{-4}}{3.0\\times10^{-6}}\\fallingdotseq\\boldsymbol{2.7\\times10^{2}}\\ \\text{倍} \\]\n（木星程度の巨大惑星である．）\n\n(4) $T^2=a^3/M=512/2.0=256$ より $T=\\boldsymbol{16}$ 年．惑星の速さは $30\\times\\dfrac{8.0}{16}=15\\,\\mathrm{km/s}$ で半分になるので，恒星の速さも $v_\\ast=\\dfrac{m}{M}v_{\\mathrm{p}}$ より半分の $\\boldsymbol{6.0\\,\\mathrm{m/s}}$．遠い惑星ほど変動は小さく周期は長いので，検出に長い観測期間と高い精度が必要になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "共通重心のまわりの運動では恒星と惑星の運動量がつり合うので，恒星の視線速度の振幅と惑星の公転速度の比から惑星の質量が求まる．惑星が遠いほど恒星のふらつきは小さく周期は長くなる．"
+ },
+ "concepts": [
+  "stellar-properties",
+  "kepler",
+  "planet-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "系外惑星",
+  "視線速度法",
+  "ドップラー効果",
+  "共通重心",
+  "ケプラーの第3法則"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

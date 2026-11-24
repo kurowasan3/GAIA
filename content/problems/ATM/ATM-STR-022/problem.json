@@ -1,0 +1,108 @@
+{
+ "id": "ATM-STR-022",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "一様大気の厚さと実際の気圧の減り方",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "気圧は，その高さより上にある空気の重さによる圧力である。地表の気圧を $1000\\,\\mathrm{hPa}$，地表付近の空気の密度を $1.25\\,\\mathrm{kg/m^3}$，重力加速度を $9.8\\,\\mathrm{m/s^2}$ とし，$1\\,\\mathrm{hPa}=100\\,\\mathrm{Pa}$，$1\\,\\mathrm{Pa}=1\\,\\mathrm{N/m^2}$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地表付近で高さが $100\\,\\mathrm{m}$ 増すと，気圧はおよそ何 $\\mathrm{hPa}$ 下がるか。有効数字2桁で答えよ。"
+     },
+     {
+      "id": "2",
+      "tex": "仮に空気の密度が高さによらず地表の値のまま一様であるとすると，大気の上端（気圧が $0$ になる高さ）は地表から何 $\\mathrm{km}$ か。有効数字2桁で答えよ。"
+     },
+     {
+      "id": "3",
+      "tex": "実際の大気では，気圧は高さ約 $5.5\\,\\mathrm{km}$ ごとにほぼ半分になる。(2) で求めた高さでの実際の気圧に最も近いものを選べ。必要なら $2^{1.5}=2.8$ を用いよ。\nア　$0\\,\\mathrm{hPa}$（それより上に空気はない），イ　約 $100\\,\\mathrm{hPa}$，ウ　約 $350\\,\\mathrm{hPa}$，エ　約 $700\\,\\mathrm{hPa}$"
+     },
+     {
+      "id": "4",
+      "tex": "(3) のように，実際の大気が (2) の高さよりずっと上まで続いている理由を，「密度」という語を用いて簡潔に述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$12\\,\\mathrm{hPa}$"
+   },
+   {
+    "id": "2",
+    "tex": "$8.2\\,\\mathrm{km}$"
+   },
+   {
+    "id": "3",
+    "tex": "ウ"
+   },
+   {
+    "id": "4",
+    "tex": "上空ほど空気の密度が小さいので，同じ高さだけ上がっても減る気圧（その間にある空気の重さ）が小さくなり，気圧の減り方がしだいにゆるやかになるから。"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　厚さ $\\Delta h$ の空気の層の重さ（$1\\,\\mathrm{m^2}$ あたり）は $\\rho g\\Delta h$ で，これがその層の上と下の気圧の差になる。\n\n(1) $\\Delta p=\\rho g\\Delta h=1.25\\times9.8\\times100=1.225\\times10^{3}\\,\\mathrm{Pa}$，すなわち $\\boldsymbol{12\\,\\mathrm{hPa}}$。地表付近では「約 $8\\,\\mathrm{m}$ 上がると $1\\,\\mathrm{hPa}$ 下がる」ことになる。\n\n(2) 密度が一様なら気圧は高さに比例して減るので，気圧が $0$ になる高さ $H$ は\n\\[ H=\\frac{p_0}{\\rho g}=\\frac{1.00\\times10^{5}}{1.25\\times9.8}=8.16\\times10^{3}\\,\\mathrm{m} \\]\nすなわち $\\boldsymbol{8.2\\,\\mathrm{km}}$。これは富士山の2倍ほどの高さにすぎない。\n\n(3) $8.2\\,\\mathrm{km}$ は $5.5\\,\\mathrm{km}$ のおよそ $1.5$ 倍なので，実際の気圧は $1000\\times\\left(\\dfrac{1}{2}\\right)^{1.5}=\\dfrac{1000}{2.8}\\fallingdotseq 360\\,\\mathrm{hPa}$。大気の全質量の約 $35\\,\\%$ がまだこの高さより上にある。答えは \\textbf{ウ}。\n\n(4) 上空ほど空気の密度が小さいので，同じ $100\\,\\mathrm{m}$ 上がっても，その層の空気の重さ（気圧の減少）は小さくなる。気圧の減り方は高さとともにゆるやかになり（気圧はほぼ一定の高さごとに半分になる減り方），大気は一様大気の上端 $8\\,\\mathrm{km}$ をはるかにこえて続く。\n\n\\textbf{補足}　地表 $1\\,\\mathrm{m^2}$ の上の空気の質量は $p_0/g\\fallingdotseq1.0\\times10^{4}\\,\\mathrm{kg}$ で，(2) の $H$ は「この質量を地表の密度で積んだときの厚さ」にあたる。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "地表付近の気圧の減り方は $\\rho g$ で決まり，密度が一様なら大気の厚さは $p_0/(\\rho g)\\approx8\\,\\mathrm{km}$ になる。実際は上空ほど密度が小さいので気圧の減り方がゆるやかになり，その高さでも全質量の3分の1ほどの空気が上に残る。"
+ },
+ "concepts": [
+  "atmosphere-structure",
+  "atm-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気圧",
+  "一様大気",
+  "静水圧",
+  "大気の密度",
+  "大気の鉛直構造"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

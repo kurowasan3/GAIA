@@ -1,0 +1,100 @@
+{
+ "id": "GEO-HIS-034",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-05",
+ "topic": "イリジウムの量から堆積速度と隕石の大きさ",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "イリジウム（Ir）は地殻にはほとんど含まれず，隕石に比較的多く含まれる．宇宙から地表に降り積もる Ir の量（単位面積・単位時間あたり）は，ふつうは時代によらず一定とみなせる．ある深海底の地層を調べた．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "深海粘土層 A は $1000$ 年に $0.20\\,\\mathrm{cm}$ の速さで堆積し，Ir を $1\\,\\mathrm{cm^3}$ あたり $3.0\\times10^{-10}\\,\\mathrm{g}$ 含む．宇宙から降り積もる Ir の量は，$1\\,\\mathrm{cm^2}$ あたり $1000$ 年に何 g か（有効数字2桁）．また，別の層 B の Ir は $1\\,\\mathrm{cm^3}$ あたり $1.5\\times10^{-10}\\,\\mathrm{g}$ であった．B の堆積速度は $1000$ 年に何 cm か（有効数字2桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "中生代と新生代の境界には厚さ $2.0\\,\\mathrm{cm}$ の粘土層があり，隕石に由来する Ir を $1\\,\\mathrm{cm^3}$ あたり $6.0\\times10^{-8}\\,\\mathrm{g}$ 含む．この Ir を，(1) で求めたふつうの降り積もりだけでためるには何年かかるか（有効数字2桁）．また，この結果が，粘土層 $2.0\\,\\mathrm{cm}$ が A と同じ速さで堆積するのにかかる時間と矛盾することを示せ．"
+     },
+     {
+      "id": "3",
+      "tex": "境界粘土層の Ir が，1つの巨大隕石が衝突して蒸発し，地球の全表面に一様に降り積もったものだとする．隕石の質量の $5.0\\times10^{-7}$ が Ir，隕石の密度を $3.0\\,\\mathrm{g/cm^3}$，地球の半径を $6400\\,\\mathrm{km}$，円周率を $3.14$ として，隕石を球とみなしたときの半径を求めよ（有効数字2桁）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$6.0\\times10^{-11}\\,\\mathrm{g}$，$0.40\\,\\mathrm{cm}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.0\\times10^{6}$ 年．A と同じ速さなら $2.0\\,\\mathrm{cm}$ は $1.0\\times10^{4}$ 年で堆積し，そのあいだにふつうの降り積もりでたまる Ir は実際の $\\dfrac{1}{200}$ にすぎない（Ir の量に比べて粘土層が薄すぎる）"
+   },
+   {
+    "id": "3",
+    "tex": "4.6 km"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 降り積もる量と堆積速度}　$1000$ 年に $1\\,\\mathrm{cm^2}$ の上に積もる A の体積は $0.20\\,\\mathrm{cm^3}$ なので\n\\[ F=3.0\\times10^{-10}\\times0.20=\\boldsymbol{6.0\\times10^{-11}}\\ \\mathrm{g/(cm^2\\cdot1000\\text{年})} \\]\n降り積もる量 $F$ が一定なら，（Ir の濃度）×（堆積速度）＝$F$ で，濃度は堆積速度に反比例する．B の堆積速度は $\\dfrac{6.0\\times10^{-11}}{1.5\\times10^{-10}}=\\boldsymbol{0.40}\\,\\mathrm{cm}/1000$ 年（濃度が半分なら速さは2倍）．これが Ir を使って堆積速度を見積もる原理である．\n\n\\textbf{(2) 境界粘土層の Ir}　$1\\,\\mathrm{cm^2}$ あたりの Ir は $6.0\\times10^{-8}\\times2.0=1.2\\times10^{-7}\\,\\mathrm{g}$．ふつうの降り積もりでは\n\\[ \\frac{1.2\\times10^{-7}}{6.0\\times10^{-11}}\\times1000=\\boldsymbol{2.0\\times10^{6}}\\ \\text{年} \\]\nかかる．一方，A と同じ速さなら $2.0\\,\\mathrm{cm}$ は $\\dfrac{2.0}{0.20}\\times1000=1.0\\times10^{4}$ 年で堆積する．この間にたまる Ir は $6.0\\times10^{-13}\\,\\mathrm{g}$ ほどで，実際の量の $\\dfrac{1}{200}$ にすぎない．Ir が「ふつうの降り積もり」では説明できないほど多く，短い時間に大量の Ir が供給されたことを示す．\n\n\\textbf{(3) 隕石の大きさ}　地球の表面積は $4\\pi R^2=4\\times3.14\\times(6.4\\times10^{8})^2\\fallingdotseq5.14\\times10^{18}\\,\\mathrm{cm^2}$．\n\\[ \\text{Ir の総量}=5.14\\times10^{18}\\times1.2\\times10^{-7}\\fallingdotseq6.2\\times10^{11}\\,\\mathrm{g},\\qquad \\text{隕石の質量}=\\frac{6.2\\times10^{11}}{5.0\\times10^{-7}}\\fallingdotseq1.23\\times10^{18}\\,\\mathrm{g} \\]\n体積 $V=\\dfrac{1.23\\times10^{18}}{3.0}\\fallingdotseq4.1\\times10^{17}\\,\\mathrm{cm^3}$ で，$\\dfrac{4}{3}\\pi r^3=V$ より\n\\[ r=\\left(\\frac{3V}{4\\pi}\\right)^{1/3}\\fallingdotseq(9.8\\times10^{16})^{1/3}\\fallingdotseq4.6\\times10^{5}\\,\\mathrm{cm}=\\boldsymbol{4.6}\\ \\mathrm{km} \\]\n直径約 $10\\,\\mathrm{km}$ の天体の衝突となり，白亜紀末の大量絶滅の原因とされる巨大隕石の大きさと同じ程度である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "宇宙から降る Ir の量が一定なら，地層中の Ir の濃度は堆積速度に反比例する．中生代末の境界粘土層の Ir はふつうの降り積もりでは説明できないほど多く，その総量と隕石中の Ir の割合から衝突した隕石の大きさが見積もれる．"
+ },
+ "concepts": [
+  "life-history",
+  "planet-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "イリジウム",
+  "白亜紀末の大量絶滅",
+  "隕石衝突",
+  "堆積速度",
+  "物質収支"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

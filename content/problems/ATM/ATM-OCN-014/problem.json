@@ -1,0 +1,99 @@
+{
+ "id": "ATM-OCN-014",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "浅い海に入る波の速さ・波長と屈折",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "周期 10 s の波が沖から海岸に近づいてくる．波の周期は水深が変わっても変わらない．水深が波長の $\\dfrac12$ より大きいところでは波の速さは $\\sqrt{\\dfrac{gL}{2\\pi}}$（$L$：波長），水深が波長の $\\dfrac{1}{20}$ より小さいところでは $\\sqrt{gh}$（$h$：水深）で表されるとする．$g=9.8\\ \\mathrm{m/s^2}$，$\\pi=3.14$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水深 100 m の沖での波の波長と速さを求めよ（有効数字2桁）．また，用いた式の条件を満たしていることを確かめよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水深 2.0 m の海岸近くでの波の速さと波長を求めよ（有効数字2桁）．また，用いた式の条件を満たしていることを確かめよ．"
+     },
+     {
+      "id": "3",
+      "tex": "海岸線に斜めに近づいてきた波の峰（波頭の線）は，海岸に近づくにつれてどうなるか．理由とともに述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "波長 $1.6\\times10^{2}$ m，速さ 16 m/s．水深 100 m は波長の 1/2（約 78 m）より大きい．"
+   },
+   {
+    "id": "2",
+    "tex": "速さ 4.4 m/s，波長 44 m．水深 2.0 m は波長の 1/20（約 2.2 m）より小さい．"
+   },
+   {
+    "id": "3",
+    "tex": "峰は海岸線（等深線）に平行に近づく．浅い所ほど波の速さが遅いので，峰のうち先に浅い所に入った部分が遅れ，峰が曲がる（屈折）から．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 速さを $c$ とすると $c=\\dfrac{L}{T}$ と $c=\\sqrt{\\dfrac{gL}{2\\pi}}$ が同時に成り立つ．2乗して $\\dfrac{L^2}{T^2}=\\dfrac{gL}{2\\pi}$ より\n\\[ L=\\frac{gT^2}{2\\pi}=\\frac{9.8\\times10^2}{2\\times3.14}=156\\fallingdotseq\\boldsymbol{1.6\\times10^{2}\\ \\mathrm{m}},\\qquad c=\\frac{156}{10}\\fallingdotseq\\boldsymbol{16\\ \\mathrm{m/s}} \\]\n$100>\\dfrac{156}{2}=78$ なので条件を満たす（深い海の波）．\n\\textbf{(2)} $c=\\sqrt{9.8\\times2.0}=4.43\\fallingdotseq\\boldsymbol{4.4\\ \\mathrm{m/s}}$，周期は変わらないので $L=cT=\\boldsymbol{44\\ \\mathrm{m}}$．$2.0<\\dfrac{44}{20}=2.2$ なので条件を満たす（浅い海の波）．\n周期を保ったまま速さが約 1/4 になるので，波長も約 1/4 に縮む．\n\\textbf{(3)} 波の峰のうち先に浅い所に入った部分は速さが遅くなり，まだ深い所にある部分は速いまま進むので，峰は浅い側に向かって曲がる（屈折）．その結果，峰は\\textbf{海岸線（等深線）に平行に近づき}，波は海岸にほぼ正面から打ち寄せる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "波が浅い海に入っても周期は変わらないので，速さが遅くなるのと同じ割合で波長が縮む．深い海と浅い海で別の速さの式を使い分け，速さの場所による違いから波の峰が等深線に平行に曲がる（屈折）ことを導く．"
+ },
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "海の波",
+  "波長",
+  "周期",
+  "波の速さ",
+  "屈折"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

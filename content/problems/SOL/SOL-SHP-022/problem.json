@@ -1,0 +1,108 @@
+{
+ "id": "SOL-SHP-022",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "自転による重力の減少と赤道と極の差",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球を半径 $R=6.4\\times10^{6}\\,\\mathrm{m}$ の球とし，万有引力による加速度の大きさを $g_1=9.80\\,\\mathrm{m/s^2}$（どこでも同じ），自転の角速度を $\\omega=7.3\\times10^{-5}\\,\\mathrm{rad/s}$ とする．緯度 $\\varphi$ の地点では，遠心力による加速度の大きさは $R\\omega^{2}\\cos\\varphi$ で，重力加速度は近似的に $g=g_1-R\\omega^{2}\\cos^{2}\\varphi$ と表される．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "赤道での遠心力による加速度の大きさを有効数字2桁で求めよ．また，それは $g_1$ のおよそ何分の1か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "北緯 $60^\\circ$ の地点で，自転のために重力加速度が $g_1$ より小さくなる量を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "実際に測定される重力加速度は，赤道で $9.780\\,\\mathrm{m/s^2}$，極で $9.832\\,\\mathrm{m/s^2}$ である．この差のうち，(1) の遠心力の効果では説明できない分は何 $\\mathrm{m/s^2}$ か．有効数字2桁で答えよ．また，その原因を簡潔に述べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "地球の自転が速くなり，赤道で重力加速度が $0$ になるとする．そのときの自転周期は何時間か．有効数字2桁で答えよ（$\\sqrt{1.53\\times10^{-6}}=1.24\\times10^{-3}$，$\\pi=3.14$）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.4\\times10^{-2}\\,\\mathrm{m/s^2}$，約 $290$ 分の1"
+   },
+   {
+    "id": "2",
+    "tex": "$8.5\\times10^{-3}\\,\\mathrm{m/s^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.8\\times10^{-2}\\,\\mathrm{m/s^2}$．地球が赤道方向にふくらんだ回転楕円体で，赤道の方が地球の中心から遠いため，万有引力が極より小さいから．"
+   },
+   {
+    "id": "4",
+    "tex": "$1.4$ 時間"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $R\\omega^{2}=6.4\\times10^{6}\\times(7.3\\times10^{-5})^{2}\\fallingdotseq\\boldsymbol{3.4\\times10^{-2}\\,\\mathrm{m/s^2}}$．$\\dfrac{9.80}{0.0341}\\fallingdotseq287$ なので約 $\\boldsymbol{290}$ 分の1．\n\n\\textbf{(2)} $R\\omega^{2}\\cos^{2}60^\\circ=0.0341\\times\\dfrac{1}{4}\\fallingdotseq\\boldsymbol{8.5\\times10^{-3}\\,\\mathrm{m/s^2}}$．\n\n\\textbf{(3)} 球の地球なら，赤道と極の差は遠心力の分 $0.0341$ だけのはず．実測の差は $9.832-9.780=0.052$ なので，説明できない分は $0.052-0.034\\fallingdotseq\\boldsymbol{1.8\\times10^{-2}\\,\\mathrm{m/s^2}}$．地球は自転のため赤道方向にふくらんだ回転楕円体で，赤道は極より中心から約 21 km 遠いので，万有引力そのものが赤道で小さい．\n\n\\textbf{(4)} $R\\omega^{2}=g_1$ より $\\omega=\\sqrt{\\dfrac{9.80}{6.4\\times10^{6}}}=\\sqrt{1.53\\times10^{-6}}=1.24\\times10^{-3}\\,\\mathrm{rad/s}$．周期 $T=\\dfrac{2\\pi}{\\omega}=\\dfrac{6.28}{1.24\\times10^{-3}}\\fallingdotseq5.06\\times10^{3}\\,\\mathrm{s}\\fallingdotseq\\boldsymbol{1.4}$ 時間．実際の自転（24 時間）はこれよりはるかに遅いので，遠心力は重力の数百分の一にとどまる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "自転による遠心力は赤道で万有引力の約1/290で，緯度とともに cos² で小さくなる．実測の赤道と極の重力差は遠心力だけでは足りず，残りは赤道のふくらみ（中心から遠い）による．赤道で重力が0になる自転周期と比べて遠心力の小ささを確かめる．"
+ },
+ "concepts": [
+  "earth-shape",
+  "gravity-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重力",
+  "遠心力",
+  "自転",
+  "地球楕円体",
+  "緯度変化"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

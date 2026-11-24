@@ -1,0 +1,99 @@
+{
+ "id": "GEO-SED-020",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "2地点の海岸段丘から昔の海面と隆起速度を決める",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある半島の先端の地点 A と，付け根に近い地点 B で，12万年前の海岸で波にけずられてできた平坦面（海岸段丘の面）が見つかった。この面の現在の標高は，A で $186\\,\\mathrm{m}$，B で $66\\,\\mathrm{m}$ である。12万年前の海面の高さは現在と同じではなく，現在の標高で $h$〔m〕の高さにあったとする。この12万年間，各地点は一定の速さで隆起し続け，A の隆起速度は B の3倍であることがわかっている。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A と B の平均の隆起速度 $R_\\mathrm{A}$，$R_\\mathrm{B}$〔m/1000年〕を，$h$ を使って表せ。"
+     },
+     {
+      "id": "2",
+      "tex": "$h$ と，$R_\\mathrm{A}$，$R_\\mathrm{B}$ の値を求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "もし12万年前の海面が現在と同じ高さ（$h = 0$）であると誤って仮定して隆起速度を計算すると，A の隆起速度は B の何倍と求められてしまうか。有効数字2桁で答えよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$R_\\mathrm{A} = \\dfrac{186-h}{120}$，$R_\\mathrm{B} = \\dfrac{66-h}{120}$"
+   },
+   {
+    "id": "2",
+    "tex": "$h = 6\\,\\mathrm{m}$，$R_\\mathrm{A} = 1.5\\,\\mathrm{m}/1000\\text{年}$，$R_\\mathrm{B} = 0.50\\,\\mathrm{m}/1000\\text{年}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.8$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　12万年前に標高 $h$ にあった面が，現在 A では $186\\,\\mathrm{m}$ にある。隆起量は $186-h$〔m〕，期間は $120$〔1000年〕なので\n\\[ R_\\mathrm{A} = \\frac{186-h}{120},\\qquad R_\\mathrm{B} = \\frac{66-h}{120} \\]\n\n\\textbf{(2)}　$R_\\mathrm{A} = 3R_\\mathrm{B}$ より $186-h = 3(66-h)$，$186-h = 198-3h$，$2h = 12$，$\\mathbf{h = 6\\ m}$。\n\\[ R_\\mathrm{A} = \\frac{180}{120} = \\mathbf{1.5},\\qquad R_\\mathrm{B} = \\frac{60}{120} = \\mathbf{0.50}\\quad(\\mathrm{m}/1000\\text{年}) \\]\n12万年前（最終間氷期）は現在より少し暖かく，海面は現在より数 m 高かったと考えられており，$h = 6\\,\\mathrm{m}$ はこれと合う。\n\n\\textbf{(3)}　$h = 0$ とすると $R_\\mathrm{A}:R_\\mathrm{B} = 186:66$，$186\\div66 = 2.82 \\fallingdotseq \\mathbf{2.8}$ 倍。昔の海面の高さという未知数を無視すると，特に隆起量の小さい地点で誤差が大きくなる。2地点を組み合わせると，その未知数を消去して求められる。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "段丘面の現在の標高は「当時の海面の高さ＋隆起量」なので，当時の海面の高さが未知でも，隆起速度の比がわかっている2地点の標高を連立すれば海面の高さと各地点の隆起速度が決まる。未知数を無視したときの誤差も比べる。"
+ },
+ "concepts": [
+  "weathering-erosion",
+  "landforms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "海岸段丘",
+  "隆起速度",
+  "海水準変動",
+  "地殻変動",
+  "最終間氷期"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

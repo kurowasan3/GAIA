@@ -1,0 +1,99 @@
+{
+ "id": "ATM-OCN-053",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "海洋と大気の熱容量の比較",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地表 $1\\,\\mathrm{m^2}$ あたりの大気の質量を $1.0\\times10^{4}\\,\\mathrm{kg}$，大気の比熱を $1.0\\times10^{3}\\,\\mathrm{J/(kg\\cdot K)}$，海水の密度を $1.0\\times10^{3}\\,\\mathrm{kg/m^3}$，海水の比熱を $4.0\\times10^{3}\\,\\mathrm{J/(kg\\cdot K)}$，地球表面に占める海洋の面積の割合を 0.70 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "大気全体を $1\\,^\\circ\\mathrm{C}$ 温めるのに必要な熱で，海洋の表面から深さ $d$ までの海水全体を $1\\,^\\circ\\mathrm{C}$ 温められるとする．$d$ は何 m か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "海洋の表層混合層（深さ $50\\,\\mathrm{m}$）の水温が全体で $0.10\\,^\\circ\\mathrm{C}$ 上がった．この熱がすべて大気に与えられたとすると，大気全体の平均気温は何 $^\\circ\\mathrm{C}$ 上がるか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "次のうち，(1)・(2) の結果と最も関係の深いものを選べ．ア　海岸に近い地域ほど気温の年較差が小さい，イ　高い山ほど気温が低い，ウ　低気圧の中心付近で雲ができやすい，エ　成層圏では高いほど気温が高い"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.6\\,\\mathrm{m}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.4\\,^\\circ\\mathrm{C}$"
+   },
+   {
+    "id": "3",
+    "tex": "ア"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　地表 $1\\,\\mathrm{m^2}$ あたりで考える．大気の熱容量は $1.0\\times10^{4}\\times1.0\\times10^{3}=1.0\\times10^{7}\\,\\mathrm{J/K}$．海洋（面積割合 0.70）の深さ $d$ までの熱容量は $0.70\\times1.0\\times10^{3}\\times4.0\\times10^{3}\\times d$．これらが等しいから\n\\[ d=\\frac{1.0\\times10^{7}}{0.70\\times4.0\\times10^{6}}=3.57\\fallingdotseq\\boldsymbol{3.6\\,\\mathrm{m}} \\]\n大気全体の熱容量は，海のわずか数 m 分にすぎない．\n\\textbf{(2)}　\n\\[ \\Delta T=\\frac{0.70\\times1.0\\times10^{3}\\times4.0\\times10^{3}\\times50\\times0.10}{1.0\\times10^{7}}=\\boldsymbol{1.4\\,^\\circ\\mathrm{C}} \\]\n海面の水温がわずかに変わるだけで，大気には大きな影響がある．\n\\textbf{(3)}　海洋は熱容量が大きく，温まりにくく冷めにくい．そのため海の影響を受ける地域は夏と冬の気温差が小さい．\\textbf{ア}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "大気全体の熱容量は海洋のわずか数 m の層の熱容量に等しい。そのため海洋表層のわずかな水温変化が大気の大きな気温変化に相当し，海洋は気候の変化をやわらげる。"
+ },
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱容量",
+  "比熱",
+  "海洋",
+  "大気",
+  "気候"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

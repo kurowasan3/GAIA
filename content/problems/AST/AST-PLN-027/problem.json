@@ -1,0 +1,110 @@
+{
+ "id": "AST-PLN-027",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "外惑星の位相角の最大値と満ち欠けの限界",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽・地球・惑星がつくる角のうち，惑星の位置での角（太陽―惑星―地球）を位相角 $\\alpha$ という。地球から見た惑星の円盤のうち輝いて見える部分の割合（輝いた部分の幅の，直径に対する割合）は $\\dfrac{1+\\cos\\alpha}{2}$ で表される。惑星の軌道は太陽を中心とする同一平面上の円とし，軌道半径は地球 $1.00$ 天文単位，火星 $1.52$ 天文単位，木星 $5.20$ 天文単位とする。必要なら $\\sin41^\\circ=0.656$，$\\cos41^\\circ=0.755$，$\\sin11^\\circ=0.191$，$\\cos11^\\circ=0.982$ を用いよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "火星の位相角が最大になるのは，地球から見て火星と太陽の方向が $90^\\circ$ 離れたとき（矩）である。このときの位相角を整数で求め，輝いて見える部分の割合の最小値を有効数字 2 桁で求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "木星について，(1) と同様に位相角の最大値と輝いて見える部分の割合の最小値を求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "金星が最大離角（地球から見た太陽からの角度が最大）にあるとき，望遠鏡で見た金星の形として最も適当なものを選べ。\nア　満月に近い形　イ　半月形　ウ　細い三日月形"
+     },
+     {
+      "id": "4",
+      "tex": "地球から望遠鏡で見ることが\\textbf{できない}形を選べ。\nア　三日月形の金星　イ　半月形の金星　ウ　半月形の火星　エ　少し欠けた火星"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "位相角 $41^\\circ$，割合 $0.88$"
+   },
+   {
+    "id": "2",
+    "tex": "位相角 $11^\\circ$，割合 $0.99$"
+   },
+   {
+    "id": "3",
+    "tex": "イ"
+   },
+   {
+    "id": "4",
+    "tex": "ウ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 太陽を S，地球を E，火星を M とする．矩では $\\angle\\mathrm{SEM}=90^\\circ$ なので，直角三角形 SEM で\n\\[ \\sin\\alpha=\\frac{\\mathrm{SE}}{\\mathrm{SM}}=\\frac{1.00}{1.52}=0.658 \\]\nよって $\\alpha\\fallingdotseq\\boldsymbol{41^\\circ}$．輝いて見える割合は $\\dfrac{1+0.755}{2}=0.8775\\fallingdotseq\\boldsymbol{0.88}$．（三角形の正弦定理 $\\sin\\alpha=\\dfrac{\\mathrm{SE}}{\\mathrm{SM}}\\sin\\angle\\mathrm{SEM}$ から，$\\angle\\mathrm{SEM}=90^\\circ$ のとき $\\alpha$ が最大になる．）\n\n\\textbf{(2)} $\\sin\\alpha=\\dfrac{1.00}{5.20}=0.192$ より $\\alpha\\fallingdotseq\\boldsymbol{11^\\circ}$．割合は $\\dfrac{1+0.982}{2}=0.991\\fallingdotseq\\boldsymbol{0.99}$．木星はほとんど欠けて見えない．\n\n\\textbf{(3)} 最大離角では地球から金星への視線が金星の軌道に接するので，$\\angle\\mathrm{SVE}=90^\\circ$（V は金星）．位相角 $90^\\circ$ で割合は $\\dfrac{1+0}{2}=0.5$，\\textbf{半月形}（イ）．\n\n\\textbf{(4)} 外惑星は地球より外側を回るので位相角が大きくなれず，火星でも輝く割合は 0.88 より小さくならない．半月形（割合 0.5）の火星は見られない．内惑星の金星は位相角が $0^\\circ$ から $180^\\circ$ 近くまで変わるので，三日月形にも半月形にもなる．答えは \\textbf{ウ}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "惑星の満ち欠けは太陽―惑星―地球の角（位相角）で決まり，外惑星では矩のとき最大で sin α = 地球の軌道半径÷惑星の軌道半径になる。火星でも約 41° までしか開かず半月形にはならないが，内惑星は最大離角で半月形，内合に近づくと三日月形になる。"
+ },
+ "concepts": [
+  "planet-motion",
+  "moon",
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "位相角",
+  "満ち欠け",
+  "外惑星",
+  "矩",
+  "最大離角",
+  "金星"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

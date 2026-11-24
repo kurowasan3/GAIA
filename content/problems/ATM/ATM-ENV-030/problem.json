@@ -1,0 +1,107 @@
+{
+ "id": "ATM-ENV-030",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "有効応力の考え方で地下水くみ上げによる地盤沈下量を見積もる",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水で飽和したやわらかい粘土層（はじめの厚さ $h_0=10.00\\ \\mathrm{cm}$）を容器に入れ，上から板で荷重をかけ，粘土中の水の圧力を圧力計で測る実験を行った．単位面積あたりの荷重の増加を $\\Delta S$，粘土中の水の圧力の増加を $\\Delta P$ とし，十分時間がたって変形が止まったときの粘土層の厚さ $h$ を測ると，次の表のようになった．\n\\[\\begin{array}{c|c|c}\n\\Delta S\\ (\\times10^{4}\\ \\mathrm{Pa}) & \\Delta P\\ (\\times10^{4}\\ \\mathrm{Pa}) & h\\ (\\mathrm{cm}) \\\\ \\hline\n10 & 0 & 9.70 \\\\\n10 & 4 & 9.82 \\\\\n10 & 8 & 9.94 \\\\\n6 & 0 & 9.82 \\\\\n6 & 2 & 9.88 \\\\\n4 & 4 & 10.00 \\\\\n8 & 2 & 9.82 \\\\\n\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "表から，$h_0-h$ は $\\Delta S$ と $\\Delta P$ のどのような組み合わせで決まるか．$h_0-h=a\\times(\\text{その組み合わせ})$ と表したときの $a$ を，$\\mathrm{cm/Pa}$ の単位で求めよ（有効数字2桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の結果は，粘土層にかかる荷重がどのように支えられていることを示しているか．"
+     },
+     {
+      "id": "3",
+      "tex": "ある平野の地下に，厚さ $15\\ \\mathrm{m}$ の粘土層が砂の帯水層にはさまれている．地下水のくみ上げで帯水層の水位が $12\\ \\mathrm{m}$ 下がり，粘土層の中の水の圧力も同じだけ下がった．地表の荷重は変わらないものとし，粘土層は実験の粘土と同じ割合（厚さに比例）で縮むとして，地盤沈下の量を求めよ（有効数字2桁）．水の密度を $1.0\\times10^{3}\\ \\mathrm{kg/m^3}$，重力加速度を $9.8\\ \\mathrm{m/s^2}$ とする．"
+     },
+     {
+      "id": "4",
+      "tex": "地下水位が下がってから地盤沈下が終わるまでに，何年もかかることが多い．その理由を粘土の性質から説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\Delta S-\\Delta P$ で決まる．$a=3.0\\times10^{-6}\\ \\mathrm{cm/Pa}$"
+   },
+   {
+    "id": "2",
+    "tex": "荷重は粒子どうしの骨組みと粒子間の水の圧力で分担して支えられ，粘土を縮めるのは粒子の骨組みが受けもつ分（$\\Delta S-\\Delta P$）だけであること"
+   },
+   {
+    "id": "3",
+    "tex": "約 $0.53\\ \\mathrm{m}$"
+   },
+   {
+    "id": "4",
+    "tex": "粘土は粒子が細かく水を通しにくいので，粘土層の中の水がゆっくりとしか抜けず，水の圧力の低下と粘土の収縮が長い時間をかけて進むから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\Delta S=10,\\ \\Delta P=4$ と $\\Delta S=6,\\ \\Delta P=0$ と $\\Delta S=8,\\ \\Delta P=2$ は，どれも $\\Delta S-\\Delta P=6\\times10^{4}\\ \\mathrm{Pa}$ で，$h=9.82\\ \\mathrm{cm}$ と同じになる．また $\\Delta S=\\Delta P$ では縮まない．よって $h_0-h$ は $\\boldsymbol{\\Delta S-\\Delta P}$ だけで決まる．$\\Delta S-\\Delta P=1.0\\times10^{5}\\ \\mathrm{Pa}$ のとき $h_0-h=0.30\\ \\mathrm{cm}$ なので\n\\[ a=\\frac{0.30}{1.0\\times10^{5}}=\\boldsymbol{3.0\\times10^{-6}\\ \\mathrm{cm/Pa}} \\]\n（他の行も $h_0-h=a(\\Delta S-\\Delta P)$ を満たす．）\n\n\\textbf{(2)} 荷重のうち $\\Delta P$ の分は粒子のすき間の水の圧力が支え，残り $\\Delta S-\\Delta P$ を粒子どうしの骨組みが支える．粘土を縮めるのは骨組みが受けもつ分だけである．\n\n\\textbf{(3)} 水圧の低下は $\\Delta P=-1.0\\times10^{3}\\times9.8\\times12\\approx-1.18\\times10^{5}\\ \\mathrm{Pa}$．$\\Delta S=0$ なので $\\Delta S-\\Delta P=1.18\\times10^{5}\\ \\mathrm{Pa}$．実験の粘土の縮む割合は $\\dfrac{3.0\\times10^{-6}}{10.00}=3.0\\times10^{-7}\\ \\mathrm{/Pa}$ なので\n\\[ 15\\ \\mathrm{m}\\times3.0\\times10^{-7}\\times1.18\\times10^{5}\\approx\\boldsymbol{0.53\\ \\mathrm{m}} \\]\n荷重が変わらなくても，水の圧力が下がると骨組みの負担が増えて粘土が縮み，地盤が沈下する．\n\n\\textbf{(4)} 粘土は粒子が細かく\\textbf{透水性が低い}ので，帯水層の水位が下がっても粘土層の中の水はゆっくりとしか抜けない．水圧が下がり骨組みの負担が増えるのはそれに合わせて少しずつ進むので，沈下は何年も続く．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "堆積物を縮めるのは荷重から間隙水の圧力を引いた分（粒子の骨組みが支える有効な応力）だけなので，地下水のくみ上げで水圧が下がると荷重が変わらなくても粘土層が縮んで地盤沈下が起こる．"
+ },
+ "concepts": [
+  "environment"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地盤沈下",
+  "地下水",
+  "粘土層",
+  "間隙水圧",
+  "表の読み取り"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

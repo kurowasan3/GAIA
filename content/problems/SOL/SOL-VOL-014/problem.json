@@ -1,0 +1,100 @@
+{
+ "id": "SOL-VOL-014",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "マグマ混合の割合を化学組成から求める",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "マントルでできた玄武岩質マグマと，地殻がとけてできた流紋岩質マグマが混合して，安山岩質マグマができたとする．それぞれの化学組成（質量％）の一部は次の通りである．\n\\[\\begin{array}{l|c|c}\n & \\ce{SiO2} & \\ce{MgO} \\\\ \\hline\n\\text{玄武岩質マグマ} & 49 & 8.0 \\\\\n\\text{流紋岩質マグマ} & 73 & 0.5 \\\\\n\\text{混合でできたマグマ} & 59 & ? \\\\\n\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "混合でできたマグマのうち，玄武岩質マグマに由来する部分は質量で何％か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "混合でできたマグマの $\\ce{MgO}$ は何％と予想されるか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "その後，このマグマから，かんらん石（$\\ce{SiO2}$ 40％，$\\ce{MgO}$ 44％）だけがマグマ全体の質量の 5.0％ 晶出して取り除かれた．残ったマグマの $\\ce{SiO2}$ と $\\ce{MgO}$ はそれぞれ何％になるか．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "58 ％"
+   },
+   {
+    "id": "2",
+    "tex": "4.9 ％"
+   },
+   {
+    "id": "3",
+    "tex": "$\\ce{SiO2}$ 60 ％，$\\ce{MgO}$ 2.8 ％"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　混合や晶出の前後で，各成分の\\textbf{質量の合計}は変わらない（物質収支）．\n\n\\textbf{(1)}　玄武岩質マグマの割合を $f$ とすると，$\\ce{SiO2}$ について\n\\[ 49f+73(1-f)=59 \\quad\\Rightarrow\\quad f=\\frac{73-59}{73-49}=\\frac{14}{24}\\approx0.583 \\]\nよって \\textbf{58 ％}．（$\\ce{SiO2}$ 59％ は 49％ と 73％ のまん中の 61％ より玄武岩側に寄っているので，玄武岩質マグマのほうが多い．）\n\n\\textbf{(2)}　同じ割合で $\\ce{MgO}$ も混ざるので\n\\[ 8.0\\times0.583+0.5\\times0.417\\approx4.67+0.21=4.875 \\]\nよって \\textbf{4.9 ％}．\n\n\\textbf{(3)}　マグマ $100\\,\\mathrm{g}$ から，かんらん石 $5.0\\,\\mathrm{g}$ が抜けて $95\\,\\mathrm{g}$ が残る．\n\\[ \\ce{SiO2}:\\ \\frac{59-5.0\\times0.40}{95}\\times100=\\frac{57}{95}\\times100=60\\ \\%, \\qquad \\ce{MgO}:\\ \\frac{4.875-5.0\\times0.44}{95}\\times100\\approx2.8\\ \\% \\]\nかんらん石もケイ酸塩鉱物だが，その $\\ce{SiO2}$（40％）はマグマ（59％）より少ないので，取り除かれると残りのマグマの $\\ce{SiO2}$ は\\textbf{増える}．一方，$\\ce{MgO}$ に富むかんらん石が抜けるので $\\ce{MgO}$ は大きく\\textbf{減る}．混合と結晶分化の両方がはたらくと，組成から混合の割合を見積もるときには注意が必要になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "マグマの混合では各成分の質量が保存されるので，端成分2つと混合物の SiO₂ から混合の割合を求め，それを使って他の成分を予測できる。混合後に Mg に富み SiO₂ に乏しい鉱物が晶出して抜けると，残液の SiO₂ は増え MgO は減る。"
+ },
+ "concepts": [
+  "volcano-forms",
+  "crystallization",
+  "rock-forming-minerals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "マグマ混合",
+  "物質収支",
+  "化学組成",
+  "結晶分化",
+  "安山岩質マグマ"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

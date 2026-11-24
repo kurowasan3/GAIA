@@ -1,0 +1,98 @@
+{
+ "id": "SOL-SHP-019",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "振り子時計を極へ運ぶ",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "振り子時計は，振り子が1往復するごとに針を一定の量だけ進める時計である．赤道（重力加速度 $9.780\\,\\mathrm{m/s^2}$）で正確に合わせた振り子時計を，振り子の長さを変えずに北極（重力加速度 $9.832\\,\\mathrm{m/s^2}$）へ運んだ．単振り子の周期は $T=2\\pi\\sqrt{\\dfrac{l}{g}}$（$l$：振り子の長さ，$g$：重力加速度）とし，温度による長さの変化は考えない．1日は $8.64\\times10^{4}$ 秒とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "北極でこの時計は進むか，遅れるか．また，1日あたり何秒ずれるか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "北極で正しく時を刻むようにするには，振り子の長さを何％長く，または短くすればよいか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ時計を（赤道で合わせたまま）別の地点 P へ運んだところ，1日あたり 60 秒進んだ．P の重力加速度を有効数字3桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "進む．1日あたり約 $2.3\\times10^{2}$ 秒"
+   },
+   {
+    "id": "2",
+    "tex": "約 $0.53$ ％長くする"
+   },
+   {
+    "id": "3",
+    "tex": "$9.79\\,\\mathrm{m/s^2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　時計が刻む時間は「往復の回数 × 赤道での周期 $T_e$」である．周期が短くなると，同じ時間に往復の回数が増え，時計は進む．\\textbf{(1)}　$T\\propto\\dfrac{1}{\\sqrt g}$ なので，北極での周期 $T_p$ は $T_e$ より短い．本当の1日（$8.64\\times10^{4}$ 秒）の間の往復回数は $\\dfrac{8.64\\times10^{4}}{T_p}$ 回で，時計はこれに $T_e$ をかけた時間を示す．\\[ 8.64\\times10^{4}\\times\\frac{T_e}{T_p}=8.64\\times10^{4}\\times\\sqrt{\\frac{9.832}{9.780}}\\approx8.64\\times10^{4}\\times1.00265 \\]よって1日に $8.64\\times10^{4}\\times0.00265\\approx229$ 秒，\\textbf{約} $\\boldsymbol{2.3\\times10^{2}}$ \\textbf{秒進む}．\\textbf{(2)}　周期を赤道と同じにするには $\\dfrac{l}{g}$ を同じにすればよく，$l$ を $g$ に比例させる．$\\dfrac{9.832}{9.780}=1.0053$ より，\\textbf{約 0.53 ％長くする}．\\textbf{(3)}　1日に 60 秒進むので $\\dfrac{T_e}{T_P}=\\dfrac{86460}{86400}$．$g\\propto\\dfrac{1}{T^2}$ より\\[ g_P=9.780\\times\\left(\\frac{86460}{86400}\\right)^2\\approx9.794 \\]で，$\\boldsymbol{9.79\\,\\mathrm{m/s^2}}$．重力加速度が $0.1$ ％ほど違うだけで，1日に1分もずれる．17世紀に，赤道に近い南米で振り子時計が遅れることから，重力が赤道で小さいことが見つかった．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "単振り子の周期は $\\sqrt{l/g}$ に比例するので，重力加速度のわずかな違いが振り子時計の1日あたりの進み・遅れとして積み重なる．逆に時計のずれから重力加速度を求め，振り子の長さの補正量（$l\\propto g$）も考える．"
+ },
+ "concepts": [
+  "earth-shape",
+  "gravity-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重力加速度",
+  "振り子",
+  "緯度と重力",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

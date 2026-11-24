@@ -1,0 +1,106 @@
+{
+ "id": "ATM-OCN-029",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "黒潮の流速・流量と熱の放出",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "黒潮は圧力傾度力とコリオリ力がつり合った地衡流で，流れの幅を $L$，沖側と岸側の海面高度の差を $\\Delta h$ とすると，平均流速 $v$ は\n\\[ v=\\frac{g\\,\\Delta h}{fL} \\]\nで表される．$f=2\\omega\\sin\\varphi$（$\\omega$ は地球の自転角速度，$\\varphi$ は緯度）である．$g=9.8\\,\\mathrm{m/s^2}$，$\\omega=7.3\\times10^{-5}\\,\\mathrm{s^{-1}}$，$\\sin33^\\circ=0.545$，$\\sin40^\\circ=0.643$ とし，答えは有効数字2桁で求めよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "北緯 $33^\\circ$ の断面 A で，$\\Delta h=0.90\\,\\mathrm{m}$，$L=80\\,\\mathrm{km}$ であった．平均流速 $v$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "断面 A で，流れの厚さを $400\\,\\mathrm{m}$（その中で流速は一様）として，黒潮の体積流量 [$\\mathrm{m^3/s}$] を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "下流の北緯 $40^\\circ$ の断面 B で，流速と幅が断面 A と同じだとすると，$\\Delta h$ は何 m か．"
+     },
+     {
+      "id": "4",
+      "tex": "断面 A から B までの間に，黒潮の運ぶ海水の平均水温が $2.0\\,\\mathrm{K}$ 下がっていた．体積流量は (2) の値（有効数字2桁に丸めた値）で一定とし，海水の密度を $1.0\\times10^3\\,\\mathrm{kg/m^3}$，比熱を $4.0\\times10^3\\,\\mathrm{J/(kg\\cdot K)}$ とする．流れと直角方向の熱のやりとりは無視できるとして，A と B の間の海面から大気へ放出された熱は何 W か．また，この海域の面積を $1.0\\times10^{12}\\,\\mathrm{m^2}$ として，海面 $1\\,\\mathrm{m^2}$ あたりの放出量 [$\\mathrm{W/m^2}$] を求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.4\\,\\mathrm{m/s}$"
+   },
+   {
+    "id": "2",
+    "tex": "$4.4\\times10^{7}\\,\\mathrm{m^3/s}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.1\\,\\mathrm{m}$"
+   },
+   {
+    "id": "4",
+    "tex": "$3.5\\times10^{14}\\,\\mathrm{W}$，$3.5\\times10^{2}\\,\\mathrm{W/m^2}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $f=2\\times7.3\\times10^{-5}\\times0.545=7.96\\times10^{-5}\\,\\mathrm{s^{-1}}$．\n\\[ v=\\frac{9.8\\times0.90}{7.96\\times10^{-5}\\times8.0\\times10^{4}}=1.38\\cdots \\]\nより $\\boldsymbol{1.4\\,\\mathrm{m/s}}$．\n(2) $vLH=1.386\\times8.0\\times10^{4}\\times400=4.43\\times10^{7}$ より $\\boldsymbol{4.4\\times10^{7}\\,\\mathrm{m^3/s}}$．\n(3) $v$ と $L$ が同じなら $\\Delta h\\propto f\\propto\\sin\\varphi$：$0.90\\times\\dfrac{0.643}{0.545}=1.06\\cdots$ より $\\boldsymbol{1.1\\,\\mathrm{m}}$．高緯度ほどコリオリ力が強いので，同じ流れを支えるのに大きな海面の傾きが必要．\n(4) 1 秒あたりに運ばれる海水の質量は $1.0\\times10^{3}\\times4.4\\times10^{7}=4.4\\times10^{10}\\,\\mathrm{kg/s}$．これが $2.0\\,\\mathrm{K}$ 冷えるので，失った熱（＝大気への放出）は\n\\[ 4.4\\times10^{10}\\times4.0\\times10^{3}\\times2.0=3.52\\times10^{14}\\,\\mathrm{W} \\]\nより $\\boldsymbol{3.5\\times10^{14}\\,\\mathrm{W}}$．$1\\,\\mathrm{m^2}$ あたり $3.52\\times10^{14}\\div1.0\\times10^{12}=\\boldsymbol{3.5\\times10^{2}\\,\\mathrm{W/m^2}}$．地球全体で平均した太陽放射の吸収量（約 $240\\,\\mathrm{W/m^2}$）より大きく，黒潮域は大気を強く暖める熱源になっている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "地衡流の式から流速・流量を求め，同じ流れを支える海面高度差が sin（緯度）に比例すること，さらに水温低下と流量の積から海から大気への放熱量を逆算する。"
+ },
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "黒潮",
+  "地衡流",
+  "体積流量",
+  "熱輸送",
+  "コリオリ力"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

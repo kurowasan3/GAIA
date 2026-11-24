@@ -1,0 +1,109 @@
+{
+ "id": "SOL-PLT-032",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "付加体の岩石の古地磁気から海洋プレートの移動をたどる",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある付加体で，次の岩石がとなり合って分布している。\n\n・枕状溶岩の玄武岩 B：その上に整合に重なるチャートの最下部から，$1.8$ 億年前を示す放散虫化石が見つかった。玄武岩 B の残留磁気の伏角は $0^\\circ$ であった。\n・砂岩 S：陸から運ばれた砂が海溝で積もったもの。$1.0$ 億年前を示す化石をふくみ，残留磁気の伏角 $I$ は北半球の値で $\\tan I=1.40$ であった。\n\n地球の磁場は地球の中心に置いた棒磁石（地軸の向き）の磁場とし，伏角 $I$ と緯度 $\\varphi$ の間に $\\tan I=2\\tan\\varphi$ が成り立つとする。玄武岩 B は海嶺でできたあと，海洋プレートにのって真北へ一定の速さで運ばれ，$1.0$ 億年前に海溝（位置は変わらない）に達したとする。緯度 $1^\\circ$ の長さを $111\\,\\mathrm{km}$，$\\tan35^\\circ=0.70$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "玄武岩 B ができたときの緯度を答えよ。"
+     },
+     {
+      "id": "2",
+      "tex": "砂岩 S が積もった海溝の緯度を求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "玄武岩 B を運んだ海洋プレートの平均の速さは何 $\\mathrm{cm/年}$ か。有効数字2桁で求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "できた場所も時代もちがう玄武岩 B と砂岩 S が，現在となり合って分布している理由を説明せよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0^\\circ$（赤道）"
+   },
+   {
+    "id": "2",
+    "tex": "北緯 $35^\\circ$"
+   },
+   {
+    "id": "3",
+    "tex": "$4.9\\,\\mathrm{cm/年}$"
+   },
+   {
+    "id": "4",
+    "tex": "赤道付近の海嶺でできた玄武岩とその上に積もったチャートが，海洋プレートにのって北へ運ばれ，海溝で陸からの砂（砂岩 S）とともにはぎ取られて，陸側に付け加わった（付加した）から。"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\tan I=2\\tan\\varphi$ で $I=0^\\circ$ なら $\\tan\\varphi=0$，$\\varphi=\\boldsymbol{0^\\circ}$。玄武岩 B は\\textbf{赤道}付近の海嶺でできた。\n\n\\textbf{(2)}　$\\tan\\varphi=\\dfrac{\\tan I}{2}=\\dfrac{1.40}{2}=0.70$ より $\\varphi=\\boldsymbol{35^\\circ}$（北緯）。伏角は緯度の2倍ではない（$54^\\circ$ 余り）ことに注意する。\n\n\\textbf{(3)}　移動した距離と時間は\n\\[ 35\\times111\\,\\mathrm{km}=3.885\\times10^{3}\\,\\mathrm{km}=3.885\\times10^{8}\\,\\mathrm{cm},\\qquad 1.8\\text{億年}-1.0\\text{億年}=8.0\\times10^{7}\\,\\text{年} \\]\n\\[ v=\\frac{3.885\\times10^{8}\\,\\mathrm{cm}}{8.0\\times10^{7}\\,\\text{年}}=4.86\\,\\mathrm{cm/年}\\fallingdotseq\\boldsymbol{4.9\\,\\mathrm{cm/年}} \\]\n\n\\textbf{(4)}　採点の要点：\\\\\n・玄武岩 B（とチャート）は赤道付近の海嶺で，砂岩 S は北緯 $35^\\circ$ の海溝でできた。\\\\\n・海洋プレートが玄武岩・チャートを海溝まで運んだ（約 8000 万年）。\\\\\n・海溝で沈み込むとき，海洋プレート上の岩石と海溝の砂がはぎ取られ，陸側に付け加わった（\\textbf{付加体}）。\\\\\nこのため，付加体の中では，遠洋でできた古い岩石（玄武岩・チャート）と，海溝でできた新しい岩石（砂岩・泥岩）がとなり合う。付加した時期は，いちばん新しい海溝の堆積物（砂岩 S）の年代に近い。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "付加体の玄武岩とチャートは遠洋（ここでは赤道）ででき，海溝の砂岩とは古地磁気の伏角が示す緯度も年代もちがう。$\\tan I=2\\tan\\varphi$ で緯度を求め，年代差から海洋プレートの移動速度を見積もる。"
+ },
+ "concepts": [
+  "plate-boundaries",
+  "seafloor-spreading",
+  "geomagnetism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "古地磁気",
+  "伏角",
+  "付加体",
+  "海洋プレート",
+  "プレートの速さ"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

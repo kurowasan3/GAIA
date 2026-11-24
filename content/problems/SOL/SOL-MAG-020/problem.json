@@ -1,0 +1,114 @@
+{
+ "id": "SOL-MAG-020",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "地磁気の成分から3要素を求める",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある地点で地磁気を測定したところ，水平分力のうち北向きの成分が $24.0\\,\\mu\\mathrm{T}$，西向きの成分が $7.0\\,\\mu\\mathrm{T}$，鉛直分力が下向きに $43.3\\,\\mu\\mathrm{T}$ であった（$1\\,\\mu\\mathrm{T}=10^{-6}\\,\\mathrm{T}$）．必要なら $\\sqrt3=1.73$，$\\tan16^\\circ=0.29$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水平分力の大きさを求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "伏角を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "全磁力を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "偏角を，東・西の向きをつけて整数で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "この地点は，磁気赤道より北と南のどちらにあるか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$25.0\\,\\mu\\mathrm{T}$"
+   },
+   {
+    "id": "2",
+    "tex": "$60^\\circ$"
+   },
+   {
+    "id": "3",
+    "tex": "$50.0\\,\\mu\\mathrm{T}$"
+   },
+   {
+    "id": "4",
+    "tex": "西に $16^\\circ$"
+   },
+   {
+    "id": "5",
+    "tex": "北．地磁気が水平面より下向き（磁針の N 極が下がる）だから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　北向き $24.0$ と西向き $7.0$ は直交するので\\[ H=\\sqrt{24.0^2+7.0^2}=\\sqrt{625}=\\boldsymbol{25.0\\,\\mu\\mathrm{T}} \\]\\textbf{(2)}　$\\tan I=\\dfrac{Z}{H}=\\dfrac{43.3}{25.0}=1.73=\\sqrt3$ より $\\boldsymbol{I=60^\\circ}$．\\textbf{(3)}　$F=\\dfrac{H}{\\cos60^\\circ}=\\boldsymbol{50.0\\,\\mu\\mathrm{T}}$（$\\sqrt{25.0^2+43.3^2}\\approx50.0$ でも確かめられる）．\\textbf{(4)}　水平分力は真北から西へ傾いている．$\\tan D=\\dfrac{7.0}{24.0}\\approx0.29$ より \\textbf{西に} $\\boldsymbol{16^\\circ}$．\\textbf{(5)}　伏角が正（地磁気が下向き）なのは，磁北極に近い側，つまり \\textbf{磁気赤道より北}である．南側では地磁気は上向きになる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "地磁気ベクトルを北・東・鉛直の3成分に分けて測ったとき，直角三角形を2回使って水平分力・全磁力・伏角・偏角（向きも）を組み立て直す．鉛直成分の向きから磁気赤道のどちら側かも判断する．"
+ },
+ "concepts": [
+  "geomagnetism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地磁気の3要素",
+  "偏角",
+  "伏角",
+  "水平分力",
+  "ベクトル"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

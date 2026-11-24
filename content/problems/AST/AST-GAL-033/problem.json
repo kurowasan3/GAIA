@@ -1,0 +1,108 @@
+{
+ "id": "AST-GAL-033",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "宇宙背景放射の波長ののび",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "宇宙が誕生してから約 38 万年後，宇宙の温度が約 $3000\\,\\mathrm{K}$ まで下がると，電子と原子核が結びついて光がまっすぐ進めるようになった（宇宙の晴れ上がり）．このとき放たれた光は，現在，温度 $2.7\\,\\mathrm{K}$ の宇宙背景放射として観測される．熱放射が最も強くなる波長 $\\lambda_{\\max}$ と温度 $T$ の間には $\\lambda_{\\max}T=2.9\\times10^{-3}\\,\\mathrm{m\\cdot K}$ が成り立つ（ウィーンの変位則）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "現在の宇宙背景放射の $\\lambda_{\\max}$ は何 $\\mathrm{mm}$ か．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "晴れ上がりのときに放たれた光の $\\lambda_{\\max}$ は何 $\\mu\\mathrm{m}$ か．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "光の波長は宇宙の膨張とともに引きのばされ，宇宙の大きさに比例して長くなる．晴れ上がりから現在までに，宇宙の大きさは約何倍になったか．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "晴れ上がりのときに放たれた光を，その場で見ることができたとすると，どのような色の恒星の光に近いか．次から選べ．\nア　青白い恒星　イ　黄色い恒星（太陽）　ウ　赤い恒星"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.1\\,\\mathrm{mm}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.97\\,\\mu\\mathrm{m}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.1\\times10^{3}$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "ウ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　ウィーンの変位則より $\\lambda_{\\max}\\propto\\dfrac{1}{T}$．波長が宇宙の大きさに比例してのびるので，温度は宇宙の大きさに反比例して下がる．\n\n(1) $\\lambda_{\\max}=\\dfrac{2.9\\times10^{-3}}{2.7}\\fallingdotseq1.1\\times10^{-3}\\,\\mathrm{m}=\\boldsymbol{1.1\\,\\mathrm{mm}}$（電波）．\n\n(2) $\\lambda_{\\max}=\\dfrac{2.9\\times10^{-3}}{3000}\\fallingdotseq9.7\\times10^{-7}\\,\\mathrm{m}=\\boldsymbol{0.97\\,\\mu\\mathrm{m}}$（近赤外線）．\n\n(3) 波長の比 ＝ 温度の逆比：$\\dfrac{3000}{2.7}\\fallingdotseq\\boldsymbol{1.1\\times10^{3}}$ 倍．\n\n(4) 3000 K の熱放射は，表面温度が 3000 K ほどの M 型星（赤い恒星）と同じで，可視光では赤い光が強い：\\textbf{ウ}．同じ光が宇宙の膨張で約 1100 倍に引きのばされて，いまは目に見えない電波になっている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ウィーンの変位則で晴れ上がりのときと現在の放射のピーク波長を求め，その比（＝温度の逆比）が宇宙の大きさの増加率を表すことを使う．3000 K の光は赤い恒星の光に近いが，膨張で電波にまでのびている．"
+ },
+ "concepts": [
+  "cosmology",
+  "stellar-properties"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "宇宙背景放射",
+  "ウィーンの変位則",
+  "宇宙の晴れ上がり",
+  "宇宙の膨張",
+  "赤方偏移"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

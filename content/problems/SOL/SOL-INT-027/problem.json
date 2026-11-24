@@ -1,0 +1,106 @@
+{
+ "id": "SOL-INT-027",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "走時曲線の折れ曲がり点と地殻の厚さ",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "浅い地震では，震央に近い観測点には地殻の中をまっすぐ伝わる直接波が先に届くが，遠い観測点ではモホ面に沿ってマントル最上部を伝わる屈折波が先に届く．そのため走時曲線は，両者が同時に届く震央距離（折れ曲がり点）で折れ曲がる．地殻の厚さを $h$，地殻とマントル最上部の P 波の速さを $v_1$，$v_2$ とすると，震央距離 $x$ の観測点への到着時間は，直接波 $t_1=\\dfrac{x}{v_1}$，屈折波 $t_2=\\dfrac{x}{v_2}+\\dfrac{2h\\sqrt{v_2^{\\,2}-v_1^{\\,2}}}{v_1v_2}$ と表される．$v_1=6.0\\,\\mathrm{km/s}$，$v_2=8.0\\,\\mathrm{km/s}$，$\\sqrt7=2.65$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "折れ曲がり点の震央距離 $x_c$ を，$h$，$v_1$，$v_2$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "大陸地域（$h=35\\,\\mathrm{km}$）での $x_c$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "海洋地域（$h=7.0\\,\\mathrm{km}$）での $x_c$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ある地域では，P 波の走時曲線が震央距離 $120\\,\\mathrm{km}$ で折れ曲がっていた．この地域の地殻の厚さを有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$x_c=2h\\sqrt{\\dfrac{v_2+v_1}{v_2-v_1}}$"
+   },
+   {
+    "id": "2",
+    "tex": "約 $1.9\\times10^{2}\\,\\mathrm{km}$"
+   },
+   {
+    "id": "3",
+    "tex": "約 $37\\,\\mathrm{km}$"
+   },
+   {
+    "id": "4",
+    "tex": "約 $23\\,\\mathrm{km}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$t_1=t_2$ とおくと\\[ x\\left(\\frac{1}{v_1}-\\frac{1}{v_2}\\right)=\\frac{2h\\sqrt{v_2^{\\,2}-v_1^{\\,2}}}{v_1v_2}\\quad\\Longrightarrow\\quad x\\,(v_2-v_1)=2h\\sqrt{(v_2-v_1)(v_2+v_1)} \\]よって $\\boldsymbol{x_c=2h\\sqrt{\\dfrac{v_2+v_1}{v_2-v_1}}}$．速さが決まっていれば，$x_c$ は地殻の厚さに比例する．\\textbf{(2)}　$\\sqrt{\\dfrac{14}{2}}=\\sqrt7=2.65$ より $x_c=2\\times35\\times2.65\\approx185$，\\textbf{約} $\\boldsymbol{1.9\\times10^{2}\\,\\mathrm{km}}$．\\textbf{(3)}　$x_c=2\\times7.0\\times2.65\\approx\\boldsymbol{37\\,\\mathrm{km}}$．海洋地殻は薄いので，震央のすぐ近くからマントルを通る波が先に届く．\\textbf{(4)}　$h=\\dfrac{120}{2\\times2.65}\\approx\\boldsymbol{23\\,\\mathrm{km}}$（大陸と海洋の中間で，島弧などの地殻にあたる）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "直接波と屈折波の到着時間が等しくなる折れ曲がり点の震央距離は地殻の厚さに比例するので，薄い海洋地殻では大陸よりずっと近い距離で走時曲線が折れ曲がる．逆に折れ曲がり点の距離から地殻の厚さを求める．"
+ },
+ "concepts": [
+  "earth-interior",
+  "seismic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "走時曲線",
+  "モホ面",
+  "屈折波",
+  "地殻の厚さ"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

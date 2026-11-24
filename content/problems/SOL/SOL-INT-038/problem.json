@@ -1,0 +1,108 @@
+{
+ "id": "SOL-INT-038",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "層ごとの P 波の速さから地球の中心までの到達時間",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の内部を次の4層に分け，それぞれの層の中を P 波が平均の速さで伝わるとする（地球の半径 $6371\\,\\mathrm{km}$）。\n\\[\\begin{array}{c|c|c}\n\\text{層} & \\text{深さ}\\ (\\mathrm{km}) & \\text{P 波の平均の速さ}\\ (\\mathrm{km/s}) \\\\ \\hline\n\\text{上部マントル（地殻をふくむ）} & 0\\sim660 & 9.0 \\\\\n\\text{下部マントル} & 660\\sim2890 & 12.5 \\\\\n\\text{外核} & 2890\\sim5150 & 9.0 \\\\\n\\text{内核} & 5150\\sim6371 & 11.1 \\\\\n\\end{array}\\]\n地表付近で発生し，地球の中心に向かってまっすぐ下へ進む P 波を考える。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P 波が核とマントルの境界に達するまでの時間を求めよ（有効数字3桁）。"
+     },
+     {
+      "id": "2",
+      "tex": "P 波が外核と内核の境界に達するまでの時間を求めよ（有効数字3桁）。"
+     },
+     {
+      "id": "3",
+      "tex": "地表から地球の中心までの平均の速さを求めよ（有効数字3桁）。"
+     },
+     {
+      "id": "4",
+      "tex": "外核での P 波の速さが下部マントルと同じ $12.5\\,\\mathrm{km/s}$ だったとすると，(2) の時間はおよそ何秒短くなるか。また，実際に外核で P 波が遅くなる理由として最も適当なものを選べ。\nア　外核は液体で，剛性率が 0 になるから，イ　外核は岩石でできていて密度が小さいから，ウ　外核は温度が低く固いから"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$252\\,\\mathrm{s}$"
+   },
+   {
+    "id": "2",
+    "tex": "$503\\,\\mathrm{s}$"
+   },
+   {
+    "id": "3",
+    "tex": "$10.4\\,\\mathrm{km/s}$"
+   },
+   {
+    "id": "4",
+    "tex": "約 $70\\,\\mathrm{s}$ 短くなる，ア"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "各層の厚さ ÷ 速さ を足し合わせる。\n・上部マントル：$660\\div9.0\\fallingdotseq73.3\\,\\mathrm{s}$\n・下部マントル：$(2890-660)\\div12.5=2230\\div12.5\\fallingdotseq178.4\\,\\mathrm{s}$\n・外核：$(5150-2890)\\div9.0=2260\\div9.0\\fallingdotseq251.1\\,\\mathrm{s}$\n・内核：$(6371-5150)\\div11.1=1221\\div11.1=110.0\\,\\mathrm{s}$\n\n\\textbf{(1)} $73.3+178.4\\fallingdotseq\\boldsymbol{252\\,\\mathrm{s}}$\n\n\\textbf{(2)} $251.7+251.1\\fallingdotseq\\boldsymbol{503\\,\\mathrm{s}}$（約 8 分 20 秒）\n\n\\textbf{(3)} 中心までの時間は $502.8+110.0=612.8\\,\\mathrm{s}$。平均の速さは $6371\\div612.8\\fallingdotseq\\boldsymbol{10.4\\,\\mathrm{km/s}}$。\n\n\\textbf{(4)} 外核の通過時間は $2260\\div12.5=180.8\\,\\mathrm{s}$ になり，$251.1-180.8\\fallingdotseq70\\,\\mathrm{s}$ 短くなる。外核では S 波が伝わらないことから外核は液体で剛性率が 0 とわかり，P 波の速さも急に小さくなる。答えは \\textbf{ア}。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "P 波が鉛直に進む時間は，層ごとに厚さ÷速さを足し合わせれば求まる。外核は液体で P 波が遅くなるため，外核の通過に時間の大きな部分がかかる。"
+ },
+ "concepts": [
+  "earth-interior",
+  "seismic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "P波",
+  "地球の内部構造",
+  "外核",
+  "走時",
+  "平均の速さ"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

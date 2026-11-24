@@ -1,0 +1,101 @@
+{
+ "id": "AST-GAL-031",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "銀河回転の周期と内側の質量",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銀河系の円盤部で，銀河中心から $3.0$ 万光年の距離にある恒星が，銀河中心のまわりを $240\\,\\mathrm{km/s}$ の速さで円運動している．1 光年 $=9.5\\times10^{12}\\,\\mathrm{km}=6.3\\times10^{4}$ 天文単位，1 年 $=3.2\\times10^{7}\\,\\mathrm{s}$，$\\pi=3.14$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この恒星が銀河中心のまわりを1周する時間は何年か．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "円運動の速さ $v$ は，中心の質量 $M$（太陽質量単位）と半径 $a$（天文単位）を用いて $v=30\\sqrt{\\dfrac{M}{a}}\\ [\\mathrm{km/s}]$ と表される（地球の公転と比べた式）．この恒星の軌道より内側にある銀河系の質量は，太陽の何倍か．有効数字2桁で求めよ．ただし，その質量は中心に集まっているとみなしてよい．"
+     },
+     {
+      "id": "3",
+      "tex": "銀河中心から $1.5$ 万光年の恒星も $240\\,\\mathrm{km/s}$ で回っていた．この恒星の1周の時間は 小問1の何倍か．また，このことから銀河系の円盤の回転についてどのようなことがいえるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.3\\times10^{8}$ 年"
+   },
+   {
+    "id": "2",
+    "tex": "$1.2\\times10^{11}$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$0.5$ 倍．円盤は一体（剛体）として回転しているのではなく，内側ほど短い周期で回る差動回転をしている．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　周期 ＝ 円周 ÷ 速さ．円運動の速さと半径がわかれば，その内側の質量が求まる．\n\n(1) 半径 $3.0\\times10^{4}\\times9.5\\times10^{12}=2.85\\times10^{17}\\,\\mathrm{km}$．\n\\[ T=\\frac{2\\times3.14\\times2.85\\times10^{17}}{240}\\fallingdotseq7.46\\times10^{15}\\,\\mathrm{s}=\\frac{7.46\\times10^{15}}{3.2\\times10^{7}}\\fallingdotseq\\boldsymbol{2.3\\times10^{8}}\\ \\text{年} \\]\n\n(2) $M=a\\left(\\dfrac{v}{30}\\right)^2$，$a=3.0\\times10^{4}\\times6.3\\times10^{4}=1.89\\times10^{9}$ 天文単位．\n\\[ M=1.89\\times10^{9}\\times\\left(\\frac{240}{30}\\right)^2=1.89\\times10^{9}\\times64\\fallingdotseq\\boldsymbol{1.2\\times10^{11}}\\ \\text{倍} \\]\n\n(3) 速さが同じで半径が半分なので周期は $\\boldsymbol{0.5}$ 倍．もし円盤が一体（剛体）として回るなら周期はどこでも同じはずである．実際には内側ほど1周が速い\\textbf{差動回転}をしている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "銀河回転の速さと半径から1周の時間と軌道の内側の質量を求める．同じ速さで内側の星ほど周期が短いことから，円盤が剛体回転でなく差動回転していることを読みとる．"
+ },
+ "concepts": [
+  "cosmology",
+  "kepler",
+  "galaxy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "銀河系",
+  "銀河回転",
+  "ケプラーの法則",
+  "銀河系の質量",
+  "差動回転"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

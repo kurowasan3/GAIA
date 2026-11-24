@@ -1,0 +1,101 @@
+{
+ "id": "ATM-ENV-029",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "単位をそろえて自然現象の速さを桁で比べる",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc",
+  "order"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の A〜E の速さについて答えよ。重力加速度の大きさを $9.8\\,\\mathrm{m/s^2}$，$1$ 年 $=3.2\\times10^{7}\\,\\mathrm{s}$ とする。\n\nA：水深 $4000\\,\\mathrm{m}$ の外洋を伝わる津波（速さは $\\sqrt{gh}$，$h$ は水深）\n\nB：太平洋プレートの移動（1 年に $8.0\\,\\mathrm{cm}$）\n\nC：台風の暴風域の目安となる風（$25\\,\\mathrm{m/s}$）\n\nD：黒潮の強い流れ（1 時間に $7.0\\,\\mathrm{km}$）\n\nE：なだらかな斜面を流れ下る玄武岩質の溶岩流（1 時間に $300\\,\\mathrm{m}$）"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "A〜E の速さをそれぞれ m/s の単位で，有効数字 2 桁で求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "A〜E を速いものから順に並べよ。"
+     },
+     {
+      "id": "3",
+      "tex": "最も速いものは最も遅いもののおよそ $10$ の何乗倍か。整数で答えよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A $2.0\\times10^{2}\\,\\mathrm{m/s}$，B $2.5\\times10^{-9}\\,\\mathrm{m/s}$，C $25\\,\\mathrm{m/s}$，D $1.9\\,\\mathrm{m/s}$，E $0.083\\,\\mathrm{m/s}$"
+   },
+   {
+    "id": "2",
+    "tex": "A→C→D→E→B"
+   },
+   {
+    "id": "3",
+    "tex": "$11$ 乗"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} A：$\\sqrt{9.8\\times4000}=198\\,\\mathrm{m/s}\\to\\boldsymbol{2.0\\times10^{2}\\,\\mathrm{m/s}}$（ジェット機なみ）\n\nB：$\\dfrac{0.080\\,\\mathrm{m}}{3.2\\times10^{7}\\,\\mathrm{s}}=\\boldsymbol{2.5\\times10^{-9}\\,\\mathrm{m/s}}$（つめが伸びる程度）\n\nC：$\\boldsymbol{25\\,\\mathrm{m/s}}$\n\nD：$\\dfrac{7000\\,\\mathrm{m}}{3600\\,\\mathrm{s}}=1.94\\to\\boldsymbol{1.9\\,\\mathrm{m/s}}$\n\nE：$\\dfrac{300\\,\\mathrm{m}}{3600\\,\\mathrm{s}}=\\boldsymbol{0.083\\,\\mathrm{m/s}}$（人が歩くより遅い）\n\n\\textbf{(2)} $198>25>1.9>0.083>2.5\\times10^{-9}$ なので \\textbf{A→C→D→E→B}。外洋の津波は暴風よりも 1 けた速く，プレートは他より 8 けた以上遅い。\n\n\\textbf{(3)} $\\dfrac{198}{2.5\\times10^{-9}}=7.9\\times10^{10}\\fallingdotseq10^{11}$ より \\textbf{11 乗}倍。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "年・時・秒など単位のちがう速さを m/s にそろえ，指数で桁を比べると，外洋の津波（約 200 m/s）・風・海流・溶岩流・プレート運動（約 10^-9 m/s）の速さは十数けたにわたって異なることがわかる。津波の速さは水深から √(gh) で求める。"
+ },
+ "concepts": [
+  "environment",
+  "plate-boundaries",
+  "earthquake-types"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "速さの比較",
+  "単位換算",
+  "津波",
+  "プレートの速さ",
+  "黒潮"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

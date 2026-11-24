@@ -1,0 +1,107 @@
+{
+ "id": "SOL-PLT-033",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-03",
+ "topic": "海底の深さから地殻熱流量を推定する",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海嶺で生まれた海洋プレートは，海嶺から離れるにつれて冷えて厚くなり，海底は深くなる．誕生してから $t$［百万年］たったプレートについて，水深 $D$［m］と厚さ $L$［m］が次の式で表されるとする．\n\\[ D=2600+320\\sqrt{t}, \\qquad L=8000\\sqrt{t} \\]\nプレート内の温度は，上面（海底）の $0\\,^\\circ\\mathrm{C}$ から下面の $1300\\,^\\circ\\mathrm{C}$ まで深さとともに直線的に上がり，上面と下面の温度は $t$ によらないとする．地殻熱流量は地下の温度勾配に比例するとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "誕生後 $1600$ 万年のプレートの厚さは何 km か．また，そのときのプレート内の温度勾配は何 $^\\circ\\mathrm{C/km}$ か（有効数字2桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "地殻熱流量は $t$ とどのような関係にあるか．次のア〜エから選べ．また，誕生後 $400$ 万年の地点の地殻熱流量は，誕生後 $6400$ 万年の地点の何倍か．\nア　$\\sqrt{t}$ に比例，イ　$t$ に比例，ウ　$\\sqrt{t}$ に反比例，エ　$t$ によらない"
+     },
+     {
+      "id": "3",
+      "tex": "水深 $3240\\,\\mathrm{m}$ の地点 P で地殻熱流量を測ると $0.20\\,\\mathrm{W/m^2}$ であった．同じ海嶺から広がった，水深 $5160\\,\\mathrm{m}$ の地点 Q の地殻熱流量は何 $\\mathrm{W/m^2}$ と予想されるか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "水深 $D$ と地殻熱流量 $q$ の間に成り立つ関係として正しいものを，次のア〜ウから選べ．\nア　$q\\times(D-2600)$ が一定，イ　$q\\div(D-2600)$ が一定，ウ　$q\\times D$ が一定"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$32\\,\\mathrm{km}$，$41\\,^\\circ\\mathrm{C/km}$"
+   },
+   {
+    "id": "2",
+    "tex": "ウ，$4$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$0.050\\,\\mathrm{W/m^2}$"
+   },
+   {
+    "id": "4",
+    "tex": "ア"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $t=16$ なので $L=8000\\times\\sqrt{16}=32000\\,\\mathrm{m}=\\boldsymbol{32\\,\\mathrm{km}}$．温度勾配は $\\dfrac{1300}{32}\\fallingdotseq40.6\\fallingdotseq\\boldsymbol{41\\,^\\circ\\mathrm{C/km}}$．\n\n\\textbf{(2)} 温度勾配は $\\dfrac{1300}{L}$ で，$L\\propto\\sqrt{t}$ だから熱流量は $\\sqrt{t}$ に反比例する（\\textbf{ウ}）．$t=4$ と $t=64$ では $\\sqrt{64/4}=\\boldsymbol{4}$ 倍．若い海底ほど，高温のアセノスフェアが海底の近くまで来ているので熱流量が大きい．\n\n\\textbf{(3)} 水深から年齢を逆算する．$D-2600=320\\sqrt{t}$ なので\n\nP：$\\sqrt{t}=\\dfrac{3240-2600}{320}=2$，$t=4$（400 万年）\n\nQ：$\\sqrt{t}=\\dfrac{5160-2600}{320}=8$，$t=64$（6400 万年）\n\n熱流量は $\\sqrt{t}$ に反比例するので，Q は P の $\\dfrac{2}{8}=\\dfrac{1}{4}$ 倍で $0.20\\times\\dfrac{1}{4}=\\boldsymbol{0.050\\,\\mathrm{W/m^2}}$．\n\n\\textbf{(4)} $D-2600\\propto\\sqrt{t}$，$q\\propto\\dfrac{1}{\\sqrt{t}}$ なので，両者の積 $q\\times(D-2600)$ は $t$ によらず一定（\\textbf{ア}）．深い海底ほど熱流量が小さい，という関係を水深だけから予想できる．どちらもプレートが冷えて厚くなることが原因である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "海洋プレートは年齢の平方根に比例して厚くなるので，温度勾配（地殻熱流量）は年齢の平方根に反比例する．水深も年齢の平方根で深くなるので，水深から年齢を逆算して熱流量を予想できる．"
+ },
+ "concepts": [
+  "plate-boundaries"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "海洋プレート",
+  "地殻熱流量",
+  "温度勾配",
+  "海底の深さ",
+  "年齢"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

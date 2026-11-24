@@ -1,0 +1,108 @@
+{
+ "id": "SOL-SHP-028",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "自転の速さと惑星の偏平の比較",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "order"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "惑星の赤道部分のふくらみ（偏平）は，赤道上で遠心力の大きさ $\\omega^2R$ が重力の大きさ $g$ に比べてどれくらい大きいかを表す比 $q=\\dfrac{\\omega^2R}{g}$ によっておおよそ決まる（$\\omega$：自転の角速度，$R$：赤道半径）．以下では，偏平率 $f$ は $q$ に比例すると考え，地球の偏平率を $\\dfrac{1}{298}$ とする．円周率を $3.14$ とし，各惑星のデータは表のとおりとする．\n\\[\\begin{array}{c|c|c|c}\n\\text{惑星} & \\text{自転周期〔時間〕} & \\text{赤道半径〔m〕} & \\text{表面の重力加速度〔m/s}^2\\text{〕} \\\\ \\hline\n\\text{地球} & 23.9 & 6.4\\times10^{6} & 9.8 \\\\\n\\text{金星} & 5830 & 6.1\\times10^{6} & 8.9 \\\\\n\\text{火星} & 24.6 & 3.4\\times10^{6} & 3.7 \\\\\n\\text{木星} & 9.9 & 7.1\\times10^{7} & 24.8 \\\\\n\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地球の $q$ を求めよ（有効数字2桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "金星の $q$ は地球の $q$ の何倍か（有効数字2桁）．また，金星の赤道半径と極半径の差はおよそ何 m と見積もられるか（有効数字1桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "地球・火星・木星を，$q$ が大きい（偏平が大きいと予想される）順に並べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "半径の大きさが同じでも $q$ が大きく変わるのはなぜか．表の量のうち $q$ に最も強く影響するものを挙げ，その理由を述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.5\\times10^{-3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.8\\times10^{-5}$ 倍，約 $0.4\\ \\mathrm{m}$"
+   },
+   {
+    "id": "3",
+    "tex": "木星 → 火星 → 地球"
+   },
+   {
+    "id": "4",
+    "tex": "自転周期．$q$ は $\\omega^2$ すなわち周期の2乗に反比例するので，周期の違いが2乗で効くから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\omega=\\dfrac{2\\times3.14}{23.9\\times3600}\\approx7.30\\times10^{-5}\\ \\mathrm{rad/s}$．\n\\[ q=\\frac{\\omega^2R}{g}=\\frac{(7.30\\times10^{-5})^2\\times6.4\\times10^{6}}{9.8}\\approx\\boldsymbol{3.5\\times10^{-3}} \\]\n（約 $\\dfrac{1}{290}$ で，実際の偏平率 $\\dfrac{1}{298}$ に近い．）\n\n\\textbf{(2)} 金星：$\\omega=\\dfrac{2\\times3.14}{5830\\times3600}\\approx2.99\\times10^{-7}\\ \\mathrm{rad/s}$，$q\\approx\\dfrac{(2.99\\times10^{-7})^2\\times6.1\\times10^{6}}{8.9}\\approx6.1\\times10^{-8}$．\n地球との比は $\\dfrac{6.1\\times10^{-8}}{3.5\\times10^{-3}}\\approx\\boldsymbol{1.8\\times10^{-5}}$ 倍．偏平率は $\\dfrac{1}{298}\\times1.8\\times10^{-5}\\approx5.9\\times10^{-8}$ なので，赤道半径と極半径の差は $5.9\\times10^{-8}\\times6.1\\times10^{6}\\ \\mathrm{m}\\approx\\boldsymbol{0.4\\ \\mathrm{m}}$．金星はほとんど完全な球である．\n\n\\textbf{(3)} 同様に計算すると，火星 $q\\approx4.6\\times10^{-3}$，木星 $q\\approx8.9\\times10^{-2}$．よって\\textbf{木星 → 火星 → 地球}．火星は地球より自転がわずかに遅いが，重力が小さいので $q$ は地球より大きい．\n\n\\textbf{(4)} \\textbf{自転周期}．$q\\propto\\dfrac{R}{gT^2}$ で，周期 $T$ が2乗で効く．地球と金星は半径も重力もほぼ同じだが，周期が約 240 倍違うため $q$ は約 $\\dfrac{1}{240^2}$ になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "惑星の偏平は遠心力と重力の比 q＝ω²R/g で決まり，自転周期の2乗に反比例して効く．半径が同じ地球と金星でも，自転の遅い金星はほとんど偏平しない．"
+ },
+ "concepts": [
+  "earth-shape",
+  "gravity-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "偏平率",
+  "遠心力",
+  "自転",
+  "金星",
+  "木星"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

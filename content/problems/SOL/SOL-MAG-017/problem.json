@@ -1,0 +1,107 @@
+{
+ "id": "SOL-MAG-017",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "傾いた双極子磁場と伏角",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の磁場を，地球の中心に置いた棒磁石（双極子）の磁場とみなす。この棒磁石の軸は自転軸から $10^\\circ$ 傾いており，地磁気北極（棒磁石の軸を延長した線が北半球で地表と交わる点）は北緯 $80^\\circ$，西経 $70^\\circ$ にあるとする。地磁気北極からの角距離（地球の中心から見た角度）が $90^\\circ-\\varphi_m$ の地点の磁気緯度を $\\varphi_m$ とすると，伏角 $I$ は $\\tan I=2\\tan\\varphi_m$ で表される。必要なら $\\tan25^\\circ=0.466$，$\\tan45^\\circ=1.00$，$\\tan43.0^\\circ=0.933$，$\\tan63.4^\\circ=2.00$ を用いよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "西経 $70^\\circ$ の経線上で，伏角が $0^\\circ$ になる地点の緯度を答えよ。"
+     },
+     {
+      "id": "2",
+      "tex": "西経 $70^\\circ$ の経線上の北緯 $35^\\circ$ の地点の伏角を，整数で求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "東経 $110^\\circ$ の経線上の北緯 $35^\\circ$ の地点の伏角を，整数で求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "同じ北緯 $35^\\circ$ でも (2) と (3) で伏角が異なる理由を，地磁気北極との位置関係にふれて簡潔に述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "南緯 $10^\\circ$"
+   },
+   {
+    "id": "2",
+    "tex": "$63^\\circ$"
+   },
+   {
+    "id": "3",
+    "tex": "$43^\\circ$"
+   },
+   {
+    "id": "4",
+    "tex": "西経 $70^\\circ$ 側の地点は地磁気北極に近く（角距離 $45^\\circ$）磁気緯度が高いが，東経 $110^\\circ$ 側の地点は北極点をこえた反対側にあって地磁気北極から遠く（角距離 $65^\\circ$）磁気緯度が低いから。"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　伏角を決めるのは地理緯度ではなく，地磁気北極からの角距離（磁気緯度）である．西経 $70^\\circ$ と東経 $110^\\circ$ は同じ大円（子午線）の表と裏にあたる．\n\n\\textbf{(1)} 伏角 $0^\\circ$ は磁気緯度 $0^\\circ$，つまり地磁気北極から角距離 $90^\\circ$ の地点．西経 $70^\\circ$ の経線上を北緯 $80^\\circ$ から南へ $90^\\circ$ 進むと $80^\\circ-90^\\circ=-10^\\circ$，すなわち\\textbf{南緯} $\\boldsymbol{10^\\circ}$．\n\n\\textbf{(2)} 角距離は $80^\\circ-35^\\circ=45^\\circ$ なので $\\varphi_m=45^\\circ$．$\\tan I=2\\times1.00=2.00$ より $I=63.4^\\circ\\fallingdotseq\\mathbf{63^\\circ}$．\n\n\\textbf{(3)} 東経 $110^\\circ$ の北緯 $35^\\circ$ から北極点までが $55^\\circ$，北極点から地磁気北極までが $10^\\circ$ なので，角距離は $65^\\circ$，$\\varphi_m=25^\\circ$．$\\tan I=2\\times0.466=0.932$ より $I\\fallingdotseq\\mathbf{43^\\circ}$．\n\n\\textbf{(4)} 答えのとおり．地磁気の軸が傾いているので，同じ地理緯度でも経度によって磁気緯度が変わり，伏角も変わる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "双極子の軸が自転軸から傾いていると，伏角は地理緯度ではなく地磁気極からの角距離（磁気緯度）で決まる。同じ緯度でも地磁気極に近い側と反対側で伏角が大きく異なる。"
+ },
+ "concepts": [
+  "geomagnetism"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "伏角",
+  "双極子磁場",
+  "磁気緯度",
+  "地磁気極",
+  "tan I=2tanφ"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

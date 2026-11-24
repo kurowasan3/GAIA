@@ -1,0 +1,107 @@
+{
+ "id": "SOL-SHP-020",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "高さによる重力の減少",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球を半径 $R=6.4\\times10^{6}\\,\\mathrm{m}$ の球とし，自転の影響は考えない．地表での重力加速度を $g_0=9.8\\,\\mathrm{m/s^2}$ とすると，地表から高さ $h$ の点での重力加速度は $g=g_0\\dfrac{R^2}{(R+h)^2}$ と表せる．$|x|$ が 1 より十分小さいとき $(1+x)^n\\approx1+nx$ と近似してよい．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$h$ が $R$ より十分小さいとき，高さが $1\\,\\mathrm{m}$ 増すごとに重力加速度はいくら減るか．$g_0$，$R$ を用いた式と，有効数字2桁の値で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) の考えによると，富士山頂（標高 $3776\\,\\mathrm{m}$）での重力加速度は，海面上より何 $\\mathrm{m/s^2}$ 小さいか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "重力加速度は，赤道と極で約 $0.052\\,\\mathrm{m/s^2}$ 違う．高さによる減少がこれと同じ大きさになるのは，高さ何 km か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "実際に富士山頂で重力を測ると，海面上との差は (2) の値より小さい．その理由を説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{2g_0}{R}$，$3.1\\times10^{-6}\\,\\mathrm{m/s^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.2\\times10^{-2}\\,\\mathrm{m/s^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "約 $17\\,\\mathrm{km}$"
+   },
+   {
+    "id": "4",
+    "tex": "富士山頂の下には海面との間に山体の岩石があり，その引力が下向きに加わるため，高さだけで考えたときほど重力は小さくならない．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$g=g_0\\left(1+\\dfrac{h}{R}\\right)^{-2}\\approx g_0\\left(1-\\dfrac{2h}{R}\\right)$．よって $1\\,\\mathrm{m}$ あたりの減少は\\[ \\frac{2g_0}{R}=\\frac{2\\times9.8}{6.4\\times10^{6}}\\approx\\boldsymbol{3.1\\times10^{-6}\\,\\mathrm{m/s^2}} \\]（$=0.31\\,\\mathrm{mGal}$．これがフリーエア補正の係数である．）\\textbf{(2)}　$3.06\\times10^{-6}\\times3776\\approx\\boldsymbol{1.2\\times10^{-2}\\,\\mathrm{m/s^2}}$（約 0.12 ％）．\\textbf{(3)}　$\\dfrac{0.052}{3.06\\times10^{-6}}\\approx1.7\\times10^{4}\\,\\mathrm{m}$，\\textbf{約 17 km}．富士山の高さでは，高さの効果は緯度による違いの4分の1以下である．\\textbf{(4)}　(1)〜(2) は測定点の下に何もない（空気だけ）として考えた値である．実際には山頂と海面の間に山体の岩石があり，その引力の分だけ重力は大きくなる．この効果を取り除くのがブーゲー補正である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "重力は中心からの距離の2乗に反比例するので，地表付近では高さ $h$ に対して $g_0(1-2h/R)$ と1次で減る（フリーエア補正の係数）．その大きさを緯度による違いと比べ，山では岩石の引力が加わることにも目を向ける．"
+ },
+ "concepts": [
+  "earth-shape",
+  "gravity-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "重力加速度",
+  "フリーエア補正",
+  "ブーゲー補正",
+  "近似計算"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

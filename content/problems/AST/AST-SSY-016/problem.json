@@ -1,0 +1,99 @@
+{
+ "id": "AST-SSY-016",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "質量と密度から惑星の半径を求めて同定する",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次の表は，太陽系の4つの惑星 W〜Z の質量（地球 $=1$）と平均密度である．地球の平均密度を $5.5\\,\\mathrm{g/cm^3}$ とし，惑星はすべて球とする．\n\\[\\begin{array}{c|cccc} \\text{惑星} & \\text{W} & \\text{X} & \\text{Y} & \\text{Z} \\\\ \\hline \\text{質量（地球}=1\\text{）} & 95.2 & 0.107 & 14.5 & 0.055 \\\\ \\text{平均密度}(\\mathrm{g/cm^3}) & 0.69 & 3.93 & 1.27 & 5.43 \\\\ \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "惑星 W〜Z の半径は地球の何倍か．それぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "惑星 W〜Z を，半径の大きい順に並べよ．"
+     },
+     {
+      "id": "3",
+      "tex": "惑星 W〜Z はそれぞれ何か．水星・金星・火星・木星・土星・天王星・海王星から選べ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "W $9.1$ 倍，X $0.53$ 倍，Y $4.0$ 倍，Z $0.38$ 倍"
+   },
+   {
+    "id": "2",
+    "tex": "W，Y，X，Z"
+   },
+   {
+    "id": "3",
+    "tex": "W 土星，X 火星，Y 天王星，Z 水星"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　質量 $M$＝密度 $\\rho$ × 体積 $\\dfrac43\\pi R^3$ なので，$R^3\\propto\\dfrac{M}{\\rho}$．地球を基準にすると\n\\[ \\frac{R}{R_\\text{地球}}=\\left(\\frac{M/M_\\text{地球}}{\\rho/5.5}\\right)^{1/3} \\]\n(1) W：$(95.2\\times5.5\\div0.69)^{1/3}=(759)^{1/3}=9.12$ → $\\boldsymbol{9.1}$ 倍．X：$(0.107\\times5.5\\div3.93)^{1/3}=(0.150)^{1/3}=0.531$ → $\\boldsymbol{0.53}$ 倍．Y：$(14.5\\times5.5\\div1.27)^{1/3}=(62.8)^{1/3}=3.97$ → $\\boldsymbol{4.0}$ 倍．Z：$(0.055\\times5.5\\div5.43)^{1/3}=(0.0557)^{1/3}=0.382$ → $\\boldsymbol{0.38}$ 倍．\n(2) W，Y，X，Z．質量の順（W，Y，X，Z）と同じになるとは限らないが，ここでは密度の差より質量の差の方がはるかに大きい．\n(3) 密度が水より小さく巨大な W は\\textbf{土星}，半径が地球の約 4 倍で密度が $1.3$ 程度の Y は\\textbf{天王星}（海王星は質量 17，密度 1.6），地球型で半径が地球の約半分の X は\\textbf{火星}，最も小さい Z は\\textbf{水星}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "密度と質量から体積（半径の3乗）が決まることを使い，惑星の半径を地球比で求めて，大きさと密度の組み合わせから惑星を同定する。"
+ },
+ "concepts": [
+  "solar-system"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "惑星",
+  "密度",
+  "半径",
+  "地球型惑星",
+  "木星型惑星"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

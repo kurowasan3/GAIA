@@ -1,0 +1,101 @@
+{
+ "id": "AST-GAL-040",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "単位をそろえて天体の大きさを並べる",
+ "course": "地学",
+ "level": 0,
+ "minutes": 6,
+ "format": [
+  "order",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "次のア〜カの天体（天体の集まり）の大きさ（直径）が，いろいろな単位で与えられている。$1$ 天文単位 $=1.5\\times10^{8}\\,\\mathrm{km}$，$1$ 光年 $=9.5\\times10^{12}\\,\\mathrm{km}$，$1$ パーセク $=3.3$ 光年とする。\n\\[\\begin{array}{c|l|l}\n & \\text{天体} & \\text{直径} \\\\ \\hline\n\\text{ア} & \\text{太陽} & 1.4\\times10^{6}\\,\\mathrm{km} \\\\\n\\text{イ} & \\text{海王星の公転軌道} & 60\\ \\text{天文単位} \\\\\n\\text{ウ} & \\text{オリオン大星雲（散光星雲）} & \\text{約 } 24\\ \\text{光年} \\\\\n\\text{エ} & \\text{球状星団 M13} & \\text{約 } 45\\ \\text{パーセク} \\\\\n\\text{オ} & \\text{アンドロメダ銀河} & \\text{約 } 22\\ \\text{万光年} \\\\\n\\text{カ} & \\text{かみのけ座銀河団} & \\text{約 } 2000\\ \\text{万光年} \\\\\n\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ア〜カを，直径が小さいものから順に並べよ。"
+     },
+     {
+      "id": "2",
+      "tex": "海王星の公転軌道の直径は何光年か。有効数字 2 桁で求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "海王星の公転軌道の直径は，太陽の直径の約何倍か。有効数字 2 桁で求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "ア → イ → ウ → エ → オ → カ"
+   },
+   {
+    "id": "2",
+    "tex": "$9.5\\times10^{-4}$ 光年"
+   },
+   {
+    "id": "3",
+    "tex": "$6.4\\times10^{3}$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "単位をそろえて比べる．\n\n\\textbf{(1)} イ：$60\\times1.5\\times10^{8}=9.0\\times10^{9}\\,\\mathrm{km}$ で，太陽（ア）より大きいが 1 光年よりずっと小さい．エ：$45\\times3.3\\fallingdotseq1.5\\times10^{2}$ 光年なので，数値は 45 でもウ（24 光年）より大きい．オは $2.2\\times10^{5}$ 光年，カは $2.0\\times10^{7}$ 光年．よって\n\\[ \\boldsymbol{\\text{ア}\\to\\text{イ}\\to\\text{ウ}\\to\\text{エ}\\to\\text{オ}\\to\\text{カ}} \\]\n恒星 → 惑星系 → 星雲・星団（銀河の中の構造）→ 銀河 → 銀河の集団，の順になる．\n\n\\textbf{(2)} $\\dfrac{9.0\\times10^{9}}{9.5\\times10^{12}}=9.47\\times10^{-4}\\fallingdotseq\\boldsymbol{9.5\\times10^{-4}}$ 光年．太陽系の惑星の範囲は，光の速さでも 1 日足らずで横切れる大きさである．\n\n\\textbf{(3)} $\\dfrac{9.0\\times10^{9}}{1.4\\times10^{6}}=6.43\\times10^{3}\\fallingdotseq\\boldsymbol{6.4\\times10^{3}}$ 倍．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "恒星・惑星系・星雲や星団・銀河・銀河団は大きさの桁が大きく異なり，天文単位・光年・パーセクを換算してそろえると順序が決まる。数値の大小だけで比べると単位の違い（パーセクと光年など）で誤る。"
+ },
+ "concepts": [
+  "cosmology",
+  "adiabatic",
+  "stellar-properties"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "宇宙の階層構造",
+  "光年",
+  "パーセク",
+  "天文単位",
+  "銀河団"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

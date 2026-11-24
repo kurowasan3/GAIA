@@ -1,0 +1,107 @@
+{
+ "id": "ATM-ENV-019",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-07",
+ "topic": "氷床の融解と海面上昇の見積もり",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球を半径 $6.4\\times10^{3}\\,\\mathrm{km}$ の球とし，海の面積は地球の表面積の $71\\,\\%$ で，海面が上下しても変わらないとする．水（海水・とけた水）の密度を $1.0\\,\\mathrm{g/cm^3}$，氷の密度を $0.90\\,\\mathrm{g/cm^3}$ とし，海水の熱膨張は小問4以外では考えない．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "世界の平均海面を $1.0\\,\\mathrm{mm}$ 上げるのに必要な水の体積は何 $\\mathrm{km^3}$ か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "グリーンランド氷床（面積 $1.7\\times10^{6}\\,\\mathrm{km^2}$，平均の厚さ $1.6\\,\\mathrm{km}$）がすべてとけて海に流れこむと，平均海面は何 m 上がるか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "約2万年前の最終氷期には，平均海面は現在より約 $120\\,\\mathrm{m}$ 低かった．この海面低下がすべて陸上に氷としてたくわえられた水によるとすると，その氷の体積は現在の南極氷床（面積 $1.2\\times10^{7}\\,\\mathrm{km^2}$，平均の厚さ $2.3\\,\\mathrm{km}$）の体積の何倍か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "近年，世界の平均海面は1年に $3.2\\,\\mathrm{mm}$ 上がっており，そのうち $40\\,\\%$ は海水の熱膨張によるものとする．残りがすべて陸上の氷がとけた水によるとすると，1年間にとけている陸上の氷の質量は何 kg か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.7\\times10^{2}\\,\\mathrm{km^3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$6.7\\,\\mathrm{m}$"
+   },
+   {
+    "id": "3",
+    "tex": "約 $1.8$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$7.0\\times10^{14}\\,\\mathrm{kg}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{海の面積}：$0.71\\times4\\pi(6.4\\times10^{3})^{2}\\fallingdotseq3.65\\times10^{8}\\,\\mathrm{km^2}$．\n\n\\textbf{(1)} $1.0\\,\\mathrm{mm}=1.0\\times10^{-6}\\,\\mathrm{km}$ なので，$3.65\\times10^{8}\\times1.0\\times10^{-6}\\fallingdotseq\\boldsymbol{3.7\\times10^{2}\\,\\mathrm{km^3}}$．\n\n\\textbf{(2)} 氷の体積は $1.7\\times10^{6}\\times1.6=2.72\\times10^{6}\\,\\mathrm{km^3}$．とけた水の体積は密度の比をかけて $2.72\\times10^{6}\\times0.90\\fallingdotseq2.45\\times10^{6}\\,\\mathrm{km^3}$．海面の上昇は\n\\[ \\frac{2.45\\times10^{6}}{3.65\\times10^{8}}\\fallingdotseq6.7\\times10^{-3}\\,\\mathrm{km}=\\boldsymbol{6.7\\,\\mathrm{m}} \\]\n\n\\textbf{(3)} (1)(2) と逆向きの換算をする．海面 $120\\,\\mathrm{m}=0.120\\,\\mathrm{km}$ 分の水は $3.65\\times10^{8}\\times0.120\\fallingdotseq4.38\\times10^{7}\\,\\mathrm{km^3}$．氷にすると体積は $\\dfrac{1}{0.90}$ 倍で $4.87\\times10^{7}\\,\\mathrm{km^3}$．現在の南極氷床は $1.2\\times10^{7}\\times2.3=2.76\\times10^{7}\\,\\mathrm{km^3}$ なので，$\\dfrac{4.87}{2.76}\\fallingdotseq\\boldsymbol{1.8}$ 倍．氷期には，南極氷床の2倍近い量の氷が，北アメリカやヨーロッパ北部などの大陸上に余分に広がっていたことになる．\n\n\\textbf{(4)} 氷がとけた水による分は $3.2\\times(1-0.40)=1.92\\,\\mathrm{mm}$．その水の体積は $3.65\\times10^{8}\\,\\mathrm{km^2}\\times1.92\\times10^{-6}\\,\\mathrm{km}\\fallingdotseq7.0\\times10^{2}\\,\\mathrm{km^3}=7.0\\times10^{11}\\,\\mathrm{m^3}$．質量は $1.0\\times10^{3}\\,\\mathrm{kg/m^3}$ をかけて $\\boldsymbol{7.0\\times10^{14}\\,\\mathrm{kg}}$（約 7000 億トン）．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "海の面積を使って海面の高さの変化と水（氷）の体積を相互に換算する．氷床の融解から海面上昇を，逆に氷期の海面低下や観測された上昇（熱膨張分を除く）から陸上の氷の量を見積もる．"
+ },
+ "concepts": [
+  "environment",
+  "cosmology"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "海面上昇",
+  "氷床",
+  "最終氷期",
+  "熱膨張",
+  "海水準変動"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

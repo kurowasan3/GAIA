@@ -1,0 +1,109 @@
+{
+ "id": "AST-SUN-023",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "太陽のエネルギー源の寿命比べ",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "19世紀には，太陽が何をエネルギー源として輝いているかが大きな問題であった．太陽の光度（1秒間に放出するエネルギー）を $L=3.8\\times10^{26}\\,\\mathrm{W}$，質量を $M=2.0\\times10^{30}\\,\\mathrm{kg}$，半径を $R=7.0\\times10^{8}\\,\\mathrm{m}$，万有引力定数を $G=6.7\\times10^{-11}\\,\\mathrm{N\\cdot m^2/kg^2}$，光速を $c=3.0\\times10^{8}\\,\\mathrm{m/s}$，1年を $3.2\\times10^{7}\\,\\mathrm{s}$ とし，光度は一定とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "太陽全体が，燃焼熱 $3.0\\times10^{7}\\,\\mathrm{J/kg}$ の燃料でできていて，その燃焼で輝いているとすると，何年輝き続けられるか（有効数字2桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "一様な密度の球が，無限に散らばった状態から集まって半径 $R$ になるまでに解放する重力エネルギーは $\\dfrac{3GM^2}{5R}$ である．太陽が，このエネルギーをすべて放射して輝いてきたとすると，何年輝き続けられたことになるか（有効数字2桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "中心部の水素の核融合では，反応した水素の質量の $0.70\\,\\%$ がエネルギーに変わる．太陽の質量の 10\\% の水素が核融合に使われるとすると，太陽は何年輝き続けられるか（有効数字2桁）．"
+     },
+     {
+      "id": "4",
+      "tex": "地球上には約 40 億年前の岩石があり，約 35 億年前の地層からは光合成をする生物がつくったストロマトライトが見つかっている．これらの事実と (1)〜(3) の結果から，太陽のエネルギー源について言えることを述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$4.9\\times10^{3}$ 年"
+   },
+   {
+    "id": "2",
+    "tex": "$1.9\\times10^{7}$ 年"
+   },
+   {
+    "id": "3",
+    "tex": "$1.0\\times10^{10}$ 年"
+   },
+   {
+    "id": "4",
+    "tex": "化学燃焼でも重力収縮でも，太陽が輝ける時間は数千年〜数千万年で，35 億年以上前から太陽が地球を照らしていたという地質学的な証拠と合わない．100 億年輝ける核融合だけが説明できるので，太陽のエネルギー源は核融合である"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 燃焼}　ためられるエネルギーは $E_1=3.0\\times10^{7}\\times2.0\\times10^{30}=6.0\\times10^{37}\\,\\mathrm{J}$．\n\\[ \\tau_1=\\frac{E_1}{L}=\\frac{6.0\\times10^{37}}{3.8\\times10^{26}}\\fallingdotseq1.58\\times10^{11}\\,\\mathrm{s}=\\frac{1.58\\times10^{11}}{3.2\\times10^{7}}\\fallingdotseq\\boldsymbol{4.9\\times10^{3}}\\ \\text{年} \\]\n\\textbf{(2) 重力収縮}　\n\\[ E_2=\\frac{3GM^2}{5R}=\\frac{3\\times6.7\\times10^{-11}\\times(2.0\\times10^{30})^2}{5\\times7.0\\times10^{8}}\\fallingdotseq2.3\\times10^{41}\\,\\mathrm{J} \\]\n\\[ \\tau_2=\\frac{E_2}{L}\\fallingdotseq\\frac{2.3\\times10^{41}}{3.8\\times10^{26}\\times3.2\\times10^{7}}\\fallingdotseq\\boldsymbol{1.9\\times10^{7}}\\ \\text{年} \\]\n\\textbf{(3) 核融合}　使える質量 $2.0\\times10^{29}\\,\\mathrm{kg}$ の $0.70\\,\\%$ が $E=mc^2$ でエネルギーになる．\n\\[ E_3=0.0070\\times2.0\\times10^{29}\\times(3.0\\times10^{8})^2=1.26\\times10^{44}\\,\\mathrm{J},\\qquad \\tau_3=\\frac{1.26\\times10^{44}}{3.8\\times10^{26}\\times3.2\\times10^{7}}\\fallingdotseq\\boldsymbol{1.0\\times10^{10}}\\ \\text{年} \\]\n\\textbf{(4) 考察}　地質学的な証拠から，太陽は少なくとも 35〜40 億年前には今と同じように地球を照らし，光合成生物を支えていたと考えられる．燃焼（約 5000 年）や重力収縮（約 2000 万年）ではこの長さに\\textbf{まったく足りない}．約 100 億年輝ける\\textbf{核融合}だけがこの事実と矛盾しない．なお，太陽の年齢は約 46 億年なので，太陽はいま寿命のおよそ半ばにいる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "エネルギー源ごとに「ためられるエネルギー ÷ 光度」で太陽が輝ける時間を見積もり，地質学的に知られる地球の古さと比べると，化学燃焼や重力収縮では足りず核融合だけが条件を満たすことがわかる．"
+ },
+ "concepts": [
+  "sun",
+  "gravity-earth",
+  "stellar-properties"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "太陽のエネルギー源",
+  "核融合",
+  "重力収縮",
+  "寿命",
+  "光度"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

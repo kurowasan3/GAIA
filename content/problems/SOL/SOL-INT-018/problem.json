@@ -1,0 +1,108 @@
+{
+ "id": "SOL-INT-018",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "核の境界でのP波の屈折と全反射",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地震波は速さの異なる層の境界で屈折し，入射角 $i$，屈折角 $r$（いずれも境界面の法線から測る）と，境界の入射側・屈折側の速さ $v_1$，$v_2$ の間に\n\\[ \\frac{\\sin i}{\\sin r}=\\frac{v_1}{v_2} \\]\nが成り立つ。P 波の速さを，マントル最下部で $13.6\\,\\mathrm{km/s}$，外核最上部で $8.0\\,\\mathrm{km/s}$，外核最下部で $10.3\\,\\mathrm{km/s}$，内核最上部で $11.1\\,\\mathrm{km/s}$ とし，境界は局所的に平面とみなす。必要なら次の値を用いよ。\n\\[\\begin{array}{c|cccccccc} \\theta & 20^\\circ & 22^\\circ & 24^\\circ & 36^\\circ & 40^\\circ & 50^\\circ & 56^\\circ & 68^\\circ \\\\ \\hline \\sin\\theta & 0.342 & 0.375 & 0.407 & 0.588 & 0.643 & 0.766 & 0.829 & 0.927 \\\\ \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "マントルから外核へ入射角 $40^\\circ$ で入る P 波の屈折角を整数の度で求めよ。また，屈折した波の進路は法線に近づくか，遠ざかるか。"
+     },
+     {
+      "id": "2",
+      "tex": "外核から内核へ入射角 $50^\\circ$ で入る P 波の屈折角を整数の度で求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "外核から内核へ向かう P 波は，入射角がある値をこえると内核へ入れず，すべて反射される。その入射角を整数の度で求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "マントルから外核へ入る P 波の屈折角は，入射角をどれほど大きくしてもある値をこえない。その値を整数の度で求めよ。また，このことがシャドーゾーンのできることとどう関係するか簡潔に述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$22^\\circ$，法線に近づく"
+   },
+   {
+    "id": "2",
+    "tex": "$56^\\circ$"
+   },
+   {
+    "id": "3",
+    "tex": "$68^\\circ$"
+   },
+   {
+    "id": "4",
+    "tex": "$36^\\circ$。外核に入った P 波はすべて法線に近い向きへ大きく折れ曲がるので，マントルだけを通る波の届く範囲と，核を通って出てくる波の届く範囲との間に，P 波が直接届かない範囲（シャドーゾーン）ができる。"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 速い層から遅い層へ入るので屈折角は入射角より小さく，\\textbf{法線に近づく}。\n\\[ \\sin r=\\frac{8.0}{13.6}\\sin40^\\circ=0.588\\times0.643\\fallingdotseq0.378 \\quad\\Rightarrow\\quad r\\fallingdotseq\\boldsymbol{22^\\circ} \\]\n\\textbf{(2)} 遅い層から速い層へ入るので法線から遠ざかる。\n\\[ \\sin r=\\frac{11.1}{10.3}\\sin50^\\circ\\fallingdotseq1.078\\times0.766\\fallingdotseq0.826 \\quad\\Rightarrow\\quad r\\fallingdotseq\\boldsymbol{56^\\circ} \\]\n\\textbf{(3)} 屈折角が $90^\\circ$ になる入射角（臨界角）をこえると全反射する。\n\\[ \\sin i_c=\\frac{10.3}{11.1}\\fallingdotseq0.928 \\quad\\Rightarrow\\quad i_c\\fallingdotseq\\boldsymbol{68^\\circ} \\]\n\\textbf{(4)} 入射角を $90^\\circ$ に近づけても $\\sin r\\le \\dfrac{8.0}{13.6}\\fallingdotseq0.588$ なので，$r$ は $\\boldsymbol{36^\\circ}$ をこえない。外核へ入った P 波は必ず法線（地球の中心方向）に近い向きへ曲げられ，核を通過した波は震央から遠く（約 $143^\\circ$ より先）に出てくる。マントルを通る波は約 $103^\\circ$ までしか届かないので，その間に P 波が直接届かないシャドーゾーンができる。\n\n\\textbf{注意}　同じ核の境界でも，マントル→外核（速→遅）と外核→内核（遅→速）では曲がる向きが逆である。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "屈折の法則で，速い層から遅い層へ入ると波は法線に近づき，遅い層から速い層へ入ると法線から遠ざかり臨界角をこえると全反射する。マントル→外核では P 波の屈折角に上限があり，外核に入った波が大きく曲げられることがシャドーゾーンの原因になる。"
+ },
+ "concepts": [
+  "earth-interior",
+  "seismic-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "P波",
+  "屈折",
+  "臨界角",
+  "外核",
+  "内核",
+  "シャドーゾーン"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

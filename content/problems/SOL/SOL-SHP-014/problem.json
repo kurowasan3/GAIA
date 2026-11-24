@@ -1,0 +1,109 @@
+{
+ "id": "SOL-SHP-014",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "遠心力による鉛直線のずれ",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球を半径 $R=6.4\\times10^{6}\\,\\mathrm{m}$ の球とし，自転の角速度を $\\omega=7.3\\times10^{-5}\\,\\mathrm{rad/s}$，地表での引力（万有引力）の大きさを単位質量あたり $9.8\\,\\mathrm{m/s^2}$ とする。緯度 $\\varphi$ の地点では，単位質量あたり大きさ $\\omega^2R\\cos\\varphi$ の遠心力が自転軸から遠ざかる向きにはたらき，重力はこれと引力の合力である。遠心力は引力よりずっと小さいので，重力の向きが地球の中心の向きからずれる角（ラジアン）は，「遠心力のうち中心の向きに垂直な成分」÷「引力」で近似してよい。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "赤道での遠心力の大きさ $\\omega^2R$ を有効数字2桁で求めよ（単位は $\\mathrm{m/s^2}$）。"
+     },
+     {
+      "id": "2",
+      "tex": "北緯 $35^\\circ$ の地点での遠心力の大きさと，重力の向きが地球の中心の向きからずれる角を，それぞれ有効数字2桁で求めよ。角は度で答えよ。必要なら $\\sin35^\\circ=0.574$，$\\cos35^\\circ=0.819$，$1\\,\\mathrm{rad}=57.3^\\circ$ を用いよ。"
+     },
+     {
+      "id": "3",
+      "tex": "重力の向きのずれが最も大きくなる緯度と，そのときのずれの角（度，有効数字2桁）を求めよ。また，ずれが $0$ になる場所を答えよ。"
+     },
+     {
+      "id": "4",
+      "tex": "北緯 $35^\\circ$ の地点で，おもりをつるした糸の向き（鉛直下向き）をそのまま地下へ延長した直線について述べた文として最も適当なものを，次のア〜ウから一つ選べ。\n\nア　地球の中心を通る。\nイ　地球の中心より北側で自転軸と交わる。\nウ　地球の中心より南側で自転軸と交わる。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.4\\times10^{-2}\\,\\mathrm{m/s^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "遠心力 $2.8\\times10^{-2}\\,\\mathrm{m/s^2}$，ずれ $0.094^\\circ$"
+   },
+   {
+    "id": "3",
+    "tex": "緯度 $45^\\circ$，$0.10^\\circ$，ずれが $0$ になるのは赤道と両極"
+   },
+   {
+    "id": "4",
+    "tex": "ウ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}\n\\[ \\omega^2R=(7.3\\times10^{-5})^2\\times6.4\\times10^{6}\\fallingdotseq\\mathbf{3.4\\times10^{-2}\\,m/s^2} \\]\n引力 $9.8\\,\\mathrm{m/s^2}$ の約 $1/290$ である。\n\n\\textbf{(2)}　遠心力は $3.41\\times10^{-2}\\times0.819\\fallingdotseq\\mathbf{2.8\\times10^{-2}\\,m/s^2}$。遠心力は自転軸に垂直（赤道面に平行）な向きなので，中心の向きとのなす角は $90^\\circ-\\varphi$ であり，中心の向きに垂直な成分は\n\\[ \\omega^2R\\cos\\varphi\\sin\\varphi=3.41\\times10^{-2}\\times0.819\\times0.574\\fallingdotseq1.60\\times10^{-2}\\,\\mathrm{m/s^2} \\]\nずれの角は\n\\[ \\frac{1.60\\times10^{-2}}{9.8}\\fallingdotseq1.64\\times10^{-3}\\,\\mathrm{rad}\\fallingdotseq\\mathbf{0.094^\\circ} \\]\n\n\\textbf{(3)}　ずれは $\\sin\\varphi\\cos\\varphi=\\tfrac12\\sin2\\varphi$ に比例するので，\\textbf{緯度 45°} で最大：\n\\[ \\frac{3.41\\times10^{-2}\\times0.5}{9.8}\\fallingdotseq1.74\\times10^{-3}\\,\\mathrm{rad}\\fallingdotseq\\mathbf{0.10^\\circ} \\]\n赤道では遠心力が中心と正反対の向き，極では遠心力が $0$ なので，\\textbf{赤道と両極}ではずれは $0$ になる（大きさは変わっても向きはずれない）。\n\n\\textbf{(4)}　遠心力の，中心の向きに垂直な成分は赤道側（南）を向く。そのため重力（鉛直下向き）は中心の向きより少し南に傾き，延長すると\\textbf{中心より南側で自転軸と交わる}（解答図）。答えは\\textbf{ウ}。\n\n\\textbf{発展}　実際の地球は，この重力の向きに垂直な面（水平面）がつながるように赤道方向へふくらんだ回転楕円体になっており，鉛直線で決める緯度（天文緯度）は中心から見た緯度より最大で約 $0.2^\\circ$ 大きい。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "遠心力は自転軸に垂直にはたらくので，中緯度では引力（中心向き）と斜めになり，重力の向きは中心の向きから赤道側へずれる。ずれは sinφcosφ に比例して緯度45°で最大，赤道と極で0になり，鉛直線は地球の中心を通らない。"
+ },
+ "concepts": [
+  "earth-shape",
+  "gravity-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "遠心力",
+  "重力",
+  "鉛直線",
+  "緯度",
+  "自転",
+  "地球楕円体"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

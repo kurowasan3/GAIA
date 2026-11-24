@@ -1,0 +1,108 @@
+{
+ "id": "AST-STR-060",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "同じスペクトル型の恒星の半径比と恒星間の距離",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "スペクトル型が同じ 3 つの恒星 X・Y・Z を観測し，見かけの等級と年周視差を表のように得た。また，天球上で Y と Z は $60^\\circ$ 離れて見えた。星間物質による減光はないものとし，必要なら $\\log_{10}2=0.30$，$10^{0.7}=5.0$，$\\sqrt{19}=4.36$ を用いよ。\n\\[\\begin{array}{c|c|c}\n\\text{恒星} & \\text{見かけの等級} & \\text{年周視差} \\\\ \\hline\n\\mathrm{X} & 2.0 & 0.010'' \\\\\n\\mathrm{Y} & -1.0 & 0.250'' \\\\\n\\mathrm{Z} & 0.5 & 0.100'' \\\\\n\\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X・Y・Z までの距離をそれぞれパーセクで求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "X・Y・Z の絶対等級をそれぞれ求めよ（小数第 1 位まで）。"
+     },
+     {
+      "id": "3",
+      "tex": "3 つの恒星のうち半径が最も大きいものを答えよ。また，その恒星の半径は Z の半径の何倍か。有効数字 2 桁で求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "Y と Z の間の実際の距離は何パーセクか。有効数字 2 桁で求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "X：$100\\,\\mathrm{pc}$，Y：$4.0\\,\\mathrm{pc}$，Z：$10\\,\\mathrm{pc}$"
+   },
+   {
+    "id": "2",
+    "tex": "X：$-3.0$ 等，Y：$1.0$ 等，Z：$0.5$ 等"
+   },
+   {
+    "id": "3",
+    "tex": "X，$5.0$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$8.7\\,\\mathrm{pc}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 距離〔pc〕$=1\\div$ 年周視差〔$''$〕より，X：$\\boldsymbol{100\\,\\mathrm{pc}}$，Y：$\\boldsymbol{4.0\\,\\mathrm{pc}}$，Z：$\\boldsymbol{10\\,\\mathrm{pc}}$．\n\n\\textbf{(2)} $M=m+5-5\\log_{10}d$ を使う．\n・X：$M=2.0+5-5\\times2=\\boldsymbol{-3.0}$\n・Y：$\\log_{10}4=2\\times0.30=0.60$ より $M=-1.0+5-3.0=\\boldsymbol{1.0}$\n・Z：$d=10\\,\\mathrm{pc}$ なので $M=m=\\boldsymbol{0.5}$\n\n\\textbf{(3)} スペクトル型が同じなら表面温度が同じで，光度 $L=4\\pi R^2\\sigma T^4$ は半径の 2 乗に比例する．絶対等級が最も小さい（光度が最も大きい）\\textbf{ X} の半径が最も大きい．見かけで最も明るい Y は，近いから明るく見えるだけである．X と Z の絶対等級の差は $0.5-(-3.0)=3.5$ 等なので\n\\[ \\frac{L_X}{L_Z}=10^{0.4\\times3.5}=10^{1.4},\\qquad \\frac{R_X}{R_Z}=\\sqrt{10^{1.4}}=10^{0.7}=\\boldsymbol{5.0} \\]\n\n\\textbf{(4)} 地球・Y・Z を頂点とする三角形で，地球での角が $60^\\circ$ なので余弦定理より\n\\[ \\mathrm{YZ}^2=4.0^2+10^2-2\\times4.0\\times10\\times\\cos60^\\circ=76,\\qquad \\mathrm{YZ}=2\\sqrt{19}=\\boldsymbol{8.7\\,\\mathrm{pc}} \\]\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "年周視差から距離，距離と見かけの等級から絶対等級を求め，スペクトル型（表面温度）が同じなら光度の比の平方根が半径の比になる。見かけで最も明るい星が最も大きいとは限らない。2 つの星の距離と天球上の離角から，余弦定理で星どうしの実際の距離が求まる。"
+ },
+ "concepts": [
+  "stellar-properties",
+  "diurnal-annual",
+  "celestial-sphere"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "年周視差",
+  "絶対等級",
+  "シュテファン・ボルツマンの法則",
+  "恒星の半径",
+  "余弦定理"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

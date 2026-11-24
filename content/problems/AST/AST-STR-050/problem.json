@@ -1,0 +1,108 @@
+{
+ "id": "AST-STR-050",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "連星の軌道の傾きと視線速度",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽と同じ質量の2つの恒星が，$2.0$ 天文単位離れて共通重心のまわりを円軌道で公転している．太陽質量を単位とした質量の和 $M$，天文単位で表した2星間の距離 $a$，年で表した公転周期 $P$ の間には $a^3=MP^2$ が成り立つ．地球は 1 天文単位の円軌道を $30\\,\\mathrm{km/s}$ で公転している．光の速さを $3.0\\times10^{5}\\,\\mathrm{km/s}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "公転周期は何年か．また，それぞれの恒星の公転の速さは何 $\\mathrm{km/s}$ か．"
+     },
+     {
+      "id": "2",
+      "tex": "公転面に垂直な方向と $30^\\circ$ をなす方向から観測すると，それぞれの恒星の視線速度の大きさは，最大で何 $\\mathrm{km/s}$ か．また，最小でいくらか．"
+     },
+     {
+      "id": "3",
+      "tex": "前問の観測で，スペクトル線の波長のずれの割合 $\\dfrac{|\\lambda-\\lambda_0|}{\\lambda_0}$ の最大値を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "観測者が公転面を真横から見ていると思いこみ，視線速度の最大値をそのまま公転の速さとみなして質量の和を求めたとする．この値は真の質量の和の何倍になるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "周期 $2.0$ 年，速さ $15\\,\\mathrm{km/s}$"
+   },
+   {
+    "id": "2",
+    "tex": "最大 $7.5\\,\\mathrm{km/s}$，最小 $0$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.5\\times10^{-5}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\dfrac{1}{8}$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　視線速度は公転速度の「視線方向の成分」．公転面に垂直な方向と角 $i$ をなす方向から見ると，最大でも $v\\sin i$ しか見えない．\n\n(1) $P^2=\\dfrac{a^3}{M}=\\dfrac{8.0}{2.0}=4.0$ より $P=\\boldsymbol{2.0}$ 年．質量が等しいので各星は重心から 1.0 天文単位の円を回る．地球と比べて\n\\[ v=30\\times\\frac{1.0}{2.0}=\\boldsymbol{15}\\ \\mathrm{km/s} \\]\n\n(2) 最大 $v\\sin30^\\circ=\\boldsymbol{7.5\\,\\mathrm{km/s}}$．運動が視線と直角な面内にあるとき（視線を含む面と軌道の交わる2点）では視線方向の成分は $\\boldsymbol{0}$．\n\n(3) $\\dfrac{7.5}{3.0\\times10^{5}}=\\boldsymbol{2.5\\times10^{-5}}$．\n\n(4) 半径 $r=\\dfrac{vP}{2\\pi}$，質量 $M=\\dfrac{a^3}{P^2}\\propto\\dfrac{(vP)^3}{P^2}=v^3P$．周期は正しく測れるが速さを $\\sin30^\\circ=\\dfrac{1}{2}$ 倍に見積もるので，質量は $\\left(\\dfrac{1}{2}\\right)^3=\\boldsymbol{\\dfrac{1}{8}}$ 倍になる．傾きがわからない分光連星では，求めた質量は下限値にしかならない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "視線速度は公転速度の視線方向の成分にすぎず，公転面の傾きによって最大値が v sin i に小さくなる．傾きを無視すると質量は速さの3乗に比例して過小評価され，分光連星の質量は下限値になる．"
+ },
+ "concepts": [
+  "stellar-properties",
+  "geologic-structures",
+  "kepler"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "分光連星",
+  "視線速度",
+  "軌道傾斜角",
+  "ドップラー効果",
+  "ケプラーの第3法則"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

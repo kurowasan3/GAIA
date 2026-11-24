@@ -1,0 +1,106 @@
+{
+ "id": "SOL-SHP-024",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "地球の丸みと水平線までの距離",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球を半径 $R=6.4\\times10^{3}\\,\\mathrm{km}$ の球とし，大気による光の屈折や障害物は考えないものとする。高さ $h$ の地点から見える水平線（地平線）は，目からの視線が地球の表面に接する点である。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "視線が接する点と地球の中心を結ぶ線は視線に垂直である。このことを用いて，高さ $h$ から水平線までの距離 $d$ を $R$ と $h$ で表せ。ただし $h$ は $R$ にくらべて十分小さく，$h^2$ の項は無視してよい。"
+     },
+     {
+      "id": "2",
+      "tex": "標高 $1800\\,\\mathrm{m}$ の山頂 A から見える水平線までの距離を求めよ（有効数字2桁）。"
+     },
+     {
+      "id": "3",
+      "tex": "水平線までの距離を (2) の2倍の約 $300\\,\\mathrm{km}$ にするには，標高を何 km にすればよいか（有効数字2桁）。"
+     },
+     {
+      "id": "4",
+      "tex": "山頂 A と，標高 $3200\\,\\mathrm{m}$ の山頂 B がある。A と B の間の地表に高い山がないとき，A から B の山頂が見えるのは，A と B の地表に沿った距離が最大何 km までか（有効数字2桁）。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$d=\\sqrt{2Rh}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.5\\times10^{2}\\,\\mathrm{km}$"
+   },
+   {
+    "id": "3",
+    "tex": "$7.0\\,\\mathrm{km}$"
+   },
+   {
+    "id": "4",
+    "tex": "$3.5\\times10^{2}\\,\\mathrm{km}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) 直角三角形} 目・接点・地球の中心は，接点で直角の直角三角形をつくる。斜辺は $R+h$ なので\n\\[ (R+h)^2=R^2+d^2 \\quad\\Rightarrow\\quad d^2=2Rh+h^2\\approx 2Rh \\]\nよって $\\boldsymbol{d=\\sqrt{2Rh}}$。$h$ が小さいので，接点までの視線の長さと地表に沿った距離はほとんど同じである。\n\n\\textbf{(2)} $h=1.8\\,\\mathrm{km}$ として\n\\[ d=\\sqrt{2\\times6.4\\times10^{3}\\times1.8}=\\sqrt{2.30\\times10^{4}}=152\\ \\mathrm{km} \\]\nよって $\\boldsymbol{1.5\\times10^{2}\\,\\mathrm{km}}$。\n\n\\textbf{(3) 距離は高さの平方根に比例} $d\\propto\\sqrt{h}$ なので，距離を2倍にするには高さを $2^2=4$ 倍にする必要がある。直接計算すると\n\\[ h=\\frac{d^2}{2R}=\\frac{(300)^2}{2\\times6.4\\times10^{3}}=7.03\\ \\mathrm{km} \\]\nよって $\\boldsymbol{7.0\\,\\mathrm{km}}$（1.8 km の約4倍）。高さを2倍にしても距離は $\\sqrt{2}$ 倍にしかならない。\n\n\\textbf{(4) 2つの水平線距離の和} A からの視線と B からの視線が，間の同じ1点で地表に接するときが見える限界である。それぞれの水平線距離を足して\n\\[ \\sqrt{2\\times6.4\\times10^{3}\\times1.8}+\\sqrt{2\\times6.4\\times10^{3}\\times3.2}=152+202=354\\ \\mathrm{km} \\]\nよって $\\boldsymbol{3.5\\times10^{2}\\,\\mathrm{km}}$。A から見える水平線（152 km）より遠くても，B 自身が高いので B の山頂は見える。なお実際には大気の屈折で光がわずかに地表側へ曲がるため，見える距離はこれより少し長くなる。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "視線が地表に接する点で直角三角形ができるので，水平線までの距離は √(2Rh) で高さの平方根に比例する。距離を2倍にするには高さが4倍必要で，2つの山頂が見通せる限界は両者の水平線距離の和になる。"
+ },
+ "concepts": [
+  "earth-shape"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "水平線",
+  "地球の大きさ",
+  "直角三角形",
+  "平方根",
+  "見通し距離"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

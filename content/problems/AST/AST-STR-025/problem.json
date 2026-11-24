@@ -1,0 +1,107 @@
+{
+ "id": "AST-STR-025",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "3つの観測から恒星の半径を求める",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "恒星 X について，次の 3 つの観測結果が得られている。\n・放射エネルギーの強さが最大になる波長は $0.25\\,\\mathrm{\\mu m}$ である。\n・見かけの等級は $4.8$ 等である。\n・距離は $100\\,\\mathrm{pc}$ である。\n太陽の表面温度は $5800\\,\\mathrm{K}$，放射が最大になる波長は $0.50\\,\\mathrm{\\mu m}$，絶対等級は $4.8$ 等とする。恒星の光度 $L$ は半径 $R$ と表面温度 $T$ を用いて $L=4\\pi R^2\\sigma T^4$（$\\sigma$ は定数）と表され，5 等級の差は明るさ 100 倍にあたる。また，見かけの等級 $m$，絶対等級 $M$，距離 $d\\,[\\mathrm{pc}]$ の間には $m-M=5\\log_{10}d-5$ が成り立つ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "恒星 X の表面温度を有効数字2桁で求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "恒星 X の絶対等級を求めよ。また，恒星 X の光度は太陽の何倍か。"
+     },
+     {
+      "id": "3",
+      "tex": "恒星 X の半径は太陽の何倍か。有効数字2桁で求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "その後，恒星 X までの距離は実際には $200\\,\\mathrm{pc}$ であることがわかった（他の観測結果は正しい）。恒星 X の半径は太陽の何倍になるか。有効数字2桁で求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.2\\times10^{4}\\,\\mathrm{K}$"
+   },
+   {
+    "id": "2",
+    "tex": "絶対等級 $-0.2$ 等，光度は太陽の $100$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$2.5$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$5.0$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} ウィーンの変位則より，放射が最大になる波長は表面温度に反比例する．\n\\[ T_X = 5800\\times\\frac{0.50}{0.25} = 11600\\,\\mathrm{K} \\fallingdotseq \\boldsymbol{1.2\\times10^{4}\\,\\mathrm{K}} \\]\n\n\\textbf{(2)} $4.8-M=5\\log_{10}100-5=5$ より $\\boldsymbol{M=-0.2}$ 等．太陽（$4.8$ 等）より $5.0$ 等明るいので，光度は太陽の $\\boldsymbol{100}$ 倍．\n\n\\textbf{(3)} $L\\propto R^2T^4$ より $\\dfrac{R_X}{R_\\odot}=\\sqrt{\\dfrac{L_X}{L_\\odot}}\\left(\\dfrac{T_\\odot}{T_X}\\right)^2=\\sqrt{100}\\times\\left(\\dfrac{1}{2}\\right)^2=\\boldsymbol{2.5}$ 倍．温度の比は (1) の波長の比からそのまま 2 倍とわかるので，$\\sigma$ や太陽の半径の値は必要ない．\n\n\\textbf{(4)} 見かけの明るさが同じで距離が 2 倍なら，光度は $2^2=4$ 倍（$L\\propto d^2$）．温度は変わらないので $R\\propto\\sqrt{L}\\propto d$ となり，半径も 2 倍の $\\boldsymbol{5.0}$ 倍．（$m-M=5\\log_{10}200-5=6.5$ より $M=-1.7$ 等，光度 $10^{0.4\\times6.5}\\fallingdotseq400$ 倍でも確かめられる．）距離の誤差は半径の見積もりにそのまま比例して効く．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "放射のピーク波長から温度比（ウィーンの変位則），見かけの等級と距離から光度比を出し，L∝R²T⁴ で太陽と比べれば半径比が求まる。温度が同じなら半径は距離に比例するので，距離の誤差は半径にそのまま効く。"
+ },
+ "concepts": [
+  "stellar-properties",
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ウィーンの変位則",
+  "シュテファン・ボルツマンの法則",
+  "絶対等級",
+  "距離指数",
+  "恒星の半径"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

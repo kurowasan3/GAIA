@@ -1,0 +1,98 @@
+{
+ "id": "ATM-CLD-036",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "雨粒の数密度と落下速度から降水強度を求める",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "雲の中を落下する粒が，半径 $1.0\\times10^{-3}\\,\\mathrm{cm}$ の雲粒をつぎつぎに捕らえて雨粒に成長する．雲粒も雨粒も球とし，円周率を $3.0$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "半径 $0.10\\,\\mathrm{cm}$ の雨粒 1 個をつくるには，半径 $1.0\\times10^{-3}\\,\\mathrm{cm}$ の雲粒が何個必要か．はじめの粒の体積は無視してよい．"
+     },
+     {
+      "id": "2",
+      "tex": "地表付近で，半径 $0.10\\,\\mathrm{cm}$ の雨粒が $1\\,\\mathrm{m^3}$ あたり 100 個の割合で一様に存在し，すべて $6.0\\,\\mathrm{m/s}$ で落下している．1 時間あたりの降水量は何 mm か．有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "空気 $1\\,\\mathrm{m^3}$ に含まれる雨水の量は (2) と同じで，雨粒がすべて半径 $0.050\\,\\mathrm{cm}$ だった場合を考える．この大きさの雨粒の落下速度を $4.0\\,\\mathrm{m/s}$ とすると，1 時間あたりの降水量は何 mm か．有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.0\\times10^{6}$ 個"
+   },
+   {
+    "id": "2",
+    "tex": "$8.6\\,\\mathrm{mm}$"
+   },
+   {
+    "id": "3",
+    "tex": "$5.8\\,\\mathrm{mm}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 体積は半径の 3 乗に比例する．半径の比は $\\dfrac{0.10}{1.0\\times10^{-3}}=100$ なので，体積は $100^3=\\boldsymbol{1.0\\times10^{6}}$ 倍．雲粒 $10^6$ 個が必要．\n\n(2) 雨粒 1 個の体積は $\\dfrac{4}{3}\\times3.0\\times(0.10)^3=4.0\\times10^{-3}\\,\\mathrm{cm^3}$．$1\\,\\mathrm{m^3}$ あたり 100 個なので，雨水の量は $0.40\\,\\mathrm{cm^3/m^3}$．底面 $1\\,\\mathrm{m^2}$ の面を 1 時間に通過する空気の柱の高さは $6.0\\times3600=2.16\\times10^{4}\\,\\mathrm{m}$ なので，通過する雨水の体積は\n\\[ 0.40\\times2.16\\times10^{4}=8.64\\times10^{3}\\,\\mathrm{cm^3} \\]\nこれを $1\\,\\mathrm{m^2}=10^4\\,\\mathrm{cm^2}$ に広げた厚さは $0.864\\,\\mathrm{cm}$，よって $\\boldsymbol{8.6\\,\\mathrm{mm}}$．\n\n\\textbf{まとめ}　（降水強度）＝（空気 $1\\,\\mathrm{m^3}$ 中の雨水の体積）×（落下速度）．\n\n(3) 雨水の量は同じ $0.40\\,\\mathrm{cm^3/m^3}$（雨粒は小さいが数が 8 倍）．落下速度だけが $\\dfrac{4.0}{6.0}$ 倍になるので\n\\[ 8.64\\times\\frac{4.0}{6.0}=5.76\\ \\to\\ \\boldsymbol{5.8\\,\\mathrm{mm}} \\]\n同じ雨水量でも，粒が小さく落下が遅いと地面に届く量は少なくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "雨粒は雲粒が約 100 万個集まった大きさであり，降水強度は「空気中の雨水量×落下速度」で決まる．同じ雨水量でも粒が小さく落下が遅いと降水強度は小さい．"
+ },
+ "concepts": [
+  "adiabatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "雨粒",
+  "降水強度",
+  "併合",
+  "落下速度",
+  "暖かい雨"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "id": "ATM-CIR-016",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "気柱の平均気温と500 hPa 面の高さ",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地表の気圧が 1000 hPa の地点で，地表から 500 hPa の等圧面までの高さ $z$ は，その間の空気の平均気温 $\\bar T$ [K] を使って\n\\[ z=\\frac{R\\bar T}{g}\\ln\\frac{1000}{500} \\]\nと表される．ここで $R=287\\ \\mathrm{J/(kg\\cdot K)}$，$g=9.8\\ \\mathrm{m/s^2}$，$\\ln2=0.693$ とする．冬のある日，同じ経線上にある低緯度の地点 L では $\\bar T=265\\ \\mathrm{K}$，高緯度の地点 H では $\\bar T=245\\ \\mathrm{K}$ で，地表の気圧はどちらも 1000 hPa であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "L と H での 500 hPa 面の高さを，それぞれ km の単位で求めよ（有効数字2桁）．また，その差は何 m か（有効数字2桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "L と H の上空の同じ高さ 5.0 km の2点では，どちらの気圧が高いか．また，その高さで気圧傾度力はどちら向きにはたらき，北半球の上空ではどちら向きの風が吹くか．"
+     },
+     {
+      "id": "3",
+      "tex": "夏には H の平均気温が 255 K に上がり，L は 265 K のままだったとする．500 hPa 面の高さの差は冬の何倍になるか（有効数字2桁）．また，L と H の距離は変わらないとして，上空の西風は冬と比べて強いか弱いか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "L：5.4 km，H：5.0 km，差：$4.1\\times10^{2}$ m"
+   },
+   {
+    "id": "2",
+    "tex": "L の上空の方が気圧が高い．気圧傾度力は高緯度向き（北向き）にはたらき，西風（偏西風）が吹く．"
+   },
+   {
+    "id": "3",
+    "tex": "0.50 倍，弱い"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\dfrac{R}{g}\\ln2=\\dfrac{287}{9.8}\\times0.693=20.3\\ \\mathrm{m/K}$ なので，\nL：$20.3\\times265=5.38\\times10^{3}\\ \\mathrm{m}\\fallingdotseq\\boldsymbol{5.4\\ \\mathrm{km}}$，H：$20.3\\times245=4.97\\times10^{3}\\ \\mathrm{m}\\fallingdotseq\\boldsymbol{5.0\\ \\mathrm{km}}$．\n差は $20.3\\times(265-245)=406\\fallingdotseq\\boldsymbol{4.1\\times10^{2}\\ \\mathrm{m}}$．暖かい空気の柱ほど膨張していて，等圧面が高い所にある．\n\\textbf{(2)} 高さ 5.0 km は，L では 500 hPa 面（5.38 km）より下なので気圧は 500 hPa より高く，H では 500 hPa 面（4.97 km）より上なので 500 hPa より低い．よって \\textbf{L の上空の方が気圧が高い}．気圧傾度力は高圧の L から低圧の H へ，つまり\\textbf{高緯度向き}にはたらく．北半球の上空では，転向力とつり合う地衡風が低圧側を左に見て吹くので，\\textbf{西風}になる．\n\\textbf{(3)} 差は平均気温の差に比例するので，$\\dfrac{265-255}{265-245}=\\boldsymbol{0.50}$ \\textbf{倍}．等圧面の傾き（気圧傾度）が半分になるので，地衡風としての西風は\\textbf{弱く}なる．\n南北の気温差が大きい冬ほど上空の偏西風が強いのは，このしくみによる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "空気柱が暖かいほど膨張して等圧面が高くなるので，2地点の気柱の平均気温の差が上空の等圧面の高さの差（気圧傾度）を決める．南北の気温差が小さくなると等圧面の傾きが小さくなり，上空の西風が弱まる．"
+ },
+ "concepts": [
+  "general-circulation",
+  "atm-pressure",
+  "winds"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "高層天気図",
+  "等圧面の高さ",
+  "気温と気圧",
+  "偏西風",
+  "地衡風"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

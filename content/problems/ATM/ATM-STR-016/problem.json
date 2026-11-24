@@ -1,0 +1,109 @@
+{
+ "id": "ATM-STR-016",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "液柱の高さで測る気圧（水銀柱・水柱・山頂）",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "一端を閉じたガラス管に液体を満たし，液体を入れた容器の中に逆さに立てると，管の中の液面は下がり，容器の液面からある高さ $H$ で止まる（管の上部は真空になる）．このとき，液柱の底面にはたらく液柱の重さによる圧力（$\\rho gH$，$\\rho$ は液体の密度）と気圧がつり合っている．重力加速度を $9.8\\,\\mathrm{m/s^2}$，水銀の密度を $1.36\\times10^{4}\\,\\mathrm{kg/m^3}$，水の密度を $1.00\\times10^{3}\\,\\mathrm{kg/m^3}$，$1\\,\\mathrm{hPa}=100\\,\\mathrm{Pa}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "気圧が $1013\\,\\mathrm{hPa}$ の海岸で水銀を使って実験した．$H$ は何 cm か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "同じ海岸で，水銀のかわりに水を使うと，$H$ は何 m になるか．有効数字3桁で答えよ（水の蒸発は考えない）．"
+     },
+     {
+      "id": "3",
+      "tex": "気圧が $630\\,\\mathrm{hPa}$ の高い山の山頂で，水銀を使って実験すると，$H$ は何 cm か．有効数字3桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(1) の実験で，ガラス管を鉛直から $60^\\circ$ 傾けた（管は十分長い）．このとき，管の中の水銀柱について正しいものを，次から1つ選べ．ア　鉛直方向の高さは $H$ のままで，管に沿った長さは $2H$ になる，イ　管に沿った長さが $H$ のままで，鉛直方向の高さは $\\dfrac{H}{2}$ になる，ウ　傾けると気圧とつり合わなくなり，水銀はすべて容器に流れ出る，エ　鉛直方向の高さも管に沿った長さも $2H$ になる"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$76.0\\,\\mathrm{cm}$"
+   },
+   {
+    "id": "2",
+    "tex": "$10.3\\,\\mathrm{m}$"
+   },
+   {
+    "id": "3",
+    "tex": "$47.3\\,\\mathrm{cm}$"
+   },
+   {
+    "id": "4",
+    "tex": "ア"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 気圧 $p$ と液柱の圧力がつり合うので $p=\\rho gH$，$H=\\dfrac{p}{\\rho g}$．\n\\[ H=\\frac{1013\\times100}{1.36\\times10^{4}\\times9.8}=0.7600\\ \\mathrm{m}\\fallingdotseq\\boldsymbol{76.0\\ \\mathrm{cm}} \\]\n（1気圧＝水銀柱 76 cm（760 mmHg）とよばれる理由である．）\n\n\\textbf{(2)} 水の密度は水銀の $\\dfrac{1}{13.6}$ なので，同じ気圧を支える高さは 13.6 倍になる．\n\\[ H=\\frac{1013\\times100}{1.00\\times10^{3}\\times9.8}=10.34\\fallingdotseq\\boldsymbol{10.3\\ \\mathrm{m}} \\]\n水で気圧計をつくるには 10 m 以上の管が必要になり，実用的でない．密度の大きい水銀が使われるのはこのためである．\n\n\\textbf{(3)} 気圧は「その高さより上にある大気の重さ」なので，山頂では上にある大気が少なく，気圧が低い．\n\\[ H=\\frac{630\\times100}{1.36\\times10^{4}\\times9.8}=0.4727\\ \\mathrm{m}\\fallingdotseq\\boldsymbol{47.3\\ \\mathrm{cm}} \\]\n$H$ は気圧に比例するので，$76.0\\times\\dfrac{630}{1013}\\fallingdotseq47.3\\,\\mathrm{cm}$ と比で求めてもよい．\n\n\\textbf{(4)} 液柱の圧力を決めるのは液面どうしの\\textbf{鉛直方向の高さの差}であり，管の長さや傾きではない．傾けても鉛直方向の高さは $H$ のままで，管に沿った長さは $\\dfrac{H}{\\cos60^\\circ}=2H$（約 $152\\,\\mathrm{cm}$）になる．よって\\textbf{ア}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "液柱の高さ×密度×重力加速度が気圧とつり合うので，液柱の高さは気圧に比例し密度に反比例する．気圧は上にある大気の重さなので高所ほど低い．つり合いを決めるのは鉛直方向の高さの差で，管の傾きや長さではない．"
+ },
+ "concepts": [
+  "atmosphere-structure",
+  "gravity-earth",
+  "atm-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気圧",
+  "トリチェリの実験",
+  "水銀柱",
+  "液柱の圧力",
+  "高度と気圧"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

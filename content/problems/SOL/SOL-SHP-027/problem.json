@@ -1,0 +1,108 @@
+{
+ "id": "SOL-SHP-027",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "同じ太陽高度データを球形モデルと平面モデルで解釈する",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある日の正午，同じ経線上の3地点 S，A，B で太陽の天頂距離（天頂から太陽までの角度）を測った．S では太陽が真上（天頂距離 $0^\\circ$）にあり，S から北へ $800\\ \\mathrm{km}$ の A では天頂距離が $7.2^\\circ$，S から北へ $4000\\ \\mathrm{km}$ の B では $36.0^\\circ$ であった．この観測を次の2つのモデルで解釈する．\n\n・モデル I：地球は球形で，太陽は十分遠く，太陽光は平行である．\n\n・モデル II：地表は平面で，太陽は S の真上の高さ $H$ にある．\n\n円周率を $3.14$，$\\tan7.2^\\circ=0.126$，$\\tan32^\\circ=0.625$，$\\tan33^\\circ=0.649$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "S と A の観測だけを使い，モデル I で地球の半径 $R$ を求めよ（有効数字2桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "S と A の観測だけを使い，モデル II で太陽の高さ $H$ を求めよ（有効数字2桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "(1)，(2) の値を使うと，B での天頂距離はモデル I，II でそれぞれ何度と予想されるか．整数で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "2つのモデルのどちらが観測と合うか．また，S と A の観測だけでは2つのモデルを区別できない理由を簡潔に述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$R\\approx6.4\\times10^{3}\\ \\mathrm{km}$"
+   },
+   {
+    "id": "2",
+    "tex": "$H\\approx6.3\\times10^{3}\\ \\mathrm{km}$"
+   },
+   {
+    "id": "3",
+    "tex": "モデル I：約 $36^\\circ$，モデル II：約 $32^\\circ$"
+   },
+   {
+    "id": "4",
+    "tex": "モデル I．角度が小さいと $\\tan\\theta\\approx\\theta$（ラジアン）となり，2つのモデルの式がほぼ同じ結果を与えるから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 平行光線なので，天頂距離の差 $7.2^\\circ$ は S，A がつくる中心角に等しい．$7.2^\\circ=\\dfrac{7.2}{180}\\times3.14=0.1256$ ラジアン．\n\\[ R=\\frac{800}{0.1256}\\approx\\boldsymbol{6.4\\times10^{3}\\ \\mathrm{km}} \\]\n\n\\textbf{(2)} A から見た太陽の方向と鉛直線のなす角が $7.2^\\circ$ なので $\\tan7.2^\\circ=\\dfrac{800}{H}$．\n\\[ H=\\frac{800}{0.126}\\approx\\boldsymbol{6.3\\times10^{3}\\ \\mathrm{km}} \\]\n\n\\textbf{(3)} モデル I：中心角 $=\\dfrac{4000}{6.37\\times10^{3}}\\approx0.628$ ラジアン $\\approx\\boldsymbol{36^\\circ}$．\nモデル II：$\\tan\\theta=\\dfrac{4000}{6.35\\times10^{3}}\\approx0.630$．$\\tan32^\\circ=0.625$ と $\\tan33^\\circ=0.649$ の間で $32^\\circ$ に近いので $\\boldsymbol{\\theta\\approx32^\\circ}$．\n\n\\textbf{(4)} B の観測値 $36.0^\\circ$ と合うのは\\textbf{モデル I（球形）}．モデル I では天頂距離は距離に比例（$\\theta=d/R$）し，モデル II では $\\tan\\theta=d/H$ となる．$\\theta$ が小さいと $\\tan\\theta\\approx\\theta$ なので，近い2地点の観測では $R$ と $H$ が同じような値になり区別できない．離れた地点まで観測して初めて差が現れる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "太陽高度の差と距離という同じデータは，球形の地球（平行光線）と平面の地表（近くの太陽）の両方で説明でき，角度が小さい範囲では tanθ≒θ のため区別できない．十分離れた第3の地点の観測でモデルを判別できる．"
+ },
+ "concepts": [
+  "earth-shape",
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "エラトステネス",
+  "地球の大きさ",
+  "モデルの検証",
+  "太陽高度",
+  "近似"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

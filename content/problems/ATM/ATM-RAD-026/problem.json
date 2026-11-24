@@ -1,0 +1,116 @@
+{
+ "id": "ATM-RAD-026",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "1層大気モデルで全球凍結の寒冷化を見積もる",
+ "course": "地学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地表（温度 $T_S$）と 1 層の大気からなる簡単なモデルを考える．地表が吸収する太陽放射は，太陽定数 $S$ と地球のアルベド $\\alpha$ を用いて $S_E=\\dfrac{(1-\\alpha)S}{4}$ である．地表は $F_S=\\sigma T_S^4$ の赤外放射を出し，そのうち割合 $\\varepsilon$ を大気が吸収し，残りは宇宙へ出ていく．大気は吸収したのと同じ量を，上向きと下向きに等しく $F_A$ ずつ放射し，下向きの $F_A$ はすべて地表が吸収する．地表も大気も，吸収と放射がつり合っているとする．$S=1.37\\times10^{3}\\,\\mathrm{W/m^2}$，$\\sigma=5.67\\times10^{-8}\\,\\mathrm{W/(m^2\\cdot K^4)}$ とし，必要なら $\\sqrt[4]{70.5}=2.90$，$\\sqrt[4]{56.4}=2.74$，$\\sqrt[4]{40.3}=2.52$，$\\sqrt[4]{32.2}=2.38$ を用いよ．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地表と大気それぞれのつり合いの式を書き，$F_S=\\dfrac{S_E}{1-\\varepsilon/2}$ となることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "現在の地球を $\\alpha=0.30$，$\\varepsilon=0.80$ として，$T_S$ を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "地球が雪氷におおわれて $\\alpha=0.60$ になり，寒冷化で大気中の水蒸気が減って $\\varepsilon=0.50$ になったとする．$T_S$ を有効数字 3 桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の状態から，$\\alpha$ だけが $0.60$ になった場合と，$\\varepsilon$ だけが $0.50$ になった場合の $T_S$ をそれぞれ有効数字 3 桁で求め，(3) の寒冷化に大きく効いているのはどちらの変化か答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "寒冷化が始まると，(3) のような $\\alpha$ と $\\varepsilon$ の変化がさらに寒冷化を進める．このしくみを，(1) の式を用いて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "地表：$S_E+F_A=F_S$，大気：$\\varepsilon F_S=2F_A$ から導かれる（解説参照）"
+   },
+   {
+    "id": "2",
+    "tex": "$290\\,\\mathrm{K}$"
+   },
+   {
+    "id": "3",
+    "tex": "$238\\,\\mathrm{K}$"
+   },
+   {
+    "id": "4",
+    "tex": "$\\alpha$ だけ：$252\\,\\mathrm{K}$，$\\varepsilon$ だけ：$274\\,\\mathrm{K}$．アルベドの増加の方が大きく効いている．"
+   },
+   {
+    "id": "5",
+    "tex": "気温が下がると雪氷が広がって $\\alpha$ が増え $S_E$ が減り，水蒸気が減って $\\varepsilon$ が減り $1-\\varepsilon/2$ が大きくなる．どちらも $F_S=\\dfrac{S_E}{1-\\varepsilon/2}$ を小さくして $T_S$ をさらに下げるので，寒冷化が加速する（正のフィードバック）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 地表は $S_E$ と大気からの $F_A$ を吸収し $F_S$ を出すので $S_E+F_A=F_S$．大気は $\\varepsilon F_S$ を吸収し上下に $F_A$ ずつ出すので $\\varepsilon F_S=2F_A$．$F_A=\\dfrac{\\varepsilon}{2}F_S$ を代入すると\n\\[ S_E+\\frac{\\varepsilon}{2}F_S=F_S\\quad\\therefore\\quad F_S=\\frac{S_E}{1-\\varepsilon/2} \\]\n\n(2) $S_E=\\dfrac{0.70\\times1370}{4}=240\\,\\mathrm{W/m^2}$，$F_S=\\dfrac{240}{0.60}=400\\,\\mathrm{W/m^2}$．\n\\[ T_S^4=\\frac{400}{5.67\\times10^{-8}}=70.5\\times10^{8}\\quad\\Rightarrow\\quad T_S=2.90\\times10^{2}=\\boldsymbol{290\\,\\mathrm{K}} \\]\n\n(3) $S_E=\\dfrac{0.40\\times1370}{4}=137\\,\\mathrm{W/m^2}$，$F_S=\\dfrac{137}{0.75}=183\\,\\mathrm{W/m^2}$，$T_S^4=32.2\\times10^{8}$ より $T_S=\\boldsymbol{238\\,\\mathrm{K}}$（約 $-35\\,^\\circ\\mathrm{C}$）．\n\n(4) $\\alpha$ だけ：$F_S=\\dfrac{137}{0.60}=228\\,\\mathrm{W/m^2}$，$T_S^4=40.3\\times10^{8}$ より $\\boldsymbol{252\\,\\mathrm{K}}$（$-38\\,\\mathrm{K}$）．\n$\\varepsilon$ だけ：$F_S=\\dfrac{240}{0.75}=320\\,\\mathrm{W/m^2}$，$T_S^4=56.4\\times10^{8}$ より $\\boldsymbol{274\\,\\mathrm{K}}$（$-16\\,\\mathrm{K}$）．\nよって\\textbf{アルベドの増加}の方が大きく効いている．\n\n(5) $T_S$ が下がる → 海氷・氷床が広がり $\\alpha$ 増加 → $S_E$ 減少．また $T_S$，$T_A$ が下がる → 蒸発が減り，飽和水蒸気量も小さくなって大気中の水蒸気（温室効果気体）が減る → $\\varepsilon$ 減少 → $1-\\dfrac{\\varepsilon}{2}$ 増加．どちらも $F_S=\\dfrac{S_E}{1-\\varepsilon/2}$ を小さくするので $T_S$ がさらに下がる．この\\textbf{正のフィードバック}がくり返され，全球凍結へ向かう．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "1層大気モデルの地表・大気それぞれの放射のつり合いから F_S=S_E/(1−ε/2) を導き，アルベドの増加と温室効果の減少がともに地表温度を下げる正のフィードバックになることを量的に比べる．"
+ },
+ "concepts": [
+  "radiation-balance",
+  "early-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "放射平衡",
+  "温室効果",
+  "アルベド",
+  "全球凍結",
+  "フィードバック"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

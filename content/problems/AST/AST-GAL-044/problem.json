@@ -1,0 +1,108 @@
+{
+ "id": "AST-GAL-044",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "密集した星団で星が衝突するまでの時間",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "半径 $R=1.0$ 光年 $=9.6\\times10^{15}\\,\\mathrm{m}$ の球の中に，太陽と同じ質量 $M=2.0\\times10^{30}\\,\\mathrm{kg}$，同じ半径 $r=7.0\\times10^{8}\\,\\mathrm{m}$ の星が $N=1.0\\times10^{6}$ 個，一様に集まった星団を考える．万有引力定数 $G=6.7\\times10^{-11}\\,\\mathrm{N\\cdot m^2/kg^2}$，$1$ 年 $=3.2\\times10^{7}\\,\\mathrm{s}$，円周率は $3.14$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "球の表面に沿って円運動する星の速さ $v$ を $R$，$M$，$N$，$G$ で表し，その値を有効数字1桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "速さ $v$ で動く星が，止まっているほかの星と単位時間に衝突する確率 $P$ は，星の数密度を $n$ として $P=n\\times\\pi(2r)^2\\times v$ で表される（中心間の距離が $2r$ 以下になれば衝突する）．$P$ を有効数字1桁で求めよ．ただし $v$ は (1) で求めた1桁の値を用いよ．"
+     },
+     {
+      "id": "3",
+      "tex": "1つの星が衝突するまでの平均時間 $T=1/P$ は何年か．有効数字1桁で求め，宇宙の年齢 $1.4\\times10^{10}$ 年と比べよ．"
+     },
+     {
+      "id": "4",
+      "tex": "同じ星の数のまま，星団の半径が $\\dfrac{1}{10}$ に縮んだとすると，$T$ はもとの何倍になるか．有効数字1桁で答え，そのような星団が宇宙の年齢の間に保たれるかどうか述べよ．必要なら $\\sqrt{10}=3.2$ を用いよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$v=\\sqrt{\\dfrac{GNM}{R}}$，$1\\times10^{5}\\,\\mathrm{m/s}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2\\times10^{-19}\\,/\\mathrm{s}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2\\times10^{11}$ 年．宇宙の年齢より長く，衝突はほとんど起こらない"
+   },
+   {
+    "id": "4",
+    "tex": "$3\\times10^{-4}$ 倍．$T$ は約 $6\\times10^{7}$ 年となり宇宙の年齢よりずっと短いので，衝突・合体が頻繁に起こり，星の集まりのままでは保たれない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\dfrac{G(NM)}{R^2}=\\dfrac{v^2}{R}$ より $\\boldsymbol{v=\\sqrt{\\dfrac{GNM}{R}}}=\\sqrt{\\dfrac{6.7\\times10^{-11}\\times2.0\\times10^{36}}{9.6\\times10^{15}}}=1.2\\times10^5$，約 $\\boldsymbol{1\\times10^{5}\\,\\mathrm{m/s}}$．\n\n\\textbf{(2)} $n=\\dfrac{N}{\\frac43\\pi R^3}=\\dfrac{1.0\\times10^6}{\\frac43\\times3.14\\times(9.6\\times10^{15})^3}=2.7\\times10^{-43}\\,\\mathrm{m^{-3}}$．\n$P=2.7\\times10^{-43}\\times3.14\\times(1.4\\times10^9)^2\\times1\\times10^5\\fallingdotseq\\boldsymbol{2\\times10^{-19}\\,/\\mathrm{s}}$．\n\n\\textbf{(3)} $T=\\dfrac{1}{1.7\\times10^{-19}}=6\\times10^{18}\\,\\mathrm{s}$，$\\dfrac{6\\times10^{18}}{3.2\\times10^7}\\fallingdotseq\\boldsymbol{2\\times10^{11}}$ \\textbf{年}．宇宙の年齢の10倍以上なので，衝突はほとんど起こらない．\n\n\\textbf{(4)} $n\\propto R^{-3}$ で $1000$ 倍，$v\\propto R^{-1/2}$ で $\\sqrt{10}$ 倍になるので，$P$ は $1000\\sqrt{10}\\fallingdotseq3.2\\times10^3$ 倍，$T$ は $\\boldsymbol{3\\times10^{-4}}$ \\textbf{倍}（約 $6\\times10^7$ 年）．宇宙の年齢の間に星は何度も衝突・合体するので，このような密集した星の集まりは\\textbf{長く保たれない}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "星団の星の速さは万有引力と円運動のつりあいで決まり，衝突の頻度は数密度×断面積×速さで見積もれる．衝突までの時間を宇宙の年齢と比べると，その天体の集まりが長く存在できるかを判断でき，半径を縮めると密度と速さの両方が効いて衝突時間は急に短くなる．"
+ },
+ "concepts": [
+  "cosmology",
+  "planet-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "万有引力",
+  "円運動",
+  "衝突確率",
+  "星団",
+  "オーダー評価"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

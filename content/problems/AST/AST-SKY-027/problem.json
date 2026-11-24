@@ -1,0 +1,101 @@
+{
+ "id": "AST-SKY-027",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "恒星日と太陽日（順行と逆行の自転）",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "惑星の自転周期（恒星に対して1回転する時間）を $P$，公転周期を $Y$ とする．自転と公転の向きが同じとき，太陽が南中してから次に南中するまでの時間（1太陽日）$S$ は $\\dfrac{1}{S}=\\dfrac{1}{P}-\\dfrac{1}{Y}$ で表される．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地球では1太陽日が1恒星日より約何分長いか．地球は1日に公転軌道を $\\dfrac{360^\\circ}{365}$ だけ進むとして，整数で答えよ．また，太陽日のほうが長くなる理由を簡潔に述べよ．"
+     },
+     {
+      "id": "2",
+      "tex": "火星の自転周期は 24 時間 37 分，公転周期は 687 日（地球の日）である．火星の1太陽日は何時間何分か．分は整数で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "金星は公転と\\textbf{逆向き}に自転しており，自転周期は 243 日，公転周期は 225 日である．逆向きの自転では，太陽が南中する間隔はどうなるかを考え，金星の1太陽日を整数で（地球の日で）求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "約 4 分．地球が公転で進む分だけ太陽の方向がずれるので，太陽が再び南中するには1回転より約 $1^\\circ$ 余分に自転しなければならないから．"
+   },
+   {
+    "id": "2",
+    "tex": "24 時間 39 分"
+   },
+   {
+    "id": "3",
+    "tex": "117 日"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　1日に公転で $\\dfrac{360^\\circ}{365}\\fallingdotseq0.99^\\circ$ 進むので，太陽の方向も同じだけずれる．同じ向きに自転していると，その分だけ余分に回らないと太陽は南中しない．$360^\\circ$ 回るのに約 24 時間かかるから，余分の時間は\n\\[ 24\\times60\\times\\frac{1}{365}=3.9\\fallingdotseq\\boldsymbol{4\\ \\text{分}} \\]\n\\textbf{(2)}　$P=24.617$ 時間，$Y=687\\times24=16488$ 時間．\n\\[ S=\\frac{1}{\\dfrac{1}{24.617}-\\dfrac{1}{16488}}=24.653\\ \\text{時間}=\\boldsymbol{24\\ \\text{時間}\\ 39\\ \\text{分}} \\]\n\\textbf{(3)}　逆向きに自転していると，公転による太陽の方向のずれと自転が\\textbf{向かい合う}ので，1回転しないうちに太陽が再び南中する．式は $\\dfrac{1}{S}=\\dfrac{1}{P}+\\dfrac{1}{Y}$ となり\n\\[ S=\\frac{243\\times225}{243+225}=116.8\\fallingdotseq\\boldsymbol{117\\ \\text{日}} \\]\n自転周期（243 日）より太陽日のほうがずっと短くなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "太陽日と恒星日の違いは公転による太陽の方向のずれから生じ，自転と公転が同じ向きなら 1/S=1/P−1/Y，逆向きなら 1/S=1/P+1/Y となる。地球・火星・逆行自転の金星に当てはめて比べる。"
+ },
+ "concepts": [
+  "diurnal-annual",
+  "planet-motion",
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "恒星日",
+  "太陽日",
+  "会合周期",
+  "金星",
+  "火星"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

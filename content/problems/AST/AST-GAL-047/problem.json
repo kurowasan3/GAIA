@@ -1,0 +1,108 @@
+{
+ "id": "AST-GAL-047",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "宇宙背景放射の温度のむらから太陽系の速度",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "宇宙背景放射は，温度 $T_0=2.7\\,\\mathrm{K}$ の物体が出す放射とほぼ同じ波長分布をもつ．ところが太陽系で全天を測ると，ある方向 A では平均より $\\Delta T=3.0\\times10^{-3}\\,\\mathrm{K}$ だけ温度が高く，反対方向では同じだけ低く見える．これは背景放射に対して太陽系が A の向きに速さ $v$ で動いているためと考えられる．放射が最も強い波長 $\\lambda_m$ と温度 $T$ の間にはウィーンの変位則 $\\lambda_mT=$ 一定 が成り立つ．光速を $c=3.0\\times10^{5}\\,\\mathrm{km/s}$ とし，近づく向きの運動によるドップラー効果は $\\dfrac{\\Delta\\lambda_m}{\\lambda_m}=-\\dfrac{v}{c}$ で表される．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\Delta\\lambda_m$，$\\Delta T$ がそれぞれ $\\lambda_m$，$T$ に比べて十分小さいとき，$\\dfrac{\\Delta\\lambda_m}{\\lambda_m}$ と $\\dfrac{\\Delta T}{T}$ の関係を求めよ．（微小量 $x,y$ について $(1+x)(1+y)\\fallingdotseq1+x+y$）"
+     },
+     {
+      "id": "2",
+      "tex": "太陽系が背景放射に対して動く速さ $v$ を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "地球は太陽のまわりを $30\\,\\mathrm{km/s}$ で公転している．公転運動だけによって，背景放射の温度は最大でいくら高く見えるか．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "方向 A の温度を1年間測り続けると，温度の測定値はどのように変化するか．(2)・(3) の結果をもとに説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{\\Delta\\lambda_m}{\\lambda_m}=-\\dfrac{\\Delta T}{T}$"
+   },
+   {
+    "id": "2",
+    "tex": "$3.3\\times10^{2}\\,\\mathrm{km/s}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.7\\times10^{-4}\\,\\mathrm{K}$"
+   },
+   {
+    "id": "4",
+    "tex": "地球の公転速度の A 方向の成分が1年周期で変わるので，A の温度は平均より約 $3.0\\times10^{-3}\\,\\mathrm{K}$ 高い値を中心に，最大 $\\pm2.7\\times10^{-4}\\,\\mathrm{K}$ 程度（約1割）1年周期で増減する"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $(\\lambda_m+\\Delta\\lambda_m)(T+\\Delta T)=\\lambda_mT$ より $\\left(1+\\dfrac{\\Delta\\lambda_m}{\\lambda_m}\\right)\\left(1+\\dfrac{\\Delta T}{T}\\right)=1$，近似して $\\boldsymbol{\\dfrac{\\Delta\\lambda_m}{\\lambda_m}=-\\dfrac{\\Delta T}{T}}$．\n\n\\textbf{(2)} (1) とドップラー効果の式から $\\dfrac{\\Delta T}{T_0}=\\dfrac{v}{c}$．$v=3.0\\times10^5\\times\\dfrac{3.0\\times10^{-3}}{2.7}\\fallingdotseq\\boldsymbol{3.3\\times10^{2}\\,\\mathrm{km/s}}$．\n\n\\textbf{(3)} $\\Delta T=T_0\\dfrac{v}{c}=2.7\\times\\dfrac{30}{3.0\\times10^5}=\\boldsymbol{2.7\\times10^{-4}\\,\\mathrm{K}}$．\n\n\\textbf{(4)} 地球の速度は太陽系の速度と公転速度の和である．公転速度の向きは1年で1回転するので，A 方向の成分は $+30$〜$-30\\,\\mathrm{km/s}$ の範囲で1年周期に変わる（A が黄道面から離れているほど振れ幅は小さい）．そのため A の温度は $3.0\\times10^{-3}\\,\\mathrm{K}$ 高い値を中心に，最大 $\\pm2.7\\times10^{-4}\\,\\mathrm{K}$（約1割）の幅で1年周期に増減する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ウィーンの変位則から波長のずれの割合は温度のずれの割合と符号が逆で等しく，背景放射の温度のむらはドップラー効果を通じて観測者の速度を表す．地球の公転速度の寄与は1年周期の小さな変動として重なる．"
+ },
+ "concepts": [
+  "cosmology",
+  "diurnal-annual",
+  "solar-system"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "宇宙背景放射",
+  "ウィーンの変位則",
+  "ドップラー効果",
+  "太陽系の運動",
+  "近似"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

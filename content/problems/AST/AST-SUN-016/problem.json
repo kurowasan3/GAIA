@@ -1,0 +1,99 @@
+{
+ "id": "AST-SUN-016",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "Hα線のドップラー偏移とプロミネンス噴出の速さ",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽のプロミネンス（フィラメント）の噴出を，$\\mathrm{H\\alpha}$ 線（本来の波長 $\\lambda_0=656.28\\,\\mathrm{nm}$）で観測した。光の速さを $c=3.0\\times10^{5}\\,\\mathrm{km/s}$ とし，視線方向の速さ $v$ と波長のずれ $\\Delta\\lambda$ の間には $\\dfrac{\\Delta\\lambda}{\\lambda_0}=\\dfrac{v}{c}$ が成り立つとする。噴出物は，太陽の中心から外向き（動径方向）に運動するものとする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "太陽面の中央付近で起こった噴出 P では，$\\mathrm{H\\alpha}$ 線が $656.06\\,\\mathrm{nm}$ に観測された。P の視線方向の速さを有効数字2桁で求めよ。また，P は観測者に近づいているか遠ざかっているか，理由とともに答えよ。"
+     },
+     {
+      "id": "2",
+      "tex": "太陽の縁（周縁部）で起こった噴出 Q を連続して撮影すると，噴出物は $6.0$ 分間に $3.6\\times10^{4}\\,\\mathrm{km}$ 上昇していた。一方，Q の $\\mathrm{H\\alpha}$ 線の波長は本来の波長とほとんど変わらなかった。Q の上昇の速さを有効数字2桁で求め，波長がほとんどずれなかった理由を述べよ。"
+     },
+     {
+      "id": "3",
+      "tex": "太陽面上で，外向きの方向が視線と $60^\\circ$ をなす位置で起こった噴出 R では，$\\mathrm{H\\alpha}$ 線が本来より $0.15\\,\\mathrm{nm}$ 短い波長に観測された。R の実際の速さ（動径方向の速さ）を有効数字2桁で求めよ。$\\cos60^\\circ=0.50$ とする。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.0\\times10^{2}\\,\\mathrm{km/s}$，波長が短い側（青い側）にずれたので近づいている"
+   },
+   {
+    "id": "2",
+    "tex": "$1.0\\times10^{2}\\,\\mathrm{km/s}$，Q の運動の向きは視線にほぼ垂直で，ドップラー効果を生む視線方向の速度成分がほぼ $0$ だから"
+   },
+   {
+    "id": "3",
+    "tex": "$1.4\\times10^{2}\\,\\mathrm{km/s}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\Delta\\lambda=656.06-656.28=-0.22\\,\\mathrm{nm}$。\n\\[ v=c\\,\\frac{|\\Delta\\lambda|}{\\lambda_0}=3.0\\times10^{5}\\times\\frac{0.22}{656.28}\\approx 1.0\\times10^{2}\\,\\mathrm{km/s} \\]\n波長が短くなる（青方偏移）のは光源が近づくときなので，P は\\textbf{観測者に近づいている}。太陽面の中央では外向き＝地球向きなので，これは噴出物が太陽から飛び出していることと合う。\n\n\\textbf{(2)} 速さは $\\dfrac{3.6\\times10^{4}\\,\\mathrm{km}}{6.0\\times60\\,\\mathrm{s}}=1.0\\times10^{2}\\,\\mathrm{km/s}$。太陽の縁では外向きの方向が視線にほぼ垂直である。ドップラー効果で測れるのは\\textbf{視線方向の成分だけ}なので，速く動いていても波長はほとんどずれない。逆に，縁の現象は画像で動きを追える（視線に垂直な成分が見える）。\n\n\\textbf{(3)} 視線方向の速さは $3.0\\times10^{5}\\times\\dfrac{0.15}{656.28}\\approx 68.6\\,\\mathrm{km/s}$。これは実際の速さ $V$ の視線方向成分 $V\\cos60^\\circ$ なので\n\\[ V=\\frac{68.6}{0.50}\\approx \\mathbf{1.4\\times10^{2}\\,km/s} \\]\nドップラー偏移から求めた速さは，実際の速さ以下になる（等しいのは視線方向に動くときだけ）。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ドップラー偏移で測れるのは視線方向の速度成分だけである。円盤中央・縁・斜めの位置での噴出を比べ，波長のずれの向きから接近・後退を，見る角度から実際の速さを判断する。"
+ },
+ "concepts": [
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ドップラー効果",
+  "プロミネンス",
+  "Hα線",
+  "視線速度",
+  "太陽活動"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

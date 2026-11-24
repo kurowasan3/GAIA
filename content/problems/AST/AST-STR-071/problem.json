@@ -1,0 +1,108 @@
+{
+ "id": "AST-STR-071",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "系外惑星の直接撮像に適した波長",
+ "course": "地学",
+ "level": 3,
+ "minutes": 18,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "表面温度 $6000\\,\\mathrm{K}$ の恒星 X が地球から $10$ パーセクの距離にあり，そのまわりを半径 $1$ 天文単位の円軌道で惑星 Y が回っている．Y の半径は X の $\\dfrac{1}{100}$，表面温度は $288\\,\\mathrm{K}$ である．口径 $D=30\\,\\mathrm{m}$ の望遠鏡で，Y を X から分離して直接とらえることを考える．X と Y はともに黒体として放射し，Y が反射する X の光は無視する．\n\n・望遠鏡で分離できる最小の角度（回折限界）は $\\theta=1.22\\dfrac{\\lambda}{D}$〔rad〕（$\\lambda$ は波長），$1\\,\\mathrm{rad}=2.1\\times10^{5}$ 秒角．\n・1 パーセクの距離から 1 天文単位を見込む角度は 1 秒角．\n・ウィーンの変位則 $\\lambda_{\\max}T=2.9\\times10^{-3}\\,\\mathrm{m\\cdot K}$．\n・黒体の単位面積から出る，波長 $\\lambda$ の放射の強さは $\\dfrac{1}{\\lambda^5\\left(e^{a/\\lambda T}-1\\right)}$ に比例する（$a=1.44\\times10^{-2}\\,\\mathrm{m\\cdot K}$）．$e^{2.4}=11$，$e^{5.0}=1.5\\times10^{2}$，$e^{50}=5.2\\times10^{21}$，$x\\ll1$ のとき $e^{x}\\fallingdotseq1+x$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "X と Y が最も強く放射する波長を，それぞれ $\\mu\\mathrm{m}$ の単位で求めよ（有効数字1桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "地球から見て，X と Y が最も離れて見えるときの角度は何秒角か．また，波長 $1\\,\\mu\\mathrm{m}$ と $10\\,\\mu\\mathrm{m}$ での回折限界はそれぞれ何秒角か（有効数字1桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "波長 $1\\,\\mu\\mathrm{m}$ と $10\\,\\mu\\mathrm{m}$ のそれぞれで，Y から届く放射の強さは X から届く放射の強さの何倍か（有効数字1桁）．"
+     },
+     {
+      "id": "4",
+      "tex": "この観測で Y を見つけるには，どちらの波長が有利か．また，同じ惑星系が $20$ パーセクの距離にあった場合，その波長での観測にどのような問題が生じるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "X：$0.5\\,\\mu\\mathrm{m}$，Y：$10\\,\\mu\\mathrm{m}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.1$ 秒角．回折限界は $1\\,\\mu\\mathrm{m}$ で $0.009$ 秒角，$10\\,\\mu\\mathrm{m}$ で $0.09$ 秒角"
+   },
+   {
+    "id": "3",
+    "tex": "$1\\,\\mu\\mathrm{m}$：$2\\times10^{-25}$ 倍，$10\\,\\mu\\mathrm{m}$：$2\\times10^{-7}$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$10\\,\\mu\\mathrm{m}$ が有利（明るさの比が約 $10^{18}$ 倍も大きく，0.1 秒角の離れ具合も回折限界 0.09 秒角よりわずかに大きいので分離できる）．20 パーセクでは最大の離れが 0.05 秒角となり，$10\\,\\mu\\mathrm{m}$ の回折限界 0.09 秒角より小さくなって X と Y を分離できない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　X：$\\lambda_{\\max}=\\dfrac{2.9\\times10^{-3}}{6000}\\fallingdotseq4.8\\times10^{-7}\\,\\mathrm{m}\\fallingdotseq\\boldsymbol{0.5}\\,\\mu\\mathrm{m}$（可視光）．Y：$\\dfrac{2.9\\times10^{-3}}{288}\\fallingdotseq1.0\\times10^{-5}\\,\\mathrm{m}=\\boldsymbol{10}\\,\\mu\\mathrm{m}$（赤外線）．\n\n\\textbf{(2)}　1 天文単位を 10 パーセクから見ると $\\dfrac{1}{10}=\\boldsymbol{0.1}$ 秒角．回折限界は\n\\[ 1\\,\\mu\\mathrm{m}:\\ 1.22\\times\\frac{1\\times10^{-6}}{30}\\times2.1\\times10^{5}\\fallingdotseq\\boldsymbol{0.009}\\ \\text{秒角},\\qquad 10\\,\\mu\\mathrm{m}:\\ \\boldsymbol{0.09}\\ \\text{秒角} \\]\n波長が長いほど像がぼけ，分離しにくい．\n\n\\textbf{(3)}　届く強さの比は（単位面積あたりの強さの比）×（表面積の比 $\\left(\\frac{1}{100}\\right)^2=10^{-4}$）．$\\lambda^5$ は共通なので打ち消し合う．\n\\[ 1\\,\\mu\\mathrm{m}:\\ \\frac{a}{\\lambda T_X}=2.4,\\ \\frac{a}{\\lambda T_Y}=50,\\qquad \\frac{e^{2.4}-1}{e^{50}-1}\\times10^{-4}=\\frac{10}{5.2\\times10^{21}}\\times10^{-4}\\fallingdotseq\\boldsymbol{2\\times10^{-25}} \\]\n\\[ 10\\,\\mu\\mathrm{m}:\\ \\frac{a}{\\lambda T_X}=0.24,\\ \\frac{a}{\\lambda T_Y}=5.0,\\qquad \\frac{e^{0.24}-1}{e^{5.0}-1}\\times10^{-4}\\fallingdotseq\\frac{0.24}{1.5\\times10^{2}}\\times10^{-4}\\fallingdotseq\\boldsymbol{2\\times10^{-7}} \\]\n\\textbf{(4)}　$1\\,\\mu\\mathrm{m}$ は恒星の放射のピークに近く，惑星はピークから遠く離れた短波長側にあるため，比は $10^{-25}$ と絶望的に小さい．$10\\,\\mu\\mathrm{m}$ は惑星の放射のピークで，恒星の放射はピークから遠い長波長側で弱まっているため，比は約 $10^{18}$ 倍改善する．角度も $0.1>0.09$ 秒角でぎりぎり分離できるので，$\\boldsymbol{10\\,\\mu\\mathrm{m}}$ \\textbf{が有利}．\nただし長い波長ほど回折限界が大きい．20 パーセクでは最大の離れが $\\dfrac{1}{20}=0.05$ 秒角になり，$10\\,\\mu\\mathrm{m}$ の回折限界 $0.09$ 秒角を下回って\\textbf{分離できなくなる}（明るさの比は距離によらない）．明るさの比で有利な長い波長は，分解能では不利という兼ね合いがある．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "恒星と惑星の明るさの比は黒体放射の形から波長で大きく変わり，惑星のピークにあたる赤外線で格段に有利になる．一方，回折限界は波長に比例するので，長波長では見かけの離れが十分大きい近い系でしか分離できない．"
+ },
+ "concepts": [
+  "stellar-properties",
+  "planet-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "黒体放射",
+  "ウィーンの変位則",
+  "回折限界",
+  "系外惑星",
+  "赤外線"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

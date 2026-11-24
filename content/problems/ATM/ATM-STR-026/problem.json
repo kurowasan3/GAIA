@@ -1,0 +1,107 @@
+{
+ "id": "ATM-STR-026",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "スケールハイトと超高層大気の組成",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "高度 $100\\,\\mathrm{km}$ より上の熱圏では，大気がかき混ぜられにくくなり，それぞれの気体成分が別々に重力とつり合って分布する．ある成分（分子 1 個の質量 $m$）の圧力 $p$ は，その成分だけで\n\\[ \\frac{\\Delta p}{\\Delta h}=-\\rho g,\\qquad p=\\frac{\\rho}{m}kT \\]\nを満たす（$\\rho$：その成分の密度，$h$：高度，$g$：重力加速度，$k$：ボルツマン定数，$T$：絶対温度）．温度と重力加速度が高度によらず一定なら，\n\\[ p(h)=p_0\\,e^{-(h-h_0)/H} \\]\nとなる．数密度（$1\\,\\mathrm{m^3}$ あたりの個数）も同じ形で減る．$k=1.38\\times10^{-23}\\,\\mathrm{J/K}$，$T=1000\\,\\mathrm{K}$，$g=8.5\\,\\mathrm{m/s^2}$，酸素原子 O の質量を $2.7\\times10^{-26}\\,\\mathrm{kg}$，ヘリウム原子 He の質量を $6.7\\times10^{-27}\\,\\mathrm{kg}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "2 つの式から $\\rho$ を消去し，$H$ を $k$，$T$，$m$，$g$ で表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "O と He のそれぞれについて $H$ を有効数字 2 桁で求めよ（単位 km）．"
+     },
+     {
+      "id": "3",
+      "tex": "高度 $500\\,\\mathrm{km}$ では He の数密度は O の $\\dfrac{1}{8}$ であった．He と O の数密度が等しくなる高度は約何 km か．$H_{\\mathrm{O}}=60\\,\\mathrm{km}$，$H_{\\mathrm{He}}=240\\,\\mathrm{km}$ として，有効数字 2 桁で求めよ．$\\ln2=0.69$ とする．"
+     },
+     {
+      "id": "4",
+      "tex": "太陽活動が活発になり，熱圏の温度が上がった．高度 $500\\,\\mathrm{km}$ の大気の密度の変化と，その結果として人工衛星に起こることの組み合わせとして最も適当なものを選べ．\nア　密度が小さくなり，衛星の高度が下がりにくくなる．\nイ　密度が大きくなり，空気抵抗で衛星の高度が下がりやすくなる．\nウ　密度は変わらず，衛星への影響はない．\nエ　密度が大きくなり，衛星の高度が上がる．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$H=\\dfrac{kT}{mg}$"
+   },
+   {
+    "id": "2",
+    "tex": "O：$60\\,\\mathrm{km}$，He：$2.4\\times10^{2}\\,\\mathrm{km}$"
+   },
+   {
+    "id": "3",
+    "tex": "約 $6.7\\times10^{2}\\,\\mathrm{km}$"
+   },
+   {
+    "id": "4",
+    "tex": "イ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $\\rho=\\dfrac{mp}{kT}$ を代入すると $\\dfrac{\\Delta p}{\\Delta h}=-\\dfrac{mg}{kT}\\,p$．$p=p_0e^{-(h-h_0)/H}$ なら $\\dfrac{\\Delta p}{\\Delta h}=-\\dfrac{p}{H}$ なので\n\\[ \\boldsymbol{H=\\frac{kT}{mg}} \\]\n$H$（スケールハイト）は，その成分の量が $\\dfrac{1}{e}$ になる高さで，軽い成分・高温ほど大きい．\n\n(2) \\[ H_{\\mathrm{O}}=\\frac{1.38\\times10^{-23}\\times1000}{2.7\\times10^{-26}\\times8.5}=6.0\\times10^{4}\\,\\mathrm{m}=\\boldsymbol{60\\,\\mathrm{km}} \\]\n\\[ H_{\\mathrm{He}}=\\frac{1.38\\times10^{-23}\\times1000}{6.7\\times10^{-27}\\times8.5}=2.4\\times10^{5}\\,\\mathrm{m}=\\boldsymbol{2.4\\times10^{2}\\,\\mathrm{km}} \\]\n\n(3) 数密度の比 $\\dfrac{n_{\\mathrm{He}}}{n_{\\mathrm{O}}}$ は，高度が $\\Delta h$ 増すと\n\\[ \\frac{n_{\\mathrm{He}}}{n_{\\mathrm{O}}}\\ \\text{は}\\ \\exp\\!\\left[\\Delta h\\left(\\frac{1}{H_{\\mathrm{O}}}-\\frac{1}{H_{\\mathrm{He}}}\\right)\\right]=\\exp\\!\\left(\\frac{\\Delta h}{80\\,\\mathrm{km}}\\right)\\ \\text{倍} \\]\nになる（$\\frac{1}{60}-\\frac{1}{240}=\\frac{1}{80}$）．比を 8 倍にするには $\\Delta h=80\\ln8=80\\times3\\times0.69\\approx166\\,\\mathrm{km}$．よって $500+166=666$，約 $\\boldsymbol{6.7\\times10^{2}\\,\\mathrm{km}}$．軽い He は重い O よりゆっくり減るので，上空ほど軽い成分（He，さらに上では H）が主になる．\n\n(4) 温度が上がると $H$ が大きくなり，大気が上空へふくらむ．同じ高度 $500\\,\\mathrm{km}$ では密度が大きくなり，衛星が受ける空気抵抗が増えて高度が下がりやすくなる．答えは\\textbf{イ}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "静水圧平衡と気体の状態方程式からスケールハイト H=kT/(mg) を導き，軽い成分ほどゆっくり減るため超高層では He などが主成分になること，温度が上がると大気がふくらむことを量的に確かめる．"
+ },
+ "concepts": [
+  "atmosphere-structure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱圏",
+  "スケールハイト",
+  "静水圧平衡",
+  "超高層大気",
+  "ヘリウム"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

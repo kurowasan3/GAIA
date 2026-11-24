@@ -1,0 +1,109 @@
+{
+ "id": "SOL-INT-025",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "沈み込むプレートと相境界の深さ",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "マントルの深さ約 410 km と約 660 km には，鉱物の結晶構造が変わる相境界があり，地震波速度が急に大きくなる。相境界が起こる圧力は温度によって変わり，その割合（相境界の勾配＝圧力変化÷温度変化）は，410 km の境界で $+3.0\\,\\mathrm{MPa}/{}^\\circ\\mathrm{C}$，660 km の境界で $-2.0\\,\\mathrm{MPa}/{}^\\circ\\mathrm{C}$ とする。また，この深さの範囲では圧力は深さ $1\\,\\mathrm{km}$ につき $35\\,\\mathrm{MPa}$ 増えるとする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "沈み込んだ海洋プレートの内部は，周囲のマントルより $500$ ℃ 低温であった。プレート内部では 660 km の境界は周囲より何 km 深く（または浅く）なるか。深いか浅いかを示し，有効数字2桁で答えよ。"
+     },
+     {
+      "id": "2",
+      "tex": "同じプレート内部で，410 km の境界は周囲より何 km 深く（または浅く）なるか。深いか浅いかを示し，有効数字2桁で答えよ。"
+     },
+     {
+      "id": "3",
+      "tex": "(1)(2) から，プレート内部では 410 km と 660 km の境界にはさまれた層（遷移層）の厚さは周囲と比べてどうなるか。厚さの変化を有効数字2桁で答えよ。"
+     },
+     {
+      "id": "4",
+      "tex": "別の地域の地下では，660 km の境界が周囲より $12\\,\\mathrm{km}$ 浅かった。この地域の深さ 660 km 付近の温度は周囲と比べて何 ℃ 高いか低いか。有効数字2桁で答えよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$29\\,\\mathrm{km}$ 深くなる"
+   },
+   {
+    "id": "2",
+    "tex": "$43\\,\\mathrm{km}$ 浅くなる"
+   },
+   {
+    "id": "3",
+    "tex": "$71\\,\\mathrm{km}$ 厚くなる"
+   },
+   {
+    "id": "4",
+    "tex": "$2.1\\times10^{2}$ ℃ 高い"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "温度が $\\Delta T$ 変わると，境界の圧力は（勾配）$\\times\\Delta T$ だけ変わり，深さはそれを 35 MPa/km で割った分だけ変わる。\n\n\\textbf{(1)} $\\Delta P=(-2.0)\\times(-500)=+1000\\,\\mathrm{MPa}$。境界がより高い圧力，つまりより深い所に移るので $\\dfrac{1000}{35}=28.6$，\\textbf{29 km 深くなる}。\n\n\\textbf{(2)} $\\Delta P=(+3.0)\\times(-500)=-1500\\,\\mathrm{MPa}$。境界がより低い圧力の所に移るので $\\dfrac{1500}{35}=42.9$，\\textbf{43 km 浅くなる}。\n\n\\textbf{(3)} 上の境界は浅く，下の境界は深くなるので，遷移層は $28.6+42.9=71.4$，\\textbf{71 km 厚くなる}。勾配の符号が逆なので，冷たいプレートの中では2つの境界が反対向きに動く。\n\n\\textbf{(4)} 12 km 浅いので $\\Delta P=-12\\times35=-420\\,\\mathrm{MPa}$。$\\Delta T=\\dfrac{-420}{-2.0}=+210$ ℃，すなわち $\\boldsymbol{2.1\\times10^{2}}$\\textbf{ ℃ 高い}。660 km の境界は負の勾配をもつので，高温の所（例えば上昇流のある所）では浅くなる。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "相境界の圧力は温度で変わり，その勾配の符号によって低温のプレート内で境界が深くなるか浅くなるかが逆になる。境界の深さの変化から逆に温度差を推定できる。"
+ },
+ "concepts": [
+  "earth-interior",
+  "plate-boundaries",
+  "earthquake-types"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "相転移",
+  "遷移層",
+  "沈み込むプレート",
+  "マントル",
+  "地震波不連続面"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

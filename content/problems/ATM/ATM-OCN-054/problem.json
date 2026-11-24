@@ -1,0 +1,107 @@
+{
+ "id": "ATM-OCN-054",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "溶存酸素の減少から深層水の年齢を求める",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "深さ約 $2500\\,\\mathrm{m}$ の深層を流れる海水について，3地点 A，B，C で溶存酸素濃度を測ると次のようになった．\n\\[\\begin{array}{c|c|c} \\text{地点} & \\text{場所} & \\text{溶存酸素濃度}\\ (\\mathrm{mL/L}) \\\\ \\hline \\text{A} & \\text{北大西洋の高緯度} & 6.0 \\\\ \\text{B} & \\text{南大洋（南極海）} & 4.2 \\\\ \\text{C} & \\text{北太平洋} & 2.6 \\\\ \\end{array}\\]\n深層では海水に酸素が加わることはなく，沈降してくる有機物の分解によって，どこでも1年あたり $3.0\\times10^{-3}\\,\\mathrm{mL/L}$ の割合で酸素が減るとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この深層の海水は，A，B，C をどの順に流れていると考えられるか．理由とともに答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "海水が A から C まで流れるのにかかる時間は何年か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "A から C までの流路の長さを $3.0\\times10^{4}\\,\\mathrm{km}$ とすると，深層水の平均の速さは1時間あたり何 m か．1年を 365 日として有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "有機物が分解されるとリン酸も海水中に溶け出す．3地点のうち，深層のリン酸濃度が最も高いのはどこか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "A → B → C．深層では酸素は減る一方なので，酸素濃度の高い所ほど海面から沈み込んでからの時間が短く，上流にあたるから．"
+   },
+   {
+    "id": "2",
+    "tex": "$1.1\\times10^{3}$ 年"
+   },
+   {
+    "id": "3",
+    "tex": "$3.0\\,\\mathrm{m}$"
+   },
+   {
+    "id": "4",
+    "tex": "C"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　海面付近で酸素を十分に含んだ海水が沈み込み，その後は消費される一方である．酸素濃度は流れに沿って減っていくので，濃度の高い順 \\textbf{A → B → C} に流れている（北大西洋で沈み込んだ海水が南極海を経て北太平洋に至る深層循環）．\n\\textbf{(2)}　\n\\[ t=\\frac{6.0-2.6}{3.0\\times10^{-3}}=1.13\\times10^{3}\\fallingdotseq\\boldsymbol{1.1\\times10^{3}\\ \\text{年}} \\]\n\\textbf{(3)}　1年は $365\\times24=8760$ 時間だから\n\\[ \\frac{3.0\\times10^{7}\\,\\mathrm{m}}{1.13\\times10^{3}\\times8760\\,\\mathrm{h}}=3.02\\fallingdotseq\\boldsymbol{3.0\\,\\mathrm{m}}\\ \\text{（1時間あたり）} \\]\n表層の海流（$1\\,\\mathrm{m/s}$ 程度）に比べて非常に遅い．\n\\textbf{(4)}　分解が進むほど酸素は減り，リン酸は増える．最も下流で「古い」\\textbf{C}（北太平洋）が最も高い．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "深層では溶存酸素が補給されず一定の割合で消費されるので，酸素濃度は沈み込んでからの時間の目印となり，濃度の減り方から流れの向き・所要時間・速さを求められる。リン酸は逆に下流ほど増える。"
+ },
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "深層循環",
+  "溶存酸素",
+  "生物ポンプ",
+  "リン酸",
+  "海水の年齢"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

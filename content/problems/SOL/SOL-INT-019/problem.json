@@ -1,0 +1,108 @@
+{
+ "id": "SOL-INT-019",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "核が地球にしめる体積と質量の割合",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の半径を $6400\\,\\mathrm{km}$，核の半径を $3500\\,\\mathrm{km}$ とし，核の平均密度を $11\\,\\mathrm{g/cm^3}$，核より外側（地殻とマントル）の平均密度を $4.5\\,\\mathrm{g/cm^3}$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "核の体積は地球全体の体積の何 % か。有効数字2桁で答えよ。"
+     },
+     {
+      "id": "2",
+      "tex": "核の質量は地球全体の質量の何 % か。有効数字2桁で答えよ。"
+     },
+     {
+      "id": "3",
+      "tex": "これらの値から求めた地球全体の平均密度を有効数字2桁で答えよ。"
+     },
+     {
+      "id": "4",
+      "tex": "核の半径は地球の半径の半分より大きいのに，体積の割合は (1) のように小さい。その理由と，質量の割合が体積の割合より大きくなる理由を簡潔に述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$16\\,\\%$"
+   },
+   {
+    "id": "2",
+    "tex": "$32\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "$5.6\\,\\mathrm{g/cm^3}$"
+   },
+   {
+    "id": "4",
+    "tex": "体積は半径の3乗に比例するので，半径の比 $0.55$ が3乗されて約 $0.16$ になるから。核の密度がまわりの約2.4倍と大きいので，質量では体積の割合の約2倍になるから。"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 体積は半径の3乗に比例するので\n\\[ \\left(\\frac{3500}{6400}\\right)^3\\fallingdotseq0.547^3\\fallingdotseq0.164 \\quad\\Rightarrow\\quad \\boldsymbol{16\\,\\%} \\]\n\\textbf{(2)} 地球の体積を $V$ とすると，核の質量は $0.164V\\times11$，外側は $0.836V\\times4.5$。\n\\[ \\frac{0.164\\times11}{0.164\\times11+0.836\\times4.5}=\\frac{1.80}{1.80+3.76}\\fallingdotseq0.32 \\quad\\Rightarrow\\quad \\boldsymbol{32\\,\\%} \\]\n\\textbf{(3)} 平均密度は $\\dfrac{\\text{全質量}}{V}=1.80+3.76\\fallingdotseq\\boldsymbol{5.6\\,\\mathrm{g/cm^3}}$。実際の地球の平均密度 $5.5\\,\\mathrm{g/cm^3}$ に近い。\n\n\\textbf{(4)} 半径が約 $0.55$ 倍でも体積は約 $0.16$ 倍（約 $\\dfrac{1}{6}$）にしかならない（3乗の効果）。一方，鉄を主成分とする核は密度が大きいので，体積は約 $\\dfrac{1}{6}$ でも質量では約 $\\dfrac{1}{3}$ をしめる。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "体積は半径の3乗に比例するので，半径が地球の約0.55倍の核は体積では約1/6にすぎないが，密度がまわりの2倍以上あるので質量では約1/3をしめる。体積比と密度から質量比・平均密度を組み立てる。"
+ },
+ "concepts": [
+  "earth-interior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "核",
+  "マントル",
+  "体積",
+  "密度",
+  "質量",
+  "平均密度"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

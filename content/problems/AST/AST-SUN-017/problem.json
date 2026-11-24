@@ -1,0 +1,108 @@
+{
+ "id": "AST-SUN-017",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "視半径と太陽定数から光球の温度を求める",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球から見た太陽の視半径は $0.265^\\circ$，地球と太陽の距離は $1.5\\times10^{11}\\,\\mathrm{m}$，太陽定数（大気上端で太陽光に垂直な面が単位面積・単位時間に受けるエネルギー）は $S=1.37\\times10^{3}\\,\\mathrm{W/m^2}$ である。円周率は $3.14$，シュテファン・ボルツマン定数は $5.67\\times10^{-8}\\,\\mathrm{W/(m^2\\cdot K^4)}$ とし，角度 $\\theta$（ラジアン）が小さいとき $\\sin\\theta\\approx\\theta$ としてよい。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "太陽の半径を有効数字2桁で求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "光球の単位面積から単位時間に放出されるエネルギーを $E$ とする。$E$ を $S$ と視半径 $\\theta$（ラジアン）だけで表し，その値を有効数字2桁で求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "光球を黒体とみなして，その表面温度を有効数字2桁で求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "太陽からの距離が地球の $1.5$ 倍の火星で同じ観測を行うと，太陽定数と太陽の視半径はそれぞれ地球での何倍になるか。また，火星での観測値から(2)と同じ方法で求めた $E$ は，地球での値の何倍になるか。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$6.9\\times10^{8}\\,\\mathrm{m}$"
+   },
+   {
+    "id": "2",
+    "tex": "$E=\\dfrac{S}{\\theta^{2}}$，$6.4\\times10^{7}\\,\\mathrm{W/m^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "$5.8\\times10^{3}\\,\\mathrm{K}$"
+   },
+   {
+    "id": "4",
+    "tex": "太陽定数：$\\dfrac{1}{2.25}$ 倍（約 $0.44$ 倍），視半径：$\\dfrac{1}{1.5}$ 倍（約 $0.67$ 倍），$E$：$1$ 倍（同じ値）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\theta=0.265\\times\\dfrac{3.14}{180}=4.62\\times10^{-3}\\,\\mathrm{rad}$。\n\\[ R=d\\,\\theta=1.5\\times10^{11}\\times4.62\\times10^{-3}\\approx\\mathbf{6.9\\times10^{8}\\,m} \\]\n\n\\textbf{(2)} 太陽が1秒間に出す全エネルギー $L$ は，光球全体からも，半径 $d$ の球面全体からも同じ量が出ていく：\n\\[ L=4\\pi R^{2}E=4\\pi d^{2}S \\quad\\Rightarrow\\quad E=S\\left(\\frac{d}{R}\\right)^{2}=\\frac{S}{\\theta^{2}} \\]\n\\[ E=\\frac{1.37\\times10^{3}}{(4.62\\times10^{-3})^{2}}\\approx\\mathbf{6.4\\times10^{7}\\,W/m^2} \\]\n\n\\textbf{(3)} $E=\\sigma T^{4}$ より\n\\[ T=\\left(\\frac{6.41\\times10^{7}}{5.67\\times10^{-8}}\\right)^{1/4}\\approx\\mathbf{5.8\\times10^{3}\\,K} \\]\n\n\\textbf{(4)} 太陽定数は距離の2乗に反比例するので $1/1.5^{2}=1/2.25$ 倍，視半径は距離に反比例するので $1/1.5$ 倍。$E=S/\\theta^{2}$ は $\\dfrac{1/2.25}{(1/1.5)^{2}}=1$ 倍で\\textbf{変わらない}。光球の放射の強さ（表面温度）は太陽そのものの性質なので，どこから観測しても同じ値になる。距離を知らなくても，$S$ と $\\theta$ だけで表面温度が求められる。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "光度を光球と半径 d の球面の2通りで表すと，光球の単位面積あたりの放射は太陽定数と視半径だけで決まる。そこから表面温度を求め，観測地点を変えても結果が変わらないことを確かめる。"
+ },
+ "concepts": [
+  "sun",
+  "radiation-balance",
+  "stellar-properties"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "太陽定数",
+  "視半径",
+  "シュテファン・ボルツマンの法則",
+  "表面温度",
+  "逆2乗則"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

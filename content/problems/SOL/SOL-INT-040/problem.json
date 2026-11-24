@@ -1,0 +1,108 @@
+{
+ "id": "SOL-INT-040",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "核の密度が大きいと重力は深さとともにどう変わるか",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球を，半径 $3480\\ \\mathrm{km}$・密度 $11.0\\ \\mathrm{g/cm^3}$ の核と，その外側の密度 $4.4\\ \\mathrm{g/cm^3}$ の層（マントルと地殻）からなる半径 $6400\\ \\mathrm{km}$ の球とする．地球の中心から距離 $r$ の点の重力の大きさは，半径 $r$ の球の内側にある質量 $M(r)$ だけで決まり，$g=\\dfrac{GM(r)}{r^2}$ で表される（自転の影響は考えない）．万有引力定数を $G=6.67\\times10^{-11}\\ \\mathrm{N\\cdot m^2/kg^2}$，円周率を $3.14$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "核の質量と地球全体の質量を求めよ．また，地球の平均密度を $\\mathrm{g/cm^3}$ で求めよ（いずれも有効数字2桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "地表と核の表面（深さ $2920\\ \\mathrm{km}$）での重力の大きさを求めよ（有効数字2桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "地球の中心から $3200\\ \\mathrm{km}$ の点の重力の大きさを求めよ．また，地球全体の質量は同じで密度が一様だとした場合の，同じ点での重力の大きさも求めよ（いずれも有効数字2桁）．"
+     },
+     {
+      "id": "4",
+      "tex": "(2)，(3) の結果から，マントルの中では深くなっても重力がほとんど小さくならないのはなぜか．また，地球の中心で重力が 0 になる理由も述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "核 $1.9\\times10^{24}\\ \\mathrm{kg}$，地球全体 $6.0\\times10^{24}\\ \\mathrm{kg}$，平均密度 $5.5\\ \\mathrm{g/cm^3}$"
+   },
+   {
+    "id": "2",
+    "tex": "地表 $9.8\\ \\mathrm{m/s^2}$，核の表面 $11\\ \\mathrm{m/s^2}$"
+   },
+   {
+    "id": "3",
+    "tex": "2層モデル $9.8\\ \\mathrm{m/s^2}$，一様なモデル $4.9\\ \\mathrm{m/s^2}$"
+   },
+   {
+    "id": "4",
+    "tex": "地球の質量の多くが密度の大きい核に集中しているので，深くなって外側の質量が減る効果より，中心に近づく効果（$r^2$ が小さくなる）が上回るから．中心では，まわりのすべての方向から同じように引かれて引力が打ち消し合う（内側の質量が 0 になる）から．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 核：$\\dfrac{4}{3}\\times3.14\\times(3.48\\times10^{6})^3\\times1.10\\times10^{4}\\approx\\boldsymbol{1.9\\times10^{24}\\ \\mathrm{kg}}$．\n外側の層：$\\dfrac{4}{3}\\times3.14\\times\\{(6.4\\times10^{6})^3-(3.48\\times10^{6})^3\\}\\times4.4\\times10^{3}\\approx4.05\\times10^{24}\\ \\mathrm{kg}$．\n合計 $\\boldsymbol{6.0\\times10^{24}\\ \\mathrm{kg}}$．地球の体積 $1.10\\times10^{21}\\ \\mathrm{m^3}$ で割ると平均密度は $5.46\\times10^{3}\\ \\mathrm{kg/m^3}\\approx\\boldsymbol{5.5\\ \\mathrm{g/cm^3}}$．\n\n\\textbf{(2)} 地表：$g=\\dfrac{6.67\\times10^{-11}\\times5.99\\times10^{24}}{(6.4\\times10^{6})^2}\\approx\\boldsymbol{9.8\\ \\mathrm{m/s^2}}$．\n核の表面：$g=\\dfrac{6.67\\times10^{-11}\\times1.94\\times10^{24}}{(3.48\\times10^{6})^2}\\approx\\boldsymbol{11\\ \\mathrm{m/s^2}}$（約 10.7）．地表より大きい．\n\n\\textbf{(3)} 核の中は密度一様なので $M(r)\\propto r^3$，$g\\propto r$．$g=10.7\\times\\dfrac{3200}{3480}\\approx\\boldsymbol{9.8\\ \\mathrm{m/s^2}}$．\n一様なモデルでは $g$ は中心からの距離に比例するので $9.76\\times\\dfrac{3200}{6400}\\approx\\boldsymbol{4.9\\ \\mathrm{m/s^2}}$．\n\n\\textbf{(4)} 深くなると外側の殻の質量は引力に寄与しなくなる（$M(r)$ が減る）が，同時に中心に近づくので $\\dfrac{1}{r^2}$ は大きくなる．地球の質量の約3分の1が半径の約半分の核に集中しているため，マントルの中では $M(r)$ の減り方がゆるやかで，$r^2$ が小さくなる効果とほぼ打ち消し合う（核の表面ではむしろ地表より大きい）．中心では内側の質量 $M(r)$ が 0 になる，すなわちまわりの物質から全方向に同じように引かれて打ち消し合うので重力は 0 になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "地球内部の重力は半径 r より内側の質量だけで決まる．密度の大きい核に質量が集中しているため，重力はマントル中では深くなってもほとんど減らず核の表面で最大となり，核の中で中心に向かって 0 まで減る．一様な地球との比較でこれがわかる．"
+ },
+ "concepts": [
+  "earth-interior",
+  "gravity-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地球内部の重力",
+  "核",
+  "密度",
+  "地球の平均密度",
+  "2層モデル"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

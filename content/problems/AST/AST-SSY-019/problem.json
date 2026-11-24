@@ -1,0 +1,108 @@
+{
+ "id": "AST-SSY-019",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "脱出速度と分子の速さで考える惑星の大気",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "質量 $M$，半径 $R$ の天体の表面から，物体が重力をふりきって宇宙へ出ていくのに必要な速さ（脱出速度）は $v_\\mathrm{e}=\\sqrt{\\dfrac{2GM}{R}}$ である．また，温度 $T$ [K] の気体分子の平均的な速さは $v=\\sqrt{\\dfrac{3RT}{m}}$（気体定数 $R=8.3\\,\\mathrm{J/(mol\\cdot K)}$，$m$ はモル質量 [kg/mol]）で表される．目安として，$v_\\mathrm{e}$ が $v$ の 6 倍より大きければその気体は数十億年にわたって保持され，6 倍より小さければ宇宙へ逃げていくとする．$G=6.7\\times10^{-11}\\,\\mathrm{N\\cdot m^2/kg^2}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "水星（質量 $3.3\\times10^{23}\\,\\mathrm{kg}$，半径 $2.4\\times10^{6}\\,\\mathrm{m}$）の脱出速度を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "水星の昼側の表面温度を $700\\,\\mathrm{K}$ とする．水蒸気（モル質量 $0.018\\,\\mathrm{kg/mol}$）の分子の平均的な速さを有効数字2桁で求め，水星が水蒸気を大気として保持できるかを判定せよ．"
+     },
+     {
+      "id": "3",
+      "tex": "火星（質量 $6.4\\times10^{23}\\,\\mathrm{kg}$，半径 $3.4\\times10^{6}\\,\\mathrm{m}$，表面温度 $210\\,\\mathrm{K}$）について，水蒸気分子と水素原子（モル質量 $0.0010\\,\\mathrm{kg/mol}$）のそれぞれについて保持できるかを判定せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "火星にはかつて大量の水が流れた地形があるが，現在の表面には液体の水がない．(3) の結果をもとに，水が失われたしくみの一つを説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$4.3\\,\\mathrm{km/s}$"
+   },
+   {
+    "id": "2",
+    "tex": "$9.8\\times10^{2}\\,\\mathrm{m/s}$，保持できない"
+   },
+   {
+    "id": "3",
+    "tex": "水蒸気は保持できるが，水素原子は保持できない"
+   },
+   {
+    "id": "4",
+    "tex": "上空の水蒸気が太陽の紫外線で分解されると，軽い水素原子が宇宙へ逃げていくので，水が少しずつ失われた．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $v_\\mathrm{e}=\\sqrt{\\dfrac{2\\times6.7\\times10^{-11}\\times3.3\\times10^{23}}{2.4\\times10^{6}}}=\\sqrt{1.84\\times10^{7}}=4.29\\times10^{3}\\,\\mathrm{m/s}$ → $\\boldsymbol{4.3\\,\\mathrm{km/s}}$．\n(2) $v=\\sqrt{\\dfrac{3\\times8.3\\times700}{0.018}}=984\\,\\mathrm{m/s}$ → $\\boldsymbol{9.8\\times10^{2}\\,\\mathrm{m/s}}$．その 6 倍は $5.9\\,\\mathrm{km/s}$ で，$v_\\mathrm{e}=4.3\\,\\mathrm{km/s}$ より大きいので\\textbf{保持できない}．水星は重力が小さく，太陽に近くて高温なので，大気をほとんど保てない．\n(3) 火星の $v_\\mathrm{e}=\\sqrt{\\dfrac{2\\times6.7\\times10^{-11}\\times6.4\\times10^{23}}{3.4\\times10^{6}}}=5.0\\,\\mathrm{km/s}$．水蒸気：$v=\\sqrt{\\dfrac{3\\times8.3\\times210}{0.018}}=539\\,\\mathrm{m/s}$，6 倍は $3.2\\,\\mathrm{km/s}<5.0\\,\\mathrm{km/s}$ なので\\textbf{保持できる}．水素原子：$v=\\sqrt{\\dfrac{3\\times8.3\\times210}{0.0010}}=2.29\\times10^{3}\\,\\mathrm{m/s}$，6 倍は $13.7\\,\\mathrm{km/s}>5.0\\,\\mathrm{km/s}$ なので\\textbf{保持できない}．\n(4) 水分子のままなら残るが，上空で太陽の紫外線によって $\\ce{H2O}$ が分解されると，軽い水素が宇宙へ逃げ，水に戻れなくなる．このようにして火星の水は少しずつ失われた（このほか，地下に氷として残っている水もあると考えられている）．\\textbf{軽い分子ほど速く，重力の小さい天体ほど逃げやすい}．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "天体が気体を保持できるかは，脱出速度（重力の大きさ）と分子の平均の速さ（温度と分子の軽さ）の比で決まり，水星は水蒸気を保てず，火星は水蒸気を保てても分解された水素が逃げて水を失う。"
+ },
+ "concepts": [
+  "solar-system",
+  "gravity-earth"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "脱出速度",
+  "惑星の大気",
+  "水星",
+  "火星",
+  "分子の速さ"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

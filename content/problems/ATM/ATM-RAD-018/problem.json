@@ -1,0 +1,117 @@
+{
+ "id": "ATM-RAD-018",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "冬の黒潮の上で海から大気へ運ばれる熱",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海面から大気へ運ばれる単位面積・単位時間あたりの顕熱 $H$ と潜熱 $LE$ は，次の式で見積もることができる．\n\\[ H=\\rho c_p CU(T_{\\mathrm{s}}-T_{\\mathrm{a}}),\\qquad LE=\\rho LCU(q_{\\mathrm{s}}-q_{\\mathrm{a}}) \\]\nここで，$\\rho=1.2\\,\\mathrm{kg/m^3}$（空気の密度），$c_p=1.0\\times10^{3}\\,\\mathrm{J/(kg\\cdot K)}$（空気の比熱），$L=2.5\\times10^{6}\\,\\mathrm{J/kg}$（水の蒸発熱），$C=1.2\\times10^{-3}$，$U$ は海上の風速［m/s］，$T_{\\mathrm{s}}$ は海面水温，$T_{\\mathrm{a}}$ は気温，$q_{\\mathrm{s}}$ は海面水温で飽和した空気 1 kg あたりの水蒸気の質量，$q_{\\mathrm{a}}$ は実際の空気 1 kg あたりの水蒸気の質量である．冬のある日，2つの海域で次のように観測された．\n\\[\\begin{array}{c|cccc} & U\\ [\\mathrm{m/s}] & T_{\\mathrm{s}}-T_{\\mathrm{a}}\\ [\\mathrm{K}] & q_{\\mathrm{s}}\\ [\\mathrm{g/kg}] & q_{\\mathrm{a}}\\ [\\mathrm{g/kg}] \\\\ \\hline \\text{海域 A（日本の南の黒潮の上）} & 10 & 10 & 15 & 5.0 \\\\ \\text{海域 B（北太平洋の中央部）} & 6.0 & 2.0 & 13 & 9.0 \\\\ \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "海域 A の $H$ と $LE$ を，それぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "海域 B の $H$ と $LE$ の和を有効数字2桁で求め，海域 A の和が B の何倍かを整数で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "冬の海域 A で海から大気へ大量の熱が運ばれる理由を，「季節風」「暖流」という語を用いて説明せよ．"
+     },
+     {
+      "id": "4",
+      "tex": "夏の海域 A では，暖かく湿った南風が吹き，気温が海面水温より高くなることがある．このとき $H$ の符号はどうなり，熱はどちらからどちらへ運ばれるか．"
+     },
+     {
+      "id": "5",
+      "tex": "海から大気へ運ばれた潜熱は，大気のどこで大気を暖めるか．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$H=1.4\\times10^{2}\\,\\mathrm{W/m^2}$，$LE=3.6\\times10^{2}\\,\\mathrm{W/m^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.0\\times10^{2}\\,\\mathrm{W/m^2}$，5 倍"
+   },
+   {
+    "id": "3",
+    "tex": "大陸から冷たく乾いた季節風が強く吹きつけ，暖流（黒潮）で海面水温が高いので，風速・海面と空気の温度差・水蒸気量の差がどれも大きくなるから．"
+   },
+   {
+    "id": "4",
+    "tex": "$H$ は負になり，顕熱は大気から海へ運ばれる．"
+   },
+   {
+    "id": "5",
+    "tex": "水蒸気が上空で凝結して雲ができるところ（凝結熱として放出される）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\rho c_p CU=1.2\\times1.0\\times10^{3}\\times1.2\\times10^{-3}\\times10=14.4\\,\\mathrm{W/(m^2\\cdot K)}$ なので\n\\[ H=14.4\\times10=144\\fallingdotseq\\boldsymbol{1.4\\times10^{2}}\\ \\mathrm{W/m^2} \\]\n$q$ は kg/kg に直す（$15-5.0=10\\,\\mathrm{g/kg}=1.0\\times10^{-2}\\,\\mathrm{kg/kg}$）．\n\\[ LE=1.2\\times2.5\\times10^{6}\\times1.2\\times10^{-3}\\times10\\times1.0\\times10^{-2}=\\boldsymbol{3.6\\times10^{2}}\\ \\mathrm{W/m^2} \\]\n\n\\textbf{(2)} 海域 B：$H=1.2\\times10^{3}\\times1.2\\times10^{-3}\\times6.0\\times2.0=17.28$，$LE=1.2\\times2.5\\times10^{6}\\times1.2\\times10^{-3}\\times6.0\\times4.0\\times10^{-3}=86.4$．\n和は $103.7\\fallingdotseq\\boldsymbol{1.0\\times10^{2}}\\ \\mathrm{W/m^2}$．A の和は $144+360=504$ なので，$\\dfrac{504}{103.7}\\fallingdotseq4.9$，約 \\textbf{5 倍}．\n\n\\textbf{(3)} 冬は大陸から\\textbf{冷たく乾いた北西の季節風}が強く吹き出す．その下に\\textbf{暖流}の黒潮が流れていて海面水温が高いので，風速 $U$，温度差 $T_{\\mathrm{s}}-T_{\\mathrm{a}}$，水蒸気の差 $q_{\\mathrm{s}}-q_{\\mathrm{a}}$ がすべて大きくなり，顕熱も潜熱も非常に大きくなる．どの項も「かけ算」で効くので，3つがそろうと何倍にもなる．\n\n\\textbf{(4)} $T_{\\mathrm{s}}-T_{\\mathrm{a}}<0$ なので \\textbf{$H<0$}．顕熱は\\textbf{大気から海へ}運ばれる（海が空気を冷やす）．\n\n\\textbf{(5)} 潜熱は，蒸発した水蒸気が運ばれて\\textbf{上空で凝結し雲ができるところ}で，凝結熱として放出されて大気を暖める．海面で蒸発した場所とは別の場所・高さで大気を暖めるのが顕熱とのちがいである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "海から大気への顕熱・潜熱は，風速と海面・空気の温度差（水蒸気量の差）の積で決まるので，冷たく乾いた季節風が暖流の上を吹く冬の日本の南で特に大きくなる．気温が海面水温を上回ると顕熱の向きは逆になり，潜熱は凝結する場所で大気を暖める．"
+ },
+ "concepts": [
+  "radiation-balance",
+  "japan-weather",
+  "diurnal-annual"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "顕熱",
+  "潜熱",
+  "季節風",
+  "黒潮",
+  "海面熱フラックス"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

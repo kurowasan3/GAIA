@@ -1,0 +1,108 @@
+{
+ "id": "ATM-OCN-033",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "海底熱水と海水の組成をくらべる",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "choice",
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "中央海嶺では，海底下にしみこんだ海水が高温の岩石と反応して，約 $350\\ ^\\circ\\mathrm{C}$ の熱水となって噴き出している．表は，ある熱水と海水の組成（単位は mmol/kg）の例である．\n\\[\\begin{array}{c|cccccccccc} & \\mathrm{Na^{+}} & \\mathrm{K^{+}} & \\mathrm{Ca^{2+}} & \\mathrm{Mg^{2+}} & \\mathrm{Cl^{-}} & \\mathrm{SO_4^{2-}} & \\mathrm{SiO_2} & \\mathrm{Fe} & \\mathrm{H_2S} & \\mathrm{pH} \\\\ \\hline \\text{熱水} & 440 & 24 & 30 & 0 & 560 & 0 & 18 & 2.0 & 7.0 & 3.4 \\\\ \\text{海水} & 470 & 10 & 10 & 53 & 545 & 28 & 0.1 & 0 & 0 & 7.8 \\\\ \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "海水が熱水に変わる途中で，海水からほぼすべて取り除かれた成分を 2 つ答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "岩石から熱水に加わったと考えられる成分をすべて選べ．ア　$\\mathrm{Na^{+}}$，イ　$\\mathrm{K^{+}}$，ウ　$\\mathrm{Mg^{2+}}$，エ　$\\mathrm{SiO_2}$，オ　$\\mathrm{Fe}$，カ　$\\mathrm{Cl^{-}}$"
+     },
+     {
+      "id": "3",
+      "tex": "熱水の噴出口では，熱水が冷たい海水とまざってできた沈殿が積み重なり，煙突のような「チムニー」ができる．チムニーには硫化鉄（$\\mathrm{FeS_2}$ など）と硫酸カルシウム（$\\mathrm{CaSO_4}$）がふくまれる．それぞれの沈殿に必要な陰イオン（硫黄をふくむ成分）の主な供給源の組み合わせとして正しいものを選べ．ア　硫化鉄：熱水，硫酸カルシウム：熱水，イ　硫化鉄：熱水，硫酸カルシウム：海水，ウ　硫化鉄：海水，硫酸カルシウム：熱水，エ　硫化鉄：海水，硫酸カルシウム：海水"
+     },
+     {
+      "id": "4",
+      "tex": "世界の中央海嶺で高温の熱水として噴き出す水の量を $3.0\\times10^{13}\\ \\mathrm{kg/}$年，海水全体の質量を $1.4\\times10^{21}\\ \\mathrm{kg}$ とする．海水全体がこの熱水循環を 1 回通るのにかかる時間は何年か．有効数字 2 桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\mathrm{Mg^{2+}}$，$\\mathrm{SO_4^{2-}}$"
+   },
+   {
+    "id": "2",
+    "tex": "イ，エ，オ"
+   },
+   {
+    "id": "3",
+    "tex": "イ"
+   },
+   {
+    "id": "4",
+    "tex": "$4.7\\times10^{7}$ 年"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 海水には $53$ mmol/kg あった $\\mathrm{Mg^{2+}}$ と $28$ mmol/kg あった $\\mathrm{SO_4^{2-}}$ が，熱水では 0 になっている．$\\mathrm{Mg^{2+}}$ は高温で岩石と反応して粘土鉱物などにとりこまれ，$\\mathrm{SO_4^{2-}}$ は加熱されると硫酸カルシウムとして沈殿したり還元されたりして取り除かれる．よって $\\boldsymbol{\\mathrm{Mg^{2+}}}$，$\\boldsymbol{\\mathrm{SO_4^{2-}}}$．\n\n\\textbf{(2)} 海水より熱水で大きく増えている成分が，岩石から溶け出して加わった成分である．$\\mathrm{K^{+}}$（10→24），$\\mathrm{SiO_2}$（0.1→18），$\\mathrm{Fe}$（0→2.0）が増えている（$\\mathrm{Ca^{2+}}$，$\\mathrm{H_2S}$ も同様）．$\\mathrm{Na^{+}}$ はやや減り，$\\mathrm{Cl^{-}}$ はほぼ変わらない．よって \\textbf{イ，エ，オ}．\n\n\\textbf{(3)} 硫化鉄には $\\mathrm{Fe}$ と $\\mathrm{H_2S}$ が必要で，どちらも熱水にしかふくまれない．熱水が冷やされ，酸性もうすめられると溶けきれなくなって沈殿する．一方，硫酸カルシウムに必要な $\\mathrm{SO_4^{2-}}$ は熱水には 0 で，海水からしか供給されない．よって \\textbf{イ}．同じチムニーでも，熱水だけでできる沈殿と，海水とまざってはじめてできる沈殿がある．\n\n\\textbf{(4)} \\[ \\dfrac{1.4\\times10^{21}\\ \\mathrm{kg}}{3.0\\times10^{13}\\ \\mathrm{kg/}\\text{年}}=4.7\\times10^{7}\\ \\text{年} \\]\n\\textbf{約} $\\boldsymbol{4.7\\times10^{7}}$ \\textbf{年}（約 5000 万年）．地質時代の長さにくらべて短いので，海水の $\\mathrm{Mg^{2+}}$ や $\\mathrm{SO_4^{2-}}$ の濃度は，河川からの供給と海嶺の熱水による除去のつり合いで決まっていると考えられる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "海水と熱水の組成を比べると，海水から除かれた成分（Mg，硫酸イオン）と岩石から加わった成分（K，Si，Fe など）が読み取れる．チムニーの沈殿には熱水だけで足りるもの（硫化物）と海水の硫酸イオンが必要なもの（硫酸カルシウム）があり，流量から海水が熱水循環を通る時間も見積もれる．"
+ },
+ "concepts": [
+  "ocean-currents",
+  "plate-boundaries"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱水噴出孔",
+  "チムニー",
+  "海水の組成",
+  "中央海嶺",
+  "物質循環"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

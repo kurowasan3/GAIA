@@ -1,0 +1,99 @@
+{
+ "id": "AST-SUN-019",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-04",
+ "topic": "太陽の寿命と燃料の残り",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽の中心部では，4 個の陽子（水素の原子核）から 1 個のヘリウム原子核ができる反応が起こり，1 回の反応で $4.2\\times10^{-12}\\,\\mathrm{J}$ のエネルギーが出る．太陽の質量は $2.0\\times10^{30}\\,\\mathrm{kg}$ で，その $70\\,\\%$ が水素である．主系列星の間に核融合に使われるのは，この水素の $10\\,\\%$ だけとする．陽子1個の質量を $1.7\\times10^{-27}\\,\\mathrm{kg}$，太陽の光度を $3.8\\times10^{26}\\,\\mathrm{W}$（一定），1 年を $3.2\\times10^{7}\\,\\mathrm{s}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "主系列星の間に起こる反応の回数を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "太陽が主系列星として輝く期間（年）を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "太陽が誕生してから約 $46$ 億年たっている．使える水素のうち，すでに何 \\% を使ったことになるか．整数で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.1\\times10^{55}$ 回"
+   },
+   {
+    "id": "2",
+    "tex": "$7.1\\times10^{9}$ 年"
+   },
+   {
+    "id": "3",
+    "tex": "$65\\,\\%$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　寿命 ＝（使える燃料から出るエネルギーの総量）÷（毎秒出すエネルギー＝光度）．\n\n(1) 使える水素の質量は $2.0\\times10^{30}\\times0.70\\times0.10=1.4\\times10^{29}\\,\\mathrm{kg}$．陽子の数は\n\\[ \\frac{1.4\\times10^{29}}{1.7\\times10^{-27}}\\fallingdotseq8.2\\times10^{55}\\ \\text{個} \\]\n4 個で 1 回の反応なので，反応回数は $\\dfrac{8.24\\times10^{55}}{4}\\fallingdotseq\\boldsymbol{2.1\\times10^{55}}$ 回．\n\n(2) 全エネルギーは $2.06\\times10^{55}\\times4.2\\times10^{-12}\\fallingdotseq8.6\\times10^{43}\\,\\mathrm{J}$．\n\\[ t=\\frac{8.65\\times10^{43}}{3.8\\times10^{26}}\\fallingdotseq2.3\\times10^{17}\\,\\mathrm{s}=\\frac{2.28\\times10^{17}}{3.2\\times10^{7}}\\fallingdotseq\\boldsymbol{7.1\\times10^{9}}\\ \\text{年} \\]\n\n(3) 光度一定なら使った燃料は経過時間に比例：$\\dfrac{46\\times10^{8}}{7.1\\times10^{9}}\\fallingdotseq0.65$ → \\textbf{約 65 \\%}．（使える水素の割合を多くとるモデルでは寿命は約 100 億年となり，ちょうど半分ほどになる．どのモデルでも，太陽は主系列星の期間の後半に入りつつある．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "使える水素の量から反応回数と総エネルギーを出し，光度で割って主系列の寿命を見積もる．光度一定なら燃料の消費は時間に比例するので，現在の年齢からすでに使った割合がわかる．"
+ },
+ "concepts": [
+  "sun",
+  "stellar-properties"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "核融合",
+  "太陽の寿命",
+  "主系列星",
+  "光度",
+  "エネルギー"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

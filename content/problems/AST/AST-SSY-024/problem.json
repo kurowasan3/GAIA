@@ -1,0 +1,109 @@
+{
+ "id": "AST-SSY-024",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-03",
+ "topic": "表面気圧と重力から比べる火星と地球の大気の総質量",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "表面の気圧は，その上にある大気の重さによる．地表 $1\\,\\mathrm{m^2}$ の上にある大気の質量を $m$，表面の重力加速度を $g$，表面気圧を $p$ とすると $p=mg$ である．次の値を用いよ．\n\\[\\begin{array}{l|c|c} & \\text{地球} & \\text{火星} \\\\ \\hline \\text{表面気圧} & 1013\\,\\mathrm{hPa} & 6.1\\,\\mathrm{hPa} \\\\ \\text{半径} & 6.4\\times10^{3}\\,\\mathrm{km} & 3.4\\times10^{3}\\,\\mathrm{km} \\\\ \\text{質量（地球}=1\\text{）} & 1 & 0.11 \\\\ \\text{表面の重力加速度} & 9.8\\,\\mathrm{m/s^2} & ? \\\\ \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "表面の重力加速度は（惑星の質量）$\\div$（半径）$^2$ に比例する．火星の表面の重力加速度を有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "火星と地球について，表面 $1\\,\\mathrm{m^2}$ の上にある大気の質量 $m$ をそれぞれ有効数字2桁で求めよ．また，火星の値は地球の値の何倍か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "大気の総質量は $m\\times4\\pi R^2$（$R$ は半径）で表される．火星の大気の総質量は地球の大気の総質量の何倍か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2)，(3) の結果と表面気圧の比（約 $0.0060$ 倍）を比べて述べた文として最も適当なものを選べ．\nア　重力が小さいほど同じ気圧を生むのに多くの大気が必要なので，1 $\\mathrm{m^2}$ あたりの大気の量の比は気圧の比より大きくなる．一方，表面積が小さいので，総質量の比は気圧の比より小さくなる．\nイ　大気の量は気圧に比例するので，1 $\\mathrm{m^2}$ あたりでも総質量でも，比は気圧の比と同じになる．\nウ　重力が小さいほど大気は軽くなるので，1 $\\mathrm{m^2}$ あたりの大気の量の比も総質量の比も気圧の比より小さくなる．\nエ　1 $\\mathrm{m^2}$ あたりの大気の量の比は気圧の比より小さいが，総質量の比は気圧の比より大きい．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.8\\,\\mathrm{m/s^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "火星 $1.6\\times10^{2}\\,\\mathrm{kg}$，地球 $1.0\\times10^{4}\\,\\mathrm{kg}$，約 $0.015$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "約 $4.4\\times10^{-3}$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "ア"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$g_{\\text{火}}=9.8\\times\\dfrac{0.11}{(3.4/6.4)^2}=9.8\\times\\dfrac{0.11}{0.282}\\approx3.82$ → \\textbf{約 }$\\boldsymbol{3.8\\,\\mathrm{m/s^2}}$（地球の約 0.39 倍）．\n\n\\textbf{(2)}　$m=p/g$．火星：$\\dfrac{6.1\\times10^{2}\\,\\mathrm{Pa}}{3.82}\\approx1.60\\times10^{2}$ → \\textbf{約 }$\\boldsymbol{1.6\\times10^{2}\\,\\mathrm{kg}}$．地球：$\\dfrac{1.013\\times10^{5}}{9.8}\\approx1.03\\times10^{4}$ → \\textbf{約 }$\\boldsymbol{1.0\\times10^{4}\\,\\mathrm{kg}}$．比は $160\\div1.03\\times10^{4}\\approx$ \\textbf{0.015 倍}．気圧の比（0.0060）より大きいのは，火星の重力が弱く，同じ重さ（気圧）を生むのにより多くの質量が必要だからである．\n\n\\textbf{(3)}　比 $=\\dfrac{m_{\\text{火}}}{m_{\\text{地}}}\\times\\left(\\dfrac{R_{\\text{火}}}{R_{\\text{地}}}\\right)^2=0.0155\\times0.282\\approx$ $\\boldsymbol{4.4\\times10^{-3}}$\\textbf{ 倍}（約 230 分の 1）．実際に計算すると，火星 $\\approx2.3\\times10^{16}\\,\\mathrm{kg}$，地球 $\\approx5.3\\times10^{18}\\,\\mathrm{kg}$ である．\n\n\\textbf{(4)}　1 $\\mathrm{m^2}$ あたりの比は気圧の比を重力の比（0.39）で割るので大きくなり，総質量の比はさらに表面積の比（0.28）をかけるので小さくなる．まとめると，総質量の比 $=$ 気圧の比 $\\times\\dfrac{R^2\\text{の比}}{g\\text{の比}}=0.0060\\times\\dfrac{0.28}{0.39}\\approx0.0044$．\\textbf{ア}．火星の大気がこれほど少ないのは，重力が小さく，固有の磁場もないため，大気が宇宙空間へ失われてきたためと考えられている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "表面気圧は単位面積上の大気の重さなので，大気の量は p/g，総質量は p·4πR²/g で求まる。重力の弱い惑星では同じ気圧でも 1 m² あたりの大気は多く，表面積が小さいので総質量は少なく，気圧の比だけでは大気の量を比べられない。"
+ },
+ "concepts": [
+  "solar-system",
+  "gravity-earth",
+  "atm-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "火星",
+  "大気圧",
+  "重力加速度",
+  "大気の質量",
+  "地球型惑星"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "id": "ATM-STR-020",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "高さのちがう観測点の気圧を海面の気圧に直して比べる",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地表付近では，空気の密度を $\\rho=1.2\\,\\mathrm{kg/m^3}$ で一定とみなすと，高さが $\\Delta z$ 増すと気圧は $\\rho g\\Delta z$ だけ下がる（$g=9.8\\,\\mathrm{m/s^2}$）．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "高さが $1\\,\\mathrm{m}$ 増すと気圧は何 $\\mathrm{hPa}$ 下がるか．有効数字3桁で求めよ．また，気圧が $1\\,\\mathrm{hPa}$ 下がるのは約何 $\\mathrm{m}$ 上がったときか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "大型船の海面からの高さ $25\\,\\mathrm{m}$ の船橋に置いた気圧計の示度が $1003.0\\,\\mathrm{hPa}$ であった．海面での気圧を小数第1位まで求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "近くにある2つの観測所で同時に気圧を測った．標高 $600\\,\\mathrm{m}$ の山の上の観測所 P の示度は $939.0\\,\\mathrm{hPa}$，標高 $40\\,\\mathrm{m}$ の海岸の観測所 Q の示度は $1003.0\\,\\mathrm{hPa}$ であった．それぞれ海面の気圧に直して小数第1位まで求め，海面の高さで見たときの気圧はどちらが高いか答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "気圧計を持ってエレベーターで上がったところ，示度が $12\\,\\mathrm{hPa}$ 下がった．上がった高さは約何 $\\mathrm{m}$ か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "5",
+      "tex": "天気図の等圧線に，各地の観測所の示度をそのまま使わず，海面の高さでの気圧に直した値を使う理由として最も適当なものを選べ．\nア　海面のほうが空気の密度が小さく，気圧計が正確にはたらくから．\nイ　観測所の標高による気圧のちがいが大きく，そのままでは高気圧・低気圧による水平方向の気圧のちがいが見えなくなるから．\nウ　海面の気圧は時間がたっても変化しないから．\nエ　山の上では気圧計の示度が実際より高く出るから．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.118\\,\\mathrm{hPa}$，約 $8.5\\,\\mathrm{m}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1005.9\\,\\mathrm{hPa}$"
+   },
+   {
+    "id": "3",
+    "tex": "P：$1009.6\\,\\mathrm{hPa}$，Q：$1007.7\\,\\mathrm{hPa}$，P のほうが高い"
+   },
+   {
+    "id": "4",
+    "tex": "約 $1.0\\times10^{2}\\,\\mathrm{m}$"
+   },
+   {
+    "id": "5",
+    "tex": "イ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\rho g\\times1=1.2\\times9.8=11.76\\,\\mathrm{Pa}=$ $\\boldsymbol{0.118\\,\\mathrm{hPa}}$．逆に $1\\,\\mathrm{hPa}$ 下がるのは $1\\div0.1176\\approx$ \\textbf{8.5 m}．\n\n\\textbf{(2)}　海面は船橋より $25\\,\\mathrm{m}$ 低いので気圧は高い．$1003.0+25\\times0.1176=1003.0+2.94\\approx$ \\textbf{1005.9 hPa}（示度より大きくする補正）．\n\n\\textbf{(3)}　P：$939.0+600\\times0.1176=939.0+70.56\\approx$ \\textbf{1009.6 hPa}．Q：$1003.0+40\\times0.1176=1003.0+4.70\\approx$ \\textbf{1007.7 hPa}．示度では P が $64\\,\\mathrm{hPa}$ も低いが，海面の高さにそろえると \\textbf{P のほうが約 }$\\boldsymbol{2\\,\\mathrm{hPa}}$\\textbf{ 高い}．地上付近の気圧傾度力は P 側から Q 側へ向かう．\n\n\\textbf{(4)}　$12\\div0.1176\\approx102$ → \\textbf{約 }$\\boldsymbol{1.0\\times10^{2}\\,\\mathrm{m}}$．気圧計は高度計としても使える．\n\n\\textbf{(5)}　標高による気圧の差は $100\\,\\mathrm{m}$ で約 $12\\,\\mathrm{hPa}$ もあり，高気圧と低気圧の差（数十 $\\mathrm{hPa}$）を簡単に上回る．同じ高さ（海面）にそろえて初めて，水平方向の気圧の分布が比べられる．\\textbf{イ}．なお，実際の海面更正では高さによる気温・密度の変化も考えて計算する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "気圧は上にある空気の重さなので，静水圧の関係から地表付近では約 8.5 m で 1 hPa 下がる。観測所の示度を海面の高さに更正して初めて水平方向の気圧分布が比べられ，示度の大小と海面気圧の大小が逆転することもある。"
+ },
+ "concepts": [
+  "atmosphere-structure",
+  "atm-pressure",
+  "japan-weather"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "気圧",
+  "海面更正",
+  "静水圧平衡",
+  "天気図",
+  "高度計"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

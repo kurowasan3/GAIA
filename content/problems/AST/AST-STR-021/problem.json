@@ -1,0 +1,109 @@
+{
+ "id": "AST-STR-021",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "赤色巨星になった太陽の半径と惑星の軌道",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽は現在，絶対等級 $4.8$ 等，表面温度 $5800\\,\\mathrm{K}$ の主系列星である。将来，太陽は赤色巨星となり，絶対等級 $-2.7$ 等，表面温度 $2900\\,\\mathrm{K}$ になるとする。等級が 1 小さいと光度（明るさ）は $10^{0.4}$ 倍になり，恒星の光度は半径の2乗と表面温度の4乗の積に比例する。現在の太陽の半径を $7.0\\times10^{5}\\,\\mathrm{km}$，1 天文単位を $1.5\\times10^{8}\\,\\mathrm{km}$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "赤色巨星になった太陽の光度は現在の何倍か。有効数字2桁で答えよ。"
+     },
+     {
+      "id": "2",
+      "tex": "赤色巨星になった太陽の半径は現在の何倍か。有効数字2桁で答えよ。"
+     },
+     {
+      "id": "3",
+      "tex": "(2) の半径は何天文単位か。有効数字2桁で求め，水星（$0.39$ 天文単位），金星（$0.72$ 天文単位），地球（$1.00$ 天文単位）の軌道と比べてどこまで達するか答えよ。ただし，惑星の軌道は変わらないとする。"
+     },
+     {
+      "id": "4",
+      "tex": "その後，太陽は白色わい星となり，光度が現在の $\\dfrac{1}{1000}$，表面温度が $11600\\,\\mathrm{K}$ になったとする。半径は現在の何倍か。有効数字2桁で答えよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.0\\times10^{3}$ 倍"
+   },
+   {
+    "id": "2",
+    "tex": "$1.3\\times10^{2}$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$0.59$ 天文単位。水星の軌道より外側まで達するが，金星の軌道には届かない。"
+   },
+   {
+    "id": "4",
+    "tex": "$7.9\\times10^{-3}$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 等級差は $4.8-(-2.7)=7.5$ なので\n\\[ \\frac{L}{L_\\odot}=10^{0.4\\times7.5}=10^{3}=\\boldsymbol{1.0\\times10^{3}}\\ \\text{倍} \\]\n\\textbf{(2)} $L\\propto R^2T^4$ より $\\dfrac{R}{R_\\odot}=\\sqrt{\\dfrac{L}{L_\\odot}}\\left(\\dfrac{T_\\odot}{T}\\right)^2=\\sqrt{1000}\\times2^2\\fallingdotseq31.6\\times4\\fallingdotseq\\boldsymbol{1.3\\times10^{2}}$ 倍。\n光度が増えるうえに温度が下がるので，半径は大きく増える。\n\n\\textbf{(3)} $126\\times7.0\\times10^{5}\\,\\mathrm{km}\\fallingdotseq8.9\\times10^{7}\\,\\mathrm{km}$，これを天文単位に直すと\n\\[ \\frac{8.9\\times10^{7}}{1.5\\times10^{8}}\\fallingdotseq\\boldsymbol{0.59}\\ \\text{天文単位} \\]\n水星の軌道（0.39）より外側までおおうが，金星（0.72）には届かない。\n\n\\textbf{(4)} \\[ \\frac{R}{R_\\odot}=\\sqrt{\\frac{1}{1000}}\\times\\left(\\frac{5800}{11600}\\right)^2\\fallingdotseq0.0316\\times0.25\\fallingdotseq\\boldsymbol{7.9\\times10^{-3}}\\ \\text{倍} \\]\n約 $5500\\,\\mathrm{km}$ で，地球（半径約 $6400\\,\\mathrm{km}$）程度の大きさになる。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "光度は等級差から，半径は L∝R²T⁴ から求まるので，進化で光度が増して温度が下がると半径は大きく増え，光度が減って温度が上がると極端に小さくなる。赤色巨星の太陽の半径を惑星の軌道と比べ，白色わい星が地球程度の大きさになることを確かめる。"
+ },
+ "concepts": [
+  "stellar-properties",
+  "sun",
+  "stellar-evolution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "赤色巨星",
+  "白色わい星",
+  "光度",
+  "半径",
+  "等級",
+  "シュテファン・ボルツマンの法則"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

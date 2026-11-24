@@ -1,0 +1,108 @@
+{
+ "id": "ATM-CLD-023",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "上昇する飽和空気から出る水の量",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "水蒸気で飽和した空気塊（体積 $1\\,\\mathrm{km^3}$）が $1.0\\,\\mathrm{km}$ 上昇する。湿潤断熱減率を $0.50$ ℃/100 m とし，上昇による体積の変化は無視する。凝結した水はすべて空気塊から取り除かれるとする。飽和水蒸気量は次の表のとおりである。\n\\[\\begin{array}{c|ccccccc} \\text{気温 }(^\\circ\\mathrm{C}) & 0 & 5 & 10 & 15 & 20 & 25 & 30 \\\\ \\hline \\text{飽和水蒸気量 (g/m}^3\\text{)} & 4.8 & 6.8 & 9.4 & 12.8 & 17.3 & 23.0 & 30.4 \\\\ \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "熱帯の海上で，気温 30 ℃ の飽和した空気塊が上昇した。凝結する水の質量 [kg] を有効数字2桁で求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "中緯度の海上で，気温 15 ℃ の飽和した空気塊が同じように上昇した。凝結する水の質量 [kg] を有効数字2桁で求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "(1) の水が凝結するときに放出される潜熱 [J] を有効数字2桁で求めよ。水 1 kg が凝結するときの潜熱を $2.4\\times10^{6}\\,\\mathrm{J}$ とする。"
+     },
+     {
+      "id": "4",
+      "tex": "(1)(2) の比較から，台風（熱帯低気圧）が水温の高い海上で発達しやすい理由を簡潔に述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$7.4\\times10^{6}\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "2",
+    "tex": "$3.4\\times10^{6}\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.8\\times10^{13}\\,\\mathrm{J}$"
+   },
+   {
+    "id": "4",
+    "tex": "同じだけ上昇しても，気温が高いほど飽和水蒸気量の減り方が大きく，凝結する水が多い（約 2 倍）。そのぶん多くの潜熱が放出されて上昇気流が強まり，さらに水蒸気が運びこまれるから。"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "1.0 km 上昇すると，飽和した空気塊の温度は $0.50\\times10=5.0$ ℃ 下がる。$1\\,\\mathrm{km^3}=1\\times10^{9}\\,\\mathrm{m^3}$。\n\n\\textbf{(1)} 30 ℃ → 25 ℃：$(30.4-23.0)\\times10^{9}=7.4\\times10^{9}\\,\\mathrm{g}=$ $\\boldsymbol{7.4\\times10^{6}\\,\\mathrm{kg}}$。\n\n\\textbf{(2)} 15 ℃ → 10 ℃：$(12.8-9.4)\\times10^{9}=3.4\\times10^{9}\\,\\mathrm{g}=$ $\\boldsymbol{3.4\\times10^{6}\\,\\mathrm{kg}}$。\n\n\\textbf{(3)} $2.4\\times10^{6}\\times7.4\\times10^{6}=1.78\\times10^{13}$，$\\boldsymbol{1.8\\times10^{13}\\,\\mathrm{J}}$。\n\n\\textbf{(4)} 飽和水蒸気量は気温が高いほど急に増える（グラフが上に反った形）ので，同じ 5 ℃ の低下でも高温の空気ほど多くの水が凝結する（$7.4/3.4\\fallingdotseq2.2$ 倍）。放出される潜熱が台風のエネルギー源で，潜熱で暖まった空気がさらに強く上昇し，海面から水蒸気を吸い上げる。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同じ温度低下でも，飽和水蒸気量の曲線が上に反っているため高温の飽和空気ほど多くの水が凝結し，潜熱も多く出る。高温の海上で台風が発達する理由につながる。"
+ },
+ "concepts": [
+  "adiabatic",
+  "humidity",
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "飽和水蒸気量",
+  "凝結",
+  "潜熱",
+  "湿潤断熱減率",
+  "台風"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

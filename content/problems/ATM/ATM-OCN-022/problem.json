@@ -1,0 +1,99 @@
+{
+ "id": "ATM-OCN-022",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "狭い海峡で潮流が速くなるしくみ",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "面積 $1.2\\times10^{3}\\,\\mathrm{km^2}$ の湾が，幅 $2.0\\,\\mathrm{km}$，平均の深さ $30\\,\\mathrm{m}$ の海峡だけで外海とつながっている。ある日の潮差（満潮と干潮の海面の高さの差）は湾内のどこでも $2.0\\,\\mathrm{m}$ で，干潮から満潮までの時間は $6.2$ 時間であった。干潮から満潮までの間，海水は海峡を通ってだけ湾に流れこみ，湾の海面は一様に上がるものとする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "干潮から満潮までに海峡を通って湾に流れこむ海水の体積〔$\\mathrm{m^3}$〕を有効数字2桁で求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "海峡を流れる潮流の平均の速さ〔$\\mathrm{m/s}$〕を有効数字2桁で求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "他の条件は変えずに次のア〜エのうち一つだけを変えたとき，海峡の潮流の平均の速さが2倍になるものを一つ選べ。\nア　海峡の幅を半分にする，イ　湾の面積を半分にする，ウ　小潮の日で潮差が半分になる，エ　海峡の深さを2倍にする"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$2.4\\times10^{9}\\,\\mathrm{m^3}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.8\\,\\mathrm{m/s}$"
+   },
+   {
+    "id": "3",
+    "tex": "ア"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　湾の海面を上げる海水はすべて海峡の断面を通るので，（流れこむ体積）＝（断面積）×（平均の速さ）×（時間）が成り立つ。\n\n\\textbf{(1)} $V=1.2\\times10^{9}\\,\\mathrm{m^2}\\times2.0\\,\\mathrm{m}=\\mathbf{2.4\\times10^{9}\\,m^3}$．\n\n\\textbf{(2)} 断面積 $S=2.0\\times10^{3}\\times30=6.0\\times10^{4}\\,\\mathrm{m^2}$，時間 $t=6.2\\times3600=2.232\\times10^{4}\\,\\mathrm{s}$．\n\\[ v=\\frac{V}{St}=\\frac{2.4\\times10^{9}}{6.0\\times10^{4}\\times2.232\\times10^{4}}\\fallingdotseq\\mathbf{1.8\\,m/s} \\]\n外海の沿岸での潮流はふつう数十 cm/s 以下なので，同じ潮汐でも狭い海峡では流れが非常に速くなる。\n\n\\textbf{(3)} $v=\\dfrac{A\\,\\Delta h}{w\\,d\\,t}$（$A$：湾の面積，$\\Delta h$：潮差，$w$：幅，$d$：深さ）。幅を半分にすると $v$ は2倍（\\textbf{ア}）。湾の面積や潮差を半分にすると $v$ は半分，深さを2倍にしても半分になる。\n\n鳴門海峡のように広い海域と狭い海峡が組み合わさった場所では，潮流がとくに速くなり，渦も生じやすい。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "湾に出入りする潮汐の海水はすべて海峡の断面を通るので，潮流の平均の速さは（湾の面積×潮差）÷（海峡の断面積×時間）で決まり，断面が狭いほど速くなる。"
+ },
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "潮汐",
+  "潮流",
+  "海峡",
+  "潮差",
+  "体積の保存"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

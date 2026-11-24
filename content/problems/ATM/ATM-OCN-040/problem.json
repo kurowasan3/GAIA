@@ -1,0 +1,107 @@
+{
+ "id": "ATM-OCN-040",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "地球の水の総量と，すべて水蒸気になったときの気圧",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球の半径を $6.4\\times10^{3}\\,\\mathrm{km}$，地球の質量を $6.0\\times10^{24}\\,\\mathrm{kg}$，重力加速度の大きさを $9.8\\,\\mathrm{m/s^2}$ とする。海は地球の表面積の $71\\,\\%$ をおおい，その平均の深さは $3.7\\,\\mathrm{km}$，海水の密度は $1.0\\times10^{3}\\,\\mathrm{kg/m^3}$ とする。また，地球上の水の $97\\,\\%$ が海水であるとし，円周率は $3.14$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地球の表面積は何 $\\mathrm{m^2}$ か。有効数字 2 桁で求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "地球上の水の総質量は何 kg か。有効数字 2 桁で求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "地球上の水の総質量は，地球の質量の何 \\% か。有効数字 2 桁で求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "地球が誕生してまもないころ，水は高温の大気の中に水蒸気として存在していたと考えられている。現在の地球上の水がすべて水蒸気として大気中にあるとすると，水蒸気だけで地表の気圧はいくらになるか。何 Pa か有効数字 2 桁で求めよ。また，それは現在の地表の気圧 $1.0\\times10^{5}\\,\\mathrm{Pa}$ のおよそ何倍か。有効数字 1 桁で答えよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$5.1\\times10^{14}\\,\\mathrm{m^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.4\\times10^{21}\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "3",
+    "tex": "$0.023\\,\\%$"
+   },
+   {
+    "id": "4",
+    "tex": "$2.7\\times10^{7}\\,\\mathrm{Pa}$，約 $3\\times10^{2}$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $S=4\\pi R^2=4\\times3.14\\times(6.4\\times10^{6}\\,\\mathrm{m})^2=5.14\\times10^{14}\\,\\mathrm{m^2}\\to\\boldsymbol{5.1\\times10^{14}\\,\\mathrm{m^2}}$\n\n\\textbf{(2)} 海水の体積は（海の面積）×（平均の深さ）なので，海水の質量は\n\\[ 0.71\\times5.14\\times10^{14}\\times3.7\\times10^{3}\\times1.0\\times10^{3}=1.35\\times10^{21}\\,\\mathrm{kg} \\]\nこれが水全体の $97\\,\\%$ なので，総質量は $1.35\\times10^{21}\\div0.97=1.39\\times10^{21}\\to\\boldsymbol{1.4\\times10^{21}\\,\\mathrm{kg}}$。\n\n\\textbf{(3)} $\\dfrac{1.39\\times10^{21}}{6.0\\times10^{24}}=2.3\\times10^{-4}$ より $\\boldsymbol{0.023\\,\\%}$。地球の質量のほとんどは岩石と金属で，水はごくわずかである。\n\n\\textbf{(4)} 気圧は単位面積の上にある気体の重さなので，水蒸気の重さ $mg$ を地表の面積で割ればよい。\n\\[ p=\\frac{mg}{S}=\\frac{1.39\\times10^{21}\\times9.8}{5.14\\times10^{14}}=2.65\\times10^{7}\\,\\mathrm{Pa}\\to\\boldsymbol{2.7\\times10^{7}\\,\\mathrm{Pa}} \\]\n現在の気圧の $\\dfrac{2.65\\times10^{7}}{1.0\\times10^{5}}\\fallingdotseq 3\\times10^{2}$ 倍で，約 $\\boldsymbol{3\\times10^{2}}$ \\textbf{倍}（約 270 倍）。地球の質量に比べればわずかな水も，大気にすれば現在の大気（1 m² あたり約 $1\\times10^{4}\\,\\mathrm{kg}$）の数百倍の重さになる。地表が冷えるとこの水蒸気が凝結して雨となり，海ができたと考えられている。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "海の面積×平均の深さ×密度で地球の水の総量を概算すると，地球の質量のわずか約0.02％にすぎない。一方，気圧は単位面積あたりの気体の重さなので，その水がすべて水蒸気になれば現在の大気の数百倍の重さになり，原始大気の水蒸気が凝結して海ができたことの量的な裏付けになる。"
+ },
+ "concepts": [
+  "ocean-currents",
+  "atm-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "海水の量",
+  "概算",
+  "水の総量",
+  "原始大気",
+  "気圧と大気の重さ"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "id": "SOL-INT-030",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-02",
+ "topic": "大陸と海洋の熱流量から地球全体へ",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地殻熱流量の平均値は，大陸地域で $6.5\\times10^{-2}\\,\\mathrm{W/m^2}$，海洋地域で $1.00\\times10^{-1}\\,\\mathrm{W/m^2}$，地球全体で $8.7\\times10^{-2}\\,\\mathrm{W/m^2}$ である．地球を半径 $6.4\\times10^{6}\\,\\mathrm{m}$ の球とし，円周率を $3.14$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "地球全体から1秒間に放出される熱量は何 W か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "地表のうち，海洋地域が占める面積の割合は何％か．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "地球全体から放出される熱量のうち，海洋地域から放出される割合は何％か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$4.5\\times10^{13}\\,\\mathrm{W}$"
+   },
+   {
+    "id": "2",
+    "tex": "約 63 ％"
+   },
+   {
+    "id": "3",
+    "tex": "約 72 ％"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　表面積は $4\\pi R^2=4\\times3.14\\times(6.4\\times10^{6})^2\\approx5.14\\times10^{14}\\,\\mathrm{m^2}$．\\[ 8.7\\times10^{-2}\\times5.14\\times10^{14}\\approx\\boldsymbol{4.5\\times10^{13}\\,\\mathrm{W}} \\]\\textbf{(2)}　海洋地域の割合を $f$ とすると，地球全体の平均は面積の割合で重みをつけた平均になる．\\[ 0.065(1-f)+0.100f=0.087\\quad\\Longrightarrow\\quad f=\\frac{0.087-0.065}{0.100-0.065}\\approx0.629 \\]\\textbf{約 63 ％}．（大陸棚は大陸地殻なので，地殻で分けた海洋の割合は海の面積の割合 71 ％より小さい．）\\textbf{(3)}　$\\dfrac{0.100\\times0.629}{0.087}\\approx0.72$，\\textbf{約 72 ％}．面積の割合より大きい．海洋地域では，海嶺で高温のマントル物質が上昇して新しいプレートがつくられ，それが冷えながら移動するので，多くの熱が放出される．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "地球全体の平均熱流量は大陸と海洋の熱流量を面積の割合で重みづけした平均なので，逆に平均値から海洋の面積の割合が求まり，海洋が面積の割合以上に熱を放出していることがわかる．"
+ },
+ "concepts": [
+  "earth-interior"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "地殻熱流量",
+  "加重平均",
+  "地球の熱",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

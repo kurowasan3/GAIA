@@ -1,0 +1,117 @@
+{
+ "id": "SOL-MAG-023",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "ラグランジュ点 L1 からの宇宙天気警報の猶予",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽と地球を結ぶ直線上で，地球から太陽側に距離 $r$ の点（ラグランジュ点 L1）に観測衛星を置き，地球に向かう太陽風を監視して「宇宙天気予報」の警報を出す．太陽と地球の距離を $R=1.5\\times10^{8}\\,\\mathrm{km}$，太陽と地球の質量を $M$，$m$（$\\dfrac{m}{M}=3.0\\times10^{-6}$），万有引力定数を $G$ とする．太陽風の変化は，観測された速さのまま L1 から地球へまっすぐ進むものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "L1 の衛星は，太陽の引力と地球の引力の差を向心力として，地球と同じ角速度 $\\omega$（$\\omega^2=\\dfrac{GM}{R^3}$）で太陽のまわりを円運動する．$x=\\dfrac{r}{R}\\ll1$ のときの近似 $\\dfrac{1}{(1-x)^2}\\fallingdotseq1+2x$ を用いて $r$ を $R$，$M$，$m$ で表し，$r$ の値を求めよ（有効数字2桁）．"
+     },
+     {
+      "id": "2",
+      "tex": "ふだんの太陽風の速さを $450\\,\\mathrm{km/s}$ とすると，L1 を通過した太陽風が地球に届くのは何分後か（有効数字2桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "L1 の衛星が，太陽風の速さが $750\\,\\mathrm{km/s}$ に急増したことをとらえた．警報を出してから地球に届くまでの猶予は何分か（有効数字2桁）．"
+     },
+     {
+      "id": "4",
+      "tex": "運動エネルギーが $1.6\\times10^{-13}\\,\\mathrm{J}$ の高エネルギー陽子（質量 $1.7\\times10^{-27}\\,\\mathrm{kg}$）が急増した場合，猶予は何分か（有効数字2桁）．"
+     },
+     {
+      "id": "5",
+      "tex": "猶予を長くするために，衛星を L1 よりずっと太陽に近い点（たとえば地球から $1.5\\times10^{7}\\,\\mathrm{km}$）に置いても，その点にとどまり続けることはできない．その理由を，ケプラーの第3法則と地球の引力の大きさに着目して述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$r=R\\left(\\dfrac{m}{3M}\\right)^{1/3}$，$r=1.5\\times10^{6}\\,\\mathrm{km}$"
+   },
+   {
+    "id": "2",
+    "tex": "56 分後"
+   },
+   {
+    "id": "3",
+    "tex": "33 分"
+   },
+   {
+    "id": "4",
+    "tex": "1.8 分"
+   },
+   {
+    "id": "5",
+    "tex": "地球より太陽に近い円軌道はケプラーの第3法則により周期が1年より短くなり，地球より先に進んでしまう．1年の周期にそろえるには太陽の引力を地球の引力で打ち消す必要があるが，地球から遠い点では地球の引力が弱すぎて足りないため"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1) L1 の位置}　衛星（質量 $\\mu$）の運動方程式（太陽向きを正）は\n\\[ \\frac{GM\\mu}{(R-r)^2}-\\frac{Gm\\mu}{r^2}=\\mu\\omega^2(R-r)=\\frac{GM\\mu}{R^3}(R-r) \\]\n左辺第1項は $\\dfrac{GM\\mu}{R^2}\\cdot\\dfrac{1}{(1-x)^2}\\fallingdotseq\\dfrac{GM\\mu}{R^2}(1+2x)$，右辺は $\\dfrac{GM\\mu}{R^2}(1-x)$ なので\n\\[ \\frac{GM}{R^2}\\cdot3x=\\frac{Gm}{r^2}\\quad\\Longrightarrow\\quad r^3=\\frac{m}{3M}R^3,\\qquad \\boldsymbol{r=R\\left(\\frac{m}{3M}\\right)^{1/3}} \\]\n$\\dfrac{m}{3M}=1.0\\times10^{-6}$ より $r=1.5\\times10^{8}\\times10^{-2}=\\boldsymbol{1.5\\times10^{6}}\\ \\mathrm{km}$（太陽までの距離の約 1\\%）．\n\n\\textbf{(2)}　$\\dfrac{1.5\\times10^{9}\\,\\mathrm{m}}{4.5\\times10^{5}\\,\\mathrm{m/s}}\\fallingdotseq3.3\\times10^{3}\\,\\mathrm{s}\\fallingdotseq\\boldsymbol{56}$ 分後．\n\n\\textbf{(3)}　$\\dfrac{1.5\\times10^{9}}{7.5\\times10^{5}}=2.0\\times10^{3}\\,\\mathrm{s}\\fallingdotseq\\boldsymbol{33}$ 分．速い太陽風ほど猶予は短い．\n\n\\textbf{(4)}　$\\dfrac12m_pv^2=1.6\\times10^{-13}$ より $v=\\sqrt{\\dfrac{2\\times1.6\\times10^{-13}}{1.7\\times10^{-27}}}\\fallingdotseq1.4\\times10^{7}\\,\\mathrm{m/s}$．\n\\[ t=\\frac{1.5\\times10^{9}}{1.37\\times10^{7}}\\fallingdotseq1.1\\times10^{2}\\,\\mathrm{s}\\fallingdotseq\\boldsymbol{1.8}\\ \\text{分} \\]\n\\textbf{(5)}　太陽のまわりの円軌道は，ケプラーの第3法則により太陽に近いほど周期が短い．地球より内側の点にいる衛星は，太陽の引力だけでは1年より速く回ってしまい，地球との位置関係を保てない．周期を1年にそろえるには，太陽の引力の一部を\\textbf{地球の引力で打ち消す}必要がある．地球の引力は距離の2乗に反比例して弱まるので，打ち消しが足りるのは (1) で求めた L1（約 $1.5\\times10^{6}\\,\\mathrm{km}$）まで近い点だけである．このため，L1 での監視の猶予は，太陽風で数十分，高エネルギー粒子では数分にかぎられる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "L1 は太陽と地球の引力の差で地球と同じ1年周期を保てる点で，地球の引力が十分強い約 150 万 km にしか置けない．警報の猶予は L1–地球間の距離を現象の速さで割って決まり，速い現象ほど短い．"
+ },
+ "concepts": [
+  "geomagnetism",
+  "diurnal-annual",
+  "kepler"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "太陽風",
+  "ラグランジュ点",
+  "宇宙天気",
+  "ケプラーの法則",
+  "磁気嵐"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

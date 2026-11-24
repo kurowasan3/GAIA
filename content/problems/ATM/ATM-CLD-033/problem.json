@@ -1,0 +1,109 @@
+{
+ "id": "ATM-CLD-033",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "乾湿計のしくみと気圧による違い",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "乾湿計では，ぬれたガーゼで包んだ湿球のまわりで水が蒸発し，その気化熱で空気が冷やされる．質量 $m$ の空気が，最初は温度 $T_1$，水蒸気の質量 $m_1$ で，湿球のまわりで水が蒸発して温度が $T_2$（湿球温度）に下がり，水蒸気の質量 $m_2$ で飽和したとする．空気 $1\\,\\mathrm{kg}$ の温度を $1\\,\\mathrm{K}$ 上げる熱量を $C=1.0\\times10^{3}\\,\\mathrm{J}$，水 $1\\,\\mathrm{kg}$ の蒸発熱を $L=2.5\\times10^{6}\\,\\mathrm{J}$ とし，蒸発に使われた熱量は空気の温度降下で失われた熱量に等しいとする．また，水蒸気圧 $e$ と気圧 $P$ の間には，定数 $a=1.6$ を用いて $\\dfrac{e}{P}=a\\cdot\\dfrac{(\\text{水蒸気の質量})}{m}$ の関係がある．飽和水蒸気圧は次の表のとおりとする．\n\\[\\begin{array}{c|cccccccc} \\text{温度}\\ [^\\circ\\mathrm{C}] & 10 & 14 & 15 & 18 & 20 & 24 & 25 & 30 \\\\ \\hline \\text{飽和水蒸気圧}\\ [\\mathrm{hPa}] & 12.3 & 16.0 & 17.0 & 20.6 & 23.4 & 29.8 & 31.7 & 42.4 \\\\ \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "熱のつり合いの式を書き，最初の水蒸気圧 $e_1$ が $e_1=e_2-\\dfrac{aC}{L}P\\,(T_1-T_2)$（$e_2$：温度 $T_2$ の飽和水蒸気圧）と表されることを示せ．"
+     },
+     {
+      "id": "2",
+      "tex": "気圧 $1000\\,\\mathrm{hPa}$ の平地で，乾球 $25\\,^\\circ\\mathrm{C}$，湿球 $18\\,^\\circ\\mathrm{C}$ であった．相対湿度を有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "気圧 $700\\,\\mathrm{hPa}$ の高山で，同じく乾球 $25\\,^\\circ\\mathrm{C}$，湿球 $18\\,^\\circ\\mathrm{C}$ であった．相対湿度を有効数字 2 桁で求め，(2) と比べて高いか低いかを答えよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2) の空気の露点を，表の値を直線で内分して小数第 1 位まで求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$(m_2-m_1)L=mC(T_1-T_2)$ から導かれる（解説参照）"
+   },
+   {
+    "id": "2",
+    "tex": "$51\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "$55\\,\\%$，(2) より高い"
+   },
+   {
+    "id": "4",
+    "tex": "$14.1\\,^\\circ\\mathrm{C}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 蒸発した水の質量は $m_2-m_1$ なので，熱のつり合いは\n\\[ (m_2-m_1)L=mC(T_1-T_2) \\]\n両辺を $m$ で割り，$\\dfrac{m_1}{m}=\\dfrac{e_1}{aP}$，$\\dfrac{m_2}{m}=\\dfrac{e_2}{aP}$ を代入すると\n\\[ \\frac{e_2-e_1}{aP}L=C(T_1-T_2)\\quad\\therefore\\quad e_1=e_2-\\frac{aC}{L}P\\,(T_1-T_2) \\]\n\n(2) $\\dfrac{aC}{L}=\\dfrac{1.6\\times1.0\\times10^{3}}{2.5\\times10^{6}}=6.4\\times10^{-4}\\ /\\mathrm{K}$．$e_2=20.6\\,\\mathrm{hPa}$（$18\\,^\\circ\\mathrm{C}$）なので\n\\[ e_1=20.6-6.4\\times10^{-4}\\times1000\\times7=20.6-4.48=16.1\\,\\mathrm{hPa} \\]\n相対湿度は $\\dfrac{16.1}{31.7}\\times100=50.9$ より $\\boldsymbol{51\\,\\%}$．\n\n(3) $e_1=20.6-6.4\\times10^{-4}\\times700\\times7=20.6-3.14=17.5\\,\\mathrm{hPa}$，相対湿度は $\\dfrac{17.5}{31.7}\\times100=55.1$ より $\\boldsymbol{55\\,\\%}$，\\textbf{(2) より高い}．乾湿の差 $T_1-T_2$ が同じなら，空気 $1\\,\\mathrm{kg}$ あたりに蒸発する水の質量 $\\dfrac{m_2-m_1}{m}=\\dfrac{C(T_1-T_2)}{L}$ は気圧によらない．しかし同じ質量の水蒸気が加わったときの水蒸気圧の増え方 $e_2-e_1=aP\\cdot\\dfrac{m_2-m_1}{m}$ は気圧が低いほど小さい．そのため気圧が低い所では $e_1$ が $e_2$ に近く，同じ乾湿の差でも空気はより湿っている（乾湿計の湿度表は気圧によって補正が必要）．\n\n(4) $e_1=16.1\\,\\mathrm{hPa}$ が飽和水蒸気圧になる温度．表で $14\\,^\\circ\\mathrm{C}$ が $16.0$，$15\\,^\\circ\\mathrm{C}$ が $17.0$ なので\n\\[ 14+\\frac{16.12-16.0}{17.0-16.0}\\times1=14.1\\,^\\circ\\mathrm{C} \\]\nよって露点は $\\boldsymbol{14.1\\,^\\circ\\mathrm{C}}$．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "湿球のまわりの蒸発熱と空気の冷却のつり合いから乾湿計の式を導き，乾湿の差から水蒸気圧・相対湿度・露点を求める．同じ乾湿の差でも気圧が低いと相対湿度が高くなる．"
+ },
+ "concepts": [
+  "adiabatic",
+  "humidity",
+  "atm-pressure"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "乾湿計",
+  "湿球温度",
+  "相対湿度",
+  "露点",
+  "蒸発熱"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

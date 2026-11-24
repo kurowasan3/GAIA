@@ -1,0 +1,108 @@
+{
+ "id": "SOL-IGN-035",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "斜長石の連動置換と化学組成からの鉱物量",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "斜長石は，曹長石 $\\ce{NaAlSi3O8}$ と灰長石 $\\ce{CaAl2Si2O8}$ が混じり合った固溶体である．ある斑れい岩は，輝石 $\\ce{MgSiO3}$ と斜長石だけからなり（ほかに微量の鉱物がある），化学組成（質量\\%）は次のとおりであった．\n\\[\\begin{array}{cccccc} \\ce{SiO2} & \\ce{Al2O3} & \\ce{MgO} & \\ce{CaO} & \\ce{Na2O} & \\text{その他} \\\\ \\hline 54.0 & 20.4 & 12.0 & 8.4 & 3.1 & 2.1 \\\\ \\end{array}\\]\nモル質量は $\\ce{SiO2}$ 60，$\\ce{Al2O3}$ 102，$\\ce{MgO}$ 40，$\\ce{CaO}$ 56，$\\ce{Na2O}$ 62（単位 g/mol）とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "斜長石の中で $\\ce{Na+}$ が $\\ce{Ca^2+}$ に置き換わるとき，電荷のつり合いを保つために，同時にどのイオンがどのイオンに置き換わるか．「$\\ce{Na+}$ ＋（　）$\\Leftrightarrow$ $\\ce{Ca^2+}$ ＋（　）」の形で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "岩石 100 g 中の輝石の物質量と，輝石の含有率（質量\\%）を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "岩石 100 g 中の曹長石と灰長石の物質量をそれぞれ求めよ．また，斜長石の中の灰長石の割合（物質量の\\%）を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "(2)，(3) の結果から，岩石 100 g 中の $\\ce{Al2O3}$ と $\\ce{SiO2}$ の質量を計算し，分析値と比べて「輝石と斜長石だけからなる」という仮定が妥当か確かめよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{Na+ + Si^4+ <=> Ca^2+ + Al^3+}$"
+   },
+   {
+    "id": "2",
+    "tex": "0.30 mol，30\\%"
+   },
+   {
+    "id": "3",
+    "tex": "曹長石 0.10 mol，灰長石 0.15 mol，灰長石の割合 60\\%"
+   },
+   {
+    "id": "4",
+    "tex": "$\\ce{Al2O3}$ 20.4 g，$\\ce{SiO2}$ 54.0 g となり，分析値と一致するので妥当である"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{NaAlSi3O8}$ と $\\ce{CaAl2Si2O8}$ を比べると，Na が Ca に変わると同時に Si 1 個が Al 1 個に変わっている．電荷は $(+1)+(+4)=(+2)+(+3)$ でつり合う．$\\ce{Na+ + Si^4+ <=> Ca^2+ + Al^3+}$（\\textbf{連動置換}）．\n\n\\textbf{(2) 輝石}　Mg はすべて輝石にある．$\\ce{MgO}$：$\\dfrac{12.0}{40}=0.30\\,\\mathrm{mol}$ なので輝石 $\\ce{MgSiO3}$ も $\\boldsymbol{0.30}\\,\\mathrm{mol}$．モル質量は $40+60=100\\,\\mathrm{g/mol}$ で $30\\,\\mathrm{g}$，含有率 $\\boldsymbol{30}\\,\\%$．\n\n\\textbf{(3) 斜長石}　Na はすべて曹長石，Ca はすべて灰長石にある．\n\\[ \\ce{Na2O}:\\ \\frac{3.1}{62}=0.050\\ \\mathrm{mol}\\ \\Rightarrow\\ \\ce{NaAlSi3O8}\\ \\boldsymbol{0.10}\\ \\mathrm{mol},\\qquad \\ce{CaO}:\\ \\frac{8.4}{56}=0.15\\ \\mathrm{mol}\\ \\Rightarrow\\ \\ce{CaAl2Si2O8}\\ \\boldsymbol{0.15}\\ \\mathrm{mol} \\]\n灰長石の割合は $\\dfrac{0.15}{0.10+0.15}=\\boldsymbol{60}\\,\\%$（Ca に富む斜長石で，斑れい岩のような苦鉄質の岩石に典型的）．\n\n\\textbf{(4) 検算}　$\\ce{Al}$ は曹長石に 1 個，灰長石に 2 個：$0.10+0.30=0.40\\,\\mathrm{mol}$ → $\\ce{Al2O3}$ $0.20\\,\\mathrm{mol}=20.4\\,\\mathrm{g}$．\n$\\ce{Si}$ は輝石 1 個，曹長石 3 個，灰長石 2 個：$0.30+0.30+0.30=0.90\\,\\mathrm{mol}$ → $\\ce{SiO2}$ $0.90\\times60=54.0\\,\\mathrm{g}$．\nどちらも分析値と\\textbf{一致する}ので，「輝石と斜長石だけからなる」という仮定と矛盾しない．各鉱物の質量の合計は $30+26.2+41.7=97.9\\,\\mathrm{g}$ で，残りの $2.1\\,\\mathrm{g}$ が「その他」と一致する．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "斜長石では Na⁺+Si⁴⁺ と Ca²⁺+Al³⁺ が組で置き換わって電荷を保つ．岩石の酸化物組成から，特定の鉱物にしか入らない元素（Mg・Na・Ca）を手がかりに各鉱物の物質量を求め，残りの成分で検算できる．"
+ },
+ "concepts": [
+  "igneous-rocks",
+  "crystallization",
+  "rock-forming-minerals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "固溶体",
+  "斜長石",
+  "連動置換",
+  "化学組成",
+  "斑れい岩"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

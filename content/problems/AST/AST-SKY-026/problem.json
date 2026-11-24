@@ -1,0 +1,108 @@
+{
+ "id": "AST-SKY-026",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-01",
+ "topic": "赤道で見る太陽と恒星の南中高度の季節変化",
+ "course": "地学",
+ "level": 1,
+ "minutes": 6,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "赤道直下の地点 A（緯度 $0^\\circ$）と，北緯 $35^\\circ$ の地点 B で天体を観測する。太陽の赤緯は，春分の日に $0^\\circ$，夏至の日に $+23.4^\\circ$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "春分の日，地点 A で太陽が南中するときの高度を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "夏至の日，地点 A で太陽が南中する（子午線を通過する）ときの高度を求めよ。また，そのとき太陽は北・南のどちらの空にあるか。"
+     },
+     {
+      "id": "3",
+      "tex": "春分の日の真夜中（0 時）ごろ，地点 A で恒星 X が南の空に高度 $50^\\circ$ で南中した。X の赤緯を求めよ。また，地点 B で X が南中するときの高度を求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "春分の日から 90 日後，地点 A で X が南中するときの高度を求めよ。また，その日に X が南中するのはおよそ何時ごろか。恒星が南中する時刻は 1 日に約 4 分ずつ早くなるものとする。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$90^\\circ$（天頂）"
+   },
+   {
+    "id": "2",
+    "tex": "$66.6^\\circ$，北の空"
+   },
+   {
+    "id": "3",
+    "tex": "赤緯 $-40^\\circ$，B での南中高度 $15^\\circ$"
+   },
+   {
+    "id": "4",
+    "tex": "$50^\\circ$（変わらない），18 時ごろ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "南の空で南中する天体の南中高度は $h=90^\\circ-\\varphi+\\delta$（$\\varphi$：緯度，$\\delta$：赤緯）である．\n\n\\textbf{(1)} $\\varphi=0^\\circ$，$\\delta=0^\\circ$ なので $h=\\boldsymbol{90^\\circ}$．太陽は天頂を通る．\n\n\\textbf{(2)} $90^\\circ-0^\\circ+23.4^\\circ=113.4^\\circ$ は $90^\\circ$ をこえるので，太陽は天頂を北へ越えたところを通る．高度は $180^\\circ-113.4^\\circ=\\boldsymbol{66.6^\\circ}$ で，\\textbf{北の空}にある．\n\n\\textbf{(3)} $50^\\circ=90^\\circ-0^\\circ+\\delta$ より $\\delta=\\boldsymbol{-40^\\circ}$．地点 B では $h=90^\\circ-35^\\circ+(-40^\\circ)=\\boldsymbol{15^\\circ}$．同じ星でも，赤道から見るより低い．\n\n\\textbf{(4)} 恒星の赤緯は季節によって変わらない（太陽の赤緯が変わるのは地球の公転によるもので，遠い恒星の天球上の位置はほとんど変わらない）．よって A での南中高度は $\\boldsymbol{50^\\circ}$ \\textbf{のまま}である．一方，南中時刻は 1 日に約 4 分ずつ早くなるので，90 日で $4\\times90=360$ 分 $=6$ 時間早くなり，\\textbf{18 時ごろ}に南中する．季節で変わるのは南中の時刻（夜に見やすいかどうか）であって，南中高度ではない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "太陽は赤緯が季節で変わるので南中高度も変わり，赤道では春分・秋分に天頂，夏至には北の空を通る。恒星の赤緯は季節で変わらないので南中高度は一定で，季節で変わるのは南中する時刻（1 日に約 4 分ずつ早まる）だけである。"
+ },
+ "concepts": [
+  "diurnal-annual",
+  "celestial-sphere",
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "南中高度",
+  "赤緯",
+  "赤道",
+  "恒星日",
+  "季節変化"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

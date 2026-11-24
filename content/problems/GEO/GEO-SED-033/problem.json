@@ -1,0 +1,116 @@
+{
+ "id": "GEO-SED-033",
+ "schema": "gaia.problem/1",
+ "field": "GEO",
+ "unit": "GEO-01",
+ "topic": "石灰岩の溶食と二酸化炭素の出入り",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "方解石だけからなる石灰岩は，二酸化炭素をとかした水によって化学的に風化する．ある石灰岩の台地（石灰岩の分布面積 $20\\,\\mathrm{km^2}$）から流れ出す河川水と地下水は，1年間に合計 $1.2\\times10^{7}\\,\\mathrm{m^3}$ で，年平均で $\\ce{Ca^2+}$ を $48\\,\\mathrm{mg/L}$，$\\ce{HCO3-}$ を $146\\,\\mathrm{mg/L}$ 含んでいた．溶けた成分はすべてこの石灰岩に由来するものとする．原子量は H＝1，C＝12，O＝16，Ca＝40 とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "方解石の化学的風化の反応式を書け．また，水に含まれる $\\ce{Ca^2+}$ と $\\ce{HCO3-}$ の物質量の比が，反応式から予想される値になっていることを確かめよ．"
+     },
+     {
+      "id": "2",
+      "tex": "この台地で，石灰岩 $1\\,\\mathrm{km^2}$ あたり1年間に溶けて流れ出す方解石は何 kg か（有効数字2桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "この風化で，石灰岩 $1\\,\\mathrm{km^2}$ あたり1年間に大気から取り除かれる二酸化炭素は何 kg か（有効数字2桁）．"
+     },
+     {
+      "id": "4",
+      "tex": "河川水中の $\\ce{HCO3-}$ に含まれる炭素のうち，大気の二酸化炭素に由来するものは何割か．"
+     },
+     {
+      "id": "5",
+      "tex": "流れ出た $\\ce{Ca^2+}$ と $\\ce{HCO3-}$ が海で方解石として沈殿すると，大気の二酸化炭素はどうなるか．陸での風化から海での沈殿までを通して，大気中の二酸化炭素の量の増減を答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{CaCO3 + H2O + CO2 -> Ca^2+ + 2HCO3-}$．$\\ce{Ca^2+}$：$1.2\\times10^{-3}\\,\\mathrm{mol/L}$，$\\ce{HCO3-}$：$2.4\\times10^{-3}\\,\\mathrm{mol/L}$ で $1:2$ になっている"
+   },
+   {
+    "id": "2",
+    "tex": "$7.2\\times10^{4}\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "3",
+    "tex": "$3.2\\times10^{4}\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "4",
+    "tex": "5割"
+   },
+   {
+    "id": "5",
+    "tex": "沈殿のときに風化で取り込んだのと同じ量の $\\ce{CO2}$ が放出されるので，全体を通すと大気中の二酸化炭素は増えも減りもしない"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　$\\ce{CaCO3 + H2O + CO2 -> Ca^2+ + 2HCO3-}$．物質量の濃度は\n\\[ \\ce{Ca^2+}:\\ \\frac{48\\times10^{-3}}{40}=1.2\\times10^{-3}\\ \\mathrm{mol/L},\\qquad \\ce{HCO3-}:\\ \\frac{146\\times10^{-3}}{61}\\fallingdotseq2.4\\times10^{-3}\\ \\mathrm{mol/L} \\]\nで，比は $1:2$ と反応式どおりである．\n\n\\textbf{(2)}　1年間に流れ出す $\\ce{Ca^2+}$ は $1.2\\times10^{7}\\,\\mathrm{m^3}=1.2\\times10^{10}\\,\\mathrm{L}$ より\n\\[ 1.2\\times10^{10}\\times1.2\\times10^{-3}=1.44\\times10^{7}\\ \\mathrm{mol} \\]\n同じ物質量の方解石（モル質量 $100\\,\\mathrm{g/mol}$）が溶けたので $1.44\\times10^{9}\\,\\mathrm{g}=1.44\\times10^{6}\\,\\mathrm{kg}$．$1\\,\\mathrm{km^2}$ あたり $\\dfrac{1.44\\times10^{6}}{20}\\fallingdotseq\\boldsymbol{7.2\\times10^{4}}\\,\\mathrm{kg}$．\n\n\\textbf{(3)}　方解石 1 mol につき $\\ce{CO2}$ 1 mol（$44\\,\\mathrm{g}$）を消費する．$1\\,\\mathrm{km^2}$ あたり $\\dfrac{1.44\\times10^{7}}{20}=7.2\\times10^{5}\\,\\mathrm{mol}$ なので $7.2\\times10^{5}\\times44\\,\\mathrm{g}\\fallingdotseq\\boldsymbol{3.2\\times10^{4}}\\,\\mathrm{kg}$．\n\n\\textbf{(4)}　$\\ce{HCO3-}$ 2 個の炭素のうち，1 個は方解石（岩石）から，1 個は大気の $\\ce{CO2}$ から来ている．大気由来は\\textbf{5割}．河川の炭素の量から「風化で大気から取り除かれた $\\ce{CO2}$」を見積もるときは，半分だけを数えなければならない．\n\n\\textbf{(5)}　海での沈殿は逆反応 $\\ce{Ca^2+ + 2HCO3- -> CaCO3 + H2O + CO2}$ で，$\\ce{CO2}$ を1 mol 放出する．陸の風化で1 mol 取り込み，海の沈殿で1 mol 放出するので，\\textbf{石灰岩の風化と沈殿を通すと大気の二酸化炭素は差し引き変わらない}．大気の $\\ce{CO2}$ を長い時間をかけて減らすのは，ケイ酸塩鉱物の風化と，それに続く炭酸塩の沈殿である．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "河川水の Ca²⁺ 濃度と流出量から石灰岩の溶食量と消費される CO₂ が求まる．HCO₃⁻ の炭素の半分は岩石由来で，海で方解石が沈殿すると同じ量の CO₂ が戻るため，石灰岩の風化だけでは大気の CO₂ は差し引き減らない．"
+ },
+ "concepts": [
+  "weathering-erosion",
+  "sedimentary-rocks"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "化学的風化",
+  "石灰岩",
+  "炭素循環",
+  "二酸化炭素",
+  "カルスト"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

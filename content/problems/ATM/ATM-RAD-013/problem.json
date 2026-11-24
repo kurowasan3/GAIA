@@ -1,0 +1,107 @@
+{
+ "id": "ATM-RAD-013",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "海と大気の熱輸送と循環にかかる時間",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "低緯度から高緯度へ運ばれる熱のうち，海水の循環が $2.0\\times10^{15}\\,\\mathrm{W}$，大気の循環が $3.0\\times10^{15}\\,\\mathrm{W}$ を運んでいるとする。海水は高緯度向きに平均 $15\\,{}^\\circ\\mathrm{C}$ で流れ，$5\\,{}^\\circ\\mathrm{C}$ になって低緯度に戻ってくる。大気も高緯度向きと低緯度向きの流れの温度差が $10\\,\\mathrm{K}$ であるとする。比熱は海水 $4.0\\times10^{3}\\,\\mathrm{J/(kg\\cdot K)}$，空気 $1.0\\times10^{3}\\,\\mathrm{J/(kg\\cdot K)}$，海水の総質量は $1.4\\times10^{21}\\,\\mathrm{kg}$，大気の総質量は $5.1\\times10^{18}\\,\\mathrm{kg}$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "毎秒，高緯度へ流れている海水の質量〔$\\mathrm{kg/s}$〕を有効数字2桁で求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "毎秒，高緯度へ流れている空気の質量〔$\\mathrm{kg/s}$〕を有効数字2桁で求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "全海水と全大気が，それぞれ (1)，(2) の割合で1回入れかわるのにかかる時間を，海水は「年」，大気は「日」の単位で，有効数字2桁で求めよ。1 年 $=3.15\\times10^{7}\\,\\mathrm{s}$，1 日 $=8.64\\times10^{4}\\,\\mathrm{s}$ とする。"
+     },
+     {
+      "id": "4",
+      "tex": "運んでいる熱の量は同じ程度なのに，(3) の時間は大きくちがう。このことから，海洋の循環が変化した場合と大気の循環が変化した場合とで，気候への影響のあらわれ方にどのようなちがいがあると考えられるか。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$5.0\\times10^{10}\\,\\mathrm{kg/s}$"
+   },
+   {
+    "id": "2",
+    "tex": "$3.0\\times10^{11}\\,\\mathrm{kg/s}$"
+   },
+   {
+    "id": "3",
+    "tex": "海水：$8.9\\times10^{2}$ 年，大気：$2.0\\times10^{2}$ 日"
+   },
+   {
+    "id": "4",
+    "tex": "大気の循環の変化は数日〜1年程度の短い時間で気候に影響し，すぐに元に戻りうるが，海洋の循環の変化は数百年〜千年の長い時間をかけて気候に影響し，いったん変わると長く続く。"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　質量 $m$〔kg/s〕の流れが温度差 $\\Delta T$ をもって往復すると，運ぶ熱は $Q=mc\\Delta T$．\n\n\\textbf{(1)} $m=\\dfrac{Q}{c\\Delta T}=\\dfrac{2.0\\times10^{15}}{4.0\\times10^{3}\\times10}=\\mathbf{5.0\\times10^{10}\\,kg/s}$．\n\n\\textbf{(2)} $m=\\dfrac{3.0\\times10^{15}}{1.0\\times10^{3}\\times10}=\\mathbf{3.0\\times10^{11}\\,kg/s}$．比熱が小さい空気は，同じ熱を運ぶのに海水より多くの質量が必要．\n\n\\textbf{(3)} 海水：$\\dfrac{1.4\\times10^{21}}{5.0\\times10^{10}}=2.8\\times10^{10}\\,\\mathrm{s}$，$\\div3.15\\times10^{7}\\fallingdotseq\\mathbf{8.9\\times10^{2}}$ 年．\n大気：$\\dfrac{5.1\\times10^{18}}{3.0\\times10^{11}}=1.7\\times10^{7}\\,\\mathrm{s}$，$\\div8.64\\times10^{4}\\fallingdotseq\\mathbf{2.0\\times10^{2}}$ 日．\n海水の方が約 1600 倍長い．\n\n\\textbf{(4)} 海洋は質量が大きく入れかわりに時間がかかるので，大きな熱をため込んで気候の変化をゆっくり・長く続ける働き（記憶）をもつ．大気の変化は速く現れて速く消える．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "熱輸送量＝流量×比熱×温度差から海と大気の流量を求め，総質量÷流量で循環にかかる時間を比べる。同じ程度の熱を運ぶのに時間スケールが千倍以上ちがうことが，海洋が気候の長期変化を担う理由になる。"
+ },
+ "concepts": [
+  "radiation-balance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱輸送",
+  "海洋循環",
+  "大気循環",
+  "滞留時間",
+  "比熱"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

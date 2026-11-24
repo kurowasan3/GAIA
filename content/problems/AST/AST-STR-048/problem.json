@@ -1,0 +1,98 @@
+{
+ "id": "AST-STR-048",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "非常に重い星の寿命の頭打ち",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "主系列星の寿命は（質量）÷（光度）に比例し，太陽の寿命を $100$ 億年とする．主系列星の光度 $L$ と質量 $M$（いずれも太陽を1とする）の関係を，次のように単純化する．\n・$M\\le10$ のとき：$L=M^4$\n・$M>10$ のとき：$L=10^4\\times\\dfrac{M}{10}$（光度は質量に比例する）"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "太陽の $40$ 倍の質量の主系列星の光度は太陽の何倍か．"
+     },
+     {
+      "id": "2",
+      "tex": "太陽の $5.0$ 倍，$10$ 倍，$40$ 倍の質量の主系列星の寿命をそれぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この関係が正しいとすると，太陽の $10$ 倍より重い主系列星の寿命はどのようになるか．理由とともに述べよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$4.0\\times10^{4}$ 倍"
+   },
+   {
+    "id": "2",
+    "tex": "$5.0$ 倍：$8.0\\times10^{7}$ 年，$10$ 倍：$1.0\\times10^{7}$ 年，$40$ 倍：$1.0\\times10^{7}$ 年"
+   },
+   {
+    "id": "3",
+    "tex": "質量によらずほぼ一定（約 $1.0\\times10^{7}$ 年）になる．燃料（質量）も燃やす速さ（光度）もどちらも質量に比例するので，その比が変わらないから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　寿命 $t=100\\ \\text{億年}\\times\\dfrac{M}{L}$．光度が質量の何乗に比例するかで，寿命の質量依存性が変わる．\n\n(1) $L=10^4\\times\\dfrac{40}{10}=\\boldsymbol{4.0\\times10^{4}}$ 倍．\n\n(2) $M=5.0$：$t=100\\ \\text{億年}\\times\\dfrac{5}{625}=0.80$ 億年 $=\\boldsymbol{8.0\\times10^{7}}$ 年．\n$M=10$：$t=100\\ \\text{億年}\\times\\dfrac{10}{10^4}=\\boldsymbol{1.0\\times10^{7}}$ 年．\n$M=40$：$t=100\\ \\text{億年}\\times\\dfrac{40}{4.0\\times10^4}=\\boldsymbol{1.0\\times10^{7}}$ 年．\n\n(3) $M>10$ では $\\dfrac{M}{L}=\\dfrac{M}{10^3M}=10^{-3}$ で一定．\\textbf{寿命は質量によらず約 1000 万年}で頭打ちになる．$L\\propto M^4$ の範囲では重いほど寿命は急に短くなる（$t\\propto M^{-3}$）が，非常に重い星ではそうならない．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "寿命は質量÷光度で決まるので，光度が質量の4乗に比例する範囲では寿命は急に短くなるが，光度が質量に比例する範囲では寿命は質量によらず一定になる．質量光度関係の形が寿命の質量依存性を決める．"
+ },
+ "concepts": [
+  "stellar-properties"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "恒星の寿命",
+  "質量光度関係",
+  "大質量星",
+  "主系列星"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

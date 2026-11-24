@@ -1,0 +1,107 @@
+{
+ "id": "AST-STR-066",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "超新星ニュートリノの検出数と放射源の大きさ",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銀河系内の距離 $1.0\\times10^{20}\\,\\mathrm{m}$ の位置で，重い星が超新星爆発を起こしたとする．爆発の中心部から放射されたニュートリノの全エネルギーは $3.0\\times10^{46}\\,\\mathrm{J}$ で，$1$ 個あたりの平均エネルギーは $3.0\\times10^{-12}\\,\\mathrm{J}$ であった．ニュートリノはあらゆる方向に一様に放射される．地上の検出器は，超新星から見ると面積 $5.0\\times10^{2}\\,\\mathrm{m^2}$ の面に見え，この面を通過したニュートリノの $1.0\\times10^{16}$ 個に $1$ 個が検出される．円周率は $3.14$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "放射されたニュートリノの総数を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "検出されるニュートリノは何個か．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "同じ超新星が，距離 $1.5\\times10^{21}\\,\\mathrm{m}$ の大マゼラン雲で起こっていたとすると，検出数は何個になるか．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "ニュートリノは $10$ 秒間にわたって一様に放射され，放射した球面の温度は $4.0\\times10^{10}\\,\\mathrm{K}$ であった．単位面積・単位時間あたりの放射エネルギー $E$ と温度 $T$ の間に $E=5.7\\times10^{-8}\\,T^4\\ \\mathrm{(W/m^2)}$ が成り立つとして，この球面の半径を有効数字2桁で求めよ．また，この球の中に太陽質量 $2.0\\times10^{30}\\,\\mathrm{kg}$ が入っているとすると，平均密度は太陽の平均密度 $1.4\\times10^{3}\\,\\mathrm{kg/m^3}$ のおよそ何倍か．有効数字1桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.0\\times10^{58}$ 個"
+   },
+   {
+    "id": "2",
+    "tex": "$4.0\\times10^{3}$ 個"
+   },
+   {
+    "id": "3",
+    "tex": "$18$ 個"
+   },
+   {
+    "id": "4",
+    "tex": "半径 $4.0\\times10^{4}\\,\\mathrm{m}$，約 $5\\times10^{12}$ 倍"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\dfrac{3.0\\times10^{46}}{3.0\\times10^{-12}}=\\boldsymbol{1.0\\times10^{58}}$ \\textbf{個}．\n\n\\textbf{(2)} 半径 $d$ の球面に一様に広がるので，検出器の面を通る数は\n\\[ 1.0\\times10^{58}\\times\\frac{5.0\\times10^2}{4\\times3.14\\times(1.0\\times10^{20})^2}=3.98\\times10^{19}. \\]\n検出数は $\\dfrac{3.98\\times10^{19}}{1.0\\times10^{16}}\\fallingdotseq\\boldsymbol{4.0\\times10^{3}}$ \\textbf{個}．\n\n\\textbf{(3)} 通過数は距離の2乗に反比例するので，$4.0\\times10^3\\times\\left(\\dfrac{1.0\\times10^{20}}{1.5\\times10^{21}}\\right)^2=\\dfrac{3.98\\times10^3}{225}\\fallingdotseq\\boldsymbol{18}$ \\textbf{個}．距離が15倍になるだけで検出数は 1/225 になる．\n\n\\textbf{(4)} 光度 $L=\\dfrac{3.0\\times10^{46}}{10}=3.0\\times10^{45}\\,\\mathrm{W}$．$E=5.7\\times10^{-8}\\times(4.0\\times10^{10})^4=1.46\\times10^{35}\\,\\mathrm{W/m^2}$．$L=4\\pi R^2E$ より\n\\[ R=\\sqrt{\\frac{3.0\\times10^{45}}{4\\times3.14\\times1.46\\times10^{35}}}\\fallingdotseq\\boldsymbol{4.0\\times10^{4}\\,\\mathrm{m}}\\ (40\\,\\mathrm{km}). \\]\n平均密度 $\\dfrac{2.0\\times10^{30}}{\\frac{4}{3}\\times3.14\\times(4.0\\times10^4)^3}\\fallingdotseq7\\times10^{15}\\,\\mathrm{kg/m^3}$ で，太陽の約 $\\boldsymbol{5\\times10^{12}}$ \\textbf{倍}．原子核に近い密度の中性子星ができたことを示す．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "等方的に放射された粒子は半径dの球面に広がるので，検出器の面積の割合と検出効率から検出数が決まり，距離の2乗に反比例する．放射の光度と温度からシュテファン・ボルツマンの法則で放射源の半径が出て，中性子星の超高密度がわかる．"
+ },
+ "concepts": [
+  "stellar-properties",
+  "stellar-evolution"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "超新星",
+  "ニュートリノ",
+  "逆2乗則",
+  "シュテファン・ボルツマンの法則",
+  "中性子星"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

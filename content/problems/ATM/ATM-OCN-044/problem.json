@@ -1,0 +1,97 @@
+{
+ "id": "ATM-OCN-044",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-06",
+ "topic": "黒潮に乗った漂流ブイの日数",
+ "course": "地学",
+ "level": 0,
+ "minutes": 6,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "黒潮の流れの中心付近を，漂流ブイが平均 $1.5\\,\\mathrm{m/s}$ の速さで流された。ブイは台湾の東の沖（北緯 23°）から黒潮の流路に沿って，四国の沖（北緯 32°）まで流された。流路に沿った道のりは $1600\\,\\mathrm{km}$ である。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "ブイは1日に何 km 進むか（有効数字2桁）。"
+     },
+     {
+      "id": "2",
+      "tex": "ブイが四国の沖に着くまでの日数を求めよ（有効数字2桁）。"
+     },
+     {
+      "id": "3",
+      "tex": "緯度の差だけから南北の距離を求め，(1) の速さで割って日数を見積もると何日になるか。経線に沿った緯度 1° の長さを $111\\,\\mathrm{km}$ とする（有効数字2桁）。また，この見積もりが (2) より小さくなる理由を答えよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.3\\times10^{2}\\,\\mathrm{km}$"
+   },
+   {
+    "id": "2",
+    "tex": "12 日"
+   },
+   {
+    "id": "3",
+    "tex": "7.7 日．黒潮は真北ではなく北東へ斜めに流れているので，流路の道のりは南北の距離より長いから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 1日は $86400\\,\\mathrm{s}$ なので，$1.5\\times86400=1.296\\times10^{5}\\,\\mathrm{m}\\fallingdotseq$ $\\boldsymbol{1.3\\times10^{2}\\ \\mathrm{km}}$。\n\n\\textbf{(2)} $\\dfrac{1600}{129.6}\\fallingdotseq12.3$ より \\textbf{12 日}。わずか2週間足らずで九州・四国の沖に達する。\n\n\\textbf{(3)} 南北の距離は $(32-23)\\times111=999\\,\\mathrm{km}$ なので，$\\dfrac{999}{129.6}\\fallingdotseq$ \\textbf{7.7 日}。黒潮は台湾の東から北東へ向きを変えて日本の南岸に沿って流れるので，実際の道のりは南北の距離より長く，緯度の差だけで見積もると日数を小さく見積もってしまう。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "流速 [m/s] を1日あたりの距離に直し，流路に沿った道のりを割ると漂流日数が出る。黒潮は北東へ斜めに流れるので，緯度差だけから距離を見積もると道のりを小さく見積もり，日数を過小評価する。"
+ },
+ "concepts": [
+  "ocean-currents"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "黒潮",
+  "流速",
+  "単位換算",
+  "漂流"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

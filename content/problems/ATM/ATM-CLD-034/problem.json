@@ -1,0 +1,109 @@
+{
+ "id": "ATM-CLD-034",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-02",
+ "topic": "夏と冬のフェーン：湿潤断熱減率の温度依存",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海面から標高 $2000\\,\\mathrm{m}$ の山を空気が越え，風下側の海面まで吹き下りる．風上側では高度 $800\\,\\mathrm{m}$ で雲ができ始め（凝結高度），そこから山頂まで雲ができて降水があり，風下側では雲は消えていた．乾燥断熱減率を $1.0\\,^\\circ\\mathrm{C}/100\\,\\mathrm{m}$ とする．湿潤断熱減率は気温によって変わり，暖かい夏の場合は $0.40\\,^\\circ\\mathrm{C}/100\\,\\mathrm{m}$，寒い冬の場合は $0.65\\,^\\circ\\mathrm{C}/100\\,\\mathrm{m}$ とする（雲の中では一定とみなす）．風上側の海面の気温は，夏 $28\\,^\\circ\\mathrm{C}$，冬 $8\\,^\\circ\\mathrm{C}$ であった．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "夏と冬のそれぞれについて，風下側の海面での気温を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "風下側の海面の気温は，風上側より何 $^\\circ\\mathrm{C}$ 高くなるか．夏と冬のそれぞれについて答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "山の高さを $h$，凝結高度を $z_c$，乾燥断熱減率を $\\Gamma_d$，湿潤断熱減率を $\\Gamma_m$ とすると，(2) の温度上昇 $\\Delta T$ はどう表されるか．"
+     },
+     {
+      "id": "4",
+      "tex": "気温が高いほど湿潤断熱減率が小さい理由を，「飽和水蒸気圧が $1\\,^\\circ\\mathrm{C}$ あたりに変化する量」に注目して説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "夏 $35.2\\,^\\circ\\mathrm{C}$，冬 $12.2\\,^\\circ\\mathrm{C}$"
+   },
+   {
+    "id": "2",
+    "tex": "夏 $7.2\\,^\\circ\\mathrm{C}$，冬 $4.2\\,^\\circ\\mathrm{C}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\Delta T=(\\Gamma_d-\\Gamma_m)(h-z_c)$"
+   },
+   {
+    "id": "4",
+    "tex": "飽和水蒸気圧は高温ほど急に増えるので，気温が高いと $1\\,^\\circ\\mathrm{C}$ 冷えるあいだに凝結する水蒸気の量が多く，放出される凝結熱が大きいため，温度の下がり方が小さくなる．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) \\textbf{夏}　海面〜$800\\,\\mathrm{m}$：$28-8=20\\,^\\circ\\mathrm{C}$．$800\\sim2000\\,\\mathrm{m}$（$1200\\,\\mathrm{m}$）：$20-0.40\\times12=15.2\\,^\\circ\\mathrm{C}$（山頂）．風下では乾燥断熱で $2000\\,\\mathrm{m}$ 下りるので $15.2+20=\\boldsymbol{35.2\\,^\\circ\\mathrm{C}}$．\n\n\\textbf{冬}　$8-8=0\\,^\\circ\\mathrm{C}$（$800\\,\\mathrm{m}$），$0-0.65\\times12=-7.8\\,^\\circ\\mathrm{C}$（山頂），風下の海面で $-7.8+20=\\boldsymbol{12.2\\,^\\circ\\mathrm{C}}$．\n\n(2) 夏 $35.2-28=\\boldsymbol{7.2\\,^\\circ\\mathrm{C}}$，冬 $12.2-8=\\boldsymbol{4.2\\,^\\circ\\mathrm{C}}$．夏の方がフェーンによる昇温が大きい．\n\n(3) 凝結高度までと風下の下りの同じ高さの区間では，上りも下りも $\\Gamma_d$ で変化し打ち消し合う．差が出るのは雲の中の $h-z_c$ の区間だけで，上りは $\\Gamma_m$ で冷え，下りは $\\Gamma_d$ で暖まるから\n\\[ \\boldsymbol{\\Delta T=(\\Gamma_d-\\Gamma_m)(h-z_c)} \\]\n（夏：$(1.0-0.40)\\times12=7.2$，冬：$(1.0-0.65)\\times12=4.2$ で一致）．\n\n(4) 飽和水蒸気圧の曲線は高温ほど傾きが急である（例：$5\\sim10\\,^\\circ\\mathrm{C}$ では約 $0.7\\,\\mathrm{hPa/^\\circ C}$，$25\\sim30\\,^\\circ\\mathrm{C}$ では約 $2\\,\\mathrm{hPa/^\\circ C}$）．そのため，飽和した空気塊が $1\\,^\\circ\\mathrm{C}$ 冷えるときに凝結する水蒸気の量は高温ほど多く，放出される\\textbf{凝結熱（潜熱）が大きい}．その分だけ温度の下がり方がおさえられ，湿潤断熱減率は小さくなる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "フェーンの昇温は雲の中の区間で上りと下りの減率の差 (Γd−Γm) から生じ，ΔT=(Γd−Γm)(h−z_c) となる．湿潤断熱減率は高温ほど小さいので，同じ地形でも暖かい季節ほどフェーンの昇温が大きい．"
+ },
+ "concepts": [
+  "adiabatic",
+  "foehn",
+  "humidity"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "フェーン現象",
+  "湿潤断熱減率",
+  "凝結熱",
+  "飽和水蒸気圧",
+  "季節"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

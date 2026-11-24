@@ -1,0 +1,108 @@
+{
+ "id": "SOL-IGN-033",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "単位胞からかんらん石固溶体の密度を求める",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "かんらん石は，苦土かんらん石 $\\ce{Mg2SiO4}$ と鉄かんらん石 $\\ce{Fe2SiO4}$ の固溶体で，Mg と Fe がたがいに置きかわる．結晶の規則正しいくり返しの単位（単位胞）には，組成によらず 4 個の $\\ce{(Mg,Fe)2SiO4}$ が含まれる．単位胞の体積は，苦土かんらん石で $0.290\\ \\mathrm{nm^3}$，Mg と Fe の数が等しいかんらん石で $0.299\\ \\mathrm{nm^3}$ である（$1\\ \\mathrm{nm}=10^{-9}\\ \\mathrm{m}$）．原子量を Mg 24，Fe 56，Si 28，O 16，アボガドロ定数を $6.0\\times10^{23}\\ \\mathrm{/mol}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "Mg と Fe の数が等しいかんらん石の化学組成式を書け．"
+     },
+     {
+      "id": "2",
+      "tex": "苦土かんらん石の密度を $\\mathrm{g/cm^3}$ で求めよ（有効数字2桁）．"
+     },
+     {
+      "id": "3",
+      "tex": "Mg と Fe の数が等しいかんらん石の密度を求めよ（有効数字2桁）．"
+     },
+     {
+      "id": "4",
+      "tex": "Fe が増えると単位胞は大きくなるのに，密度は大きくなる．その理由を，(2)，(3) の計算で用いた量の変化の割合を比べて説明せよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{MgFeSiO4}$"
+   },
+   {
+    "id": "2",
+    "tex": "$3.2\\ \\mathrm{g/cm^3}$"
+   },
+   {
+    "id": "3",
+    "tex": "$3.8\\ \\mathrm{g/cm^3}$"
+   },
+   {
+    "id": "4",
+    "tex": "Mg を Fe に置きかえると単位胞の質量は約 1.23 倍になるが，体積は約 1.03 倍にしかならないので，質量の増加の効果が上回るから．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\ce{(Mg,Fe)2SiO4}$ で Mg と Fe が 1 個ずつなので $\\boldsymbol{\\ce{MgFeSiO4}}$．\n\n\\textbf{(2)} $\\ce{Mg2SiO4}$ の式量は $24\\times2+28+16\\times4=140$．単位胞 1 個の質量は $\\dfrac{4\\times140}{6.0\\times10^{23}}\\approx9.33\\times10^{-22}\\ \\mathrm{g}$．体積は $0.290\\ \\mathrm{nm^3}=0.290\\times10^{-21}\\ \\mathrm{cm^3}$．\n\\[ \\rho=\\frac{9.33\\times10^{-22}}{2.90\\times10^{-22}}\\approx\\boldsymbol{3.2\\ \\mathrm{g/cm^3}} \\]\n\n\\textbf{(3)} $\\ce{MgFeSiO4}$ の式量は $24+56+28+64=172$．\n\\[ \\rho=\\frac{4\\times172}{6.0\\times10^{23}\\times2.99\\times10^{-22}}\\approx\\boldsymbol{3.8\\ \\mathrm{g/cm^3}} \\]\n\n\\textbf{(4)} 単位胞の質量は $\\dfrac{172}{140}\\approx1.23$ 倍，体積は $\\dfrac{0.299}{0.290}\\approx1.03$ 倍．Fe は Mg より原子量がずっと大きい一方，イオンの大きさはあまり変わらないので，質量の増え方が体積の増え方をはるかに上回り，密度は $\\dfrac{1.23}{1.03}\\approx1.19$ 倍になる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "結晶の密度は（単位胞中の分子数×式量÷アボガドロ定数）÷単位胞の体積で求まる．かんらん石固溶体では Fe が Mg を置きかえると質量が大きく増え体積はわずかしか増えないので，Fe に富むほど密度が大きくなる．"
+ },
+ "concepts": [
+  "igneous-rocks",
+  "crystallization"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "固溶体",
+  "かんらん石",
+  "単位胞",
+  "密度",
+  "アボガドロ定数"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

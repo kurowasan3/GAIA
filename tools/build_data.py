@@ -120,16 +120,20 @@ def build(content=CONTENT, out=ROOT / 'data'):
 
     index, bodies, search, hidden = [], {}, [], 0
     # 頻出度（1=低 2=中 3=高）：problem.json の frequency。無ければ、主な概念（concepts の先頭）を扱う問題の数から
-    #   10問以上＝高・5〜9問＝中・4問以下＝低（全体のおよそ 3割・5割・2割）（よく使われる考え方ほど、問題集・入試に繰り返し出る、という近似）
+    #   問題を「主な概念を扱う問題の数」で並べ、上位およそ 3割＝高・下位およそ 2割＝低・残り＝中（問題が増えても割合が変わらないよう順位で決める）
+    #   （よく使われる考え方ほど、問題集・入試に繰り返し出る、という近似）
     main_n = {}
     for _, p in probs:
         if p['quality']['status'] == 'published' and p['concepts']:
             main_n[p['concepts'][0]] = main_n.get(p['concepts'][0], 0) + 1
+    ranked = sorted(main_n.get(p['concepts'][0], 0) for _, p in probs if p['quality']['status'] == 'published' and p['concepts'])
+    hi_n = ranked[int(len(ranked) * 0.7)] if ranked else 1
+    lo_n = ranked[int(len(ranked) * 0.2)] if ranked else 0
     def freq(p):
         if p.get('frequency'):
             return p['frequency']
         n = main_n.get(p['concepts'][0], 0) if p['concepts'] else 0
-        return 3 if n >= 10 else 2 if n >= 5 else 1
+        return 3 if n > hi_n or (n == hi_n and n > lo_n) else 1 if n <= lo_n else 2
     choices = read(content / 'choices.json')['choices'] if (content / 'choices.json').exists() else {}
     for d, p in probs:
         if p['quality']['status'] != 'published':

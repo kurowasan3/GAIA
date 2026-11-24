@@ -1,0 +1,109 @@
+{
+ "id": "SOL-MAG-021",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-07",
+ "topic": "太陽風の圧力と磁気圏界面の位置",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽側の磁気圏界面は，太陽風の単位体積あたりの運動エネルギー $\\dfrac{1}{2}NmV^2$ と，地球の磁場の単位体積あたりのエネルギー $\\dfrac{B^2}{2\\mu_0}$ がつり合う位置にあるとする（$N$：太陽風の陽子の数密度，$m$：陽子の質量，$V$：太陽風の速さ，$\\mu_0$：真空の透磁率）．赤道面上で地球中心から距離 $r$ の点の磁場の強さは $B=B_0\\left(\\dfrac{r_0}{r}\\right)^3$ とする（$r_0$：地球半径，$B_0$：赤道の地表の磁場）．\n$m=1.7\\times10^{-27}\\ \\mathrm{kg}$，$\\mu_0=1.3\\times10^{-6}\\ \\mathrm{kg\\cdot m/(s^2\\cdot A^2)}$，$B_0=3.1\\times10^{-5}\\ \\mathrm{T}$，$5^3=125$，$6^3=216$，$8^3=512$，$9^3=729$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "磁気圏界面までの距離 $r$ が $r_0$ の何倍かを，$N$，$m$，$V$，$\\mu_0$，$B_0$ を用いて表せ．"
+     },
+     {
+      "id": "2",
+      "tex": "ふだんの太陽風（$N=6.0\\ \\mathrm{個/cm^3}$，$V=4.0\\times10^{2}\\ \\mathrm{km/s}$）のとき，$\\dfrac{r}{r_0}$ に最も近い整数を答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "太陽でコロナ質量放出が起こり，$N=30\\ \\mathrm{個/cm^3}$，$V=8.0\\times10^{2}\\ \\mathrm{km/s}$ の太陽風が地球に届いた．$\\dfrac{r}{r_0}$ に最も近い整数を答えよ．また，地球中心から $6.6r_0$ の静止軌道を回る気象衛星（太陽側にあるとき）は，磁気圏の内側と外側のどちらにあるか．"
+     },
+     {
+      "id": "4",
+      "tex": "太陽風の「密度だけが2倍になった場合」と「速さだけが2倍になった場合」では，どちらのほうが磁気圏界面が地球に近づくか．理由とともに答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\dfrac{r}{r_0}=\\left(\\dfrac{B_0}{V\\sqrt{\\mu_0Nm}}\\right)^{1/3}$"
+   },
+   {
+    "id": "2",
+    "tex": "9"
+   },
+   {
+    "id": "3",
+    "tex": "5．磁気圏の外側にある"
+   },
+   {
+    "id": "4",
+    "tex": "速さだけが2倍の場合．$r\\propto(NV^2)^{-1/6}$ で，速さは2乗で効くから（$r$ は密度2倍で約 0.89 倍，速さ2倍で約 0.79 倍）．"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\dfrac{1}{2}NmV^2=\\dfrac{B^2}{2\\mu_0}$ より $B=V\\sqrt{\\mu_0Nm}$．これが $B_0\\left(\\dfrac{r_0}{r}\\right)^3$ に等しいので\n\\[ \\frac{r}{r_0}=\\left(\\frac{B_0}{V\\sqrt{\\mu_0Nm}}\\right)^{1/3} \\]\n\n\\textbf{(2)} $N=6.0\\times10^{6}\\ \\mathrm{m^{-3}}$，$V=4.0\\times10^{5}\\ \\mathrm{m/s}$．\n$\\mu_0Nm=1.3\\times10^{-6}\\times6.0\\times10^{6}\\times1.7\\times10^{-27}\\approx1.33\\times10^{-26}$，その平方根は $1.15\\times10^{-13}$．\n$B=4.0\\times10^{5}\\times1.15\\times10^{-13}\\approx4.6\\times10^{-8}\\ \\mathrm{T}$．\n$\\dfrac{B_0}{B}=\\dfrac{3.1\\times10^{-5}}{4.6\\times10^{-8}}\\approx6.7\\times10^{2}$．$8^3=512<670<729=9^3$ で $9^3$ に近いので $\\dfrac{r}{r_0}\\approx\\boldsymbol{9}$（約 8.8）．\n\n\\textbf{(3)} $\\mu_0Nm=1.3\\times10^{-6}\\times3.0\\times10^{7}\\times1.7\\times10^{-27}\\approx6.6\\times10^{-26}$，平方根 $2.6\\times10^{-13}$．$B=8.0\\times10^{5}\\times2.6\\times10^{-13}\\approx2.1\\times10^{-7}\\ \\mathrm{T}$．$\\dfrac{B_0}{B}\\approx1.5\\times10^{2}$ で，$125$ と $216$ の間の $125$ に近いので $\\dfrac{r}{r_0}\\approx\\boldsymbol{5}$（約 5.3）．界面が $6.6r_0$ より内側まで押し込まれるので，静止衛星は\\textbf{磁気圏の外側}に出て，太陽風に直接さらされる．\n\n\\textbf{(4)} (1) より $r\\propto(NV^2)^{-1/6}$．密度2倍では $2^{-1/6}\\approx0.89$ 倍，速さ2倍では $4^{-1/6}\\approx0.79$ 倍．\\textbf{速さが2倍}のほうが界面は地球に近づく．ただし，どちらも $\\dfrac{1}{6}$ 乗でしか効かないので，太陽風が大きく変わっても界面の位置の変化は比較的小さい．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "磁気圏界面は太陽風の動圧と地球磁場の磁気圧のつり合いで決まり，双極子磁場が距離の3乗で弱まるため界面距離は (NV²)^{-1/6} に比例する．強い太陽風では界面が静止軌道より内側に押し込まれる．"
+ },
+ "concepts": [
+  "geomagnetism",
+  "atm-pressure",
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "磁気圏",
+  "太陽風",
+  "コロナ質量放出",
+  "静止衛星",
+  "宇宙天気"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "id": "ATM-RAD-017",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "放射平衡温度は惑星の大きさによらない",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽の光度（1 秒間に放射するエネルギー）を $L=3.8\\times10^{26}\\,\\mathrm{W}$ とする。太陽から距離 $D$ にある半径 $R$ の惑星を考える。惑星の大気による反射や吸収は考えない。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "惑星が 1 秒間に受け取る太陽のエネルギー $E$ を $L$，$D$，$R$ で表せ。"
+     },
+     {
+      "id": "2",
+      "tex": "地球（$D=1.5\\times10^{11}\\,\\mathrm{m}$，$R=6.4\\times10^{6}\\,\\mathrm{m}$）について $E$ を有効数字2桁で求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "惑星が表面全体から温度 $T$ の黒体として放射し，受け取るエネルギーとつり合っているとする（シュテファン・ボルツマン定数 $\\sigma$）。$T$ が惑星の半径 $R$ によらないことを示せ。"
+     },
+     {
+      "id": "4",
+      "tex": "地球の位置ではこの方法で求めた温度が $255\\,\\mathrm{K}$ であった（反射率は地球と同じとする）。太陽から $9.0$ 天文単位の位置にある，半径が地球の 9 倍の惑星の温度を求めよ（有効数字2桁）。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$E=\\dfrac{L\\pi R^2}{4\\pi D^2}=\\dfrac{LR^2}{4D^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$1.7\\times10^{17}\\,\\mathrm{W}$"
+   },
+   {
+    "id": "3",
+    "tex": "$4\\pi R^2\\sigma T^4=\\dfrac{LR^2}{4D^2}$ より $T^4=\\dfrac{L}{16\\pi\\sigma D^2}$ となり，$R$ が消えるので $T$ は $R$ によらない。"
+   },
+   {
+    "id": "4",
+    "tex": "$85\\,\\mathrm{K}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 太陽のエネルギーは半径 $D$ の球面 $4\\pi D^2$ に一様に広がる。惑星は断面積 $\\pi R^2$ の円板として受け取るので $E=L\\times\\dfrac{\\pi R^2}{4\\pi D^2}=\\dfrac{LR^2}{4D^2}$。\n\n\\textbf{(2)} $E=\\dfrac{3.8\\times10^{26}\\times(6.4\\times10^{6})^2}{4\\times(1.5\\times10^{11})^2}=1.73\\times10^{17}$，$\\boldsymbol{1.7\\times10^{17}\\,\\mathrm{W}}$。\n\n\\textbf{(3)} 惑星は表面積 $4\\pi R^2$ 全体から放射するので $4\\pi R^2\\sigma T^4=\\dfrac{LR^2}{4D^2}$。両辺の $R^2$ が消えて $T^4=\\dfrac{L}{16\\pi\\sigma D^2}$。受け取る量も出す量も $R^2$ に比例するので，大きい惑星も小さい惑星も同じ温度になる。\n\n\\textbf{(4)} $T\\propto D^{-1/2}$ で，半径は関係ない。距離が 9.0 倍なので温度は $\\dfrac{1}{\\sqrt{9.0}}=\\dfrac{1}{3}$ 倍，$\\dfrac{255}{3}=$ \\textbf{85 K}。半径が 9 倍であることは答えに影響しない。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "受け取るエネルギー（断面積 πR²）も放射するエネルギー（表面積 4πR²）も R² に比例するので，放射平衡温度は惑星の大きさによらず，距離の平方根に反比例する。"
+ },
+ "concepts": [
+  "radiation-balance",
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "放射平衡温度",
+  "シュテファン・ボルツマンの法則",
+  "太陽定数",
+  "逆2乗則",
+  "惑星の温度"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

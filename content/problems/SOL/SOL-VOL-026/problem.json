@@ -1,0 +1,99 @@
+{
+ "id": "SOL-VOL-026",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "温泉水のうちマグマ起源の割合",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある火山のふもとの温泉では，$70\\,^\\circ\\mathrm{C}$ の湯が毎秒 $600\\ \\mathrm{kg}$ わき出している。この湯は，マグマから上昇してきた $1000\\,^\\circ\\mathrm{C}$ の水蒸気（火山ガス）と，$10\\,^\\circ\\mathrm{C}$ の地下水が一定の割合で混ざってできたものとする。$1000\\,^\\circ\\mathrm{C}$ の水蒸気 $1\\ \\mathrm{kg}$ が $70\\,^\\circ\\mathrm{C}$ の水になるときに放出する熱を $4.3\\times10^{6}\\ \\mathrm{J}$，水の比熱を $4.2\\times10^{3}\\ \\mathrm{J/(kg\\cdot{}^\\circ C)}$ とし，熱は外へ逃げないものとする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "わき出す湯のうち，地下水に由来するものは毎秒何 kg か。有効数字2桁で求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "わき出す湯のうち，マグマに由来する水の割合は何 % か。有効数字2桁で求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "もし地下水の温度が $20\\,^\\circ\\mathrm{C}$ だったとすると，同じ $70\\,^\\circ\\mathrm{C}$ の湯をつくるのに必要なマグマ由来の水の割合は，(2) より大きくなるか，小さくなるか。理由とともに答えよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$5.7\\times10^{2}\\ \\mathrm{kg}$"
+   },
+   {
+    "id": "2",
+    "tex": "$5.5\\ \\%$"
+   },
+   {
+    "id": "3",
+    "tex": "小さくなる（地下水 1 kg を 70 ℃ まで温めるのに必要な熱が少なくてすむから。約 4.7 %）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 毎秒の地下水を $x\\ \\mathrm{kg}$，水蒸気を $y\\ \\mathrm{kg}$ とする。質量と熱のやりとりから\n\\[ x+y=600,\\qquad 4.3\\times10^{6}\\,y=4.2\\times10^{3}\\times(70-10)\\,x=2.52\\times10^{5}\\,x \\]\n$y=\\dfrac{2.52\\times10^{5}}{4.3\\times10^{6}}x=0.0586x$ より $1.0586x=600$，$x=566.8$。よって毎秒 $\\boldsymbol{5.7\\times10^{2}\\ \\mathrm{kg}}$。\n\\textbf{(2)} $y=600-566.8=33.2\\ \\mathrm{kg}$ なので $\\dfrac{33.2}{600}\\times100=\\boldsymbol{5.5\\ \\%}$。温泉水のほとんどは地下水（もとは雨水）である。\n\\textbf{(3)} 地下水 1 kg が受け取る熱は $4.2\\times10^{3}\\times50=2.1\\times10^{5}\\ \\mathrm{J}$ に減るので，必要な水蒸気も減る。$4.3\\times10^{6}y=2.1\\times10^{5}x$，$x+y=600$ を解くと $y=27.9\\ \\mathrm{kg}$，割合は約 4.7 % で，\\textbf{小さくなる}。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "温泉水は高温の火山ガス（水蒸気）と地下水の混合物で，熱の収支と質量の保存を連立するとマグマ起源の水の割合が求まる。地下水の温度が上がると必要な水蒸気の割合は減る。"
+ },
+ "concepts": [
+  "volcano-forms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "温泉",
+  "火山ガス",
+  "熱収支",
+  "地下水",
+  "比熱"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "id": "SOL-SHP-021",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-01",
+ "topic": "削られても低くなりにくい山地",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "アイソスタシーが成り立っている山地がある．地殻の密度を $2.7\\,\\mathrm{g/cm^3}$，マントルの密度を $3.3\\,\\mathrm{g/cm^3}$ とする．山地の表面が侵食で削られると，削られた岩石はこの地域の外へ運び去られ，そのたびにアイソスタシーが回復するものとする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "山地の表面が一様に $2.2\\,\\mathrm{km}$ 削られた．アイソスタシーが回復するとき，地殻全体は何 km 隆起するか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のとき，山地の標高は削られる前より何 km 低くなるか．有効数字2桁で答えよ．"
+     },
+     {
+      "id": "3",
+      "tex": "山地の標高を $1.0\\,\\mathrm{km}$ 下げるには，表面を何 km 削る必要があるか．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$1.8\\,\\mathrm{km}$"
+   },
+   {
+    "id": "2",
+    "tex": "$0.40\\,\\mathrm{km}$"
+   },
+   {
+    "id": "3",
+    "tex": "$5.5\\,\\mathrm{km}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　補償面（マントル中の十分深い面）にかかる圧力，つまり「密度 × 厚さ」の和が削る前後で等しい．\\textbf{(1)}　厚さ $e$ を削ると，柱の重さは $2.7e$ だけ減る．地殻が $u$ 隆起すると，補償面より上ではマントルが $u$ だけ減る．よって $3.3u=2.7e$．\\[ u=\\frac{2.7}{3.3}\\times2.2=\\boldsymbol{1.8\\,\\mathrm{km}} \\]\\textbf{(2)}　表面は $2.2\\,\\mathrm{km}$ 下がり，$1.8\\,\\mathrm{km}$ 持ち上がるので，$2.2-1.8=\\boldsymbol{0.40\\,\\mathrm{km}}$ 低くなる．\\textbf{(3)}　標高の低下は削った厚さの $1-\\dfrac{2.7}{3.3}=\\dfrac{2}{11}$ 倍なので，$1.0\\div\\dfrac{2}{11}=\\boldsymbol{5.5\\,\\mathrm{km}}$．このように山地は削られても隆起し続けるので，なかなか低くならない．そのぶん，地下深くでできた岩石（変成岩や深成岩）が地表に出てくる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "アイソスタシーのもとで表面を削ると，削った厚さの $\\rho_c/\\rho_m$ 倍だけ地殻が隆起し返すので，標高は削った厚さの $(1-\\rho_c/\\rho_m)$ 倍しか下がらない．逆に，標高を下げるのに必要な侵食量を求める．"
+ },
+ "concepts": [
+  "earth-shape",
+  "isostasy",
+  "weathering-erosion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "アイソスタシー",
+  "侵食",
+  "隆起",
+  "計算"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

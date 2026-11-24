@@ -1,0 +1,99 @@
+{
+ "id": "AST-PLN-028",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-02",
+ "topic": "系外惑星どうしの会合周期と中心星の質量",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある恒星のまわりを，2つの惑星 B・C がそれぞれ半径 $1.21$ 天文単位と $6.25$ 天文単位の円軌道で，同じ向きに公転している。中心の恒星の質量は惑星より十分大きく，公転周期 $T$［年］，軌道半径 $a$［天文単位］，恒星の質量 $M$［太陽質量］の間に $T^2=\\dfrac{a^3}{M}$ が成り立つ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "恒星の質量が太陽と同じ（$M=1$）とき，B・C の公転周期をそれぞれ求めよ（有効数字3桁）。"
+     },
+     {
+      "id": "2",
+      "tex": "(1) のとき，惑星 B から見て惑星 C が衝（恒星と正反対の方向）になってから，次に衝になるまでの時間を求めよ（有効数字3桁）。"
+     },
+     {
+      "id": "3",
+      "tex": "恒星の質量が太陽の 2 倍だったとすると，(2) の時間はいくらになるか（有効数字3桁）。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "B $1.33$ 年，C $15.6$ 年"
+   },
+   {
+    "id": "2",
+    "tex": "$1.45$ 年"
+   },
+   {
+    "id": "3",
+    "tex": "$1.03$ 年"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $T=a^{3/2}$。B：$1.21^{3/2}=1.1^3=1.331$ より $\\boldsymbol{1.33}$ \\textbf{年}。C：$6.25^{3/2}=2.5^3=15.625$ より $\\boldsymbol{15.6}$ \\textbf{年}。\n\n\\textbf{(2)} 内側の B が外側の C を1周分追い越すまでの時間が会合周期 $S$：\n\\[ \\dfrac{1}{S}=\\dfrac{1}{1.331}-\\dfrac{1}{15.625} \\quad\\Rightarrow\\quad S\\fallingdotseq\\boldsymbol{1.45\\ \\text{年}} \\]\n\n\\textbf{(3)} $M=2$ では両方の周期が $\\dfrac{1}{\\sqrt2}$ 倍になる。すると $\\dfrac{1}{S}$ の両項が $\\sqrt2$ 倍になるので，会合周期も $\\dfrac{1}{\\sqrt2}$ 倍：$1.455\\div1.414\\fallingdotseq\\boldsymbol{1.03\\ \\text{年}}$。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ケプラーの第3法則で2つの系外惑星の周期を求め，角速度の差から会合周期を出す。中心星の質量が変わると全周期が同じ割合で変わるので会合周期も同じ割合で変わる。"
+ },
+ "concepts": [
+  "planet-motion",
+  "kepler"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "会合周期",
+  "ケプラーの第3法則",
+  "系外惑星",
+  "中心星の質量",
+  "衝"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

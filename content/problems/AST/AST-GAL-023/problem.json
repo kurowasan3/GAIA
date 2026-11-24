@@ -1,0 +1,108 @@
+{
+ "id": "AST-GAL-023",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "銀河回転を差し引いて銀河系の運動を求める",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "銀経 $l$・銀緯 $b$ は，銀河面を赤道とし，銀河系中心の方向を $l=0^\\circ$，$b=0^\\circ$ とする天球上の座標（地球の経度・緯度にあたる）である。宇宙背景放射の温度のむらから，太陽系は背景放射に対して方向 A（$l=270^\\circ$，$b=+30^\\circ$）へ速さ $3.7\\times10^{2}\\ \\mathrm{km/s}$ で動いていることがわかっている。一方，太陽系は銀河系の回転によって，銀河系中心に対して方向 B（$l=90^\\circ$，$b=0^\\circ$）へ速さ $220\\ \\mathrm{km/s}$ で動いている。背景放射に対して速さ $v$ で動く観測者には，進む向きと角 $\\theta$ をなす方向の背景放射の温度が，平均温度 $T_0=2.7\\ \\mathrm{K}$ より $\\Delta T=T_0\\dfrac{v\\cos\\theta}{c}$ だけ高く見える（$c=3.0\\times10^{5}\\ \\mathrm{km/s}$）。$\\cos30^\\circ=0.87$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "方向 A と方向 B のなす角を求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "背景放射に対する銀河系中心の速度は，「太陽系の背景放射に対する速度」から「太陽系の銀河系中心に対する速度」をベクトルとして引いたものである。その速さを求めよ（有効数字2桁）。"
+     },
+     {
+      "id": "3",
+      "tex": "銀河系中心にいる観測者が測る背景放射の温度のむらの最大値（最も高い方向での $\\Delta T$）を求めよ（有効数字2桁）。"
+     },
+     {
+      "id": "4",
+      "tex": "太陽系で $l=270^\\circ$，$b=0^\\circ$ の方向の背景放射を測ると，その温度は平均より何 K 高いか（または低いか）。有効数字2桁で答えよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$150^\\circ$"
+   },
+   {
+    "id": "2",
+    "tex": "$5.7\\times10^{2}\\ \\mathrm{km/s}$"
+   },
+   {
+    "id": "3",
+    "tex": "$5.1\\times10^{-3}\\ \\mathrm{K}$"
+   },
+   {
+    "id": "4",
+    "tex": "$2.9\\times10^{-3}\\ \\mathrm{K}$ 高い"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 方向 B（$l=90^\\circ$）と反対の方向は $l=270^\\circ$，$b=0^\\circ$。方向 A はこれと同じ銀経で $30^\\circ$ 上にあるので，A と「B の反対向き」のなす角は $30^\\circ$。よって A と B のなす角は $180^\\circ-30^\\circ=\\boldsymbol{150^\\circ}$。\n\n\\textbf{(2)} 銀河系中心の速度 $\\vec V=\\vec v_A-\\vec v_B$。$\\vec v_A$ と $-\\vec v_B$ のなす角は $30^\\circ$ なので\n\\[ |\\vec V|^2=370^2+220^2+2\\times370\\times220\\times\\cos30^\\circ\\fallingdotseq3.3\\times10^{5} \\]\n$|\\vec V|\\fallingdotseq\\boldsymbol{5.7\\times10^{2}\\ \\mathrm{km/s}}$。太陽系の回転の向きは A とほぼ逆なので，回転の分を差し引くと銀河系自身はさらに速く動いていることになる。\n\n\\textbf{(3)} $\\Delta T=T_0\\dfrac{V}{c}=2.7\\times\\dfrac{5.7\\times10^{2}}{3.0\\times10^{5}}\\fallingdotseq\\boldsymbol{5.1\\times10^{-3}\\ \\mathrm{K}}$。\n\n\\textbf{(4)} この方向は太陽系の運動の向き A と $30^\\circ$ をなすので\n\\[ \\Delta T=2.7\\times\\frac{3.7\\times10^{2}\\times0.87}{3.0\\times10^{5}}\\fallingdotseq\\boldsymbol{2.9\\times10^{-3}\\ \\mathrm{K}} \\]\nだけ\\textbf{高い}。温度のずれは速度の視線方向の成分で決まる。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "宇宙背景放射の双極子からわかる太陽系の速度から，銀河回転による速度をベクトルとして差し引き，銀河系そのものの運動を求める。方向ごとの温度のずれは速度の視線成分で決まる。"
+ },
+ "concepts": [
+  "cosmology",
+  "solar-system",
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "宇宙背景放射",
+  "ドップラー効果",
+  "ベクトルの合成",
+  "銀河系の回転",
+  "銀経・銀緯"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

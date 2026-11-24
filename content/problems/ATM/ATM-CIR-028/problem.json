@@ -1,0 +1,99 @@
+{
+ "id": "ATM-CIR-028",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "ハドレー循環の下降気流と放射冷却",
+ "course": "地学",
+ "level": 3,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "熱帯収束帯で，地表付近の気温 $28\\,^\\circ\\mathrm{C}$ の空気塊が断熱的に上昇し，高度 $0.8\\,\\mathrm{km}$ で水蒸気が飽和した．その後は飽和したまま高度 $14\\,\\mathrm{km}$ まで上昇した（凝結した水はすべて降水となって落ちたとする）．空気塊はその高度で気温を保ったまま亜熱帯高圧帯まで運ばれ，そこで地表まで下降したとする．乾燥断熱減率を $1.0\\,^\\circ\\mathrm{C}/100\\,\\mathrm{m}$，湿潤断熱減率を $0.50\\,^\\circ\\mathrm{C}/100\\,\\mathrm{m}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "高度 $14\\,\\mathrm{km}$ での空気塊の気温を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "空気塊が断熱的に地表まで下降したとすると，地表での気温は何 $^\\circ\\mathrm{C}$ になるか．"
+     },
+     {
+      "id": "3",
+      "tex": "実際の亜熱帯高圧帯の地表付近の気温は $26\\,^\\circ\\mathrm{C}$ 程度である．この差は，下降する空気が放射によって冷えるためである．空気塊が $0.50\\,\\mathrm{cm/s}$ の一定の速さで $14\\,\\mathrm{km}$ 下降し，その間一定の割合で放射冷却されるとすると，冷却の割合は 1 日あたり何 K か．有効数字2桁で答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$-46\\,^\\circ\\mathrm{C}$"
+   },
+   {
+    "id": "2",
+    "tex": "$94\\,^\\circ\\mathrm{C}$"
+   },
+   {
+    "id": "3",
+    "tex": "$2.1\\,\\mathrm{K}$/日"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) 高度 $0.8\\,\\mathrm{km}$ までは乾燥断熱減率で $28-8=20\\,^\\circ\\mathrm{C}$．その後 $13.2\\,\\mathrm{km}$ を湿潤断熱減率で上昇するので\n\\[ 20-0.50\\times132=-46\\,^\\circ\\mathrm{C} \\]\n(2) 下降中は雲がない（水蒸気は降水で失われ，下降で昇温して不飽和）ので乾燥断熱減率で昇温する：$-46+1.0\\times140=\\boldsymbol{94\\,^\\circ\\mathrm{C}}$．上昇時に放出された凝結熱（潜熱）がそのまま残るため，出発時より大幅に高温になる．\n(3) 必要な冷却は $94-26=68\\,\\mathrm{K}$．下降にかかる時間は\n\\[ \\frac{14000\\,\\mathrm{m}}{0.0050\\,\\mathrm{m/s}}=2.8\\times10^{6}\\,\\mathrm{s}=32.4\\,\\text{日} \\]\nよって冷却率は $68\\div32.4=2.09\\cdots$ より $\\boldsymbol{2.1\\,\\mathrm{K}}$/日．実際の大気の晴天域の放射冷却もこの程度（1〜2 K/日）であり，ハドレー循環の下降域では，ゆっくり下降する空気が放射で冷やされながら昇温を打ち消している．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "ハドレー循環で上昇時に得た潜熱のため断熱下降だけでは地表が異常高温になるはずで，実際には下降中の放射冷却（1 日に数 K）がそれを打ち消していることを，下降時間から冷却率として見積もる。"
+ },
+ "concepts": [
+  "general-circulation",
+  "adiabatic"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ハドレー循環",
+  "断熱変化",
+  "潜熱",
+  "放射冷却",
+  "亜熱帯高圧帯"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

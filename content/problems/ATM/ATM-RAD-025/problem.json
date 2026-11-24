@@ -1,0 +1,106 @@
+{
+ "id": "ATM-RAD-025",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "降水量から潜熱輸送を求め大気の熱収支を閉じる",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球全体で平均すると，大気は放射（太陽放射の吸収と赤外放射の吸収・射出の差し引き）によって $1.0\\times10^{2}\\,\\mathrm{W/m^2}$ の割合でエネルギーを失っている．この損失は，地表からの潜熱（蒸発した水蒸気が大気中で凝結して放出する熱）と顕熱（熱伝導・対流による熱）の輸送で補われ，大気の温度はほぼ一定に保たれている．地球全体の平均の降水量は 1 日あたり $2.8\\,\\mathrm{mm}$ で，蒸発量と降水量はつり合っているとする．水の蒸発熱を $2.5\\times10^{6}\\,\\mathrm{J/kg}$，水の密度を $1.0\\times10^{3}\\,\\mathrm{kg/m^3}$，1 日を $8.6\\times10^{4}\\,\\mathrm{s}$，地表の気圧を $1.0\\times10^{5}\\,\\mathrm{Pa}$，重力加速度を $10\\,\\mathrm{m/s^2}$，空気の定圧比熱を $1.0\\times10^{3}\\,\\mathrm{J/(kg\\cdot K)}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "潜熱による熱輸送の大きさを $\\mathrm{W/m^2}$ の単位で，有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "顕熱による熱輸送の大きさを有効数字 2 桁で求めよ．また，潜熱輸送は顕熱輸送の何倍か．有効数字 2 桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "地表 $1\\,\\mathrm{m^2}$ の上にある大気の質量を求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "地表からの熱の供給が止まり，放射による損失だけが続いたとすると，大気全体の平均気温は 1 日あたり何 K 下がるか．有効数字 2 桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$81\\,\\mathrm{W/m^2}$"
+   },
+   {
+    "id": "2",
+    "tex": "$19\\,\\mathrm{W/m^2}$，$4.4$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$1.0\\times10^{4}\\,\\mathrm{kg}$"
+   },
+   {
+    "id": "4",
+    "tex": "$0.86\\,\\mathrm{K}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $1\\,\\mathrm{m^2}$ あたり 1 日に蒸発する水は，厚さ $2.8\\times10^{-3}\\,\\mathrm{m}$ なので質量 $2.8\\times10^{-3}\\times1.0\\times10^{3}=2.8\\,\\mathrm{kg}$．必要な熱は $2.8\\times2.5\\times10^{6}=7.0\\times10^{6}\\,\\mathrm{J}$．1 秒あたりにすると\n\\[ \\frac{7.0\\times10^{6}}{8.6\\times10^{4}}=81.4\\ \\to\\ \\boldsymbol{81\\,\\mathrm{W/m^2}} \\]\nこの熱は，水蒸気が大気中で凝結して雨になるときに大気に放出される．\n\n(2) 放射による損失 $100\\,\\mathrm{W/m^2}$ のうち，残りを顕熱が補うので $100-81.4=18.6\\to\\boldsymbol{19\\,\\mathrm{W/m^2}}$．比は $\\dfrac{81.4}{18.6}=4.4$ 倍．地表から大気への熱輸送は，潜熱が主役である．\n\n(3) 気圧は上にある空気の重さなので $m=\\dfrac{P}{g}=\\dfrac{1.0\\times10^{5}}{10}=\\boldsymbol{1.0\\times10^{4}\\,\\mathrm{kg}}$．\n\n(4) 1 日に失う熱は $1.0\\times10^{2}\\times8.6\\times10^{4}=8.6\\times10^{6}\\,\\mathrm{J}$．\n\\[ \\Delta T=\\frac{8.6\\times10^{6}}{1.0\\times10^{4}\\times1.0\\times10^{3}}=\\boldsymbol{0.86\\,\\mathrm{K}} \\]\n約 12 日で $10\\,\\mathrm{K}$ も下がる量であり，降水（潜熱）と顕熱による地表からの熱の供給が大気の温度を保っていることがわかる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "降水量（＝蒸発量）に蒸発熱をかけて潜熱輸送を求め，大気の放射による損失との差から顕熱輸送を出す．大気の柱の質量 P/g と比熱から，熱の供給がない場合の冷却速度を見積もる．"
+ },
+ "concepts": [
+  "radiation-balance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "熱収支",
+  "潜熱",
+  "顕熱",
+  "降水量",
+  "放射冷却"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

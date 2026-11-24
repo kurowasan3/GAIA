@@ -1,0 +1,108 @@
+{
+ "id": "SOL-EQK-019",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-04",
+ "topic": "遠い海岸に届く3種類の波と海の深さ",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc",
+  "order"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "海溝沿いの震源域で巨大地震が発生した。震源域から $1600\\,\\mathrm{km}$ 離れた島の海岸の観測点では，P波，表面波（地球の表面に沿って伝わる地震波），津波の3つが観測された。次の観測事実を使って答えよ。\n・この地震の表面波は，地球の表面（1周 $4.0\\times10^{4}\\,\\mathrm{km}$）を約 $3.0$ 時間で1周した。\n・P波は，この観測点まで平均 $7.5\\,\\mathrm{km/s}$ で伝わった。\n・津波は，地震発生の $2.5$ 時間後に観測点に到達した。\n・津波の速さは，水深を $h$，重力加速度を $g=9.8\\,\\mathrm{m/s^2}$ として $\\sqrt{gh}$ で表される。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "表面波の速さは何 $\\mathrm{km/s}$ か。有効数字2桁で答えよ。"
+     },
+     {
+      "id": "2",
+      "tex": "P波と表面波が観測点に到達したのは，それぞれ地震発生の何秒後か。有効数字2桁で答えよ。また，3つの波を観測点に到達した順に並べよ。"
+     },
+     {
+      "id": "3",
+      "tex": "津波が伝わった経路の平均の水深は何 $\\mathrm{m}$ か。経路上で水深は一様とみなし，有効数字2桁で答えよ。"
+     },
+     {
+      "id": "4",
+      "tex": "同じ震源域から，別の方向に同じく $1600\\,\\mathrm{km}$ 離れた海岸がある。そこまでの経路の平均の水深が (3) の値の $\\dfrac{1}{4}$ であるとき，津波はこの海岸に地震発生の何時間後に到達するか。有効数字2桁で答えよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$3.7\\,\\mathrm{km/s}$"
+   },
+   {
+    "id": "2",
+    "tex": "P波 $2.1\\times10^{2}$ 秒後，表面波 $4.3\\times10^{2}$ 秒後，順は P波 → 表面波 → 津波"
+   },
+   {
+    "id": "3",
+    "tex": "$3.2\\times10^{3}\\,\\mathrm{m}$"
+   },
+   {
+    "id": "4",
+    "tex": "$5.0$ 時間後"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　3つの波は速さの桁がまったく違う。P波は数 $\\mathrm{km/s}$，表面波はS波より少し遅い $3\\sim4\\,\\mathrm{km/s}$，津波は深い海でも $0.2\\,\\mathrm{km/s}$ 程度である。だから到達の順は距離によらず決まり，到達時刻の差は遠いほど大きくなる。\n\\textbf{(1)}　$3.0$ 時間 $=1.08\\times10^{4}$ 秒より\n\\[ \\frac{4.0\\times10^{4}\\,\\mathrm{km}}{1.08\\times10^{4}\\,\\mathrm{s}}\\approx3.70\\,\\mathrm{km/s} \\]\nで，\\textbf{約 3.7 km/s}。\n\\textbf{(2)}　P波：$\\dfrac{1600}{7.5}\\approx213$ 秒，表面波：$\\dfrac{1600}{3.70}\\approx432$ 秒。よって \\textbf{P波 $\\boldsymbol{2.1\\times10^{2}}$ 秒後，表面波 $\\boldsymbol{4.3\\times10^{2}}$ 秒後}。津波は $2.5$ 時間 $=9.0\\times10^{3}$ 秒後なので，順は\\textbf{P波 → 表面波 → 津波}。表面波が届いてから津波が来るまで2時間以上の間がある。\n\\textbf{(3)}　津波の平均の速さは\n\\[ v=\\frac{1.6\\times10^{6}\\,\\mathrm{m}}{9.0\\times10^{3}\\,\\mathrm{s}}\\approx178\\,\\mathrm{m/s} \\]\n$v=\\sqrt{gh}$ より\n\\[ h=\\frac{v^2}{g}=\\frac{178^2}{9.8}\\approx3.2\\times10^{3}\\,\\mathrm{m} \\]\nで，\\textbf{約 $\\boldsymbol{3.2\\times10^{3}}$ m}。大洋の平均的な深さとして妥当な値である。\n\\textbf{(4)}　水深が $\\dfrac{1}{4}$ になると，速さは $\\sqrt{\\dfrac{1}{4}}=\\dfrac{1}{2}$ 倍になる。同じ距離なので時間は2倍で，\\textbf{5.0 時間後}。浅い海を通る経路ほど，同じ距離でも津波の到達は遅れる。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "P波・表面波・津波は速さの桁が違うので，遠い観測点ほど到達時刻の差が大きく開く。津波の到達時間から平均の速さを出し，$v=\\sqrt{gh}$ を逆に使って経路の平均水深を求める。水深が $1/4$ なら速さは半分，時間は2倍になる。"
+ },
+ "concepts": [
+  "seismic-waves",
+  "earthquake-types"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "津波",
+  "表面波",
+  "P波",
+  "到達時刻",
+  "水深"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

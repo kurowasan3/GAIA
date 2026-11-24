@@ -1,0 +1,108 @@
+{
+ "id": "ATM-RAD-019",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-03",
+ "topic": "1層の大気モデルで太陽放射の吸収が地表温度に与える影響",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球が吸収する太陽放射を地表 $1\\,\\mathrm{m^2}$ あたりに平均した量を $F$ とし，$F=\\sigma T_\\mathrm{e}^{4}$（$\\sigma$ はシュテファン・ボルツマン定数，$T_\\mathrm{e}=255\\,\\mathrm{K}$）とする。地表の上に温度 $T_\\mathrm{a}$ の一様な1層の大気があり，次のようにふるまうとする。\n\n・大気は，地表からの赤外放射をすべて吸収する。\n・大気は，入ってくる太陽放射 $F$ のうち割合 $\\beta$（$0\\leqq\\beta\\leqq1$）を吸収し，残りは地表に届いて地表に吸収される。\n・大気は，上向き（宇宙へ）と下向き（地表へ）に，それぞれ $\\sigma T_\\mathrm{a}^{4}$ の赤外放射を出す。地表は温度 $T_\\mathrm{s}$ で $\\sigma T_\\mathrm{s}^{4}$ を放射する。\n\n必要なら $2^{\\frac{1}{4}}=1.19$，$1.7^{\\frac{1}{4}}=1.14$ を用いよ。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "大気の上端でのエネルギーのつり合いから，$T_\\mathrm{a}$ を $T_\\mathrm{e}$ で表せ。"
+     },
+     {
+      "id": "2",
+      "tex": "地表でのつり合いの式を立て，$T_\\mathrm{s}^{4}$ を $\\beta$ と $T_\\mathrm{e}$ で表せ。"
+     },
+     {
+      "id": "3",
+      "tex": "$\\beta=0$（大気が太陽放射を吸収しない）のときと，$\\beta=0.30$ のときの $T_\\mathrm{s}$ を，それぞれ整数で求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "大気が太陽放射を吸収する割合 $\\beta$ が大きくなると，$T_\\mathrm{s}$ はどうなるか。また $\\beta=1$ のとき $T_\\mathrm{s}$ はいくらか。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$T_\\mathrm{a}=T_\\mathrm{e}$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\sigma T_\\mathrm{s}^{4}=(1-\\beta)F+\\sigma T_\\mathrm{a}^{4}$ より $T_\\mathrm{s}^{4}=(2-\\beta)T_\\mathrm{e}^{4}$"
+   },
+   {
+    "id": "3",
+    "tex": "$\\beta=0$：$303\\,\\mathrm{K}$，$\\beta=0.30$：$291\\,\\mathrm{K}$"
+   },
+   {
+    "id": "4",
+    "tex": "低くなる。$\\beta=1$ のとき $T_\\mathrm{s}=T_\\mathrm{e}=255\\,\\mathrm{K}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)}　宇宙へ出ていくのは大気の上向きの放射 $\\sigma T_\\mathrm{a}^{4}$ だけ（地表の放射はすべて大気に吸収される）。入ってくる $F$ とつり合うので\n\\[ \\sigma T_\\mathrm{a}^{4}=F=\\sigma T_\\mathrm{e}^{4}\\quad\\Rightarrow\\quad \\boldsymbol{T_\\mathrm{a}=T_\\mathrm{e}} \\]\n\n\\textbf{(2)}　地表が受け取るのは，大気を通りぬけた太陽放射 $(1-\\beta)F$ と，大気からの下向きの放射 $\\sigma T_\\mathrm{a}^{4}=F$。出すのは $\\sigma T_\\mathrm{s}^{4}$。\n\\[ \\sigma T_\\mathrm{s}^{4}=(1-\\beta)F+F=(2-\\beta)\\sigma T_\\mathrm{e}^{4}\\quad\\Rightarrow\\quad \\boldsymbol{T_\\mathrm{s}^{4}=(2-\\beta)T_\\mathrm{e}^{4}} \\]\n（大気のつり合い $\\beta F+\\sigma T_\\mathrm{s}^{4}=2\\sigma T_\\mathrm{a}^{4}$ も成り立つことが確かめられる。）\n\n\\textbf{(3)}　$\\beta=0$：$T_\\mathrm{s}=2^{\\frac{1}{4}}T_\\mathrm{e}=1.19\\times255=303.5$ より $\\boldsymbol{303\\,\\mathrm{K}}$（$303.2\\,\\mathrm{K}$）。\\\\\n$\\beta=0.30$：$T_\\mathrm{s}=1.7^{\\frac{1}{4}}T_\\mathrm{e}=1.14\\times255=290.7$ より $\\boldsymbol{291\\,\\mathrm{K}}$。\n\n\\textbf{(4)}　$T_\\mathrm{s}^{4}=(2-\\beta)T_\\mathrm{e}^{4}$ なので，$\\beta$ が大きいほど $T_\\mathrm{s}$ は\\textbf{低く}なり，$\\beta=1$ で $\\boldsymbol{T_\\mathrm{s}=T_\\mathrm{e}=255\\,\\mathrm{K}}$ となって温室効果による昇温がなくなる。太陽放射が大気で吸収されると，地表には大気からの放射しか届かず，その量は宇宙へ出ていく量と同じ $F$ になるからである。温室効果は「太陽放射はよく通し，地球放射はよく吸収する」という性質があってはじめてはたらく。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "1層の大気モデルで大気上端と地表のエネルギーのつり合いを立てると $T_\\mathrm{s}^4=(2-\\beta)T_\\mathrm{e}^4$ となる。大気が太陽放射まで吸収すると地表の温室効果はうすれ，全部吸収すれば地表温度は放射平衡温度に等しくなる。"
+ },
+ "concepts": [
+  "radiation-balance",
+  "sun"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "温室効果",
+  "放射平衡",
+  "シュテファン・ボルツマンの法則",
+  "大気モデル",
+  "地球の熱収支"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "ATM-STR-024",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-01",
+ "topic": "地球儀の縮尺で見る大気の薄さ",
+ "course": "地学",
+ "level": 0,
+ "minutes": 6,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "地球を 1000万分の1 に縮めた地球儀を考える。地球の半径を $6400\\,\\mathrm{km}$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この地球儀の半径は何 cm か。"
+     },
+     {
+      "id": "2",
+      "tex": "対流圏の厚さを $11\\,\\mathrm{km}$ とすると，この地球儀では何 mm になるか。"
+     },
+     {
+      "id": "3",
+      "tex": "直径 $1000\\,\\mathrm{km}$ の台風の雲の広がりは，この地球儀で直径何 cm になるか。また，台風の雲の直径は対流圏の厚さの約何倍か（有効数字1桁）。"
+     },
+     {
+      "id": "4",
+      "tex": "(1)〜(3) からいえることとして最も適当なものを選べ。ア　大気は地球の大きさに比べて厚く，大気の運動は上下方向が主である．イ　大気は地球の大きさに比べてきわめて薄く，天気をつくる大規模な大気の運動はおもに水平方向に広がっている．ウ　対流圏の厚さは地球の半径の約10分の1である．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "64 cm"
+   },
+   {
+    "id": "2",
+    "tex": "1.1 mm"
+   },
+   {
+    "id": "3",
+    "tex": "10 cm，約 $9\\times10$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "イ"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $6400\\,\\mathrm{km}=6.4\\times10^{8}\\,\\mathrm{cm}$ なので，$6.4\\times10^{8}\\div10^{7}=$ \\textbf{64 cm}。\n\n\\textbf{(2)} $11\\,\\mathrm{km}=1.1\\times10^{7}\\,\\mathrm{mm}$ なので，$1.1\\times10^{7}\\div10^{7}=$ \\textbf{1.1 mm}。半径 64 cm の球に対して，紙数枚分の厚さにすぎない（半径の約 $\\dfrac{1}{600}$）。\n\n\\textbf{(3)} $1000\\,\\mathrm{km}\\div10^{7}=10\\,\\mathrm{cm}$。$\\dfrac{1000}{11}\\fallingdotseq91$ なので \\textbf{約} $\\boldsymbol{9\\times10}$ \\textbf{倍}。台風は厚さ 1 mm ほどの層の中に広がる，直径 10 cm の薄い円盤のようなものである。\n\n\\textbf{(4)} 大気（特に気象現象の起こる対流圏）は地球の大きさに比べてきわめて薄く，高気圧・低気圧・台風のような大規模な運動は，上下の大きさより水平の大きさがはるかに大きい。\\textbf{イ}。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "縮尺をそろえて比べると，対流圏の厚さは地球の半径の約1/600，台風の雲の広がりの約1/90にすぎない。大気は地球をおおうきわめて薄い層で，天気をつくる大規模な運動はおもに水平方向に広がっていることを量的に確かめる。"
+ },
+ "concepts": [
+  "atmosphere-structure",
+  "adiabatic",
+  "weather-systems"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "対流圏",
+  "縮尺",
+  "大気の厚さ",
+  "台風",
+  "単位換算"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

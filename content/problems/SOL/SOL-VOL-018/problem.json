@@ -1,0 +1,106 @@
+{
+ "id": "SOL-VOL-018",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-05",
+ "topic": "噴火する火山と地熱活動の熱放出の比較",
+ "course": "地学",
+ "level": 1,
+ "minutes": 10,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "火山は，噴火によって溶岩などを噴出するときだけでなく，温泉や噴気などの地熱活動によっても熱を放出している。次の2つの火山を比べる。1年は $3.2\\times10^{7}$ 秒とする。\n\n・火山 X：噴火はしないが，温泉・噴気活動によって毎秒 $2.5\\times10^{8}\\,\\mathrm{J}$ の熱を放出し続けている。\n・火山 Y：地熱活動はほとんどなく，50 年ごとに $6.0\\times10^{7}\\,\\mathrm{m^3}$ の溶岩を噴出する。溶岩は噴出後に常温まで冷え，$1\\,\\mathrm{kg}$ あたり $1.2\\times10^{6}\\,\\mathrm{J}$ の熱を放出する。溶岩の密度は $2.6\\times10^{3}\\,\\mathrm{kg/m^3}$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "火山 X が 100 年間に放出する熱は何 J か。有効数字2桁で求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "火山 Y が 100 年間に放出する熱は何 J か。有効数字2桁で求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "火山 Y が放出する熱を 100 年間で平均すると，毎秒何 J になるか。有効数字2桁で求めよ。"
+     },
+     {
+      "id": "4",
+      "tex": "火山 Y の噴火の間隔だけが変わり，1回に噴出する溶岩の量は同じだとする。100 年間に放出する熱が火山 X と等しくなるのは，噴火の間隔が何年のときか。有効数字2桁で求めよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$8.0\\times10^{17}\\,\\mathrm{J}$"
+   },
+   {
+    "id": "2",
+    "tex": "$3.7\\times10^{17}\\,\\mathrm{J}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.2\\times10^{8}\\,\\mathrm{J}$"
+   },
+   {
+    "id": "4",
+    "tex": "$23$ 年"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "(1) $2.5\\times10^{8}\\times(100\\times3.2\\times10^{7})=2.5\\times10^{8}\\times3.2\\times10^{9}=\\boldsymbol{8.0\\times10^{17}\\,\\mathrm{J}}$。\n\n(2) 1回の噴火で出る溶岩の質量は $6.0\\times10^{7}\\times2.6\\times10^{3}=1.56\\times10^{11}\\,\\mathrm{kg}$，放出する熱は $1.56\\times10^{11}\\times1.2\\times10^{6}=1.87\\times10^{17}\\,\\mathrm{J}$。100 年間に 2 回噴火するので $3.74\\times10^{17}\\,\\mathrm{J}$，よって $\\boldsymbol{3.7\\times10^{17}\\,\\mathrm{J}}$。\n\n(3) $\\dfrac{3.74\\times10^{17}}{3.2\\times10^{9}}=1.17\\times10^{8}$，よって毎秒 $\\boldsymbol{1.2\\times10^{8}\\,\\mathrm{J}}$。噴火しない火山 X の半分ほどである。\n\n(4) 必要な噴火の回数は $\\dfrac{8.0\\times10^{17}}{1.87\\times10^{17}}=4.27$ 回。間隔は $\\dfrac{100}{4.27}=23.4$ 年，よって $\\boldsymbol{23}$ 年。\n\n噴火は目立つが，地熱活動による熱の放出は休みなく続くため，長い期間で見ると噴火による熱放出を上回ることもある。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "火山の熱放出を，間欠的な溶岩噴出（体積→質量→熱）と連続的な地熱活動（仕事率×時間）とで同じ期間に換算して比べ，逆に等しくなる噴火間隔も求める。"
+ },
+ "concepts": [
+  "volcano-forms"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "火山",
+  "地熱活動",
+  "溶岩",
+  "熱エネルギー",
+  "単位換算"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

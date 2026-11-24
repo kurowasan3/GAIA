@@ -1,0 +1,108 @@
+{
+ "id": "SOL-IGN-030",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "2つのマグマの組成から取り除かれた鉱物の量を逆算する",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "マグマ Y は，マグマだまりの中で，マグマ X からかんらん石と斜長石が晶出して取り除かれてできた。表は，X，Y と，取り除かれた鉱物の化学組成（質量%，一部の成分）である。\n\\[\\begin{array}{l|cccc} & \\ce{SiO2} & \\ce{Al2O3} & \\text{MgO} & \\ce{K2O} \\\\ \\hline \\text{マグマ X} & 50.0 & 18.0 & 9.00 & 0.60 \\\\ \\text{マグマ Y} & 51.6 & 17.6 & 6.00 & 0.80 \\\\ \\text{かんらん石} & 41.0 & 0.0 & 45.0 & 0.0 \\\\ \\text{斜長石} & 48.0 & 32.0 & 0.0 & 0.0 \\\\ \\end{array}\\]"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "マグマ X $100\\,\\mathrm{g}$ から Y ができたとき，Y の質量は何 g か。$\\ce{K2O}$ がどちらの鉱物にも含まれないことを使って，有効数字3桁で求めよ。"
+     },
+     {
+      "id": "2",
+      "tex": "取り除かれたかんらん石の質量を，MgO のつりあいから有効数字3桁で求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "取り除かれた斜長石の質量を，$\\ce{Al2O3}$ のつりあいから有効数字3桁で求めよ。また，斜長石の質量はかんらん石の何倍か。"
+     },
+     {
+      "id": "4",
+      "tex": "ここまでの結果が正しいことを，$\\ce{SiO2}$ のつりあいで確かめよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$75.0\\,\\mathrm{g}$"
+   },
+   {
+    "id": "2",
+    "tex": "$10.0\\,\\mathrm{g}$"
+   },
+   {
+    "id": "3",
+    "tex": "$15.0\\,\\mathrm{g}$，$1.5$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "Y に $75.0\\times0.516 = 38.7\\,\\mathrm{g}$，かんらん石に $10.0\\times0.410 = 4.1\\,\\mathrm{g}$，斜長石に $15.0\\times0.480 = 7.2\\,\\mathrm{g}$ の $\\ce{SiO2}$ があり，合計 $50.0\\,\\mathrm{g}$ で X の $\\ce{SiO2}$ と一致する（質量の合計も $75.0+10.0+15.0 = 100\\,\\mathrm{g}$ で一致）。"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　X $100\\,\\mathrm{g}$ $=$ Y $+$ かんらん石 $+$ 斜長石。どの成分も，この分かれ方の前後で量が保存される。\n\n\\textbf{(1)}　$\\ce{K2O}$ は鉱物に入らないので，X の $\\ce{K2O}$ $0.60\\,\\mathrm{g}$ はすべて Y に残る。Y の質量を $m$ とすると $0.0080\\,m = 0.60$ より $m = \\mathbf{75.0\\ g}$。（取り除かれた鉱物は合計 $25.0\\,\\mathrm{g}$。）\n\n\\textbf{(2)}　MgO は斜長石に含まれない。かんらん石の質量を $a$ とすると\n\\[ 9.00 = 75.0\\times0.0600 + 0.450\\,a \\quad\\Rightarrow\\quad a = \\frac{9.00-4.50}{0.450} = \\mathbf{10.0\\ g} \\]\n\n\\textbf{(3)}　$\\ce{Al2O3}$ はかんらん石に含まれない。斜長石の質量を $b$ とすると\n\\[ 18.0 = 75.0\\times0.176 + 0.320\\,b \\quad\\Rightarrow\\quad b = \\frac{18.0-13.2}{0.320} = \\mathbf{15.0\\ g} \\]\n斜長石はかんらん石の $15.0\\div10.0 = \\mathbf{1.5}$ 倍。\n\n\\textbf{(4)}　$\\ce{SiO2}$：$38.7 + 4.1 + 7.2 = 50.0\\,\\mathrm{g}$ で X の値と一致する。また $a+b = 25.0\\,\\mathrm{g}$ は，(1) で求めた「取り除かれた鉱物の合計」と一致する。2通りの確かめが合うので，求めた値は正しい。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "親マグマと娘マグマの組成差から，取り除かれた鉱物の量を成分ごとの質量保存で逆算する。鉱物に入らない成分（K2O）で残液の割合を，片方の鉱物にしか入らない成分（MgO，Al2O3）でそれぞれの鉱物の量を決め，残りの成分で検算する。"
+ },
+ "concepts": [
+  "igneous-rocks",
+  "crystallization",
+  "rock-forming-minerals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "結晶分化作用",
+  "物質収支",
+  "かんらん石",
+  "斜長石",
+  "化学組成"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "id": "ATM-CIR-029",
+ "schema": "gaia.problem/1",
+ "field": "ATM",
+ "unit": "ATM-04",
+ "topic": "傾度風と地衡風の速さ",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "北半球で，等圧線が同心円状の低気圧と高気圧を考える．中心から距離 $r$ の点で，等圧線に沿って速さ $V$ の風が吹いており，単位質量の空気には，大きさ $P$ の気圧傾度力，大きさ $fV$ のコリオリ力（転向力），大きさ $\\dfrac{V^2}{r}$ の遠心力の3力がはたらいてつり合っているとする（傾度風）．遠心力は中心から外向きにはたらき，コリオリ力は運動の向きに対して直角右向きにはたらく．$f=1.0\\times10^{-4}\\,\\mathrm{s^{-1}}$，$r=400\\,\\mathrm{km}$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "低気圧で $P=2.0\\times10^{-3}\\,\\mathrm{m/s^2}$ のとき，地衡風（遠心力を無視した場合）の速さと傾度風の速さを，それぞれ有効数字2桁で求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "高気圧で $P=7.5\\times10^{-4}\\,\\mathrm{m/s^2}$ のとき，地衡風の速さと傾度風の速さを有効数字2桁で求めよ．ただし，傾度風の速さとして解が2つ得られる場合は，小さい方をとること．"
+     },
+     {
+      "id": "3",
+      "tex": "高気圧では，$P$ がある値をこえると傾度風の解がなくなる．その値を求めよ．また，空気の密度を $1.2\\,\\mathrm{kg/m^3}$ として，それを $100\\,\\mathrm{km}$ あたりの気圧差（hPa）に直せ（有効数字2桁）．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "地衡風 $20\\,\\mathrm{m/s}$，傾度風 $15\\,\\mathrm{m/s}$"
+   },
+   {
+    "id": "2",
+    "tex": "地衡風 $7.5\\,\\mathrm{m/s}$，傾度風 $10\\,\\mathrm{m/s}$"
+   },
+   {
+    "id": "3",
+    "tex": "$1.0\\times10^{-3}\\,\\mathrm{m/s^2}$，$100\\,\\mathrm{km}$ あたり $1.2\\,\\mathrm{hPa}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{力の向き}　低気圧（北半球では反時計回り）では，気圧傾度力が中心向き，コリオリ力（右向き）と遠心力が外向き．高気圧（時計回り）では，気圧傾度力と遠心力が外向き，コリオリ力が中心向き．\n\\[ \\text{低気圧：}P=fV+\\frac{V^2}{r},\\qquad \\text{高気圧：}fV=P+\\frac{V^2}{r} \\]\n地衡風は遠心力を無視して $V_\\mathrm{g}=P/f$．また $fr=40\\,\\mathrm{m/s}$．\n(1) $V_\\mathrm{g}=2.0\\times10^{-3}/1.0\\times10^{-4}=\\boldsymbol{20\\,\\mathrm{m/s}}$．傾度風は $V^2+40V-800=0$ より\n\\[ V=\\frac{-40+\\sqrt{1600+3200}}{2}=14.6\\cdots \\]\nより $\\boldsymbol{15\\,\\mathrm{m/s}}$．遠心力が気圧傾度力の一部を受けもつので，低気圧では傾度風 $<$ 地衡風．\n(2) $V_\\mathrm{g}=\\boldsymbol{7.5\\,\\mathrm{m/s}}$．傾度風は $V^2-40V+300=0$ より $V=10,\\ 30$．小さい方をとって $\\boldsymbol{10\\,\\mathrm{m/s}}$．高気圧では遠心力が気圧傾度力と同じ外向きなので，コリオリ力が大きく（風が速く）なければならず，傾度風 $>$ 地衡風．\n(3) $V^2-frV+rP=0$ が実数解をもつ条件は $(fr)^2-4rP\\geqq0$，つまり\n\\[ P\\leqq\\frac{f^2r}{4}=\\frac{(1.0\\times10^{-4})^2\\times4.0\\times10^{5}}{4}=\\boldsymbol{1.0\\times10^{-3}\\,\\mathrm{m/s^2}} \\]\n気圧の傾きは $\\rho P=1.2\\times10^{-3}\\,\\mathrm{Pa/m}$，$100\\,\\mathrm{km}$ では $120\\,\\mathrm{Pa}=\\boldsymbol{1.2\\,\\mathrm{hPa}}$．高気圧の中心付近では等圧線の間隔を狭くできず，風が弱いのはこのためである．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "同心円状の等圧線では遠心力が加わり，低気圧では傾度風が地衡風より遅く，高気圧では速くなる。高気圧では2次方程式が実数解をもつ条件から気圧傾度に上限があり，中心付近は等圧線の間隔が広く風が弱い。"
+ },
+ "concepts": [
+  "general-circulation",
+  "atm-pressure",
+  "winds"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "傾度風",
+  "地衡風",
+  "遠心力",
+  "高気圧",
+  "低気圧"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

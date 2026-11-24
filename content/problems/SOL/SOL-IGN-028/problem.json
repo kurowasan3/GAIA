@@ -1,0 +1,99 @@
+{
+ "id": "SOL-IGN-028",
+ "schema": "gaia.problem/1",
+ "field": "SOL",
+ "unit": "SOL-06",
+ "topic": "かんらん石の化学式と酸化物の質量%",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "原子 $6.0\\times10^{23}$ 個の質量を，O：$16\\,\\mathrm{g}$，Mg：$24\\,\\mathrm{g}$，Si：$28\\,\\mathrm{g}$，Fe：$56\\,\\mathrm{g}$ とする。かんらん石は，苦土かんらん石 $\\ce{Mg2SiO4}$ と鉄かんらん石 $\\ce{Fe2SiO4}$ が任意の割合で混ざった固溶体である。鉱物の化学組成は，$\\ce{SiO2}$，MgO，FeO のような酸化物の質量%で表すことが多い。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "$\\ce{Mg2SiO4}$ に含まれる $\\ce{SiO2}$ と MgO の質量%を，それぞれ整数で答えよ。"
+     },
+     {
+      "id": "2",
+      "tex": "Mg と Fe の原子数の比が $4:1$ のかんらん石 $(\\mathrm{Mg}_{0.8}\\mathrm{Fe}_{0.2})_2\\mathrm{SiO_4}$ に含まれる $\\ce{SiO2}$，MgO，FeO の質量%を，それぞれ整数で答えよ。"
+     },
+     {
+      "id": "3",
+      "tex": "2つのかんらん石で Si の原子数の割合は同じなのに，$\\ce{SiO2}$ の質量%は異なる。その理由を答えよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$\\ce{SiO2}$：$43\\,\\%$，MgO：$57\\,\\%$"
+   },
+   {
+    "id": "2",
+    "tex": "$\\ce{SiO2}$：$39\\,\\%$，MgO：$42\\,\\%$，FeO：$19\\,\\%$"
+   },
+   {
+    "id": "3",
+    "tex": "Mg の一部が，原子1個の質量がより大きい Fe に置きかわると，化学式1つ分の質量が大きくなる。$\\ce{SiO2}$ の質量は変わらないので，全体に占める割合は小さくなる。"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　化学式を酸化物の組み合わせに書きかえる。$\\ce{Mg2SiO4} = 2\\,\\mathrm{MgO} + \\ce{SiO2}$ である（O の数：$2+2=4$）。\n\n\\textbf{(1)}　$\\mathrm{MgO} = 24+16 = 40$，$\\ce{SiO2} = 28+32 = 60$。化学式1つ分は $2\\times40+60 = 140$。\n\\[ \\ce{SiO2}：\\frac{60}{140}\\times100 = 42.9 \\fallingdotseq 43\\,\\%,\\qquad \\mathrm{MgO}：\\frac{80}{140}\\times100 = 57.1 \\fallingdotseq 57\\,\\% \\]\n\n\\textbf{(2)}　$(\\mathrm{Mg}_{0.8}\\mathrm{Fe}_{0.2})_2\\mathrm{SiO_4} = 1.6\\,\\mathrm{MgO} + 0.4\\,\\mathrm{FeO} + \\ce{SiO2}$。$\\mathrm{FeO} = 56+16 = 72$。\n・MgO：$1.6\\times40 = 64$，FeO：$0.4\\times72 = 28.8$，$\\ce{SiO2}$：$60$，合計 $152.8$\n\\[ \\ce{SiO2}：\\frac{60}{152.8}\\times100 = 39.3,\\quad \\mathrm{MgO}：\\frac{64}{152.8}\\times100 = 41.9,\\quad \\mathrm{FeO}：\\frac{28.8}{152.8}\\times100 = 18.8 \\]\n整数にして \\textbf{39 %，42 %，19 %}（合計 100 %）。\n\n\\textbf{(3)}　Fe（56）は Mg（24）より重いので，Fe が入るほど化学式1つ分の質量が増える。Si と O の数は同じでも，全体の質量が増えた分だけ $\\ce{SiO2}$ の質量%は下がる。マントルのかんらん石は $\\mathrm{Mg:Fe}$ がおよそ $9:1$ で，Mg に富んでいる。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "鉱物の化学式を酸化物の和（例：Mg2SiO4 = 2MgO + SiO2）に書きかえると，酸化物の質量%が式量の比で求まる。固溶体で重い元素が置きかわると，同じ原子数比でも各酸化物の質量%が変わる。"
+ },
+ "concepts": [
+  "igneous-rocks",
+  "crystallization",
+  "rock-forming-minerals"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "かんらん石",
+  "固溶体",
+  "化学組成",
+  "ケイ酸塩鉱物"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "AST-GAL-046",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-06",
+ "topic": "渦巻銀河の回転速度から距離とハッブル定数",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "渦巻銀河の円盤は薄い円板とみなせる．円盤の回転軸と視線のなす角（傾き角）を $\\theta$ とすると，円盤は長軸 $a$，短軸 $b$ の楕円に見える．長軸の端で測った視線速度から銀河中心の視線速度を引くと，回転速度 $V$ の視線方向成分 $V_r$ が得られる．渦巻銀河の絶対等級 $M$ と円盤外側の回転速度 $V_0$（$\\mathrm{km/s}$）の間には $M=-10\\log_{10}V_0+2.0$ の関係があるとする．\nある渦巻銀河 G では $a=4.0'$，$b=2.0'$，$V_r=173\\,\\mathrm{km/s}$，見かけの等級 $13.0$ 等，銀河中心の視線速度 $4400\\,\\mathrm{km/s}$ であった．$\\sin60^\\circ=0.87$，$\\log_{10}2=0.30$，$10^{0.8}=6.3$ とする．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "G の傾き角 $\\theta$ を求めよ．"
+     },
+     {
+      "id": "2",
+      "tex": "G の回転速度 $V_0$ と絶対等級を求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "G までの距離を求め，ハッブル定数を $\\mathrm{km/(s\\cdot Mpc)}$ の単位で有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "後の観測で，G の短軸の長さを実際より長く測っていたことがわかった（ほかの測定値は正しい）．正しいハッブル定数は (3) の値より大きいか小さいか．傾き角・回転速度・絶対等級・距離がそれぞれどう変わるかをたどって答えよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$60^\\circ$"
+   },
+   {
+    "id": "2",
+    "tex": "$V_0=2.0\\times10^{2}\\,\\mathrm{km/s}$，$M=-21.0$ 等"
+   },
+   {
+    "id": "3",
+    "tex": "距離 $63\\,\\mathrm{Mpc}$，ハッブル定数 $70\\,\\mathrm{km/(s\\cdot Mpc)}$"
+   },
+   {
+    "id": "4",
+    "tex": "大きい．正しい短軸は短いので $\\cos\\theta=b/a$ が小さく傾き角は大きい→ $\\sin\\theta$ が大きく回転速度 $V_0=V_r/\\sin\\theta$ は小さい→絶対等級は大きく（暗く）なる→同じ見かけの等級なら距離は近い→後退速度は同じなのでハッブル定数は大きくなる"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 円盤の直径 $a$ は長軸としてそのまま見え，それと垂直な方向は $\\cos\\theta$ 倍に縮んで見える．$\\cos\\theta=\\dfrac{b}{a}=0.50$ より $\\boldsymbol{\\theta=60^\\circ}$．\n\n\\textbf{(2)} 長軸の端では回転の向きは長軸に垂直で，視線方向の成分は $V\\sin\\theta$．$V_0=\\dfrac{173}{0.87}\\fallingdotseq\\boldsymbol{2.0\\times10^{2}\\,\\mathrm{km/s}}$．$M=-10\\times(2+0.30)+2.0=\\boldsymbol{-21.0}$ \\textbf{等}．\n\n\\textbf{(3)} $13.0-(-21.0)=5\\log_{10}d-5$ より $\\log_{10}d=7.8$，$d=6.3\\times10^7$ パーセク $=\\boldsymbol{63\\,\\mathrm{Mpc}}$．$H=\\dfrac{4400}{63}\\fallingdotseq\\boldsymbol{70\\,\\mathrm{km/(s\\cdot Mpc)}}$．\n\n\\textbf{(4)} 正しい $b$ は短いので $\\cos\\theta=b/a$ は小さく，\\textbf{傾き角は大きい}．$\\sin\\theta$ が大きくなるので $V_0=V_r/\\sin\\theta$ は\\textbf{小さい}．$M=-10\\log_{10}V_0+2.0$ より絶対等級は\\textbf{大きく（暗く）}なり，見かけの等級は同じなので距離指数が小さく，\\textbf{距離は近い}．後退速度 $4400\\,\\mathrm{km/s}$ は変わらないので，ハッブル定数は (3) より\\textbf{大きく}なる．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "薄い円盤の見かけの縦横比から傾き角を求めて視線速度を回転速度に直し，回転速度と絶対等級の関係から距離を出してハッブル定数を求める．形の測定の誤りは，傾き角→回転速度→絶対等級→距離→ハッブル定数と連鎖して伝わる．"
+ },
+ "concepts": [
+  "cosmology",
+  "stellar-properties",
+  "galaxy"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "渦巻銀河",
+  "タリー・フィッシャー関係",
+  "ドップラー効果",
+  "ハッブル・ルメートルの法則",
+  "誤差の伝わり方"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

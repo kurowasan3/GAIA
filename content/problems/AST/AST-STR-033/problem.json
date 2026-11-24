@@ -1,0 +1,99 @@
+{
+ "id": "AST-STR-033",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "光度が同じで温度のちがう3つの星",
+ "course": "地学",
+ "level": 1,
+ "minutes": 8,
+ "format": [
+  "calc",
+  "choice"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "光度（全放射エネルギー）がどれも太陽の100倍で，表面温度がそれぞれ P：$12000\\ \\mathrm{K}$，Q：$6000\\ \\mathrm{K}$，R：$3000\\ \\mathrm{K}$ の3つの恒星がある。3つの星は地球から同じ距離にあるとする。ウィーンの変位則を $\\lambda_{\\max}T=2900\\ \\mu\\mathrm{m\\cdot K}$ とする。"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "P，Q，R が最も強く放射する波長 $\\lambda_{\\max}$ をそれぞれ求めよ（有効数字2けた，単位 $\\mu\\mathrm{m}$）。"
+     },
+     {
+      "id": "2",
+      "tex": "半径が最も大きい星と最も小さい星を答え，その半径の比（最大÷最小）を求めよ。"
+     },
+     {
+      "id": "3",
+      "tex": "波長 $0.5\\ \\mu\\mathrm{m}$ 付近の光だけを通すフィルターをつけて3つの星を観測した。最も明るく見えるのはどれか。ア　P，イ　Q，ウ　R から選び，理由を簡潔に述べよ。"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "P：$0.24\\ \\mu\\mathrm{m}$，Q：$0.48\\ \\mu\\mathrm{m}$，R：$0.97\\ \\mu\\mathrm{m}$"
+   },
+   {
+    "id": "2",
+    "tex": "最大は R，最小は P，半径の比は $16$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "イ（全放射は同じでも，Q は放射の山が $0.5\\ \\mu\\mathrm{m}$ 付近にあり，その波長で出すエネルギーが最も多い。P は紫外線側，R は赤外線側に放射の多くを出す。）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} $\\lambda_{\\max}=\\dfrac{2900}{T}$ より，P：$\\dfrac{2900}{12000}=0.24\\ \\mu\\mathrm{m}$，Q：$\\dfrac{2900}{6000}=0.48\\ \\mu\\mathrm{m}$，R：$\\dfrac{2900}{3000}=0.97\\ \\mu\\mathrm{m}$。\n\n\\textbf{(2)} 光度 $L=4\\pi R^2\\sigma T^4$ が等しいので $R\\propto \\dfrac{1}{T^2}$。温度が最も低い R が最大，最も高い P が最小で，\n\\[ \\frac{R_{\\mathrm{R}}}{R_{\\mathrm{P}}}=\\left(\\frac{12000}{3000}\\right)^2=\\boldsymbol{16} \\]\n\n\\textbf{(3)} 3つの星が出すエネルギーの合計は同じだが，その配分（スペクトル）がちがう。放射は $\\lambda_{\\max}$ のまわりに集中するので，$0.5\\ \\mu\\mathrm{m}$ の光を最も多く出すのは $\\lambda_{\\max}$ がその近くにある Q である。P は紫外線側に，R は赤外線側に多くのエネルギーを出しているので，$0.5\\ \\mu\\mathrm{m}$ では Q より暗い。答えは\\textbf{イ}。\n\n「光度が同じ＝どの波長で見ても同じ明るさ」ではない点に注意する。可視光の一部の波長で比べると，温度が太陽に近い星が最も明るく見える。\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "光度が等しくても放射のスペクトルの配分は温度で決まるので，ある波長の光だけで比べると最大放射波長がその波長に近い星が最も明るい。また光度が等しければ半径は温度の2乗に反比例する。"
+ },
+ "concepts": [
+  "stellar-properties"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "ウィーンの変位則",
+  "シュテファン・ボルツマンの法則",
+  "スペクトル",
+  "恒星の半径",
+  "フィルター観測"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

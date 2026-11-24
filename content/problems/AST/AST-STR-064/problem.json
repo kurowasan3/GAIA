@@ -1,0 +1,110 @@
+{
+ "id": "AST-STR-064",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "原始星の光度と半径",
+ "course": "地学",
+ "level": 3,
+ "minutes": 12,
+ "format": [
+  "calc",
+  "written"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "ある原始星は，表面温度がほぼ $4000\\,\\mathrm{K}$ のまま，HR 図上をほぼ真下に移動している段階（林トラック上）にある．この原始星の年周視差は $0.0040''$ で，地上で受け取る単位面積・単位時間あたりの放射エネルギーは太陽定数の $4.0\\times10^{-14}$ 倍であった．$1$ パーセク $=2.0\\times10^{5}$ 天文単位，太陽の表面温度を $5800\\,\\mathrm{K}$ とし，星間吸収は無視する．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "この原始星までの距離は何天文単位か．"
+     },
+     {
+      "id": "2",
+      "tex": "この原始星の光度は太陽の何倍か．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "この原始星の半径は太陽の何倍か．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "この原始星が HR 図上を真下に移動していくとき，半径はどう変わるか．また，その間に原始星を輝かせているエネルギー源は何か．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$5.0\\times10^{7}$ 天文単位"
+   },
+   {
+    "id": "2",
+    "tex": "$1.0\\times10^{2}$ 倍"
+   },
+   {
+    "id": "3",
+    "tex": "$21$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "半径は小さくなっていく．エネルギー源は重力収縮で解放される重力エネルギー（重力による位置エネルギー）"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{(1)} 距離は $\\dfrac{1}{0.0040}=250$ パーセク $=250\\times2.0\\times10^5=\\boldsymbol{5.0\\times10^{7}}$ \\textbf{天文単位}．\n\n\\textbf{(2)} 光度は「受け取る強さ × 距離の2乗」に比例する．太陽は距離 $1$ 天文単位で太陽定数を与えるので\n\\[ \\frac{L}{L_\\odot}=4.0\\times10^{-14}\\times(5.0\\times10^{7})^2=\\boldsymbol{1.0\\times10^{2}}\\ \\text{倍}. \\]\n\n\\textbf{(3)} $L\\propto R^2T^4$ より $\\dfrac{R}{R_\\odot}=\\sqrt{100}\\times\\left(\\dfrac{5800}{4000}\\right)^2=10\\times2.10=\\boldsymbol{21}$ \\textbf{倍}．\n\n\\textbf{(4)} 温度一定のまま光度が下がるので，$L\\propto R^2$ より\\textbf{半径は小さくなる}．原始星はまだ中心で核融合が始まっておらず，\\textbf{重力収縮で解放される重力エネルギー}で輝いている．\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "年周視差から距離を出し，受け取る放射の強さを太陽定数と比べれば光度が太陽の何倍かがわかり，温度との組み合わせで半径が出る．温度一定のまま光度が下がる林トラックは，重力収縮で半径が小さくなる段階を表す．"
+ },
+ "concepts": [
+  "stellar-properties",
+  "gravity-earth",
+  "radiation-balance"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "原始星",
+  "林トラック",
+  "年周視差",
+  "光度",
+  "シュテファン・ボルツマンの法則",
+  "HR図"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}

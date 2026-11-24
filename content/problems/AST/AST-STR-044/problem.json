@@ -1,0 +1,108 @@
+{
+ "id": "AST-STR-044",
+ "schema": "gaia.problem/1",
+ "field": "AST",
+ "unit": "AST-05",
+ "topic": "トランジットの減光時間と深さ",
+ "course": "地学",
+ "level": 3,
+ "minutes": 15,
+ "format": [
+  "calc"
+ ],
+ "examStyle": "national-2nd",
+ "statement": {
+  "blocks": [
+   {
+    "type": "text",
+    "tex": "太陽と同じ質量・半径（$7.0\\times10^{5}\\,\\mathrm{km}$）をもつ恒星 Q のまわりを，惑星 X が円軌道で公転している．地球はほぼ惑星 X の公転面内にあり，惑星 X が恒星 Q の手前を通過するたびに恒星 Q の明るさがわずかに下がる（トランジット）．観測結果は次のとおりである．\n・減光は $8.0\\times10^{-3}$ 年ごとにくり返す．\n・1回の減光が続く時間は $1.8$ 時間である．\n・減光している間，明るさは通常の $1.0\\,\\%$ だけ下がっている．\n\n恒星 Q は一様に光る円盤とみなし，惑星 X は光を出さない．惑星 X の大きさは恒星 Q にくらべて小さいので，減光が続く時間は，惑星の中心が恒星の円盤を横切る時間とみなしてよい．太陽質量の中心星のまわりでは，天文単位で表した軌道半径 $a$ と年で表した周期 $T$ の間に $a^3=T^2$ が成り立ち，地球（$a=1$）の公転の速さは $30\\,\\mathrm{km/s}$ である．"
+   },
+   {
+    "type": "parts",
+    "items": [
+     {
+      "id": "1",
+      "tex": "惑星 X の軌道半径は何天文単位か．また，公転の速さは何 $\\mathrm{km/s}$ か．"
+     },
+     {
+      "id": "2",
+      "tex": "惑星 X が恒星 Q の円盤の中心を通って横切るとすると，減光は何時間続くはずか．有効数字2桁で求めよ．"
+     },
+     {
+      "id": "3",
+      "tex": "観測された減光時間から，惑星 X は恒星 Q の円盤の中心からどれだけ離れたところを横切ったと考えられるか．恒星 Q の半径の何倍かを有効数字2桁で求めよ．"
+     },
+     {
+      "id": "4",
+      "tex": "惑星 X の半径は何 $\\mathrm{km}$ か．有効数字2桁で求めよ．"
+     }
+    ]
+   }
+  ]
+ },
+ "figures": [],
+ "answer": {
+  "parts": [
+   {
+    "id": "1",
+    "tex": "$0.040$ 天文単位，$1.5\\times10^{2}\\,\\mathrm{km/s}$"
+   },
+   {
+    "id": "2",
+    "tex": "$2.6$ 時間"
+   },
+   {
+    "id": "3",
+    "tex": "$0.72$ 倍"
+   },
+   {
+    "id": "4",
+    "tex": "$7.0\\times10^{4}\\,\\mathrm{km}$"
+   }
+  ]
+ },
+ "solutions": [
+  {
+   "id": "main",
+   "kind": "main",
+   "blocks": [
+    {
+     "type": "text",
+     "tex": "\\textbf{考え方}　周期 → 軌道半径 → 速さ，速さ×時間 → 円盤を横切った弦の長さ，減光率 → 面積比．\n\n(1) $a^3=T^2=(8.0\\times10^{-3})^2=6.4\\times10^{-5}$ より $a=\\boldsymbol{0.040}$ 天文単位．速さは（円周）÷（周期）に比例するので\n\\[ V=30\\times\\frac{0.040}{8.0\\times10^{-3}}=\\boldsymbol{1.5\\times10^{2}}\\ \\mathrm{km/s} \\]\n\n(2) 中心を通るなら横切る長さは直径 $1.4\\times10^{6}\\,\\mathrm{km}$．\n\\[ t=\\frac{1.4\\times10^{6}}{150}\\fallingdotseq9.3\\times10^{3}\\ \\mathrm{s}\\fallingdotseq\\boldsymbol{2.6}\\ \\text{時間} \\]\n\n(3) 実際は 1.8 時間で，中心通過より短い → 中心からずれた弦を横切った．弦の長さは $150\\times1.8\\times3600=9.72\\times10^{5}\\,\\mathrm{km}$，その半分は $4.86\\times10^{5}\\,\\mathrm{km}$．弦と中心の距離を $d$ とすると\n\\[ d=\\sqrt{(7.0\\times10^{5})^2-(4.86\\times10^{5})^2}\\fallingdotseq5.0\\times10^{5}\\ \\mathrm{km}\\quad\\Rightarrow\\quad \\frac{d}{R}\\fallingdotseq\\boldsymbol{0.72} \\]\n\n(4) 惑星が円盤の内側にある間は，減光率 = 面積の比 $\\left(\\dfrac{r}{R}\\right)^2$ で，通る位置によらない．\n\\[ \\left(\\frac{r}{R}\\right)^2=0.010\\ \\Rightarrow\\ r=0.10R=\\boldsymbol{7.0\\times10^{4}}\\ \\mathrm{km} \\]\n（木星程度の大きさ．恒星のすぐ近くを回る巨大ガス惑星である．）\\hfill$\\square$"
+    }
+   ]
+  }
+ ],
+ "idea": {
+  "tex": "周期から軌道半径と公転速度を出し，速さ×減光時間で恒星円盤を横切る弦の長さを求めると，中心通過かどうかと通過位置がわかる．減光率は面積比なので惑星の半径が求まる．"
+ },
+ "concepts": [
+  "stellar-properties",
+  "kepler",
+  "planet-motion"
+ ],
+ "laws": [],
+ "misconceptions": [],
+ "tags": [
+  "系外惑星",
+  "トランジット",
+  "ケプラーの第3法則",
+  "減光",
+  "恒星の半径"
+ ],
+ "provenance": {
+  "created": "2026-11-24",
+  "method": "AI生成（問題管理表から取り込み）"
+ },
+ "quality": {
+  "status": "published",
+  "checks": {
+   "schema": true,
+   "units": false,
+   "figures": false,
+   "facts": true,
+   "human": false
+  },
+  "verified": false
+ }
+}
